@@ -5,8 +5,8 @@ from shapely.geometry import Point
 from scipy import ndimage
 
 def line_smoothing(x,y):
-    ndimage.gaussian_filter(y)
-    smooth_line = np.column_stack(x,y)
+    smooth_y=ndimage.gaussian_filter(y,2)
+    smooth_line = np.column_stack((x,smooth_y))
     return(smooth_line)
 
 class GeoHandler:

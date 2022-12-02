@@ -2,6 +2,7 @@ from tesspy import Tessellation
 import geopandas as gpd
 import pandas as pd
 import osmnx as ox
+from functools import reduce
 
 from ..utils.file_handle import FileHandle
 
@@ -67,6 +68,26 @@ class FeatureOfInterest(Tessellation):
                 
         self.map_creator()
         return(self.final_gpd)
+ 
+    def mul_area_of_interest(self,osm_tag_list,func_arg='sum',geom_arg='area',verbose=False):
+        self.osm_tag_list = osm_tag_list
+        self.func_arg = func_arg
+        self.geom_arg = geom_arg
+        self.area_list_gdf = []
+        column_list = ['geometry']
+        
+        for osm_tag in self.osm_tag_list:
+            osm_dict = osm_tag
+            area_gdf = self.area_of_interest(osm_dict)
+            attr_name = list(osm_dict.items())[0]
+            column_name = f"{attr_name[0]}_{attr_name[1]} {geom_arg}"
+            column_list.append(column_name)
+            area_gdf.rename(columns = {geom_arg:column_name}, inplace = True)
+            self.area_list_gdf.append(area_gdf)
+
+        self.mul_area_gpd = reduce(lambda x, y: pd.merge(x, y, on = 'geometry'), self.area_list_gdf)
+        self.mul_area_gpd = self.mul_area_gpd[column_list]
+        return(self.mul_area_gpd)
         
     def road_of_interest(self,detail_deg, func_arg='sum',verbose=False):
         if detail_deg is None:
@@ -88,7 +109,7 @@ class FeatureOfInterest(Tessellation):
     def overlay_builder(self, geom_arg='area'):
         if geom_arg =='area':
             self.footprint_raw = self.footprint_raw[self.footprint_raw.geom_type != 'Point']
-            self.area_overlay = self.square_grid.overlay(self.footprint_raw, how='difference')
+            self.area_overlay = self.square_grid.overlay(self.footprint_raw, how='intersection')
             self.area_overlay[geom_arg]=self.area_overlay.to_crs(self.set_crs).area
         if geom_arg =='length':
             self.footprint_raw = self.footprint_raw[self.footprint_raw.geom_type != 'Point']

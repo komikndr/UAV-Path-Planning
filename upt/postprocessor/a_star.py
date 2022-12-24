@@ -26,7 +26,6 @@ class AStar:
             pass
         else:
             raise Exception("Warning argument column(agr_column) does not match with GeoPandas DataFrame column(gdf)")
-        
         self.gdf = gdf
         self.custom_func = custom_func
         self.centroids = np.column_stack((gdf.to_crs(self.crs).centroid.x, gdf.to_crs(self.crs).centroid.y))
@@ -36,10 +35,11 @@ class AStar:
         
         self.node_positions = dict(zip(self.graph.nodes, self.centroids))
         nx.set_node_attributes(self.graph, self.node_positions,name='position')
-        
+        self.node_id = dict(zip(self.graph.nodes, gdf.index))
+        nx.set_node_attributes(self.graph,  self.node_id, name='id')
+
         for column in self.arg_column:
             nx.set_node_attributes(self.graph,  gdf[column], name=column)
-        nx.set_node_attributes(self.graph,  gdf.index, name='id')
     
     def create_line(self):
         self.point_line = []

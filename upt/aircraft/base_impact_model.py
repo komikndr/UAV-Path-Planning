@@ -1,32 +1,28 @@
-from pyproj import Proj
 import pandas as pd
 import geopandas as gpd
 import numpy as np
 
 import ballistic_model
 
-class BaseImpactModel:
+class base_impact_model:
     def __init__(self, model, ac_profile, crs, n_sampling = 1000):
         self.model_type = model
         self.crs = crs
         self.n_sampling = n_sampling
         self.ac_profile = ac_profile
-        self.model_func = self.get_function()
+        self.get_function()
     
     def get_function(self):
-        crash_func={
-            "ballistic":ballistic_model,
-            "glide": None,
-        }
-        return(crash_func[self.model_type]) 
+        if self.model_type == "ballistic":
+            self.model_func = ballistic_model
+        if self.model_type == "glide":
+            pass
     
     def run_model(self):
         self.impact_point = self.model_func(self.n_sampling, self.ac_profile)
         self.binning()
         self.array_to_gpd()
-        self.meter_to_lonlat()
         self.pd_to_gpd()
-        
         return(self.mask_gdf)
     
     def run_unbinned_model(self):
@@ -55,13 +51,10 @@ class BaseImpactModel:
         self.locmap_df = pd.DataFrame(self.locmap_map)
         self.mask_df = self.n_point_df.join(self.locmap_df)
         
-    def meter_to_lonlat(self):
-        p = Proj(projparams = self.crs, peserve_units=False)
-        self.mask_df['x_loc'], self.mask_df['y_loc'] = p(self.mask_df['x_loc'], self.mask_df['y_loc'], inverse=True)
-        
     def pd_to_gpd(self):
         self.mask_gdf = gpd.GeoDataFrame(self.mask_df.copy(), geometry=gpd.points_from_xy(self.mask_df['x_loc'], self.mask_df['y_loc']))
         self.mask_gdf.drop(['x_loc','y_loc'], axis=1, inplace = True)
 
         #Dividde N_point by sample size
         self.mask_gdf['N_points'] = self.mask_gdf['N_points']/self.n_sampling
+        self.mask_gdf = self.mask_gdf.set_crs(self.crs)

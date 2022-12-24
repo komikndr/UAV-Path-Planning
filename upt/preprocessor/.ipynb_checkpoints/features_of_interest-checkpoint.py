@@ -125,7 +125,6 @@ class FeatureOfInterest(Tessellation):
         self.final_gpd = pd.merge(self.square_grid, self.area_df, on='id', how='outer', indicator=False)
         self.final_gpd.fillna(0,inplace=True)
         self.final_gpd.to_crs("EPSG:3857", inplace=True)
-        print(self.final_gpd.crs)
         
         if self.save_file:
             calculated_file_name = f"{self.city_name}_calculated_{list(self.osm_tag.keys())[0]}_{list(self.osm_tag.values())[0]}"

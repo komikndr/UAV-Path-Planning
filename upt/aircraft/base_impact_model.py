@@ -2,9 +2,12 @@ import pandas as pd
 import geopandas as gpd
 import numpy as np
 
-import ballistic_model
+from .ballistic_model import ballistic_model
+from .glide_model import glide_model
+from .fly_away_model import fly_away_model
+from .parachute_model import parachute_model
 
-class base_impact_model:
+class BaseImpactModel:
     def __init__(self, model, ac_profile, crs, n_sampling = 1000):
         self.model_type = model
         self.crs = crs
@@ -16,7 +19,11 @@ class base_impact_model:
         if self.model_type == "ballistic":
             self.model_func = ballistic_model
         if self.model_type == "glide":
-            pass
+            self.model_func = glide_model
+        if self.model_type == "fly_away":
+            self.model_func = fly_away_model
+        if self.model_type == "parachute":
+            self.model_func = parachute_model
     
     def run_model(self):
         self.impact_point = self.model_func(self.n_sampling, self.ac_profile)
@@ -38,11 +45,13 @@ class base_impact_model:
         self.n_point_map = {}
         self.locmap_map = {}
         self.n_point_map.setdefault("N_points", [])
+        self.n_point_map.setdefault("E_imp", [])
         self.locmap_map.setdefault("x_loc", [])
         self.locmap_map.setdefault("y_loc", [])
         for ith, _ in enumerate(histogram):
             for jth, point in enumerate(histogram[ith]):
                 self.n_point_map['N_points'].append(point)
+                self.n_point_map['E_imp'].append(point)
                 self.locmap_map['x_loc'].append(x_bin[ith])
                 self.locmap_map['y_loc'].append(y_bin[jth])
                 

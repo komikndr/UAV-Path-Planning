@@ -3,6 +3,7 @@ import geopandas as gpd
 import numpy as np
 from shapely.geometry import Point
 from scipy import ndimage
+from geopy.geocoders import Nominatim
 
 def line_smoothing(x,y):
     smooth_y=ndimage.gaussian_filter(y,2)
@@ -11,7 +12,7 @@ def line_smoothing(x,y):
 
 class GeoHandler:
     def __init__(self):
-        pass 
+        self.crs = "epsg:4326" 
     
     def geocoder(self, query):
         self.query = query
@@ -22,11 +23,18 @@ class GeoHandler:
         self.coord = coord
         self.coord = self.coord [::-1]
         self.point_coord = Point(self.coord)
-        self.point_coord=gpd.GeoDataFrame({'col1': ['name1'], 'geometry': [Point(self.coord)]})
-        self.point_coord = self.point_coord.set_crs(self.gdf.crs)
+        self.point_coord = gpd.GeoDataFrame({'col1': ['name1'], 'geometry': [Point(self.coord)]})
+        self.point_coord = self.point_coord.set_crs(self.crs)
+        self.gdf = self.gdf.to_crs(self.crs)
+        
         node_gdf = self.gdf.sjoin(self.point_coord ,predicate='contains',how='right')
         node_id =node_gdf['index_left'][0]
         return(node_id)
+    
+#     def grid_select(self, coord):
+#         geolocator = Nominatim(user_agent="UAV Path Finder")
+#         latitude = location.latitude
+#         longitude = location.longitude
     
     def node_select(self,gdf, query):
         self.gdf = gdf

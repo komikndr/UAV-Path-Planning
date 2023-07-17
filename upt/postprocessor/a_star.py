@@ -3,7 +3,10 @@ import networkx as nx
 from libpysal.weights import Queen
 import warnings
 
+
+from .risk_astar import risk_a_star
 from ..utils.geo_utils import GeoHandler
+
 
 warnings.filterwarnings("ignore", category=DeprecationWarning) 
 np.seterr(all=None)
@@ -12,6 +15,7 @@ def standar_heuristic(current_attr,neig_attr):
     x1,y1 = current_attr['position']
     x2,y2 = neig_attr['position']
     return (((x2 - x1) ** 2 + (y2 - y1) ** 2))
+
 
 class AStar:
     def __init__(self, gdf , arg_column, crs, custom_func=None):
@@ -51,15 +55,18 @@ class AStar:
     def heuristic_func_generator(self,current, neighbour):
         current_attr = self.graph.nodes[current]
         neighbour_attr = self.graph.nodes[neighbour]
-        
-        if self.custom_func == None:
-            return (standar_heuristic(current_attr,neighbour_attr))
-        else:
-            return (self.custom_func(current_attr,neighbour_attr))
+
+        return (standar_heuristic(current_attr,neighbour_attr))
     
     def run_instance(self,start_node,end_node):
         gh = GeoHandler()
         self.start_node = gh.node_select(self.gdf,start_node)
         self.end_node = gh.node_select(self.gdf,end_node)
-        self.path_finder = nx.astar_path(self.graph, (self.start_node), (self.end_node), heuristic=self.heuristic_func_generator)
+    
+        if self.custom_func == None:
+            self.path_finder = nx.astar_path(self.graph, self.start_node, self.end_node, heuristic=self.heuristic_func_generator)
+        elif self.custom_func=="Risk ASTAR":
+            self.path_finder = risk_a_star(self.graph, self.start_node, self.end_node, self.arg_column[0])
+            
         return(self.path_finder)
+    

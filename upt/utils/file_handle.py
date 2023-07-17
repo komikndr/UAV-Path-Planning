@@ -40,6 +40,22 @@ class FileHandle:
 
         with open(gdf_path, 'wb') as gpdfile:
             pickle.dump(gdf, gpdfile, pickle.HIGHEST_PROTOCOL)
+            
+    def load_data_column(self, name, path_file):
+        #Away with elegance, i'll do what i do
+        data_column_name = f"{name}.dc"
+        data_column_path = os.path.join(path_file,data_column_name)
+
+        with open(data_column_path, 'rb') as dcfile:
+            return_data_column = pickle.load(dcfile)
+        return(return_data_column)
+
+    def save_data_column(self, data_column, name, path_file):
+        data_column_name = f"{name}.dc"
+        data_column_path = os.path.join(path_file,data_column_name)
+
+        with open(data_column_path, 'wb') as dcfile:
+            pickle.dump(data_column, dcfile, pickle.HIGHEST_PROTOCOL)
 
     def load_json(json_name,path_file):
         pass

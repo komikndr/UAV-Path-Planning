@@ -1,0 +1,109 @@
+UPX
+
+	UAV Path eXtension, is a library created for creating a flight 
+path based on the risk attributes. These attributes can be anything as long as the user
+provide the correct location on geographic coordinate system, and the function
+that use said attribute.
+	UPX geographic backend is provided using OpenStreetMap data to
+provides its geographic features and attribute.
+	The main building idea of UPX is to aid the safeties of UAV growing
+demand in recent years. Where users can select the type of aircrafts that they
+are going to use. Start point, end point, and how to calculate the path.
+	While UPX intended to be use to aid UAV operation, its library can be
+use in manned aircraft. There are 2 main reasons why it choose to be UAV aided
+system. First, UPX provide waypoint to be inserted in flight controller,
+second and much importantly, Many aircraft operated outside the civiliant
+area, hence it is useless to use UPX.
+
+UPX What is Not and Its Limitation
+	
+What is not.
+	UPX is a PRELIMINARY, tools for risk analysis for drone operation 
+it do not handle real world phenomena such as sudden wind gale, rain, 
+storm. Another aircraft who unfortunately present in the path of the UAV.
+	UPX Limitation, while its core function to determine which point 
+UAV would be fallen upon. It is computationally expansive to measure each
+grid with high degree precision, although it can be combat using montecarlo
+procedure. And it is written in Python, while Numba NJit is great method
+solution in hindsight, unfortunately Numba do not support DataFarame object.
+	How about using GPU? I MEAN YOU WANT ME TO? I NEVER EVEN TOUCH CUDA
+or OPENCL, I CAN NOT IMAGINE THE POINTER NIGHTMARE I MUST DEALT WITH.
+	While this is not necessarily Astar problem, but since Astar is a path
+optimizer sometimes it is plague by not capable to find global minima, just like
+its Optimizer brethren.	While it is seldom for Astar to get plague by this
+phenomena, since most of the common usage of Astar, road network,
+is being constrained by the graph model with mostly acyclic, directed graph 
+like a road network.
+	And Grid array in UPX, is the opposite of that, nodes with varying 
+degree of values, night cylic, and undirected graph. A perfect recipe for
+disaster.
+	Fortunately it can mostly be, emphised on mostly, to alleviate the
+problem by heuristically provide better function to h(n), and there is why
+it is called heuristic function. 
+	
+UPX Parts.	
+	UPX, has 3 main parts, preprocessor, postprocessor, and aircraft
+dynamics. 
+
+Preprocessor 
+	preprocessor is a sub package for handling the geographic data.
+Downloading the geographic data, storing it in local storage, and calculating
+the value features. Sum, means, max, min. The basic built in attributes are
+building footprint density, road area density. User can choose to insert the
+additional attribute such as transmission tower, lake, water storage, to name
+a few, AS LONG AS IT IS AVAILABLE ON OPERNSTREETMAP
+
+
+-------------------------------------------------------------------OSM---
+OpenStreetMap (OSM) is a collaborative project that aims to create a free, 
+editable map of the world. It was founded in 2004 and has since grown to 
+become one of the largest and most popular sources of geospatial data.
+
+OSM is built on the idea that anyone can contribute to the map by adding and updating data. 
+Users can add data using GPS devices, aerial imagery, or by manually tracing over satellite imagery. 
+The data is then stored in a database and made available under an open license, 
+allowing anyone to use and share the data.
+
+OSM data is used in a wide variety of applications, including online maps, routing services, 
+and geographic information systems (GIS).It is particularly useful for areas where other 
+geospatial data sources may be lacking or out of date.
+--------------------------------------------------------------------- GIS
+Geographic Information Systems (GIS) are computer-based tools used for
+storing, ]manipulating, and visualizing geographic data. They allow users to analyze and 
+understand spatial relationships, patterns, and trends in data.
+
+GIS consists of several key components:
+
+-Data: GIS uses data that is linked to a geographic location. This data can be in the form of points, 
+lines, or polygons (areas) and can include attributes such as population, land use, or elevation.
+
+-Hardware and software: GIS requires specialized hardware and software to store and analyze the data. 
+This includes computers, servers, and specialized software such as ArcGIS or QGIS.
+
+-Maps: GIS allows users to create interactive maps that can be used to visualize and analyze the data. 
+Maps can be customized with different layers of information, such as roads, land use, and population density.
+
+-Analysis: GIS allows users to perform spatial analysis on the data, such as calculating the distance 
+between two locations or identifying patterns in the data.
+
+GIS is used in a wide range of applications, including environmental planning, transportation, 
+public health, and urban planning. It allows users to make informed decisions by 
+analyzing and visualizing data in a geographic context.
+--------------------------------------------------------------------A STAR
+The A* (pronounced "A-star") algorithm is a popular search algorithm that is used to find the 
+shortest path between two points in a graph. It is an extension of the well-known 
+Dijkstra's algorithm and uses a heuristic function to guide the search.
+
+A heuristic function is a function that estimates the cost of reaching the goal from a given position. 
+In the case of the A* algorithm, the heuristic function is used to estimate the 
+remaining cost to the goal from the current position. This helps the algorithm to focus its search on the most 
+promising paths and avoid exploring paths that are unlikely to lead to the goal.
+
+The A* algorithm works by maintaining a priority queue of unexplored paths. 
+At each step, it selects the path with the lowest cost (as determined by the heuristic function) 
+and expands it to explore its neighboring vertices. If the goal is reached, the algorithm terminates 
+and returns the shortest path. If the goal is not reached, the algorithm continues to search until it has explored all possible paths.
+
+The A* algorithm is widely used in computer science and has a number of important applications, 
+including in video games, robotics, and geographic information systems. It is known for its 
+efficiency and ability to find the optimal solution in many cases.  		

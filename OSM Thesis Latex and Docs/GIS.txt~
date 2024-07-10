@@ -1,0 +1,135 @@
+UPX
+
+	UAV Path eXtension, is a library created for creating a flight 
+path based on the risk attributes. These attributes can be anything as long as the user
+provide the correct location on geographic coordinate system, and the function
+that use said attribute.
+	UPX geographic backend is provided using OpenStreetMap data to
+provides its geographic features and attribute.
+	The main building idea of UPX is to aid the safeties of UAV growing
+demand in recent years. Where users can select the type of aircrafts that they
+are going to use. Start point, end point, and how to calculate the path.
+	While UPX intended to be use to aid UAV operation, its library can be
+use in manned aircraft. There are 2 main reasons why it choose to be UAV aided
+system. First, UPX provide waypoint to be inserted in flight controller,
+second and much importantly, Many aircraft operated outside the civiliant
+area, hence it is useless to use UPX.
+
+UPX What is Not and Its Limitation
+	
+What is not.
+	UPX is a PRELIMINARY, tools for risk analysis for drone operation 
+it do not handle real world phenomena such as sudden wind gale, rain, 
+storm. Another aircraft who unfortunately present in the path of the UAV.
+	UPX Limitation, while its core function to determine which point 
+UAV would be fallen upon. It is computationally expansive to measure each
+grid with high degree precision, although it can be combat using montecarlo
+procedure. And it is written in Python, while Numba NJit is great method
+solution in hindsight, unfortunately Numba do not support DataFarame object.
+	How about using GPU? I MEAN YOU WANT ME TO? I NEVER EVEN TOUCH CUDA
+or OPENCL, I CAN NOT IMAGINE THE POINTER NIGHTMARE I MUST DEALT WITH.
+	While this is not necessarily Astar problem, but since Astar is a path
+optimizer sometimes it is plague by not capable to find global minima, just like
+its Optimizer brethren.	While it is seldom for Astar to get plague by this
+phenomena, since most of the common usage of Astar, road network,
+is being constrained by the graph model with mostly acyclic, directed graph 
+like a road network.
+	And Grid array in UPX, is the opposite of that, nodes with varying 
+degree of values, night cylic, and undirected graph. A perfect recipe for
+disaster.
+	Fortunately it can mostly be, emphised on mostly, to alleviate the
+problem by heuristically provide better function to h(n), and there is why
+it is called heuristic function. 
+	
+UPX Parts.	
+	UPX, has 3 main parts, preprocessor, postprocessor, and aircraft
+dynamics. 
+
+Preprocessor 
+	preprocessor is a sub package for handling the geographic data.
+Downloading the geographic data, storing it in local storage, and calculating
+the value features. Sum, means, max, min. The basic built in attributes are
+building footprint density, road area density. User can choose to insert the
+additional attribute such as transmission tower, lake, water storage, to name
+a few, AS LONG AS IT IS AVAILABLE ON OPERNSTREETMAP
+
+
+-------------------------------------------------------------------OSM---
+OpenStreetMap (OSM) is a collaborative project that aims to create a free, 
+editable map of the world. It was founded in 2004 and has since grown to 
+become one of the largest and most popular sources of geospatial data.
+
+OSM is built on the idea that anyone can contribute to the map by adding and updating data. 
+Users can add data using GPS devices, aerial imagery, or by manually tracing over satellite imagery. 
+The data is then stored in a database and made available under an open license, 
+allowing anyone to use and share the data.
+
+OSM data is used in a wide variety of applications, including online maps, routing services, 
+and geographic information systems (GIS).It is particularly useful for areas where other 
+geospatial data sources may be lacking or out of date.
+--------------------------------------------------------------------- GIS
+Geographic Information Systems (GIS) are computer-based tools used for
+storing, ]manipulating, and visualizing geographic data. They allow users to analyze and 
+understand spatial relationships, patterns, and trends in data.
+
+GIS consists of several key components:
+
+-Data: GIS uses data that is linked to a geographic location. This data can be in the form of points, 
+lines, or polygons (areas) and can include attributes such as population, land use, or elevation.
+
+-Hardware and software: GIS requires specialized hardware and software to store and analyze the data. 
+This includes computers, servers, and specialized software such as ArcGIS or QGIS.
+
+-Maps: GIS allows users to create interactive maps that can be used to visualize and analyze the data. 
+Maps can be customized with different layers of information, such as roads, land use, and population density.
+
+-Analysis: GIS allows users to perform spatial analysis on the data, such as calculating the distance 
+between two locations or identifying patterns in the data.
+
+GIS is used in a wide range of applications, including environmental planning, transportation, 
+public health, and urban planning. It allows users to make informed decisions by 
+analyzing and visualizing data in a geographic context.
+----------------------------------------------------------------------------------    		
+
+
+
+The differences between these three representations are important to understand because they affect what kinds of
+relations are appropriate. For instance, the relationships among geographical processes with objects can be modelled
+using simple distances. Near objects might then be “strongly related,” and distant objects “weakly related.”
+Alternatively, we could consider (or construct) a network that relates the objects based on their interactions.
+Geographical processes with networks must account for this topology, or structure of the connections between the “nodes”
+(i.e. the origins or destinations). We cannot assume that every node is connected, and these connections also cannot be
+directly determined from the nodes alone. For example, two subway stations may be very far apart, but could be connected
+by a frequent direct express train; given their connectivity, the raw distances (treating stops as geographic objects)
+may not be a good indication of their true geographic relationship. Finally, in a field, measurements can occur
+anywhere, so models need to account for the hypothetical realizations that could happen in the unobserved space between
+points of measurement.
+
+Geographic tables store information about discrete objects. Tables are two dimensional structures made up of rows and
+columns. Each row represents an independent object, while each column stores an attribute of those objects. Geographic
+tables are like typical data tables where one column stores geographic information. The tabular structure fits well with
+the object model because it clearly partitions space into discrete entities, and assigns a geometry to each entity
+according to their spatial nature. More importantly, geographic tables can seamlessly combine geographic and
+non-geographic information. In this data structure, geography becomes simply “one more attribute”, when it comes to
+storage and computer representation.
+
+Spatial graphs capture relationships between objects that are mediated through space. In a sense, they can be considered
+geographic networks, a data structure to store topologies. There are several ways to define spatial relationships
+between features, and we explore many of them in Chapter 4. The important thing to note for now is that, whichever rules
+we follow, spatial graphs provide a way to encode them into a data structure that can support analytics. As we will see
+throughout the book, the range of techniques that rely on these topologies is pretty large, spanning from exploratory
+statistics of spatial autocorrelation (Ch. 6 & 7), to regionalization (Ch. 10) to spatial econometrics (Ch. 11).
+Ironically, each of these fields, and others in computer science and mathematics, have come up with their own
+terminology to describe similar structures. Hence, when we talk or read about spatial weights matrices, adjacency
+matrices, geo-graphs, or spatial networks, we are thinking of very similar fundamental structures deployed in different
+contexts.
+
+Before proceeding, though, it helps to mention a quick clarification on terminology. Throughout this book, regardless of
+the data structure used, we will refer to a measurement about an observation as a feature. 
+
+Fortunately the Open Geospatial Consortium (OGC) has defined a set of “abstract” types that can be used to define any
+kind of geometry. This specification, codified in ISO 19125-1—the “simple features” specification—defines the formal
+relationships between these types: a Point is a zero-dimensional location with an x and y coordinate; a LineString is a
+path composed of a set of more than one Point, and a Polygon is a surface that has at least one LineString that starts
+and stops with the same coordinate. All of these types also have Multi variants that indicate a collection of multiple
+geometries of the same type. So, for instance, Bolivia is represented as a single polygon:

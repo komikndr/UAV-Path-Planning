@@ -1,0 +1,83 @@
+Chapter 1, Introduction
+
+Introduction
+
+		Unmanned Aerial vehicles, UAVs, also known as a drone, is getting more 
+	recognition in recent years. The booming of UAVs is caused by the component needed to manufacture the drone, especially
+	microcontrollers getting cheaper, and smaller. Compare to previous drone iteration, drone nowadays offers much wider
+	capability, such as enhanced range, the ability to mount hardware, and camera for example, and of course easily
+	deployable without requiring many technicians to maintain them.
+		UAVs are often being used in area where it is dangerous, impractical,
+	and expensive for human. The affordable entry point of using a drone incentivized emerging industries to exploit the
+	capability that UAVs offer. Not only that but the existing industry is also getting interested to use UAVs as an
+	augmentation to its existing operational infrastructure. And that industries are, logistics companies, agricultural
+	companies, multimedia companies, and surveyors to name a few
+		Alas, UAV regulation is in an unfortunate dichotomy, these are UAV
+	regulations are very conservative to the point of limiting the capability of the UAV itself, [insert FAA part number
+	here]. While often time in many areas UAV usage is very lenient to nonexistent.
+		That is why, this paper, is trying to explore the possibilities of
+	creating safety tools to help the users to create an optimized safe flight path to navigate. 
+ 
+
+Research Purpose
+
+		The UAV path planning research has the purpose to discover the usability
+	of geo analysis and aircraft, dynamic to determine the safe possible route.
+
+Research Limitation
+
+	- The UAV path planner only provides data based on static data, this
+	  include the building footprint, road footprint, and population density to name a few, while dynamic data such as
+	  real-time wind and whether data is ignored.
+	- UAV path planners only provide the flight path coordinate and do not
+	  provide a method to handle real-life incident.
+
+ Chapter 2, Literature Review
+
+Theoritical frame works
+
+Drone and drone types
+	
+	An unmanned aerial vehicle is one of the types of aircraft that does not require have human present onboard. Just
+	like its manned counterpart, UAV has its own propulsion system, lift devices, cargo area, power source, and flight
+	control. 
+		The drone can be categorized by its autonomy, from fully manual to fully autonomous. Fully manual UAVs rely on every
+	of its control by a human operator. Fully manual is also very cheap to manufacture, while also being the most
+	dangerous type, since it has little to no safety features. While the opposite is true for the latter.
+		Usually, many drones is fell into the semi-autonomous category, where a pilot can send direction control and its
+	onboard devices. While the UAV itself provides flight assistance[insert reference for acro, level], object
+	avoidance, return to home, and failsafe mechanism.
+		From its propulsion and lift generation method. UAVs can generally be divided into fixed-wing, and multirotor. Fixed
+	wings are generally shaped with fuselage with a placement combination of wing pairs. While multirotor relies on its
+	vertically oriented propeller both as propulsion and lift generation. With the number of propellers that it can
+	safely fly with from 3 to 4 and its multiplicity of 2. 
+		The shape of a UAV has a great influence on how it falls, with fixed wings, generally glides down. While the
+	multirotor fell following the ballistic trajectory. Both of which will influence the falling probability heat map.
+	
+Graph Theory. (SIMPLE)[WARNING PLEASE DO RE-RESEARCH]
+
+		Graph theory is one of the disciplines in mathematics where the use of
+	graphs in simple terms can be described as a relationship between its elements. Graph components consist of vertex or
+	node (V) and edge or link (E). The node is the object being represented in the graph, while the edge describes the
+	relationship between the nodes.
+
+		Graph theory can be used to describe the real-life phenomenon. Social interaction can be described using a graph.
+	Where people are nodes and the edge is the relation between them.
+
+		Edge can have a function attached to them. Some function is used to
+	describe the relationship between nodes, also called weight function. This function can be any function. For example in
+	social interaction an edge can be augmented to a basic linear function [xb+z] where x is the node(person), b is weight,
+	and z is bias. this function can describe how strong the relationship between each person is.
+
+Path finder.
+
+			Pathfinder is a sub-topic of graph theory, where its purpose is to find
+	which node and which edge that connecting the starting node to its final node. There are 2 types of pathfinder
+	algorithms. informed and Uninformed pathfinder. An informed pathfinder is a pathfinder that knows the location of its
+	final node while the opposite is true for the latter. The informed search uses a heuristical
+
+		function to estimate guessing the suitable node to traverse to. 
+	An example of informed search is Astar, A*, algorithm. Its search function can be written as [f(n) = g(n) + h(n)] where
+	f(n) is the cost of each nodes, g(n) is the cost proportional based on the distance between nodes and its starting node,
+	h(n), heuristic function, is the cost based on the distance between nodes and their final nodes.
+p

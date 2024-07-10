@@ -1,0 +1,17 @@
+UAV Pathfinder eXtension
+
+	UAV Pathfinder eXtension, UPX, is both python libraries and
+application to find the optimal risk informed flight path. The risk metioned
+previously is a set of rules to determine the probability of fatality in case
+the UAV happen to be malfunctioned and fell in that area. UPX is built based
+on the concern of negative consequence of increase frequency of UAV flown in
+urban area.
+	 UPX is written in python and use the python GIS, graph, and numerical
+processing in python. In broad outline, UPX works as follows.
+
+	[GEO Retrieving Library]->[Assigning Value]->[Pathfinding]
+
+Subsec
+	Geoprocessing in UPX is built upon geopandas, OSMnx, and Tesspy.
+
+ 

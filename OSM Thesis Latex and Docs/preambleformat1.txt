@@ -1,0 +1,52 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage{graphicx}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{enumitem}
+\usepackage{changepage}
+\usepackage[a4paper, top=3cm, bottom=3cm, left=3cm, right=3cm]{geometry}
+% \usepackage{fontspec}
+% \setmainfont{Calibri}
+\setlist{leftmargin=5.5mm}
+\newlist{myitemize}{itemize}{3}
+\setlist[myitemize,1]{label=\textbullet,leftmargin=1.5cm}
+
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\LARGE\bfseries\centering}{CHAPTER \thechapter}{20pt}{\LARGE\bfseries}
+\titleformat{\section}
+  {\normalfont\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+\titlespacing*{\chapter}{0pt}{1.5\baselineskip}{1.5\baselineskip}
+\titlespacing*{\section}{0pt}{1.5\baselineskip}{1.5\baselineskip}
+\titlespacing*{\subsection}{0pt}{1.5\baselineskip}{1.5\baselineskip}
+
+\setlength{\parskip}{3\baselineskip}
+\setlength{\parindent}{0pt}
+
+\usepackage{fancyhdr}
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\usepackage{etoolbox}
+\patchcmd{\chapter}
+  {\thispagestyle{plain}}
+  {\thispagestyle{fancy}}
+  {}{}
+
+\usepackage{caption}
+\captionsetup{font={small,singlespacing}, justification=centering, singlelinecheck=false}
+
+\usepackage{footnote}
+\renewcommand\footnoterule{\vspace*{-0.3cm}\hrule width 2in\vspace*{0.2cm}}
+\renewcommand{\footnotesize}{\fontsize{10}{12}\selectfont}
+
+\usepackage{amsmath}
+\usepackage{hyperref}

@@ -1,0 +1,257 @@
+\documentclass[11pt]{report}
+\usepackage{graphicx}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{enumitem}
+\usepackage{changepage}
+\usepackage[a4paper, total={15cm, 23.7cm}]{geometry}
+%\usepackage[backend=biber,style=ieee]{biblatex}
+
+
+%\addbibresource{My Library.bib}
+\setlist{leftmargin=5.5mm}
+\newlist{myitemize}{itemize}{3}
+\setlist[myitemize,1]{label=\textbullet,leftmargin=1.5cm}
+
+\begin{document}
+    %------------------- TITLE COVER-----------------------
+     \begin{titlepage}
+        \begin{center}
+            \textbf{\LARGE Using UAV Path Planning }
+    
+            \vspace{0.5cm}
+            
+                
+            \textbf{\Large Micko Lesmana}
+            \vspace{0.5cm}
+
+            \textbf{\Large 11201901010}
+            \vspace{3.5cm}  
+
+            \includegraphics[width=0.4\textwidth]{General Image/IULISymbol}
+            \vspace{3.5cm}
+
+
+            \large Report of internship activity\\
+            \large On Airbus A320 and Boeing 737\\
+            \large In GMF AeroAsia as Cabin Maintenance\\
+                
+            \vspace{0.8cm}
+                
+            Department of Aviation Engineering\\
+            International University Liaison Indonesia\\
+            BSD City\\
+            3 December 2022
+                
+        \end{center}
+    \end{titlepage}
+    %------------------- APPROVAL PAGE---------------------
+
+        \begin{center}
+            \textbf{\Large Approval Page}
+            \vspace{0.4cm}
+
+            \textbf{\Large Internship Report}
+            \vspace{0.4cm}
+            
+            \textbf{\Large Narrowbody Cabin Maintenance}
+            \vspace{0.4cm}
+
+            \textbf{\large Period: 10 October - 31 December}
+            \vspace{1cm}
+            
+                
+            \textbf{\large Micko Lesmana}
+            \vspace{0.3cm}
+
+            \textbf{\large 11201901010}
+            \vspace{0.3cm}
+                
+            \textbf{\large Department of Aviation Engineering}
+            \vspace{2cm}
+
+            \textbf{\large Acknowledge by:}
+            \vspace{3cm}
+
+        \begin{tabular}{@{}p{2.5in}p{2.5in}@{}}
+        
+        Company Surpervisor:                & Head of Department\\
+        Date:                               & Aviation Engineering:\\
+                                            & Date:\\
+%                                            & \centerline{\includegraphics[width=0.1\textwidth]{IULIstamp}}\\
+        \rule{5cm}{0.5pt}                   & \rule{5cm}{0.5pt}\\
+        \end{tabular}
+    \end{center}
+    %-----------------------------------TABLE OF CONTENT--------
+   \tableofcontents
+
+
+%---------------------------------------CHAPTER 1-------------------------------------
+   
+
+   \chapter{Introduction}
+
+        \section{Introduction}
+                Unmanned Aerial vehicles, UAVs, also known as a drone, is getting more 
+	        recognition in recent years. The booming of UAVs is caused by the component needed to manufacture the drone, especially
+	        microcontrollers getting cheaper, and smaller. Compare to previous drone iteration, drone nowadays offers much wider
+	        capability, such as enhanced range, the ability to mount hardware, and camera for example, and of course easily
+	        deployable without requiring many technicians to maintain them.
+
+
+		        UAVs are often being used in area where it is dangerous, impractical,
+	        and expensive for human. The affordable entry point of using a drone incentivized emerging industries to exploit the
+	        capability that UAVs offer. Not only that but the existing industry is also getting interested to use UAVs as an
+	        augmentation to its existing operational infrastructure. And that industries are, logistics companies, agricultural
+	        companies, multimedia companies, and surveyors to name a few
+
+
+		        Alas, UAV regulation is in an unfortunate dichotomy, these are UAV
+	        regulations are very conservative to the point of limiting the capability of the UAV itself, [insert FAA part number
+	        here]. While often time in many areas UAV usage is very lenient to nonexistent. 
+
+            
+		        That is why, this paper, is trying to explore the possibilities of
+	        creating safety tools to help the users to create an optimized safe flight path to navigate.
+
+        \section{Research purpose}
+		        The UAV path planning research has the purpose to discover the usability of geoanalysis and aircraft, dynamic
+            to determine the safe possible route.
+
+        \section{Research Limitation}
+        \begin{myitemize}   
+            \item   The UAV path planner only provides data based on static data, this includes the building footprint,
+                    road footprint, and population density to name a few, while dynamic data such as real-time wind and
+                    whether data is ignored.
+            \item   UAV path planners only provide the flight path coordinate and do not provide a method to handle
+                    real-life in
+        \end{myitemize}
+
+
+%------------------------------------CHAPTER 2-----------------------------------------
+    \chapter{Literature Review}
+    	\section{Insert Something Here}
+		\begin{myitemize}
+			\item Using GIS as path planner?
+			\item Using GIS as a method to groupping population?
+			\item Falling mechanics
+		\end{myitemize}
+%------------------------------------CHAPTER 3-----------------------------------------
+    
+
+    \chapter{Background Theory and Methodology}
+
+        \section{Drone and drone types}
+            An unmanned aerial vehicle is one of the types of aircraft that does not require have human present onboard. Just
+            like its manned counterpart, UAV has its own propulsion system, lift devices, cargo area, power source, and flight
+            control. 
+
+
+                The drone can be categorized by its autonomy, from fully manual to fully autonomous. Fully manual UAVs rely on every
+            of its control by a human operator. Fully manual is also very cheap to manufacture, while also being the most
+            dangerous type, since it has little to no safety features. While the opposite is true for the latter.
+                Usually, many drones is fell into the semi-autonomous category, where a pilot can send direction control and its
+            onboard devices. While the UAV itself provides flight assistance[insert reference for acro, level], object
+            avoidance, return to home, and failsafe mechanism.
+
+
+                From its propulsion and lift generation method. UAVs can generally be divided into fixed-wing, and multirotor. Fixed
+            wings are generally shaped with fuselage with a placement combination of wing pairs. While multirotor relies on its
+            vertically oriented propeller both as propulsion and lift generation. With the number of propellers that it can
+            safely fly with from 3 to 4 and its multiplicity of 2. 
+
+
+                The shape of a UAV has a great influence on how it falls, with fixed wings, generally glides down. While the
+            multirotor fell following the ballistic trajectory. Both of which will influence the falling probability
+            heat map.    
+            
+        \section{Graph theory} %DO RERESEARCH
+            Graph theory is one of the disciplines in mathematics where the use of
+            graphs in simple terms can be described as a relationship between its elements. Graph components consist of vertex or
+            node (V) and edge or link (E). The node is the object being represented in the graph, while the edge describes the
+            relationship between the nodes.
+        
+            
+                Graph theory can be used to describe the real-life phenomenon. Social interaction can be described using a graph.
+            Where people are nodes and the edge is the relation between them.
+        
+                Edge can have a function attached to them. Some function is used to
+            describe the relationship between nodes, also called weight function. This function can be any function. For example in
+            social interaction an edge can be augmented to a basic linear function [xb+z] where x is the node(person), b is weight,
+            and z is bias. This function can describe how strong the relationship between each person is.
+
+	    \subsection{Contiguity}
+	    \subsection{Pathfinder}
+      
+        \section{Pathfinder} %DO RERESEARCH
+            Pathfinder is a sub-topic of graph theory, where its purpose is to find
+            which node and which edge that connecting the starting node to its final node. There are 2 types of pathfinder
+            algorithms. Informed and Uninformed pathfinder. An informed pathfinder is a pathfinder that knows the location of its
+            final node while the opposite is true for the latter. The informed search uses a heuristical
+        
+
+                Function to estimate guessing the suitable node to traverse to. 
+            An example of informed search is Astar, A*, algorithm. Its search function can be written as [f(n) = g(n) + h(n)] where
+            f(n) is the cost of each node, g(n) is the cost proportional based on the distance between nodes and its starting node,
+            h(n), heuristic function, is the cost based on the distance between nodes and their final nodes.
+
+	\section{Geospatial study}%DO RERESEARCH
+	     GIS or Geographic Information System is a study to compile bla bla bla
+	    	
+
+
+
+	\section{Python and packages}
+		
+		\subsection{Python}
+			Python is an interpreted programming language. Interpreted language has a benefit to be an easier language compare
+		to compiled language. Added to this, it has massive scientific related packages and libaries. Combine with quick deployment
+		and its STEM library, it is a perfect choice for engineering, mathematic, and physic analysis. Based on previous criteria
+		it is a great choice for creating UAV path planner application and library.
+			While python indeed have a great advantage, unfortunately its comparatively easy language came with a great price.
+		Interpreted language is inherently slow, 8 to 100 time slower compare to C/C++ language. Base python language also cannot
+		use more than one thread because its GIL, Global Interpreted Lock, prevent the threads to share memories. Fortunately, 
+		most of heavy calculation is handled by c/c++ library, where python use caller function to launch the libraries.
+			
+		\subsection{Geopandas}
+			Geopandas is a libary built for measuring geographical-spatial analysis in python. It is one the must have package
+		when working with geo-spatial data. Geopandas itself can be regarded as the extention of Pandas libary, where Pandas is
+		tabular data processor akin to Microsoft Excel. Geopands has spatial related function such as overlay, spatial join, clipping
+		to group, aggregate, and measure geospatial data.
+
+		\subsection{Shapely}
+			Shapely is a geomeytry calculation and manipulation packages available for python. Many of geospatial function in 
+		geopandas relies on shapely itself. Overlay, clipping, spatial binary combination of geopandas can be found in Shapely.
+		In this paper shapely is being use to create custom filter for heat map function of aircraft falling probability.
+
+		\subsection{Tesspy}
+			Tesspy, a tesselation library for python. It purpose, as the name implied is for creating a tesselated polygon.
+		Tesspy can be use as long as the polygon object is derived from shapely object. Tesspy offer type of tesselated map 
+		that commonly use for geopastial processing. Sqare grid, hexbin, voronoi city block, and addaptive square is the type
+		of tesselated maps to name a few. 
+
+		\subsection{OSMNx}
+			OSMNx is a combintaion of OSM and networkx. OSMNx mainly is being use to create graph representation of road 
+		network. It use the geopandas dataframe, to build the network, as long as the roads in question is connected at least
+		with another road. But for this paper, OSMNx only being used as a geocoder and reverse geocoder to retrieve geopandas
+		data.
+
+		\subsection{NetworkX}
+			To create a graph structure NetworkX provide the necessary function to do that. NetworkX offers graph creation,
+		graph traversal algorithms, and graph manipulation. The graph as previously mentioned in the combination of nodes and edges.
+		The A star pathfinder for the UAV Path finder also using the NetworkX built in Astar.
+
+		\subsection{Libpysal}
+			Although NetworkX provided us with the method to manipulate graph. However it does not have a method to connect nodes
+		to its surrounding neighbours. Libpysal provide us with queen, rook, and fuzzy contiguity to connect the node.
+
+
+%-----------------------------------------CHAPTER 4---------------------------------------
+    
+
+    \chapter{Results}
+        \section{Results}
+            
+			
+\end{document}
+%ONYX VEIL
+%CAUCHEMAR YURA

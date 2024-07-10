@@ -1,0 +1,3253 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global}
+    \entry{aalmoes_conceptual_2015}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=456dedde16567f56cbe2189c7e04b2be}{%
+           family={Aalmoes},
+           familyi={A\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=67026d41e0600ba6a0ca3ea820b47447}{%
+           family={Cheung},
+           familyi={C\bibinitperiod},
+           given={Y.S.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d9317f7e3e3e4c78cddc3867ec0cbc1}{%
+           family={Sunil},
+           familyi={S\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=34f7c137ba5a2142920f3ca41f4e8e30}{%
+           family={Hoekstra},
+           familyi={H\bibinitperiod},
+           given={J.M.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f9fcb7e53dba0332b1dcb1c13ae6d2ff}{%
+           family={Bussink},
+           familyi={B\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Denver, {CO}, {USA}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{bf6ef076a54e993c49848cca7067ede5}
+      \strng{fullhash}{8f3f6acc882d8714c4e04883cb6fdd9f}
+      \strng{bibnamehash}{8f3f6acc882d8714c4e04883cb6fdd9f}
+      \strng{authorbibnamehash}{8f3f6acc882d8714c4e04883cb6fdd9f}
+      \strng{authornamehash}{bf6ef076a54e993c49848cca7067ede5}
+      \strng{authorfullhash}{8f3f6acc882d8714c4e04883cb6fdd9f}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A conceptual third party risk ({TPR}) model is developed, implemented, and tested to demonstrate the capability of determining the risk to the population in a metropolitan city exposed to personal aerial vehicles ({PAVs}) and unmanned aerial vehicles ({UAVs}) traffic operations. The conceptual model that is primarily based on the methodology and experience of risk modelling for conventional aircraft is modified and the parameters are adjusted suitable for a determination of risk in the arrival, departure and cruise phase of flight for those new aircraft types. Without the availability of the empirical accident data of these aircraft, however, a validation of the conceptual model is not possible. For the purpose of comparison of different future operation concepts and different scenarios in a metropolitan area the model suffices the need. Two examples of operation concepts and traffic scenarios for {PAV} and {UAV} aircraft movements, respectively, are demonstrated.}
+      \field{eventtitle}{2015 International Conference on Unmanned Aircraft Systems ({ICUAS})}
+      \field{isbn}{978-1-4799-6010-1}
+      \field{journaltitle}{2015 International Conference on Unmanned Aircraft Systems ({ICUAS})}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{title}{A conceptual third party risk model for personal and unmanned aerial vehicles}
+      \field{urlday}{25}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1301\bibrangedash 1309}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/ICUAS.2015.7152424
+      \endverb
+      \verb{file}
+      \verb Aalmoes et al. - 2015 - A conceptual third party risk model for personal a.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\X2AFJHIF\\ICUAS.2015.7152424.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/7152424/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/7152424/
+      \endverb
+    \endentry
+    \entry{ale_assessment_2000}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=354190c8313c33e73c6c6150dfe8c45f}{%
+           family={Ale},
+           familyi={A\bibinitperiod},
+           given={B.J.M},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=13876aad46d11ca7149641e989fe356a}{%
+           family={Piers},
+           familyi={P\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d9a789ad281292a86dc43ef274e79614}
+      \strng{fullhash}{d9a789ad281292a86dc43ef274e79614}
+      \strng{bibnamehash}{d9a789ad281292a86dc43ef274e79614}
+      \strng{authorbibnamehash}{d9a789ad281292a86dc43ef274e79614}
+      \strng{authornamehash}{d9a789ad281292a86dc43ef274e79614}
+      \strng{authorfullhash}{d9a789ad281292a86dc43ef274e79614}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Schiphol, the main airport of the Netherlands, is growing rapidly. The aircraft movements, also growing in number, place a considerable environmental burden on the surrounding population, notably, noise and odour nuisance and risks. In the process of deciding on how to extend the capacity of the airport to accommodate the anticipated twofold growth in the number of movements with respect to 1990, environmental problems form a major concern. The concern about risks for the surrounding population was enhanced after the crash on 4 October 1992, in which a Boeing 747 cargo carrier bored into a block of flats in a suburb of Amsterdam near Schiphol. In this accident, the four crew members were killed, together with 39 inhabitants of the flatsrapartment building. These risks were studied as part of the Environmental Impact Assessment Ž{EIA}.. To make these studies useful for decision making necessitated a major improvement in the available techniques for risk quantification. The results of the quantitative analyses, using several different methods, have all indicated that the activities of Schiphol pose a considerable risk compared to other major industrial activities in the Netherlands. This paper describes the development of the methodology from 1990 in the light of the policy context in which it took place. Use of the methods in the decision-making process is illustrated by describing the current status of this process. q 2000 Elsevier Science B.V. All rights reserved.}
+      \field{issn}{03043894}
+      \field{journaltitle}{Journal of Hazardous Materials}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{Journal of Hazardous Materials}
+      \field{title}{The assessment and management of third party risk around a major airport}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{71}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 16}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/S0304-3894(99)00069-2
+      \endverb
+      \verb{file}
+      \verb Ale and Piers - 2000 - The assessment and management of third party risk .pdf:C\:\\Users\\MICKO\\Zotero\\storage\\R2BDTINF\\Ale and Piers - 2000 - The assessment and management of third party risk .pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0304389499000692
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0304389499000692
+      \endverb
+    \endentry
+    \entry{ancel_real-time_2017}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=b8e4354cc30d9f5ab36d50931f1dce44}{%
+           family={Ancel},
+           familyi={A\bibinitperiod},
+           given={Ersin},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=94c944cb6991eb0dfea900af7e29cab5}{%
+           family={Capristan},
+           familyi={C\bibinitperiod},
+           given={Francisco\bibnamedelima M.},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=425dd6312976e4d06b9e307caa0d4c64}{%
+           family={Foster},
+           familyi={F\bibinitperiod},
+           given={John\bibnamedelima V.},
+           giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6bd40af0e73fd05172b8e17d4620d801}{%
+           family={Condotta},
+           familyi={C\bibinitperiod},
+           given={Ryan\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Denver, Colorado}%
+      }
+      \list{publisher}{2}{%
+        {American Institute of Aeronautics}%
+        {Astronautics}%
+      }
+      \strng{namehash}{9af03160bcc9a5e6d8a8e9f5107d23f7}
+      \strng{fullhash}{be5bb9b849c7d8bf70559bfb8dca6289}
+      \strng{bibnamehash}{be5bb9b849c7d8bf70559bfb8dca6289}
+      \strng{authorbibnamehash}{be5bb9b849c7d8bf70559bfb8dca6289}
+      \strng{authornamehash}{9af03160bcc9a5e6d8a8e9f5107d23f7}
+      \strng{authorfullhash}{be5bb9b849c7d8bf70559bfb8dca6289}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{eventtitle}{17th {AIAA} Aviation Technology, Integration, and Operations Conference}
+      \field{isbn}{978-1-62410-508-1}
+      \field{journaltitle}{17th {AIAA} Aviation Technology, Integration, and Operations Conference}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{title}{Real-time Risk Assessment Framework for Unmanned Aircraft System ({UAS}) Traffic Management ({UTM})}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.2514/6.2017-3273
+      \endverb
+      \verb{file}
+      \verb 6.2017-3272.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\QU26BFME\\6.2017-3272.pdf:application/pdf;Ancel et al. - 2017 - Real-time Risk Assessment Framework for Unmanned A.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\E2ADTIJG\\Ancel et al. - 2017 - Real-time Risk Assessment Framework for Unmanned A.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://arc.aiaa.org/doi/10.2514/6.2017-3273
+      \endverb
+      \verb{url}
+      \verb https://arc.aiaa.org/doi/10.2514/6.2017-3273
+      \endverb
+    \endentry
+    \entry{ball_crash_nodate}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=77ce134e595ab31c2446ea858d33a028}{%
+           family={Ball},
+           familyi={B\bibinitperiod},
+           given={John\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5663d314329812825136940dd3f48ae6}{%
+           family={Knott},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5bc49a09f546532279c67c25abfec87d}{%
+           family={Burke},
+           familyi={B\bibinitperiod},
+           given={Dr\bibnamedelima David},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1f061eab8f03fd84c358349f634d8a95}
+      \strng{fullhash}{453fd8584c2ee25d97f8127225f7d391}
+      \strng{bibnamehash}{453fd8584c2ee25d97f8127225f7d391}
+      \strng{authorbibnamehash}{453fd8584c2ee25d97f8127225f7d391}
+      \strng{authornamehash}{1f061eab8f03fd84c358349f634d8a95}
+      \strng{authorfullhash}{453fd8584c2ee25d97f8127225f7d391}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Expanding the permitted airspace permissions for Unmanned Air Systems ({UAS}) is a common desire among multiple military and civilian government organizations. Military groups desire to expand the {UAS} airspace to improve reserve and operational logistics, training exercises, and testing purposes. Civilian agencies, such as police forces, border patrol, and news agencies, would use unmanned air vehicles to conduct aerial surveillance and other missions strongly suited to the {UAS}. Current air space restrictions limit flight to either restricted airspace, or areas with sparse populations. While lifting these restrictions would have a positive impact on operational envelope and flexibility, due diligence must be used to ensure the public is not subjected to unreasonable hazards.}
+      \field{langid}{english}
+      \field{title}{{CRASH} {LETHALITY} {MODEL}}
+      \verb{file}
+      \verb Ball et al. - CRASH LETHALITY MODEL.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\X6FEQG26\\Ball et al. - CRASH LETHALITY MODEL.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{barr_preliminary_2017}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=8f74e36b6cfaefd7fe130cab80802227}{%
+           family={Barr},
+           familyi={B\bibinitperiod},
+           given={Lawrence\bibnamedelima C.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7c8bb4ed68e7e6f5b71b4658bb7b304a}{%
+           family={Newman},
+           familyi={N\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b8e4354cc30d9f5ab36d50931f1dce44}{%
+           family={Ancel},
+           familyi={A\bibinitperiod},
+           given={Ersin},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7979839f417a8bae02d08c22237e9ee4}{%
+           family={Belcastro},
+           familyi={B\bibinitperiod},
+           given={Christine\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=425dd6312976e4d06b9e307caa0d4c64}{%
+           family={Foster},
+           familyi={F\bibinitperiod},
+           given={John\bibnamedelima V.},
+           giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c18516b62af81124f7c2735328b05bad}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={Joni},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bd03577e4df12eaf19503db99dddf25a}{%
+           family={Klyde},
+           familyi={K\bibinitperiod},
+           given={David\bibnamedelima H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Denver, Colorado}%
+      }
+      \list{publisher}{2}{%
+        {American Institute of Aeronautics}%
+        {Astronautics}%
+      }
+      \strng{namehash}{efb910bba480daeab3f33374bbd275b1}
+      \strng{fullhash}{2d1a88dc40a6d7e0dbbdc02b603abac5}
+      \strng{bibnamehash}{2d1a88dc40a6d7e0dbbdc02b603abac5}
+      \strng{authorbibnamehash}{2d1a88dc40a6d7e0dbbdc02b603abac5}
+      \strng{authornamehash}{efb910bba480daeab3f33374bbd275b1}
+      \strng{authorfullhash}{2d1a88dc40a6d7e0dbbdc02b603abac5}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{eventtitle}{17th {AIAA} Aviation Technology, Integration, and Operations Conference}
+      \field{isbn}{978-1-62410-508-1}
+      \field{journaltitle}{17th {AIAA} Aviation Technology, Integration, and Operations Conference}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{title}{Preliminary Risk Assessment for Small Unmanned Aircraft Systems}
+      \field{urlday}{30}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.2514/6.2017-3272
+      \endverb
+      \verb{file}
+      \verb Barr et al. - 2017 - Preliminary Risk Assessment for Small Unmanned Air.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\CW4ICRE5\\Barr et al. - 2017 - Preliminary Risk Assessment for Small Unmanned Air.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://arc.aiaa.org/doi/10.2514/6.2017-3272
+      \endverb
+      \verb{url}
+      \verb https://arc.aiaa.org/doi/10.2514/6.2017-3272
+      \endverb
+    \endentry
+    \entry{bleier_risk_2015}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=963d64a45383d2749fb48859d8242629}{%
+           family={Bleier},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=25a2cd3035dd2156adf82f7214f4c0a8}{%
+           family={Settele},
+           familyi={S\bibinitperiod},
+           given={Ferdinand},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=643b476dc244e1f697726dae1530938e}{%
+           family={Krauss},
+           familyi={K\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c96e7e6c472ee84ee4b2ea52131c823e}{%
+           family={Knoll},
+           familyi={K\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d0e9365d3680a63f010909694e7a8a08}{%
+           family={Schilling},
+           familyi={S\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{722218e2b200a6ba7ae98b89945fe0cb}
+      \strng{fullhash}{93cd00aa60d5bd288f82f76058fe8649}
+      \strng{bibnamehash}{93cd00aa60d5bd288f82f76058fe8649}
+      \strng{authorbibnamehash}{93cd00aa60d5bd288f82f76058fe8649}
+      \strng{authornamehash}{722218e2b200a6ba7ae98b89945fe0cb}
+      \strng{authorfullhash}{93cd00aa60d5bd288f82f76058fe8649}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{24058963}
+      \field{journaltitle}{{IFAC}-{PapersOnLine}}
+      \field{langid}{english}
+      \field{number}{9}
+      \field{shortjournal}{{IFAC}-{PapersOnLine}}
+      \field{title}{Risk Assessment of Flight Paths for Automatic Emergency Parachute Deployment in {UAVs}}
+      \field{urlday}{12}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{volume}{48}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{180\bibrangedash 185}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/j.ifacol.2015.08.080
+      \endverb
+      \verb{file}
+      \verb Bleier et al. - 2015 - Risk Assessment of Flight Paths for Automatic Emer.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\UXZPP4N4\\Bleier et al. - 2015 - Risk Assessment of Flight Paths for Automatic Emer.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S2405896315009477
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S2405896315009477
+      \endverb
+    \endentry
+    \entry{breunig_modeling_nodate}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=8f8954b8994aaf3e7d6e253f75bb352a}{%
+           family={Breunig},
+           familyi={B\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93b69d2735540bd5bdbf77b6c6c6bd5e}{%
+           family={Forman},
+           familyi={F\bibinitperiod},
+           given={Joyce},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=92c62f5aa8d38f3f3fe7a83ff1b5cd27}{%
+           family={Sayed},
+           familyi={S\bibinitperiod},
+           given={Shereef},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9aca7b5f860d92a2e8d984e84e40445b}{%
+           family={Audenaerd},
+           familyi={A\bibinitperiod},
+           given={Laurence},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{90bf60bd99b18cf4704e7ae9f6eb9178}
+      \strng{fullhash}{fa0ba27fc95d05eb6e2f542062a9aa6d}
+      \strng{bibnamehash}{fa0ba27fc95d05eb6e2f542062a9aa6d}
+      \strng{authorbibnamehash}{fa0ba27fc95d05eb6e2f542062a9aa6d}
+      \strng{authornamehash}{90bf60bd99b18cf4704e7ae9f6eb9178}
+      \strng{authorfullhash}{fa0ba27fc95d05eb6e2f542062a9aa6d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Modeling Risk-Based Approach for Small Unmanned Aircraft Systems}
+      \verb{file}
+      \verb Breunig et al. - Modeling Risk-Based Approach for Small Unmanned Ai.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\6DC2CTKL\\Breunig et al. - Modeling Risk-Based Approach for Small Unmanned Ai.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{burke_system-level_2011}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b23741c920bbf5af46ac4dfeb7fdce09}{%
+           family={Burke},
+           familyi={B\bibinitperiod},
+           given={David\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a1631dd293560401f2c5e5c99f47f7ea}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={Charles\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=575b2f0c2cabf0fca0acd6896c8a4bc8}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Stephen\bibnamedelima P.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a29957a0e6f310d7d25ee6e3d69fda02}
+      \strng{fullhash}{bd08839f35661ba1df1ab016d69c10dc}
+      \strng{bibnamehash}{bd08839f35661ba1df1ab016d69c10dc}
+      \strng{authorbibnamehash}{bd08839f35661ba1df1ab016d69c10dc}
+      \strng{authornamehash}{a29957a0e6f310d7d25ee6e3d69fda02}
+      \strng{authorfullhash}{bd08839f35661ba1df1ab016d69c10dc}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0021-8669, 1533-3868}
+      \field{journaltitle}{Journal of Aircraft}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{3}
+      \field{shortjournal}{Journal of Aircraft}
+      \field{title}{System-Level Airworthiness Tool}
+      \field{urlday}{2}
+      \field{urlmonth}{2}
+      \field{urlyear}{2023}
+      \field{volume}{48}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{777\bibrangedash 785}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.2514/1.C031022
+      \endverb
+      \verb{file}
+      \verb Burke et al. - 2011 - System-Level Airworthiness Tool.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\4JCPSN7P\\Burke et al. - 2011 - System-Level Airworthiness Tool.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://arc.aiaa.org/doi/10.2514/1.C031022
+      \endverb
+      \verb{url}
+      \verb https://arc.aiaa.org/doi/10.2514/1.C031022
+      \endverb
+    \endentry
+    \entry{clothier_casualty_2007}{article}{}
+      \name{author}{4}{}{%
+        {{un=1,uniquepart=given,hash=112ce3f50405c4a2e5a3b3ec599e5c63}{%
+           family={Clothier},
+           familyi={C\bibinitperiod},
+           given={Reece},
+           giveni={R\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=badf27263b10161259313c8e22543623}{%
+           family={Walker},
+           familyi={W\bibinitperiod},
+           given={Rodney},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bde3f2f4f2c4808806a49b84bae2d98b}{%
+           family={Fulton},
+           familyi={F\bibinitperiod},
+           given={Neale},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=32109eddff373ba174a88467b6e17eb0}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={Duncan},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ad097836dcfe34a5097d319cc7893d5d}
+      \strng{fullhash}{ce4b03e91d9abfe68b2728e41747dcb1}
+      \strng{bibnamehash}{ce4b03e91d9abfe68b2728e41747dcb1}
+      \strng{authorbibnamehash}{ce4b03e91d9abfe68b2728e41747dcb1}
+      \strng{authornamehash}{ad097836dcfe34a5097d319cc7893d5d}
+      \strng{authorfullhash}{ce4b03e91d9abfe68b2728e41747dcb1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper discusses the need for informed decision making with respect to the management of the risks Unmanned Aerial System ({UAS}) operations present to people and property on the ground. In the absence of a wealth of experience in the hazards of {UAS} operations, an understanding of the risks can be gained through a formal risk analysis. This paper proposes the development of new risk analysis tools as a means for ensuring risk-informed decision making. The paper provides an introduction to the risk management of {UAS} operations over inhabited areas and presents an argument which establishes the need for an objective understanding of the risks. The development of formal risk analysis tools is then discussed. A simple casualty expectation model is presented and is applied to the example case-study scenario of a generic Medium Altitude, Long Endurance ({MALE}) {UAS} on approach to Royal Australia Air Force ({RAAF}) Base Edinburgh. A brief evaluation of the results from the analysis is provided; illustrating how a formal risk analysis can be used to inform practical decision making. The paper concludes by providing a summary on the direction of the program of research and the key points made.}
+      \field{langid}{english}
+      \field{title}{A {CASUALTY} {RISK} {ANALYSIS} {FOR} {UNMANNED} {AERIAL} {SYSTEM} ({UAS}) {OPERATIONS} {OVER} {INHABITED} {AREAS}}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Clothier et al. - 2007 - A CASUALTY RISK ANALYSIS FOR UNMANNED AERIAL SYSTE.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\KS4D292W\\Clothier et al. - 2007 - A CASUALTY RISK ANALYSIS FOR UNMANNED AERIAL SYSTE.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{cole_hazards_1997}{report}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d635ab1d710c6e899f29b90814f99119}{%
+           family={Cole},
+           familyi={C\bibinitperiod},
+           given={J.\bibnamedelimi K.},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ab0695d9836550ce7c3f005fae6cf6cb}{%
+           family={Young},
+           familyi={Y\bibinitperiod},
+           given={L.\bibnamedelimi W.},
+           giveni={L\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5464c7ad95fdd61ed8f129b614bc480b}{%
+           family={Jordan-Culler},
+           familyi={J\bibinithyphendelim C\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Sandia National Lab. ({SNL}-{NM}), Albuquerque, {NM} (United States)}%
+      }
+      \strng{namehash}{78b6c119387a33b37c32cae302cae338}
+      \strng{fullhash}{f4ea12cbccef6d63cf60f47184659979}
+      \strng{bibnamehash}{f4ea12cbccef6d63cf60f47184659979}
+      \strng{authorbibnamehash}{f4ea12cbccef6d63cf60f47184659979}
+      \strng{authornamehash}{78b6c119387a33b37c32cae302cae338}
+      \strng{authorfullhash}{f4ea12cbccef6d63cf60f47184659979}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This report is a collection of studies performed at Sandia National Laboratories in support of Phase One (inert debris) for the Risk and Lethality Commonality Team. This team was created by the Range Safety Group of the Range Commander`s Council to evaluate the safety issues for debris generated during flight tests and to develop debris safety criteria that can be adopted by the national ranges. Physiological data on the effects of debris impacts on people are presented. Log-normal curves are developed to relate the impact kinetic energy of fragments to the probability of fatality for people exposed in standing, sitting, or prone positions. Debris hazards to aircraft resulting from engine ingestion or penetration of a structure or windshield are discussed. The smallest mass fragments of aluminum, steel, and tungsten that may be hazardous to current aircraft are defined. Fragment penetration of the deck of a small ship or a pleasure craft is also considered. The smallest mass fragments of aluminum, steel, or tungsten that can penetrate decks are calculated.}
+      \field{day}{1}
+      \field{month}{4}
+      \field{number}{{SAND}-97-0805}
+      \field{title}{Hazards of falling debris to people, aircraft, and watercraft}
+      \field{urlday}{26}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{year}{1997}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.2172/468556
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\MICKO\\Zotero\\storage\\RH7A9U3S\\Cole et al. - 1997 - Hazards of falling debris to people, aircraft, and.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.osti.gov/biblio/468556
+      \endverb
+      \verb{url}
+      \verb https://www.osti.gov/biblio/468556
+      \endverb
+    \endentry
+    \entry{cour-harbo_ground_2020}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=85e131d05b260a8fccba6291fbc34f28}{%
+           family={Cour-Harbo},
+           familyi={C\bibinithyphendelim H\bibinitperiod},
+           given={Anders\bibnamedelima la},
+           giveni={A\bibinitperiod\bibinitdelim l\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Athens, Greece}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{85e131d05b260a8fccba6291fbc34f28}
+      \strng{fullhash}{85e131d05b260a8fccba6291fbc34f28}
+      \strng{bibnamehash}{85e131d05b260a8fccba6291fbc34f28}
+      \strng{authorbibnamehash}{85e131d05b260a8fccba6291fbc34f28}
+      \strng{authornamehash}{85e131d05b260a8fccba6291fbc34f28}
+      \strng{authorfullhash}{85e131d05b260a8fccba6291fbc34f28}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Safety is a key factor in all aviation, and while years of development has made manned aviation relatively safe, the same has yet to happen for unmanned aircraft. However, the rapid development of unmanned aircraft technology means that the range of commercial and scientiﬁc applications is growing equally rapid. At the same time the trend in national and international regulations for unmanned aircraft is to take a risk-based approach, effectively requiring risk assessment for every ﬂight operation. This work addresses the growing need for methods for quantitatively evaluating individual ﬂights by modelling the consequences of a ballistic descent of an unmanned aircraft as a result of a major in-ﬂight incident. The presented model is a probability density function for the ground impact area based on a second order drag model with probabilistic assumptions on the least well-known parameters of the ﬂight, and includes the effect of wind. The model has low computational complexity and is well-suited for high ﬁdelity simulations for longer ﬂights over populated areas and with changing trajectory parameters.}
+      \field{eventtitle}{2020 International Conference on Unmanned Aircraft Systems ({ICUAS})}
+      \field{isbn}{978-1-72814-278-4}
+      \field{journaltitle}{2020 International Conference on Unmanned Aircraft Systems ({ICUAS})}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{title}{Ground impact probability distribution for small unmanned aircraft in ballistic descent}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1442\bibrangedash 1451}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ICUAS48674.2020.9213990
+      \endverb
+      \verb{file}
+      \verb Cour-Harbo - 2020 - Ground impact probability distribution for small u.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\5IRVKGAU\\Cour-Harbo - 2020 - Ground impact probability distribution for small u.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/9213990/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/9213990/
+      \endverb
+    \endentry
+    \entry{dalamagkidis_evaluating_2008}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d82cbf28385b4d139a4e70c9a529fe43}{%
+           family={Dalamagkidis},
+           familyi={D\bibinitperiod},
+           given={Konstantinos},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9f0ca3f10b63e984131aee4400b646ef}{%
+           family={Valavanis},
+           familyi={V\bibinitperiod},
+           given={Kimon\bibnamedelima P.},
+           giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a6a2ee10f31e1891be4b89782da92768}{%
+           family={Piegl},
+           familyi={P\bibinitperiod},
+           given={Les\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f3674a330505f12652ced320fdc20420}
+      \strng{fullhash}{51f7cafd45d969324ecffdff263e255c}
+      \strng{bibnamehash}{51f7cafd45d969324ecffdff263e255c}
+      \strng{authorbibnamehash}{51f7cafd45d969324ecffdff263e255c}
+      \strng{authornamehash}{f3674a330505f12652ced320fdc20420}
+      \strng{authorfullhash}{51f7cafd45d969324ecffdff263e255c}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Currently many countries are developing regulation to allow unmanned aircraft systems ({UAS}) operations in their National Airspace System ({NAS}). Successful integration requires {UAS} to achieve, at a minimum, an equivalent level of safety to that of manned aviation. Safety is primarily defined in terms of the risk to human life, although potential collateral damages to property can also be taken into account. This paper presents a novel, general, quite conservative and rather simple method that calculates the probability of fatalities and the fatality rates associated with a ground impact. Spatial analysis results are presented that indicate where unmanned aircraft may fly based on obtained reliability and safety levels and provide a coherent comparison of reliability requirements between unmanned aircraft of different families.}
+      \field{eventtitle}{2008 16th Mediterranean Conference on Control and Automation}
+      \field{journaltitle}{2008 16th Mediterranean Conference on Control and Automation}
+      \field{month}{6}
+      \field{title}{Evaluating the risk of unmanned aircraft ground impacts}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{pages}{709\bibrangedash 716}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/MED.2008.4602249
+      \endverb
+      \verb{file}
+      \verb Full Text:C\:\\Users\\MICKO\\Zotero\\storage\\KNMSQFHP\\Dalamagkidis et al. - 2008 - Evaluating the risk of unmanned aircraft ground im.pdf:application/pdf;IEEE Xplore Abstract Record:C\:\\Users\\MICKO\\Zotero\\storage\\XF2W5KBA\\4602249.html:text/html
+      \endverb
+      \keyw{Automation,Conferences}
+    \endentry
+    \entry{noauthor_faas_nodate}{online}{}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{note}{Archive Location: world}
+      \field{title}{{FAA}'s Approaches to Ground and {NAS} Separation Distances for Commercial Rocket Launches}
+      \field{titleaddon}{Aerospace Sciences Meetings}
+      \field{urlday}{26}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.2514/6.2010-1540
+      \endverb
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\MICKO\\Zotero\\storage\\SLLINKHE\\6.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://arc.aiaa.org/doi/10.2514/6.2010-1540
+      \endverb
+      \verb{url}
+      \verb https://arc.aiaa.org/doi/10.2514/6.2010-1540
+      \endverb
+    \endentry
+    \entry{noauthor_global_nodate}{online}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{title}{Global Human Settlement - Mission - European Commission}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Global Human Settlement - Mission - European Commission:C\:\\Users\\MICKO\\Zotero\\storage\\35R6MD5T\\about.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://ghsl.jrc.ec.europa.eu/about.php
+      \endverb
+      \verb{url}
+      \verb https://ghsl.jrc.ec.europa.eu/about.php
+      \endverb
+    \endentry
+    \entry{harwick_approved_2007}{report}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=e94bf7e5b596755b40b5110e4395632b}{%
+           family={Harwick},
+           familyi={H\bibinitperiod},
+           given={Meredith\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fa4493f4566ed8ce19dd8e722f8d57dc}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0ad76d6a822c20fdeea7e83d7886b550}{%
+           family={Tatom},
+           familyi={T\bibinitperiod},
+           given={John\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6482beef654cf18c4c6aa426670bb1b5}{%
+           family={Baker},
+           familyi={B\bibinitperiod},
+           given={Robert\bibnamedelima G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Defense Technical Information Center}%
+      }
+      \list{location}{1}{%
+        {Fort Belvoir, {VA}}%
+      }
+      \strng{namehash}{d3307e388a90bb91f7b324782920ce1f}
+      \strng{fullhash}{a5194f82eadc8c8a766d02d17426a038}
+      \strng{bibnamehash}{a5194f82eadc8c8a766d02d17426a038}
+      \strng{authorbibnamehash}{a5194f82eadc8c8a766d02d17426a038}
+      \strng{authornamehash}{d3307e388a90bb91f7b324782920ce1f}
+      \strng{authorfullhash}{a5194f82eadc8c8a766d02d17426a038}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{2}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{shorttitle}{Approved Methods and Algorithms for {DoD} Risk-Based Explosives Siting}
+      \field{title}{Approved Methods and Algorithms for {DoD} Risk-Based Explosives Siting:}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.21236/ADA463571
+      \endverb
+      \verb{file}
+      \verb Harwick et al. - 2007 - Approved Methods and Algorithms for DoD Risk-Based.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\7Y58VNL4\\Harwick et al. - 2007 - Approved Methods and Algorithms for DoD Risk-Based.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.dtic.mil/docs/citations/ADA463571
+      \endverb
+      \verb{url}
+      \verb http://www.dtic.mil/docs/citations/ADA463571
+      \endverb
+    \endentry
+    \entry{noauthor_hazards_nodate}{online}{}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{title}{Hazards to people and aircraft from flight test debris generated at high altitudes {|} Aerospace Sciences Meetings}
+      \field{urlday}{26}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://arc.aiaa.org/doi/abs/10.2514/6.1996-70
+      \endverb
+      \verb{url}
+      \verb https://arc.aiaa.org/doi/abs/10.2514/6.1996-70
+      \endverb
+    \endentry
+    \entry{kim_risk-based_2022}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=28d3060006194f77a69a17be7bdbbba1}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Younsil},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=adafd101e8b33b9d221321305d6f2368}{%
+           family={Bae},
+           familyi={B\bibinitperiod},
+           given={Joongwon},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{eb9f1c68724b3e814de0f10f661ea7a1}
+      \strng{fullhash}{eb9f1c68724b3e814de0f10f661ea7a1}
+      \strng{bibnamehash}{eb9f1c68724b3e814de0f10f661ea7a1}
+      \strng{authorbibnamehash}{eb9f1c68724b3e814de0f10f661ea7a1}
+      \strng{authornamehash}{eb9f1c68724b3e814de0f10f661ea7a1}
+      \strng{authorfullhash}{eb9f1c68724b3e814de0f10f661ea7a1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{To integrate unmanned aerial vehicles ({UAVs}) into the national airspace in a safe manner, a risk-based approach to the regulation of {UAVs} is adopted in many countries. Thus, the capacity to permit {UAVs} in urban airspace also needs to be evaluated in a risk-based sense. In this regard, this paper proposes a methodology to analyze the capacity of {UAV} corridors on the basis of third-party risk on the ground. By linking the collision rate of the corridor and the failure rates of {UAVs} with the number of fatalities on the ground, the capacity of the {UAV} corridor is derived to satisfy the target level of safety. To model the collision rate of {UAVs} in the corridor, the Reich collision risk model is utilized. Moreover, a ground risk map is generated to compute the third-party risk on the ground using the databases for Seoul, Korea. The results show that the failure rate of {UAVs} is the dominant factor for determining the capacity of the corridor, even if the number of corridors increases. The proposed methodology could be useful to manage the number of ﬂights for applications where the {UAV} corridor is ﬁxed and ﬂight continues, such as package delivery.}
+      \field{day}{24}
+      \field{issn}{2504-446X}
+      \field{journaltitle}{Drones}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{9}
+      \field{shortjournal}{Drones}
+      \field{title}{Risk-Based {UAV} Corridor Capacity Analysis above a Populated Area}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{6}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{221}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/drones6090221
+      \endverb
+      \verb{file}
+      \verb Kim and Bae - 2022 - Risk-Based UAV Corridor Capacity Analysis above a .pdf:C\:\\Users\\MICKO\\Zotero\\storage\\7796C6AN\\Kim and Bae - 2022 - Risk-Based UAV Corridor Capacity Analysis above a .pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2504-446X/6/9/221
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2504-446X/6/9/221
+      \endverb
+    \endentry
+    \entry{klepeis_national_2001}{article}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=3d1c7ae0222d90454f23a38910c30c51}{%
+           family={Klepeis},
+           familyi={K\bibinitperiod},
+           given={Neil\bibnamedelima E},
+           giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=80a3b2a1137b4c408720e0db935a43dc}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={William\bibnamedelima C},
+           giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a1d026f04d0ee018b6a5d6c73f8b131}{%
+           family={Ott},
+           familyi={O\bibinitperiod},
+           given={Wayne\bibnamedelima R},
+           giveni={W\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41ba542e7a83004c9c32f6fea7fa2e69}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={John\bibnamedelima P},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e71f586eff90535c4432c434dca47f77}{%
+           family={Tsang},
+           familyi={T\bibinitperiod},
+           given={Andy\bibnamedelima M},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=50ad15b8299902b4c14092105c1a7c63}{%
+           family={Switzer},
+           familyi={S\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c4b9352dd34c70a5321447f00ee288b}{%
+           family={Behar},
+           familyi={B\bibinitperiod},
+           given={Joseph\bibnamedelima V},
+           giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93cd8f6776c581da46cd571b35c2ea0f}{%
+           family={Hern},
+           familyi={H\bibinitperiod},
+           given={Stephen\bibnamedelima C},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=286d8d8e195a4a570bdcb747cafd8b14}{%
+           family={Engelmann},
+           familyi={E\bibinitperiod},
+           given={William\bibnamedelima H},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{079e055d7e0b2b08d09a8c0a5f47adfc}
+      \strng{fullhash}{b56b294451aafa0cffe8aff6b7703481}
+      \strng{bibnamehash}{b56b294451aafa0cffe8aff6b7703481}
+      \strng{authorbibnamehash}{b56b294451aafa0cffe8aff6b7703481}
+      \strng{authornamehash}{079e055d7e0b2b08d09a8c0a5f47adfc}
+      \strng{authorfullhash}{b56b294451aafa0cffe8aff6b7703481}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Because human activities impact the timing, location, and degree of pollutant exposure, they play a key role in explaining exposure variation. This fact has motivated the collection of activity pattern data for their specific use in exposure assessments. The largest of these recent efforts is the National Human Activity Pattern Survey ( {NHAPS} ), a 2 - year probability - based telephone survey ( n = 9386 ) of exposure - related human activities in the United States ( U.S. ) sponsored by the U.S. Environmental Protection Agency ( {EPA} ). The primary purpose of {NHAPS} was to provide comprehensive and current exposure information over broad geographical and temporal scales, particularly for use in probabilistic population exposure models. {NHAPS} was conducted on a virtually daily basis from late September 1992 through September 1994 by the University of Maryland's Survey Research Center using a computer - assisted telephone interview instrument ( {CATI} ) to collect 24 - h retrospective diaries and answers to a number of personal and exposure - related questions from each respondent. The resulting diary records contain beginning and ending times for each distinct combination of location and activity occurring on the diary day ( i.e., each microenvironment ). Between 340 and 1713 respondents of all ages were interviewed in each of the 10 {EPA} regions across the 48 contiguous states. Interviews were completed in 63\% of the households contacted. {NHAPS} respondents reported spending an average of 87\% of their time in enclosed buildings and about 6\% of their time in enclosed vehicles. These proportions are fairly constant across the various regions of the U.S. and Canada and for the California population between the late 1980s, when the California Air Resources Board ( {CARB} ) sponsored a state - wide activity pattern study, and the mid - 1990s, when {NHAPS} was conducted. However, the number of people exposed to environmental tobacco smoke ( {ETS} ) in California seems to have decreased over the same time period, where exposure is determined by the reported time spent with a smoker. In both California and the entire nation, the most time spent exposed to {ETS} was reported to take place in residential locations. Journal of Exposure Analysis and Environmental Epidemiology ( 2001 ) 11, 231 ± 252.}
+      \field{day}{1}
+      \field{issn}{1559-0631, 1559-064X}
+      \field{journaltitle}{Journal of Exposure Science \& Environmental Epidemiology}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{3}
+      \field{shortjournal}{J Expo Sci Environ Epidemiol}
+      \field{shorttitle}{The National Human Activity Pattern Survey ({NHAPS})}
+      \field{title}{The National Human Activity Pattern Survey ({NHAPS}): a resource for assessing exposure to environmental pollutants}
+      \field{urlday}{5}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{volume}{11}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{231\bibrangedash 252}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1038/sj.jea.7500165
+      \endverb
+      \verb{file}
+      \verb Klepeis et al. - 2001 - The National Human Activity Pattern Survey (NHAPS).pdf:C\:\\Users\\MICKO\\Zotero\\storage\\9AEVUIDG\\Klepeis et al. - 2001 - The National Human Activity Pattern Survey (NHAPS).pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/7500165
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/7500165
+      \endverb
+    \endentry
+    \entry{la_cour-harbo_quantifying_2019}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=85e131d05b260a8fccba6291fbc34f28}{%
+           family={Cour-Harbo},
+           familyi={C\bibinithyphendelim H\bibinitperiod},
+           given={Anders},
+           giveni={A\bibinitperiod},
+           givenun=0,
+           prefix={la},
+           prefixi={l\bibinitperiod}}}%
+      }
+      \strng{namehash}{85e131d05b260a8fccba6291fbc34f28}
+      \strng{fullhash}{85e131d05b260a8fccba6291fbc34f28}
+      \strng{bibnamehash}{85e131d05b260a8fccba6291fbc34f28}
+      \strng{authorbibnamehash}{85e131d05b260a8fccba6291fbc34f28}
+      \strng{authornamehash}{85e131d05b260a8fccba6291fbc34f28}
+      \strng{authorfullhash}{85e131d05b260a8fccba6291fbc34f28}
+      \field{sortinit}{l}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{One of the major challenges of conducting operations of unmanned aircraft, especially operations beyond visual line-ofsight ({BVLOS}), is to make a realistic and sufficiently detailed risk assessment. An important part of such an assessment is to identify the risk of fatalities, preferably in a quantitative way since this allows for comparison with manned aviation to determine whether an equivalent level of safety is achievable. This work presents a method for quantifying the probability of fatalities resulting from an uncontrolled descent of an unmanned aircraft conducting a {BVLOS} flight. The method is based on a standard stochastic model, and employs a parameterized high fidelity ground impact distribution model that accounts for both aircraft specifications, parameter uncertainties, and wind. The method also samples the flight path to create an almost continuous quantification of the risk as a function of mission flight time. The methodology is exemplified with a 180 km flight in Danish airspace with a Penguin C aircraft.}
+      \field{issn}{0921-0296, 1573-0409}
+      \field{journaltitle}{Journal of Intelligent \& Robotic Systems}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{1}
+      \field{shortjournal}{J Intell Robot Syst}
+      \field{title}{Quantifying Risk of Ground Impact Fatalities for Small Unmanned Aircraft}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{93}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{367\bibrangedash 384}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/s10846-018-0853-1
+      \endverb
+      \verb{file}
+      \verb la Cour-Harbo - 2019 - Quantifying Risk of Ground Impact Fatalities for S.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\L9NJ9Y6J\\la Cour-Harbo - 2019 - Quantifying Risk of Ground Impact Fatalities for S.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s10846-018-0853-1
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s10846-018-0853-1
+      \endverb
+    \endentry
+    \entry{magister_small_2010}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=615af90832a7b3f4da98b9d97285f2c4}{%
+           family={Magister},
+           familyi={M\bibinitperiod},
+           given={Tone},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{615af90832a7b3f4da98b9d97285f2c4}
+      \strng{fullhash}{615af90832a7b3f4da98b9d97285f2c4}
+      \strng{bibnamehash}{615af90832a7b3f4da98b9d97285f2c4}
+      \strng{authorbibnamehash}{615af90832a7b3f4da98b9d97285f2c4}
+      \strng{authornamehash}{615af90832a7b3f4da98b9d97285f2c4}
+      \strng{authorfullhash}{615af90832a7b3f4da98b9d97285f2c4}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Operational restrictions are imposed upon small unmanned aircraft systems weighing up to 15kg, denying them access to the airspace over populated areas because of, for one reason, the dearth of reliable data defining the complex risks associated. Injury biomechanics resulting from blunt ballistic impact is used for small unmanned aircraft system injury potential assessment. Small unmanned aircraft injury potential correlates to the impact kinetic energy and characteristic diameter of its part that contacts the body. The injury severity of small unmanned aircraft can be less than serious in impacts at minimal airspeed that contact the body with their sufficiently blunt part; however, they are capable of inflicting lethal injury, even when impacting at minimal airspeed, if they impact the body with their sharper part. Consequently, for injury minimization the small unmanned aircraft basic operational and physical design criteria are described regarding impact velocity and attitude upon impact, along with the shape of the airframe part that contacts the body.}
+      \field{day}{1}
+      \field{issn}{0925-7535}
+      \field{journaltitle}{Safety Science}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{10}
+      \field{shortjournal}{Safety Science}
+      \field{title}{The small unmanned aircraft blunt criterion based injury potential estimation}
+      \field{urlday}{12}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{volume}{48}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1313\bibrangedash 1320}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.ssci.2010.04.012
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Snapshot:C\:\\Users\\MICKO\\Zotero\\storage\\VZJ7V28G\\S0925753510001128.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0925753510001128
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0925753510001128
+      \endverb
+      \keyw{Blunt ballistic impact,Design specifications,Injury potential,Small unmanned aircraft}
+    \endentry
+    \entry{melnyk_third-party_2014}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=b8ef8a891af2100730aed70c02cb0784}{%
+           family={Melnyk},
+           familyi={M\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=79868151aa67c6513da6051b8a320bfe}{%
+           family={Schrage},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c28f67ebc4c8a5da228d317b3b64aaca}{%
+           family={Volovoi},
+           familyi={V\bibinitperiod},
+           given={Vitali},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9120d7c078d1f6663875e6ccd660f507}{%
+           family={Jimenez},
+           familyi={J\bibinitperiod},
+           given={Hernando},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{31f05f3bed5cf7064ebcedb27dfe542e}
+      \strng{fullhash}{ee28b3acf769aee1feae384acf84b5da}
+      \strng{bibnamehash}{ee28b3acf769aee1feae384acf84b5da}
+      \strng{authorbibnamehash}{ee28b3acf769aee1feae384acf84b5da}
+      \strng{authornamehash}{31f05f3bed5cf7064ebcedb27dfe542e}
+      \strng{authorfullhash}{ee28b3acf769aee1feae384acf84b5da}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Unmanned Aircraft System ({UAS}) integration into the National Airspace System ({NAS}) is an important goal of many members of the Aerospace community including stakeholders such as the military, law enforcement and potential civil users of {UAS}. However, integration efforts have remained relatively limited due to safety concerns. Due to the nature of {UAS}, safety predictions must look beyond the system itself and take the operating environment into account. A framework that can link {UAS} reliability and physical characteristics to the effects on the bystander population is required. This study proposes using a Target Level of Safety approach and an event tree format, populated with data from existing studies that share characteristics of {UAS} crashes to enable casualty prediction for {UAS} operations.}
+      \field{issn}{09518320}
+      \field{journaltitle}{Reliability Engineering \& System Safety}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{shortjournal}{Reliability Engineering \& System Safety}
+      \field{title}{A third-party casualty risk model for unmanned aircraft system operations}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{124}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{105\bibrangedash 116}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.ress.2013.11.016
+      \endverb
+      \verb{file}
+      \verb Melnyk et al. - 2014 - A third-party casualty risk model for unmanned air.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\WS9YGAH7\\Melnyk et al. - 2014 - A third-party casualty risk model for unmanned air.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S095183201300313X
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S095183201300313X
+      \endverb
+    \endentry
+    \entry{noauthor_openstreetmap_nodate}{online}{}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{title}{{OpenStreetMap} Wiki}
+      \field{urlday}{21}
+      \field{urlmonth}{9}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb OpenStreetMap Wiki:C\:\\Users\\MICKO\\Zotero\\storage\\E6N53RY4\\Main_Page.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://wiki.openstreetmap.org/wiki/Main_Page
+      \endverb
+      \verb{url}
+      \verb https://wiki.openstreetmap.org/wiki/Main_Page
+      \endverb
+    \endentry
+    \entry{pat-cornell_uncertainties_nodate}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c3a955388c9892789c4da05dff963fde}{%
+           family={Pat-Cornell},
+           familyi={P\bibinithyphendelim C\bibinitperiod},
+           given={M\bibnamedelima Elisabeth},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c3a955388c9892789c4da05dff963fde}
+      \strng{fullhash}{c3a955388c9892789c4da05dff963fde}
+      \strng{bibnamehash}{c3a955388c9892789c4da05dff963fde}
+      \strng{authorbibnamehash}{c3a955388c9892789c4da05dff963fde}
+      \strng{authornamehash}{c3a955388c9892789c4da05dff963fde}
+      \strng{authorfullhash}{c3a955388c9892789c4da05dff963fde}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Uncertainties in risk analysis: Six levels of treatment}
+      \verb{file}
+      \verb Pat-Cornell - Uncertainties in risk analysis Six levels of trea.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\2WWPA3KS\\Pat-Cornell - Uncertainties in risk analysis Six levels of trea.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{primatesta_risk-aware_2019}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b491b415a1db6770c2807b7760589c28}{%
+           family={Primatesta},
+           familyi={P\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb05c3874a6427a24064a0154ce69933}{%
+           family={Guglieri},
+           familyi={G\bibinitperiod},
+           given={Giorgio},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2eb264a947e6b4be945ee0d7691eff5f}{%
+           family={Rizzo},
+           familyi={R\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b8fa178f5abf76af0cbede0db73c2e7b}
+      \strng{fullhash}{a3f7e257820c52fdf756563bf5cc0d96}
+      \strng{bibnamehash}{a3f7e257820c52fdf756563bf5cc0d96}
+      \strng{authorbibnamehash}{a3f7e257820c52fdf756563bf5cc0d96}
+      \strng{authornamehash}{b8fa178f5abf76af0cbede0db73c2e7b}
+      \strng{authorfullhash}{a3f7e257820c52fdf756563bf5cc0d96}
+      \field{extraname}{1}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a risk-aware path planning strategy for Unmanned Aerial Vehicles in urban environments. The aim is to compute an effective path that minimizes the risk to the population, thus enforcing safety of flight operations over inhabited areas. To quantify the risk, the proposed approach uses a risk-map that associates discretized locations of the space with a suitable risk-cost. Path planning is performed in two phases: first, a tentative path is computed off-line on the basis on the information related to static risk factors; then, using a dynamic risk-map, an on-line path planning adjusts and adapts the offline path to dynamically arising conditions. Off-line path planning is performed using {riskA}*, an ad-hoc variant of the A* algorithm, which aims at minimizing the risk. While off-line path planning has no stringent time constraints for its execution, this is not the case for the on-line phase, where a fast response constitutes a critical design parameter. We propose a novel algorithm called Borderland, which uses the check and repair approach to rapidly identify and adjust only the portion of path involved by the inception of relevant dynamical changes in the risk factor. After the path planning, a smoothing process is performed using Dubins curves. Simulation results confirm the suitability of the proposed approach.}
+      \field{issn}{0921-0296, 1573-0409}
+      \field{journaltitle}{Journal of Intelligent \& Robotic Systems}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{2}
+      \field{shortjournal}{J Intell Robot Syst}
+      \field{title}{A Risk-Aware Path Planning Strategy for {UAVs} in Urban Environments}
+      \field{urlday}{5}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{volume}{95}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{629\bibrangedash 643}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/s10846-018-0924-3
+      \endverb
+      \verb{file}
+      \verb Primatesta et al. - 2019 - A Risk-Aware Path Planning Strategy for UAVs in Ur.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\F2EJVFLP\\Primatesta et al. - 2019 - A Risk-Aware Path Planning Strategy for UAVs in Ur.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s10846-018-0924-3
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s10846-018-0924-3
+      \endverb
+    \endentry
+    \entry{primatesta_ground_2020}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b491b415a1db6770c2807b7760589c28}{%
+           family={Primatesta},
+           familyi={P\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2eb264a947e6b4be945ee0d7691eff5f}{%
+           family={Rizzo},
+           familyi={R\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85e131d05b260a8fccba6291fbc34f28}{%
+           family={Cour-Harbo},
+           familyi={C\bibinithyphendelim H\bibinitperiod},
+           given={Anders},
+           giveni={A\bibinitperiod},
+           givenun=0,
+           prefix={la},
+           prefixi={l\bibinitperiod}}}%
+      }
+      \strng{namehash}{b8fa178f5abf76af0cbede0db73c2e7b}
+      \strng{fullhash}{6d25feb53e1af666af0067c3f30a0f17}
+      \strng{bibnamehash}{6d25feb53e1af666af0067c3f30a0f17}
+      \strng{authorbibnamehash}{6d25feb53e1af666af0067c3f30a0f17}
+      \strng{authornamehash}{b8fa178f5abf76af0cbede0db73c2e7b}
+      \strng{authorfullhash}{6d25feb53e1af666af0067c3f30a0f17}
+      \field{extraname}{2}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The large diversity of unmanned aircraft requires a suitable and proper risk assessment. In this paper, we propose the use of risk maps to define the risk associated to accidents with unmanned aircraft. It is a two-dimensional location-based map that quantifies the risk to the population on ground of flight operations over a specified area. The risk map is generated through a probabilistic approach and combines several layers, including population density, sheltering factor, no-fly zones, and obstacles. Each element of the risk map has associated a risk value that quantifies the risk of flying over a specific location. Risk values are defined by a risk assessment process using different uncontrolled descent events, drone parameters, environmental characteristics, as well as uncertainties on parameters. The risk map is able to quantify the risk of large areas, such as urban environments, and allows for easy identification of high and low-risk locations. The map is a tool for informed decision making, and our results report some examples of risk map with different aircraft in a realistic urban environment.}
+      \field{issn}{0921-0296, 1573-0409}
+      \field{journaltitle}{Journal of Intelligent \& Robotic Systems}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{3}
+      \field{shortjournal}{J Intell Robot Syst}
+      \field{title}{Ground Risk Map for Unmanned Aircraft in Urban Environments}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{97}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{489\bibrangedash 509}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1007/s10846-019-01015-z
+      \endverb
+      \verb{file}
+      \verb Primatesta et al. - 2020 - Ground Risk Map for Unmanned Aircraft in Urban Env.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\JM4TQZYW\\Primatesta et al. - 2020 - Ground Risk Map for Unmanned Aircraft in Urban Env.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s10846-019-01015-z
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s10846-019-01015-z
+      \endverb
+    \endentry
+    \entry{shelley_model_2016}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f7a12783bf07926f2fd3b1fe67585518}{%
+           family={Shelley},
+           familyi={S\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f7a12783bf07926f2fd3b1fe67585518}
+      \strng{fullhash}{f7a12783bf07926f2fd3b1fe67585518}
+      \strng{bibnamehash}{f7a12783bf07926f2fd3b1fe67585518}
+      \strng{authorbibnamehash}{f7a12783bf07926f2fd3b1fe67585518}
+      \strng{authornamehash}{f7a12783bf07926f2fd3b1fe67585518}
+      \strng{authorfullhash}{f7a12783bf07926f2fd3b1fe67585518}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{23746793}
+      \field{journaltitle}{International Journal of Aviation, Aeronautics, and Aerospace}
+      \field{langid}{english}
+      \field{shortjournal}{{IJAAA}}
+      \field{shorttitle}{A Model of Human Harm from a Falling Unmanned Aircraft}
+      \field{title}{A Model of Human Harm from a Falling Unmanned Aircraft: Implications for {UAS} Regulation}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.15394/ijaaa.2016.1120
+      \endverb
+      \verb{file}
+      \verb Shelley - 2016 - A Model of Human Harm from a Falling Unmanned Airc.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\M3T8MBUC\\Shelley - 2016 - A Model of Human Harm from a Falling Unmanned Airc.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://commons.erau.edu/ijaaa/vol3/iss3/1/
+      \endverb
+      \verb{url}
+      \verb http://commons.erau.edu/ijaaa/vol3/iss3/1/
+      \endverb
+    \endentry
+    \entry{small_aviation_2009}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0b18f3a2c18c7df386cfd50ab26f8519}{%
+           family={Small},
+           familyi={S\bibinitperiod},
+           given={U.\bibnamedelimi A.\bibnamedelimi S.},
+           giveni={U\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0b18f3a2c18c7df386cfd50ab26f8519}
+      \strng{fullhash}{0b18f3a2c18c7df386cfd50ab26f8519}
+      \strng{bibnamehash}{0b18f3a2c18c7df386cfd50ab26f8519}
+      \strng{authorbibnamehash}{0b18f3a2c18c7df386cfd50ab26f8519}
+      \strng{authornamehash}{0b18f3a2c18c7df386cfd50ab26f8519}
+      \strng{authorfullhash}{0b18f3a2c18c7df386cfd50ab26f8519}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Comprehensive Set of Recommendations for {sUAS} Regulatory Development}
+      \field{title}{Aviation Rulemaking Committee ({ARC})}
+      \field{volume}{1}
+      \field{year}{2009}
+      \field{dateera}{ce}
+    \endentry
+    \entry{noauthor_unmanned_2015}{article}{}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Unmanned Aircraft Systems ({UAS}) Registration Task Force ({RTF}) Aviation Rulemaking Committee ({ARC})}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb 2015 - Unmanned Aircraft Systems (UAS) Registration Task .pdf:C\:\\Users\\MICKO\\Zotero\\storage\\CTBGTFLS\\2015 - Unmanned Aircraft Systems (UAS) Registration Task .pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{washington_review_2017}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=bdc5abf931a195d8f0aaa4283f12b870}{%
+           family={Washington},
+           familyi={W\bibinitperiod},
+           given={Achim},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=35d515759e9d02b5771098e5584d2a2a}{%
+           family={Clothier},
+           familyi={C\bibinitperiod},
+           given={Reece\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f2e592d3905272f0aaa04c5382ff690f}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Jose},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5386a48608f09bf7c8134aa62c5540a1}
+      \strng{fullhash}{2c0fe52ae9e2f654de6d662f47cf811d}
+      \strng{bibnamehash}{2c0fe52ae9e2f654de6d662f47cf811d}
+      \strng{authorbibnamehash}{2c0fe52ae9e2f654de6d662f47cf811d}
+      \strng{authornamehash}{5386a48608f09bf7c8134aa62c5540a1}
+      \strng{authorfullhash}{2c0fe52ae9e2f654de6d662f47cf811d}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{There is much effort being directed towards the development of safety regulations for unmanned aircraft systems ({UAS}). National airworthiness authorities have advocated the adoption of a risk-based approach, whereby regulations are driven by the outcomes of a systematic process to assess and manage identiﬁed safety risks. Subsequently, models characterising the primary hazards associated with {UAS} operations have now become critical to the development of regulations and in turn, to the future of the industry. Key to the development of airworthiness regulations for {UAS} is a comprehensive understanding of the risks {UAS} operations pose to people and property on the ground. A comprehensive review of the literature identiﬁed 33 different models (and component sub models) used to estimate ground risk posed by {UAS}. These models comprise failure, impact location, recovery, stress, exposure, incident stress and harm sub-models. The underlying assumptions and treatment of uncertainties in each of these sub-models differ signiﬁcantly between models, which can have a signiﬁcant impact on the development of regulations. This paper reviews the state-of-the-art in research into {UAS} ground risk modelling, discusses how the various sub-models relate to the different components of the regulation, and explores how model-uncertainties potentially impact the development of regulations for {UAS}.}
+      \field{issn}{03760421}
+      \field{journaltitle}{Progress in Aerospace Sciences}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{shortjournal}{Progress in Aerospace Sciences}
+      \field{title}{A review of unmanned aircraft system ground risk models}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{95}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{24\bibrangedash 44}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1016/j.paerosci.2017.10.001
+      \endverb
+      \verb{file}
+      \verb Washington et al. - 2017 - A review of unmanned aircraft system ground risk m.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\C4WW3SHK\\Washington et al. - 2017 - A review of unmanned aircraft system ground risk m.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0376042117301392
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0376042117301392
+      \endverb
+    \endentry
+    \entry{weibel_safety_nodate}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7c1f5ee387dc31bba0454856ac854c68}{%
+           family={Weibel},
+           familyi={W\bibinitperiod},
+           given={Roland\bibnamedelima E},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=33411ed1daff7ae4986ecdc675a5c0e9}{%
+           family={Hansman},
+           familyi={H\bibinitperiod},
+           given={R\bibnamedelima John},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{14fd952841131bce7061406c020d385b}
+      \strng{fullhash}{14fd952841131bce7061406c020d385b}
+      \strng{bibnamehash}{14fd952841131bce7061406c020d385b}
+      \strng{authorbibnamehash}{14fd952841131bce7061406c020d385b}
+      \strng{authornamehash}{14fd952841131bce7061406c020d385b}
+      \strng{authorfullhash}{14fd952841131bce7061406c020d385b}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Safety Considerations for Operation of Different Classes of {UAVs} in the {NAS}}
+      \verb{file}
+      \verb Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\C9Y4TT3V\\Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:application/pdf;Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\93RWHAHX\\Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:application/pdf;Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\5E4DZ724\\Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{wu_development_2012}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a96c2776202a07196eea910de588e7e0}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=35d515759e9d02b5771098e5584d2a2a}{%
+           family={Clothier},
+           familyi={C\bibinitperiod},
+           given={Reece\bibnamedelima A},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{08a54f299d59bcc05ac7b40152f84be4}
+      \strng{fullhash}{08a54f299d59bcc05ac7b40152f84be4}
+      \strng{bibnamehash}{08a54f299d59bcc05ac7b40152f84be4}
+      \strng{authorbibnamehash}{08a54f299d59bcc05ac7b40152f84be4}
+      \strng{authornamehash}{08a54f299d59bcc05ac7b40152f84be4}
+      \strng{authorfullhash}{08a54f299d59bcc05ac7b40152f84be4}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{With the emergence of Unmanned Aircraft Systems ({UAS}) there is a growing need for safety standards and regulatory frameworks to manage the risks associated with their operations. The primary driver for airworthiness regulations (i.e., those governing the design, manufacture, maintenance and operation of {UAS}) are the risks presented to people in the regions overflown by the aircraft. Models characterising the nature of these risks are needed to inform the development of airworthiness regulations. The output from these models should include measures of the collective, individual and societal risk. A brief review of these measures is provided. Based on the review, it was determined that the model of the operation of an {UAS} over inhabited areas must be capable of describing the distribution of possible impact locations, given a failure at a particular point in the flight plan. Existing models either do not take the impact distribution into consideration, or propose complex and computationally expensive methods for its calculation. A computationally efficient approach for estimating the boundary (and in turn area) of the impact distribution for fixed wing unmanned aircraft is proposed. A series of geometric templates that approximate the impact distributions are derived using an empirical analysis of the results obtained from a 6Degree of Freedom (6DoF) simulation. The impact distributions can be aggregated to provide impact footprint distributions for a range of generic phases of flight and missions. The maximum impact footprint areas obtained from the geometric template are shown to have a relative error of typically less than 1\% compared to the areas calculated using the computationally more expensive 6DoF simulation. Computation times for the geometric models are on the order of one second or less, using a standard desktop computer. Future work includes characterising the distribution of impact locations within the footprint boundaries.}
+      \field{langid}{english}
+      \field{title}{The Development of Ground Impact Models for the Analysis of the Risks Associated with Unmanned Aircraft Operations Over Inhabited Areas}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Wu and Clothier - 2012 - The Development of Ground Impact Models for the An.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\TI6FXYDP\\Wu and Clothier - 2012 - The Development of Ground Impact Models for the An.pdf:application/pdf
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global}
+    \entry{aalmoes_conceptual_2015}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=456dedde16567f56cbe2189c7e04b2be}{%
+           family={Aalmoes},
+           familyi={A\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=67026d41e0600ba6a0ca3ea820b47447}{%
+           family={Cheung},
+           familyi={C\bibinitperiod},
+           given={Y.S.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d9317f7e3e3e4c78cddc3867ec0cbc1}{%
+           family={Sunil},
+           familyi={S\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=34f7c137ba5a2142920f3ca41f4e8e30}{%
+           family={Hoekstra},
+           familyi={H\bibinitperiod},
+           given={J.M.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f9fcb7e53dba0332b1dcb1c13ae6d2ff}{%
+           family={Bussink},
+           familyi={B\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Denver, {CO}, {USA}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{bf6ef076a54e993c49848cca7067ede5}
+      \strng{fullhash}{8f3f6acc882d8714c4e04883cb6fdd9f}
+      \strng{bibnamehash}{8f3f6acc882d8714c4e04883cb6fdd9f}
+      \strng{authorbibnamehash}{8f3f6acc882d8714c4e04883cb6fdd9f}
+      \strng{authornamehash}{bf6ef076a54e993c49848cca7067ede5}
+      \strng{authorfullhash}{8f3f6acc882d8714c4e04883cb6fdd9f}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A conceptual third party risk ({TPR}) model is developed, implemented, and tested to demonstrate the capability of determining the risk to the population in a metropolitan city exposed to personal aerial vehicles ({PAVs}) and unmanned aerial vehicles ({UAVs}) traffic operations. The conceptual model that is primarily based on the methodology and experience of risk modelling for conventional aircraft is modified and the parameters are adjusted suitable for a determination of risk in the arrival, departure and cruise phase of flight for those new aircraft types. Without the availability of the empirical accident data of these aircraft, however, a validation of the conceptual model is not possible. For the purpose of comparison of different future operation concepts and different scenarios in a metropolitan area the model suffices the need. Two examples of operation concepts and traffic scenarios for {PAV} and {UAV} aircraft movements, respectively, are demonstrated.}
+      \field{eventtitle}{2015 International Conference on Unmanned Aircraft Systems ({ICUAS})}
+      \field{isbn}{978-1-4799-6010-1}
+      \field{journaltitle}{2015 International Conference on Unmanned Aircraft Systems ({ICUAS})}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{title}{A conceptual third party risk model for personal and unmanned aerial vehicles}
+      \field{urlday}{25}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1301\bibrangedash 1309}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/ICUAS.2015.7152424
+      \endverb
+      \verb{file}
+      \verb Aalmoes et al. - 2015 - A conceptual third party risk model for personal a.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\X2AFJHIF\\ICUAS.2015.7152424.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/7152424/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/7152424/
+      \endverb
+    \endentry
+    \entry{ale_assessment_2000}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=354190c8313c33e73c6c6150dfe8c45f}{%
+           family={Ale},
+           familyi={A\bibinitperiod},
+           given={B.J.M},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=13876aad46d11ca7149641e989fe356a}{%
+           family={Piers},
+           familyi={P\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d9a789ad281292a86dc43ef274e79614}
+      \strng{fullhash}{d9a789ad281292a86dc43ef274e79614}
+      \strng{bibnamehash}{d9a789ad281292a86dc43ef274e79614}
+      \strng{authorbibnamehash}{d9a789ad281292a86dc43ef274e79614}
+      \strng{authornamehash}{d9a789ad281292a86dc43ef274e79614}
+      \strng{authorfullhash}{d9a789ad281292a86dc43ef274e79614}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Schiphol, the main airport of the Netherlands, is growing rapidly. The aircraft movements, also growing in number, place a considerable environmental burden on the surrounding population, notably, noise and odour nuisance and risks. In the process of deciding on how to extend the capacity of the airport to accommodate the anticipated twofold growth in the number of movements with respect to 1990, environmental problems form a major concern. The concern about risks for the surrounding population was enhanced after the crash on 4 October 1992, in which a Boeing 747 cargo carrier bored into a block of flats in a suburb of Amsterdam near Schiphol. In this accident, the four crew members were killed, together with 39 inhabitants of the flatsrapartment building. These risks were studied as part of the Environmental Impact Assessment Ž{EIA}.. To make these studies useful for decision making necessitated a major improvement in the available techniques for risk quantification. The results of the quantitative analyses, using several different methods, have all indicated that the activities of Schiphol pose a considerable risk compared to other major industrial activities in the Netherlands. This paper describes the development of the methodology from 1990 in the light of the policy context in which it took place. Use of the methods in the decision-making process is illustrated by describing the current status of this process. q 2000 Elsevier Science B.V. All rights reserved.}
+      \field{issn}{03043894}
+      \field{journaltitle}{Journal of Hazardous Materials}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{Journal of Hazardous Materials}
+      \field{title}{The assessment and management of third party risk around a major airport}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{71}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 16}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/S0304-3894(99)00069-2
+      \endverb
+      \verb{file}
+      \verb Ale and Piers - 2000 - The assessment and management of third party risk .pdf:C\:\\Users\\MICKO\\Zotero\\storage\\R2BDTINF\\Ale and Piers - 2000 - The assessment and management of third party risk .pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0304389499000692
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0304389499000692
+      \endverb
+    \endentry
+    \entry{ancel_real-time_2017}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=b8e4354cc30d9f5ab36d50931f1dce44}{%
+           family={Ancel},
+           familyi={A\bibinitperiod},
+           given={Ersin},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=94c944cb6991eb0dfea900af7e29cab5}{%
+           family={Capristan},
+           familyi={C\bibinitperiod},
+           given={Francisco\bibnamedelima M.},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=425dd6312976e4d06b9e307caa0d4c64}{%
+           family={Foster},
+           familyi={F\bibinitperiod},
+           given={John\bibnamedelima V.},
+           giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6bd40af0e73fd05172b8e17d4620d801}{%
+           family={Condotta},
+           familyi={C\bibinitperiod},
+           given={Ryan\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Denver, Colorado}%
+      }
+      \list{publisher}{2}{%
+        {American Institute of Aeronautics}%
+        {Astronautics}%
+      }
+      \strng{namehash}{9af03160bcc9a5e6d8a8e9f5107d23f7}
+      \strng{fullhash}{be5bb9b849c7d8bf70559bfb8dca6289}
+      \strng{bibnamehash}{be5bb9b849c7d8bf70559bfb8dca6289}
+      \strng{authorbibnamehash}{be5bb9b849c7d8bf70559bfb8dca6289}
+      \strng{authornamehash}{9af03160bcc9a5e6d8a8e9f5107d23f7}
+      \strng{authorfullhash}{be5bb9b849c7d8bf70559bfb8dca6289}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{eventtitle}{17th {AIAA} Aviation Technology, Integration, and Operations Conference}
+      \field{isbn}{978-1-62410-508-1}
+      \field{journaltitle}{17th {AIAA} Aviation Technology, Integration, and Operations Conference}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{title}{Real-time Risk Assessment Framework for Unmanned Aircraft System ({UAS}) Traffic Management ({UTM})}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.2514/6.2017-3273
+      \endverb
+      \verb{file}
+      \verb 6.2017-3272.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\QU26BFME\\6.2017-3272.pdf:application/pdf;Ancel et al. - 2017 - Real-time Risk Assessment Framework for Unmanned A.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\E2ADTIJG\\Ancel et al. - 2017 - Real-time Risk Assessment Framework for Unmanned A.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://arc.aiaa.org/doi/10.2514/6.2017-3273
+      \endverb
+      \verb{url}
+      \verb https://arc.aiaa.org/doi/10.2514/6.2017-3273
+      \endverb
+    \endentry
+    \entry{ball_crash_nodate}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=77ce134e595ab31c2446ea858d33a028}{%
+           family={Ball},
+           familyi={B\bibinitperiod},
+           given={John\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5663d314329812825136940dd3f48ae6}{%
+           family={Knott},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5bc49a09f546532279c67c25abfec87d}{%
+           family={Burke},
+           familyi={B\bibinitperiod},
+           given={Dr\bibnamedelima David},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1f061eab8f03fd84c358349f634d8a95}
+      \strng{fullhash}{453fd8584c2ee25d97f8127225f7d391}
+      \strng{bibnamehash}{453fd8584c2ee25d97f8127225f7d391}
+      \strng{authorbibnamehash}{453fd8584c2ee25d97f8127225f7d391}
+      \strng{authornamehash}{1f061eab8f03fd84c358349f634d8a95}
+      \strng{authorfullhash}{453fd8584c2ee25d97f8127225f7d391}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Expanding the permitted airspace permissions for Unmanned Air Systems ({UAS}) is a common desire among multiple military and civilian government organizations. Military groups desire to expand the {UAS} airspace to improve reserve and operational logistics, training exercises, and testing purposes. Civilian agencies, such as police forces, border patrol, and news agencies, would use unmanned air vehicles to conduct aerial surveillance and other missions strongly suited to the {UAS}. Current air space restrictions limit flight to either restricted airspace, or areas with sparse populations. While lifting these restrictions would have a positive impact on operational envelope and flexibility, due diligence must be used to ensure the public is not subjected to unreasonable hazards.}
+      \field{langid}{english}
+      \field{title}{{CRASH} {LETHALITY} {MODEL}}
+      \verb{file}
+      \verb Ball et al. - CRASH LETHALITY MODEL.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\X6FEQG26\\Ball et al. - CRASH LETHALITY MODEL.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{barr_preliminary_2017}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=8f74e36b6cfaefd7fe130cab80802227}{%
+           family={Barr},
+           familyi={B\bibinitperiod},
+           given={Lawrence\bibnamedelima C.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7c8bb4ed68e7e6f5b71b4658bb7b304a}{%
+           family={Newman},
+           familyi={N\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b8e4354cc30d9f5ab36d50931f1dce44}{%
+           family={Ancel},
+           familyi={A\bibinitperiod},
+           given={Ersin},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7979839f417a8bae02d08c22237e9ee4}{%
+           family={Belcastro},
+           familyi={B\bibinitperiod},
+           given={Christine\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=425dd6312976e4d06b9e307caa0d4c64}{%
+           family={Foster},
+           familyi={F\bibinitperiod},
+           given={John\bibnamedelima V.},
+           giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c18516b62af81124f7c2735328b05bad}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={Joni},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bd03577e4df12eaf19503db99dddf25a}{%
+           family={Klyde},
+           familyi={K\bibinitperiod},
+           given={David\bibnamedelima H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Denver, Colorado}%
+      }
+      \list{publisher}{2}{%
+        {American Institute of Aeronautics}%
+        {Astronautics}%
+      }
+      \strng{namehash}{efb910bba480daeab3f33374bbd275b1}
+      \strng{fullhash}{2d1a88dc40a6d7e0dbbdc02b603abac5}
+      \strng{bibnamehash}{2d1a88dc40a6d7e0dbbdc02b603abac5}
+      \strng{authorbibnamehash}{2d1a88dc40a6d7e0dbbdc02b603abac5}
+      \strng{authornamehash}{efb910bba480daeab3f33374bbd275b1}
+      \strng{authorfullhash}{2d1a88dc40a6d7e0dbbdc02b603abac5}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{eventtitle}{17th {AIAA} Aviation Technology, Integration, and Operations Conference}
+      \field{isbn}{978-1-62410-508-1}
+      \field{journaltitle}{17th {AIAA} Aviation Technology, Integration, and Operations Conference}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{title}{Preliminary Risk Assessment for Small Unmanned Aircraft Systems}
+      \field{urlday}{30}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.2514/6.2017-3272
+      \endverb
+      \verb{file}
+      \verb Barr et al. - 2017 - Preliminary Risk Assessment for Small Unmanned Air.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\CW4ICRE5\\Barr et al. - 2017 - Preliminary Risk Assessment for Small Unmanned Air.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://arc.aiaa.org/doi/10.2514/6.2017-3272
+      \endverb
+      \verb{url}
+      \verb https://arc.aiaa.org/doi/10.2514/6.2017-3272
+      \endverb
+    \endentry
+    \entry{bleier_risk_2015}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=963d64a45383d2749fb48859d8242629}{%
+           family={Bleier},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=25a2cd3035dd2156adf82f7214f4c0a8}{%
+           family={Settele},
+           familyi={S\bibinitperiod},
+           given={Ferdinand},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=643b476dc244e1f697726dae1530938e}{%
+           family={Krauss},
+           familyi={K\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c96e7e6c472ee84ee4b2ea52131c823e}{%
+           family={Knoll},
+           familyi={K\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d0e9365d3680a63f010909694e7a8a08}{%
+           family={Schilling},
+           familyi={S\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{722218e2b200a6ba7ae98b89945fe0cb}
+      \strng{fullhash}{93cd00aa60d5bd288f82f76058fe8649}
+      \strng{bibnamehash}{93cd00aa60d5bd288f82f76058fe8649}
+      \strng{authorbibnamehash}{93cd00aa60d5bd288f82f76058fe8649}
+      \strng{authornamehash}{722218e2b200a6ba7ae98b89945fe0cb}
+      \strng{authorfullhash}{93cd00aa60d5bd288f82f76058fe8649}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{24058963}
+      \field{journaltitle}{{IFAC}-{PapersOnLine}}
+      \field{langid}{english}
+      \field{number}{9}
+      \field{shortjournal}{{IFAC}-{PapersOnLine}}
+      \field{title}{Risk Assessment of Flight Paths for Automatic Emergency Parachute Deployment in {UAVs}}
+      \field{urlday}{12}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{volume}{48}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{180\bibrangedash 185}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/j.ifacol.2015.08.080
+      \endverb
+      \verb{file}
+      \verb Bleier et al. - 2015 - Risk Assessment of Flight Paths for Automatic Emer.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\UXZPP4N4\\Bleier et al. - 2015 - Risk Assessment of Flight Paths for Automatic Emer.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S2405896315009477
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S2405896315009477
+      \endverb
+    \endentry
+    \entry{breunig_modeling_nodate}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=8f8954b8994aaf3e7d6e253f75bb352a}{%
+           family={Breunig},
+           familyi={B\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93b69d2735540bd5bdbf77b6c6c6bd5e}{%
+           family={Forman},
+           familyi={F\bibinitperiod},
+           given={Joyce},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=92c62f5aa8d38f3f3fe7a83ff1b5cd27}{%
+           family={Sayed},
+           familyi={S\bibinitperiod},
+           given={Shereef},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9aca7b5f860d92a2e8d984e84e40445b}{%
+           family={Audenaerd},
+           familyi={A\bibinitperiod},
+           given={Laurence},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{90bf60bd99b18cf4704e7ae9f6eb9178}
+      \strng{fullhash}{fa0ba27fc95d05eb6e2f542062a9aa6d}
+      \strng{bibnamehash}{fa0ba27fc95d05eb6e2f542062a9aa6d}
+      \strng{authorbibnamehash}{fa0ba27fc95d05eb6e2f542062a9aa6d}
+      \strng{authornamehash}{90bf60bd99b18cf4704e7ae9f6eb9178}
+      \strng{authorfullhash}{fa0ba27fc95d05eb6e2f542062a9aa6d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Modeling Risk-Based Approach for Small Unmanned Aircraft Systems}
+      \verb{file}
+      \verb Breunig et al. - Modeling Risk-Based Approach for Small Unmanned Ai.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\6DC2CTKL\\Breunig et al. - Modeling Risk-Based Approach for Small Unmanned Ai.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{burke_system-level_2011}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b23741c920bbf5af46ac4dfeb7fdce09}{%
+           family={Burke},
+           familyi={B\bibinitperiod},
+           given={David\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a1631dd293560401f2c5e5c99f47f7ea}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={Charles\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=575b2f0c2cabf0fca0acd6896c8a4bc8}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Stephen\bibnamedelima P.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a29957a0e6f310d7d25ee6e3d69fda02}
+      \strng{fullhash}{bd08839f35661ba1df1ab016d69c10dc}
+      \strng{bibnamehash}{bd08839f35661ba1df1ab016d69c10dc}
+      \strng{authorbibnamehash}{bd08839f35661ba1df1ab016d69c10dc}
+      \strng{authornamehash}{a29957a0e6f310d7d25ee6e3d69fda02}
+      \strng{authorfullhash}{bd08839f35661ba1df1ab016d69c10dc}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0021-8669, 1533-3868}
+      \field{journaltitle}{Journal of Aircraft}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{3}
+      \field{shortjournal}{Journal of Aircraft}
+      \field{title}{System-Level Airworthiness Tool}
+      \field{urlday}{2}
+      \field{urlmonth}{2}
+      \field{urlyear}{2023}
+      \field{volume}{48}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{777\bibrangedash 785}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.2514/1.C031022
+      \endverb
+      \verb{file}
+      \verb Burke et al. - 2011 - System-Level Airworthiness Tool.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\4JCPSN7P\\Burke et al. - 2011 - System-Level Airworthiness Tool.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://arc.aiaa.org/doi/10.2514/1.C031022
+      \endverb
+      \verb{url}
+      \verb https://arc.aiaa.org/doi/10.2514/1.C031022
+      \endverb
+    \endentry
+    \entry{clothier_casualty_2007}{article}{}
+      \name{author}{4}{}{%
+        {{un=1,uniquepart=given,hash=112ce3f50405c4a2e5a3b3ec599e5c63}{%
+           family={Clothier},
+           familyi={C\bibinitperiod},
+           given={Reece},
+           giveni={R\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=badf27263b10161259313c8e22543623}{%
+           family={Walker},
+           familyi={W\bibinitperiod},
+           given={Rodney},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bde3f2f4f2c4808806a49b84bae2d98b}{%
+           family={Fulton},
+           familyi={F\bibinitperiod},
+           given={Neale},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=32109eddff373ba174a88467b6e17eb0}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={Duncan},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ad097836dcfe34a5097d319cc7893d5d}
+      \strng{fullhash}{ce4b03e91d9abfe68b2728e41747dcb1}
+      \strng{bibnamehash}{ce4b03e91d9abfe68b2728e41747dcb1}
+      \strng{authorbibnamehash}{ce4b03e91d9abfe68b2728e41747dcb1}
+      \strng{authornamehash}{ad097836dcfe34a5097d319cc7893d5d}
+      \strng{authorfullhash}{ce4b03e91d9abfe68b2728e41747dcb1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper discusses the need for informed decision making with respect to the management of the risks Unmanned Aerial System ({UAS}) operations present to people and property on the ground. In the absence of a wealth of experience in the hazards of {UAS} operations, an understanding of the risks can be gained through a formal risk analysis. This paper proposes the development of new risk analysis tools as a means for ensuring risk-informed decision making. The paper provides an introduction to the risk management of {UAS} operations over inhabited areas and presents an argument which establishes the need for an objective understanding of the risks. The development of formal risk analysis tools is then discussed. A simple casualty expectation model is presented and is applied to the example case-study scenario of a generic Medium Altitude, Long Endurance ({MALE}) {UAS} on approach to Royal Australia Air Force ({RAAF}) Base Edinburgh. A brief evaluation of the results from the analysis is provided; illustrating how a formal risk analysis can be used to inform practical decision making. The paper concludes by providing a summary on the direction of the program of research and the key points made.}
+      \field{langid}{english}
+      \field{title}{A {CASUALTY} {RISK} {ANALYSIS} {FOR} {UNMANNED} {AERIAL} {SYSTEM} ({UAS}) {OPERATIONS} {OVER} {INHABITED} {AREAS}}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Clothier et al. - 2007 - A CASUALTY RISK ANALYSIS FOR UNMANNED AERIAL SYSTE.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\KS4D292W\\Clothier et al. - 2007 - A CASUALTY RISK ANALYSIS FOR UNMANNED AERIAL SYSTE.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{cole_hazards_1997}{report}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d635ab1d710c6e899f29b90814f99119}{%
+           family={Cole},
+           familyi={C\bibinitperiod},
+           given={J.\bibnamedelimi K.},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ab0695d9836550ce7c3f005fae6cf6cb}{%
+           family={Young},
+           familyi={Y\bibinitperiod},
+           given={L.\bibnamedelimi W.},
+           giveni={L\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5464c7ad95fdd61ed8f129b614bc480b}{%
+           family={Jordan-Culler},
+           familyi={J\bibinithyphendelim C\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Sandia National Lab. ({SNL}-{NM}), Albuquerque, {NM} (United States)}%
+      }
+      \strng{namehash}{78b6c119387a33b37c32cae302cae338}
+      \strng{fullhash}{f4ea12cbccef6d63cf60f47184659979}
+      \strng{bibnamehash}{f4ea12cbccef6d63cf60f47184659979}
+      \strng{authorbibnamehash}{f4ea12cbccef6d63cf60f47184659979}
+      \strng{authornamehash}{78b6c119387a33b37c32cae302cae338}
+      \strng{authorfullhash}{f4ea12cbccef6d63cf60f47184659979}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This report is a collection of studies performed at Sandia National Laboratories in support of Phase One (inert debris) for the Risk and Lethality Commonality Team. This team was created by the Range Safety Group of the Range Commander`s Council to evaluate the safety issues for debris generated during flight tests and to develop debris safety criteria that can be adopted by the national ranges. Physiological data on the effects of debris impacts on people are presented. Log-normal curves are developed to relate the impact kinetic energy of fragments to the probability of fatality for people exposed in standing, sitting, or prone positions. Debris hazards to aircraft resulting from engine ingestion or penetration of a structure or windshield are discussed. The smallest mass fragments of aluminum, steel, and tungsten that may be hazardous to current aircraft are defined. Fragment penetration of the deck of a small ship or a pleasure craft is also considered. The smallest mass fragments of aluminum, steel, or tungsten that can penetrate decks are calculated.}
+      \field{day}{1}
+      \field{month}{4}
+      \field{number}{{SAND}-97-0805}
+      \field{title}{Hazards of falling debris to people, aircraft, and watercraft}
+      \field{urlday}{26}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{year}{1997}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.2172/468556
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\MICKO\\Zotero\\storage\\RH7A9U3S\\Cole et al. - 1997 - Hazards of falling debris to people, aircraft, and.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.osti.gov/biblio/468556
+      \endverb
+      \verb{url}
+      \verb https://www.osti.gov/biblio/468556
+      \endverb
+    \endentry
+    \entry{cour-harbo_ground_2020}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=85e131d05b260a8fccba6291fbc34f28}{%
+           family={Cour-Harbo},
+           familyi={C\bibinithyphendelim H\bibinitperiod},
+           given={Anders\bibnamedelima la},
+           giveni={A\bibinitperiod\bibinitdelim l\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Athens, Greece}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{85e131d05b260a8fccba6291fbc34f28}
+      \strng{fullhash}{85e131d05b260a8fccba6291fbc34f28}
+      \strng{bibnamehash}{85e131d05b260a8fccba6291fbc34f28}
+      \strng{authorbibnamehash}{85e131d05b260a8fccba6291fbc34f28}
+      \strng{authornamehash}{85e131d05b260a8fccba6291fbc34f28}
+      \strng{authorfullhash}{85e131d05b260a8fccba6291fbc34f28}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Safety is a key factor in all aviation, and while years of development has made manned aviation relatively safe, the same has yet to happen for unmanned aircraft. However, the rapid development of unmanned aircraft technology means that the range of commercial and scientiﬁc applications is growing equally rapid. At the same time the trend in national and international regulations for unmanned aircraft is to take a risk-based approach, effectively requiring risk assessment for every ﬂight operation. This work addresses the growing need for methods for quantitatively evaluating individual ﬂights by modelling the consequences of a ballistic descent of an unmanned aircraft as a result of a major in-ﬂight incident. The presented model is a probability density function for the ground impact area based on a second order drag model with probabilistic assumptions on the least well-known parameters of the ﬂight, and includes the effect of wind. The model has low computational complexity and is well-suited for high ﬁdelity simulations for longer ﬂights over populated areas and with changing trajectory parameters.}
+      \field{eventtitle}{2020 International Conference on Unmanned Aircraft Systems ({ICUAS})}
+      \field{isbn}{978-1-72814-278-4}
+      \field{journaltitle}{2020 International Conference on Unmanned Aircraft Systems ({ICUAS})}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{title}{Ground impact probability distribution for small unmanned aircraft in ballistic descent}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1442\bibrangedash 1451}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ICUAS48674.2020.9213990
+      \endverb
+      \verb{file}
+      \verb Cour-Harbo - 2020 - Ground impact probability distribution for small u.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\5IRVKGAU\\Cour-Harbo - 2020 - Ground impact probability distribution for small u.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/9213990/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/9213990/
+      \endverb
+    \endentry
+    \entry{dalamagkidis_evaluating_2008}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d82cbf28385b4d139a4e70c9a529fe43}{%
+           family={Dalamagkidis},
+           familyi={D\bibinitperiod},
+           given={Konstantinos},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9f0ca3f10b63e984131aee4400b646ef}{%
+           family={Valavanis},
+           familyi={V\bibinitperiod},
+           given={Kimon\bibnamedelima P.},
+           giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a6a2ee10f31e1891be4b89782da92768}{%
+           family={Piegl},
+           familyi={P\bibinitperiod},
+           given={Les\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f3674a330505f12652ced320fdc20420}
+      \strng{fullhash}{51f7cafd45d969324ecffdff263e255c}
+      \strng{bibnamehash}{51f7cafd45d969324ecffdff263e255c}
+      \strng{authorbibnamehash}{51f7cafd45d969324ecffdff263e255c}
+      \strng{authornamehash}{f3674a330505f12652ced320fdc20420}
+      \strng{authorfullhash}{51f7cafd45d969324ecffdff263e255c}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Currently many countries are developing regulation to allow unmanned aircraft systems ({UAS}) operations in their National Airspace System ({NAS}). Successful integration requires {UAS} to achieve, at a minimum, an equivalent level of safety to that of manned aviation. Safety is primarily defined in terms of the risk to human life, although potential collateral damages to property can also be taken into account. This paper presents a novel, general, quite conservative and rather simple method that calculates the probability of fatalities and the fatality rates associated with a ground impact. Spatial analysis results are presented that indicate where unmanned aircraft may fly based on obtained reliability and safety levels and provide a coherent comparison of reliability requirements between unmanned aircraft of different families.}
+      \field{eventtitle}{2008 16th Mediterranean Conference on Control and Automation}
+      \field{journaltitle}{2008 16th Mediterranean Conference on Control and Automation}
+      \field{month}{6}
+      \field{title}{Evaluating the risk of unmanned aircraft ground impacts}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{pages}{709\bibrangedash 716}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/MED.2008.4602249
+      \endverb
+      \verb{file}
+      \verb Full Text:C\:\\Users\\MICKO\\Zotero\\storage\\KNMSQFHP\\Dalamagkidis et al. - 2008 - Evaluating the risk of unmanned aircraft ground im.pdf:application/pdf;IEEE Xplore Abstract Record:C\:\\Users\\MICKO\\Zotero\\storage\\XF2W5KBA\\4602249.html:text/html
+      \endverb
+      \keyw{Automation,Conferences}
+    \endentry
+    \entry{noauthor_faas_nodate}{online}{}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{note}{Archive Location: world}
+      \field{title}{{FAA}'s Approaches to Ground and {NAS} Separation Distances for Commercial Rocket Launches}
+      \field{titleaddon}{Aerospace Sciences Meetings}
+      \field{urlday}{26}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.2514/6.2010-1540
+      \endverb
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\MICKO\\Zotero\\storage\\SLLINKHE\\6.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://arc.aiaa.org/doi/10.2514/6.2010-1540
+      \endverb
+      \verb{url}
+      \verb https://arc.aiaa.org/doi/10.2514/6.2010-1540
+      \endverb
+    \endentry
+    \entry{noauthor_global_nodate}{online}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{title}{Global Human Settlement - Mission - European Commission}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Global Human Settlement - Mission - European Commission:C\:\\Users\\MICKO\\Zotero\\storage\\35R6MD5T\\about.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://ghsl.jrc.ec.europa.eu/about.php
+      \endverb
+      \verb{url}
+      \verb https://ghsl.jrc.ec.europa.eu/about.php
+      \endverb
+    \endentry
+    \entry{harwick_approved_2007}{report}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=e94bf7e5b596755b40b5110e4395632b}{%
+           family={Harwick},
+           familyi={H\bibinitperiod},
+           given={Meredith\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fa4493f4566ed8ce19dd8e722f8d57dc}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0ad76d6a822c20fdeea7e83d7886b550}{%
+           family={Tatom},
+           familyi={T\bibinitperiod},
+           given={John\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6482beef654cf18c4c6aa426670bb1b5}{%
+           family={Baker},
+           familyi={B\bibinitperiod},
+           given={Robert\bibnamedelima G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Defense Technical Information Center}%
+      }
+      \list{location}{1}{%
+        {Fort Belvoir, {VA}}%
+      }
+      \strng{namehash}{d3307e388a90bb91f7b324782920ce1f}
+      \strng{fullhash}{a5194f82eadc8c8a766d02d17426a038}
+      \strng{bibnamehash}{a5194f82eadc8c8a766d02d17426a038}
+      \strng{authorbibnamehash}{a5194f82eadc8c8a766d02d17426a038}
+      \strng{authornamehash}{d3307e388a90bb91f7b324782920ce1f}
+      \strng{authorfullhash}{a5194f82eadc8c8a766d02d17426a038}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{2}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{shorttitle}{Approved Methods and Algorithms for {DoD} Risk-Based Explosives Siting}
+      \field{title}{Approved Methods and Algorithms for {DoD} Risk-Based Explosives Siting:}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.21236/ADA463571
+      \endverb
+      \verb{file}
+      \verb Harwick et al. - 2007 - Approved Methods and Algorithms for DoD Risk-Based.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\7Y58VNL4\\Harwick et al. - 2007 - Approved Methods and Algorithms for DoD Risk-Based.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.dtic.mil/docs/citations/ADA463571
+      \endverb
+      \verb{url}
+      \verb http://www.dtic.mil/docs/citations/ADA463571
+      \endverb
+    \endentry
+    \entry{noauthor_hazards_nodate}{online}{}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{title}{Hazards to people and aircraft from flight test debris generated at high altitudes {|} Aerospace Sciences Meetings}
+      \field{urlday}{26}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://arc.aiaa.org/doi/abs/10.2514/6.1996-70
+      \endverb
+      \verb{url}
+      \verb https://arc.aiaa.org/doi/abs/10.2514/6.1996-70
+      \endverb
+    \endentry
+    \entry{kim_risk-based_2022}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=28d3060006194f77a69a17be7bdbbba1}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Younsil},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=adafd101e8b33b9d221321305d6f2368}{%
+           family={Bae},
+           familyi={B\bibinitperiod},
+           given={Joongwon},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{eb9f1c68724b3e814de0f10f661ea7a1}
+      \strng{fullhash}{eb9f1c68724b3e814de0f10f661ea7a1}
+      \strng{bibnamehash}{eb9f1c68724b3e814de0f10f661ea7a1}
+      \strng{authorbibnamehash}{eb9f1c68724b3e814de0f10f661ea7a1}
+      \strng{authornamehash}{eb9f1c68724b3e814de0f10f661ea7a1}
+      \strng{authorfullhash}{eb9f1c68724b3e814de0f10f661ea7a1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{To integrate unmanned aerial vehicles ({UAVs}) into the national airspace in a safe manner, a risk-based approach to the regulation of {UAVs} is adopted in many countries. Thus, the capacity to permit {UAVs} in urban airspace also needs to be evaluated in a risk-based sense. In this regard, this paper proposes a methodology to analyze the capacity of {UAV} corridors on the basis of third-party risk on the ground. By linking the collision rate of the corridor and the failure rates of {UAVs} with the number of fatalities on the ground, the capacity of the {UAV} corridor is derived to satisfy the target level of safety. To model the collision rate of {UAVs} in the corridor, the Reich collision risk model is utilized. Moreover, a ground risk map is generated to compute the third-party risk on the ground using the databases for Seoul, Korea. The results show that the failure rate of {UAVs} is the dominant factor for determining the capacity of the corridor, even if the number of corridors increases. The proposed methodology could be useful to manage the number of ﬂights for applications where the {UAV} corridor is ﬁxed and ﬂight continues, such as package delivery.}
+      \field{day}{24}
+      \field{issn}{2504-446X}
+      \field{journaltitle}{Drones}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{9}
+      \field{shortjournal}{Drones}
+      \field{title}{Risk-Based {UAV} Corridor Capacity Analysis above a Populated Area}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{6}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{221}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/drones6090221
+      \endverb
+      \verb{file}
+      \verb Kim and Bae - 2022 - Risk-Based UAV Corridor Capacity Analysis above a .pdf:C\:\\Users\\MICKO\\Zotero\\storage\\7796C6AN\\Kim and Bae - 2022 - Risk-Based UAV Corridor Capacity Analysis above a .pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2504-446X/6/9/221
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2504-446X/6/9/221
+      \endverb
+    \endentry
+    \entry{klepeis_national_2001}{article}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=3d1c7ae0222d90454f23a38910c30c51}{%
+           family={Klepeis},
+           familyi={K\bibinitperiod},
+           given={Neil\bibnamedelima E},
+           giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=80a3b2a1137b4c408720e0db935a43dc}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={William\bibnamedelima C},
+           giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a1d026f04d0ee018b6a5d6c73f8b131}{%
+           family={Ott},
+           familyi={O\bibinitperiod},
+           given={Wayne\bibnamedelima R},
+           giveni={W\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41ba542e7a83004c9c32f6fea7fa2e69}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={John\bibnamedelima P},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e71f586eff90535c4432c434dca47f77}{%
+           family={Tsang},
+           familyi={T\bibinitperiod},
+           given={Andy\bibnamedelima M},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=50ad15b8299902b4c14092105c1a7c63}{%
+           family={Switzer},
+           familyi={S\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c4b9352dd34c70a5321447f00ee288b}{%
+           family={Behar},
+           familyi={B\bibinitperiod},
+           given={Joseph\bibnamedelima V},
+           giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93cd8f6776c581da46cd571b35c2ea0f}{%
+           family={Hern},
+           familyi={H\bibinitperiod},
+           given={Stephen\bibnamedelima C},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=286d8d8e195a4a570bdcb747cafd8b14}{%
+           family={Engelmann},
+           familyi={E\bibinitperiod},
+           given={William\bibnamedelima H},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{079e055d7e0b2b08d09a8c0a5f47adfc}
+      \strng{fullhash}{b56b294451aafa0cffe8aff6b7703481}
+      \strng{bibnamehash}{b56b294451aafa0cffe8aff6b7703481}
+      \strng{authorbibnamehash}{b56b294451aafa0cffe8aff6b7703481}
+      \strng{authornamehash}{079e055d7e0b2b08d09a8c0a5f47adfc}
+      \strng{authorfullhash}{b56b294451aafa0cffe8aff6b7703481}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Because human activities impact the timing, location, and degree of pollutant exposure, they play a key role in explaining exposure variation. This fact has motivated the collection of activity pattern data for their specific use in exposure assessments. The largest of these recent efforts is the National Human Activity Pattern Survey ( {NHAPS} ), a 2 - year probability - based telephone survey ( n = 9386 ) of exposure - related human activities in the United States ( U.S. ) sponsored by the U.S. Environmental Protection Agency ( {EPA} ). The primary purpose of {NHAPS} was to provide comprehensive and current exposure information over broad geographical and temporal scales, particularly for use in probabilistic population exposure models. {NHAPS} was conducted on a virtually daily basis from late September 1992 through September 1994 by the University of Maryland's Survey Research Center using a computer - assisted telephone interview instrument ( {CATI} ) to collect 24 - h retrospective diaries and answers to a number of personal and exposure - related questions from each respondent. The resulting diary records contain beginning and ending times for each distinct combination of location and activity occurring on the diary day ( i.e., each microenvironment ). Between 340 and 1713 respondents of all ages were interviewed in each of the 10 {EPA} regions across the 48 contiguous states. Interviews were completed in 63\% of the households contacted. {NHAPS} respondents reported spending an average of 87\% of their time in enclosed buildings and about 6\% of their time in enclosed vehicles. These proportions are fairly constant across the various regions of the U.S. and Canada and for the California population between the late 1980s, when the California Air Resources Board ( {CARB} ) sponsored a state - wide activity pattern study, and the mid - 1990s, when {NHAPS} was conducted. However, the number of people exposed to environmental tobacco smoke ( {ETS} ) in California seems to have decreased over the same time period, where exposure is determined by the reported time spent with a smoker. In both California and the entire nation, the most time spent exposed to {ETS} was reported to take place in residential locations. Journal of Exposure Analysis and Environmental Epidemiology ( 2001 ) 11, 231 ± 252.}
+      \field{day}{1}
+      \field{issn}{1559-0631, 1559-064X}
+      \field{journaltitle}{Journal of Exposure Science \& Environmental Epidemiology}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{3}
+      \field{shortjournal}{J Expo Sci Environ Epidemiol}
+      \field{shorttitle}{The National Human Activity Pattern Survey ({NHAPS})}
+      \field{title}{The National Human Activity Pattern Survey ({NHAPS}): a resource for assessing exposure to environmental pollutants}
+      \field{urlday}{5}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{volume}{11}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{231\bibrangedash 252}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1038/sj.jea.7500165
+      \endverb
+      \verb{file}
+      \verb Klepeis et al. - 2001 - The National Human Activity Pattern Survey (NHAPS).pdf:C\:\\Users\\MICKO\\Zotero\\storage\\9AEVUIDG\\Klepeis et al. - 2001 - The National Human Activity Pattern Survey (NHAPS).pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/7500165
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/7500165
+      \endverb
+    \endentry
+    \entry{la_cour-harbo_quantifying_2019}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=85e131d05b260a8fccba6291fbc34f28}{%
+           family={Cour-Harbo},
+           familyi={C\bibinithyphendelim H\bibinitperiod},
+           given={Anders},
+           giveni={A\bibinitperiod},
+           givenun=0,
+           prefix={la},
+           prefixi={l\bibinitperiod}}}%
+      }
+      \strng{namehash}{85e131d05b260a8fccba6291fbc34f28}
+      \strng{fullhash}{85e131d05b260a8fccba6291fbc34f28}
+      \strng{bibnamehash}{85e131d05b260a8fccba6291fbc34f28}
+      \strng{authorbibnamehash}{85e131d05b260a8fccba6291fbc34f28}
+      \strng{authornamehash}{85e131d05b260a8fccba6291fbc34f28}
+      \strng{authorfullhash}{85e131d05b260a8fccba6291fbc34f28}
+      \field{sortinit}{l}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{One of the major challenges of conducting operations of unmanned aircraft, especially operations beyond visual line-ofsight ({BVLOS}), is to make a realistic and sufficiently detailed risk assessment. An important part of such an assessment is to identify the risk of fatalities, preferably in a quantitative way since this allows for comparison with manned aviation to determine whether an equivalent level of safety is achievable. This work presents a method for quantifying the probability of fatalities resulting from an uncontrolled descent of an unmanned aircraft conducting a {BVLOS} flight. The method is based on a standard stochastic model, and employs a parameterized high fidelity ground impact distribution model that accounts for both aircraft specifications, parameter uncertainties, and wind. The method also samples the flight path to create an almost continuous quantification of the risk as a function of mission flight time. The methodology is exemplified with a 180 km flight in Danish airspace with a Penguin C aircraft.}
+      \field{issn}{0921-0296, 1573-0409}
+      \field{journaltitle}{Journal of Intelligent \& Robotic Systems}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{1}
+      \field{shortjournal}{J Intell Robot Syst}
+      \field{title}{Quantifying Risk of Ground Impact Fatalities for Small Unmanned Aircraft}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{93}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{367\bibrangedash 384}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/s10846-018-0853-1
+      \endverb
+      \verb{file}
+      \verb la Cour-Harbo - 2019 - Quantifying Risk of Ground Impact Fatalities for S.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\L9NJ9Y6J\\la Cour-Harbo - 2019 - Quantifying Risk of Ground Impact Fatalities for S.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s10846-018-0853-1
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s10846-018-0853-1
+      \endverb
+    \endentry
+    \entry{magister_small_2010}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=615af90832a7b3f4da98b9d97285f2c4}{%
+           family={Magister},
+           familyi={M\bibinitperiod},
+           given={Tone},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{615af90832a7b3f4da98b9d97285f2c4}
+      \strng{fullhash}{615af90832a7b3f4da98b9d97285f2c4}
+      \strng{bibnamehash}{615af90832a7b3f4da98b9d97285f2c4}
+      \strng{authorbibnamehash}{615af90832a7b3f4da98b9d97285f2c4}
+      \strng{authornamehash}{615af90832a7b3f4da98b9d97285f2c4}
+      \strng{authorfullhash}{615af90832a7b3f4da98b9d97285f2c4}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Operational restrictions are imposed upon small unmanned aircraft systems weighing up to 15kg, denying them access to the airspace over populated areas because of, for one reason, the dearth of reliable data defining the complex risks associated. Injury biomechanics resulting from blunt ballistic impact is used for small unmanned aircraft system injury potential assessment. Small unmanned aircraft injury potential correlates to the impact kinetic energy and characteristic diameter of its part that contacts the body. The injury severity of small unmanned aircraft can be less than serious in impacts at minimal airspeed that contact the body with their sufficiently blunt part; however, they are capable of inflicting lethal injury, even when impacting at minimal airspeed, if they impact the body with their sharper part. Consequently, for injury minimization the small unmanned aircraft basic operational and physical design criteria are described regarding impact velocity and attitude upon impact, along with the shape of the airframe part that contacts the body.}
+      \field{day}{1}
+      \field{issn}{0925-7535}
+      \field{journaltitle}{Safety Science}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{10}
+      \field{shortjournal}{Safety Science}
+      \field{title}{The small unmanned aircraft blunt criterion based injury potential estimation}
+      \field{urlday}{12}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{volume}{48}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1313\bibrangedash 1320}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.ssci.2010.04.012
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Snapshot:C\:\\Users\\MICKO\\Zotero\\storage\\VZJ7V28G\\S0925753510001128.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0925753510001128
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0925753510001128
+      \endverb
+      \keyw{Blunt ballistic impact,Design specifications,Injury potential,Small unmanned aircraft}
+    \endentry
+    \entry{melnyk_third-party_2014}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=b8ef8a891af2100730aed70c02cb0784}{%
+           family={Melnyk},
+           familyi={M\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=79868151aa67c6513da6051b8a320bfe}{%
+           family={Schrage},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c28f67ebc4c8a5da228d317b3b64aaca}{%
+           family={Volovoi},
+           familyi={V\bibinitperiod},
+           given={Vitali},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9120d7c078d1f6663875e6ccd660f507}{%
+           family={Jimenez},
+           familyi={J\bibinitperiod},
+           given={Hernando},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{31f05f3bed5cf7064ebcedb27dfe542e}
+      \strng{fullhash}{ee28b3acf769aee1feae384acf84b5da}
+      \strng{bibnamehash}{ee28b3acf769aee1feae384acf84b5da}
+      \strng{authorbibnamehash}{ee28b3acf769aee1feae384acf84b5da}
+      \strng{authornamehash}{31f05f3bed5cf7064ebcedb27dfe542e}
+      \strng{authorfullhash}{ee28b3acf769aee1feae384acf84b5da}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Unmanned Aircraft System ({UAS}) integration into the National Airspace System ({NAS}) is an important goal of many members of the Aerospace community including stakeholders such as the military, law enforcement and potential civil users of {UAS}. However, integration efforts have remained relatively limited due to safety concerns. Due to the nature of {UAS}, safety predictions must look beyond the system itself and take the operating environment into account. A framework that can link {UAS} reliability and physical characteristics to the effects on the bystander population is required. This study proposes using a Target Level of Safety approach and an event tree format, populated with data from existing studies that share characteristics of {UAS} crashes to enable casualty prediction for {UAS} operations.}
+      \field{issn}{09518320}
+      \field{journaltitle}{Reliability Engineering \& System Safety}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{shortjournal}{Reliability Engineering \& System Safety}
+      \field{title}{A third-party casualty risk model for unmanned aircraft system operations}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{124}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{105\bibrangedash 116}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.ress.2013.11.016
+      \endverb
+      \verb{file}
+      \verb Melnyk et al. - 2014 - A third-party casualty risk model for unmanned air.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\WS9YGAH7\\Melnyk et al. - 2014 - A third-party casualty risk model for unmanned air.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S095183201300313X
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S095183201300313X
+      \endverb
+    \endentry
+    \entry{noauthor_openstreetmap_nodate}{online}{}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{title}{{OpenStreetMap} Wiki}
+      \field{urlday}{21}
+      \field{urlmonth}{9}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb OpenStreetMap Wiki:C\:\\Users\\MICKO\\Zotero\\storage\\E6N53RY4\\Main_Page.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://wiki.openstreetmap.org/wiki/Main_Page
+      \endverb
+      \verb{url}
+      \verb https://wiki.openstreetmap.org/wiki/Main_Page
+      \endverb
+    \endentry
+    \entry{pat-cornell_uncertainties_nodate}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c3a955388c9892789c4da05dff963fde}{%
+           family={Pat-Cornell},
+           familyi={P\bibinithyphendelim C\bibinitperiod},
+           given={M\bibnamedelima Elisabeth},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c3a955388c9892789c4da05dff963fde}
+      \strng{fullhash}{c3a955388c9892789c4da05dff963fde}
+      \strng{bibnamehash}{c3a955388c9892789c4da05dff963fde}
+      \strng{authorbibnamehash}{c3a955388c9892789c4da05dff963fde}
+      \strng{authornamehash}{c3a955388c9892789c4da05dff963fde}
+      \strng{authorfullhash}{c3a955388c9892789c4da05dff963fde}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Uncertainties in risk analysis: Six levels of treatment}
+      \verb{file}
+      \verb Pat-Cornell - Uncertainties in risk analysis Six levels of trea.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\2WWPA3KS\\Pat-Cornell - Uncertainties in risk analysis Six levels of trea.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{primatesta_risk-aware_2019}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b491b415a1db6770c2807b7760589c28}{%
+           family={Primatesta},
+           familyi={P\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb05c3874a6427a24064a0154ce69933}{%
+           family={Guglieri},
+           familyi={G\bibinitperiod},
+           given={Giorgio},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2eb264a947e6b4be945ee0d7691eff5f}{%
+           family={Rizzo},
+           familyi={R\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b8fa178f5abf76af0cbede0db73c2e7b}
+      \strng{fullhash}{a3f7e257820c52fdf756563bf5cc0d96}
+      \strng{bibnamehash}{a3f7e257820c52fdf756563bf5cc0d96}
+      \strng{authorbibnamehash}{a3f7e257820c52fdf756563bf5cc0d96}
+      \strng{authornamehash}{b8fa178f5abf76af0cbede0db73c2e7b}
+      \strng{authorfullhash}{a3f7e257820c52fdf756563bf5cc0d96}
+      \field{extraname}{1}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a risk-aware path planning strategy for Unmanned Aerial Vehicles in urban environments. The aim is to compute an effective path that minimizes the risk to the population, thus enforcing safety of flight operations over inhabited areas. To quantify the risk, the proposed approach uses a risk-map that associates discretized locations of the space with a suitable risk-cost. Path planning is performed in two phases: first, a tentative path is computed off-line on the basis on the information related to static risk factors; then, using a dynamic risk-map, an on-line path planning adjusts and adapts the offline path to dynamically arising conditions. Off-line path planning is performed using {riskA}*, an ad-hoc variant of the A* algorithm, which aims at minimizing the risk. While off-line path planning has no stringent time constraints for its execution, this is not the case for the on-line phase, where a fast response constitutes a critical design parameter. We propose a novel algorithm called Borderland, which uses the check and repair approach to rapidly identify and adjust only the portion of path involved by the inception of relevant dynamical changes in the risk factor. After the path planning, a smoothing process is performed using Dubins curves. Simulation results confirm the suitability of the proposed approach.}
+      \field{issn}{0921-0296, 1573-0409}
+      \field{journaltitle}{Journal of Intelligent \& Robotic Systems}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{2}
+      \field{shortjournal}{J Intell Robot Syst}
+      \field{title}{A Risk-Aware Path Planning Strategy for {UAVs} in Urban Environments}
+      \field{urlday}{5}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{volume}{95}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{629\bibrangedash 643}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/s10846-018-0924-3
+      \endverb
+      \verb{file}
+      \verb Primatesta et al. - 2019 - A Risk-Aware Path Planning Strategy for UAVs in Ur.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\F2EJVFLP\\Primatesta et al. - 2019 - A Risk-Aware Path Planning Strategy for UAVs in Ur.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s10846-018-0924-3
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s10846-018-0924-3
+      \endverb
+    \endentry
+    \entry{primatesta_ground_2020}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b491b415a1db6770c2807b7760589c28}{%
+           family={Primatesta},
+           familyi={P\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2eb264a947e6b4be945ee0d7691eff5f}{%
+           family={Rizzo},
+           familyi={R\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85e131d05b260a8fccba6291fbc34f28}{%
+           family={Cour-Harbo},
+           familyi={C\bibinithyphendelim H\bibinitperiod},
+           given={Anders},
+           giveni={A\bibinitperiod},
+           givenun=0,
+           prefix={la},
+           prefixi={l\bibinitperiod}}}%
+      }
+      \strng{namehash}{b8fa178f5abf76af0cbede0db73c2e7b}
+      \strng{fullhash}{6d25feb53e1af666af0067c3f30a0f17}
+      \strng{bibnamehash}{6d25feb53e1af666af0067c3f30a0f17}
+      \strng{authorbibnamehash}{6d25feb53e1af666af0067c3f30a0f17}
+      \strng{authornamehash}{b8fa178f5abf76af0cbede0db73c2e7b}
+      \strng{authorfullhash}{6d25feb53e1af666af0067c3f30a0f17}
+      \field{extraname}{2}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The large diversity of unmanned aircraft requires a suitable and proper risk assessment. In this paper, we propose the use of risk maps to define the risk associated to accidents with unmanned aircraft. It is a two-dimensional location-based map that quantifies the risk to the population on ground of flight operations over a specified area. The risk map is generated through a probabilistic approach and combines several layers, including population density, sheltering factor, no-fly zones, and obstacles. Each element of the risk map has associated a risk value that quantifies the risk of flying over a specific location. Risk values are defined by a risk assessment process using different uncontrolled descent events, drone parameters, environmental characteristics, as well as uncertainties on parameters. The risk map is able to quantify the risk of large areas, such as urban environments, and allows for easy identification of high and low-risk locations. The map is a tool for informed decision making, and our results report some examples of risk map with different aircraft in a realistic urban environment.}
+      \field{issn}{0921-0296, 1573-0409}
+      \field{journaltitle}{Journal of Intelligent \& Robotic Systems}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{3}
+      \field{shortjournal}{J Intell Robot Syst}
+      \field{title}{Ground Risk Map for Unmanned Aircraft in Urban Environments}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{97}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{489\bibrangedash 509}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1007/s10846-019-01015-z
+      \endverb
+      \verb{file}
+      \verb Primatesta et al. - 2020 - Ground Risk Map for Unmanned Aircraft in Urban Env.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\JM4TQZYW\\Primatesta et al. - 2020 - Ground Risk Map for Unmanned Aircraft in Urban Env.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s10846-019-01015-z
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s10846-019-01015-z
+      \endverb
+    \endentry
+    \entry{shelley_model_2016}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f7a12783bf07926f2fd3b1fe67585518}{%
+           family={Shelley},
+           familyi={S\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f7a12783bf07926f2fd3b1fe67585518}
+      \strng{fullhash}{f7a12783bf07926f2fd3b1fe67585518}
+      \strng{bibnamehash}{f7a12783bf07926f2fd3b1fe67585518}
+      \strng{authorbibnamehash}{f7a12783bf07926f2fd3b1fe67585518}
+      \strng{authornamehash}{f7a12783bf07926f2fd3b1fe67585518}
+      \strng{authorfullhash}{f7a12783bf07926f2fd3b1fe67585518}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{23746793}
+      \field{journaltitle}{International Journal of Aviation, Aeronautics, and Aerospace}
+      \field{langid}{english}
+      \field{shortjournal}{{IJAAA}}
+      \field{shorttitle}{A Model of Human Harm from a Falling Unmanned Aircraft}
+      \field{title}{A Model of Human Harm from a Falling Unmanned Aircraft: Implications for {UAS} Regulation}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.15394/ijaaa.2016.1120
+      \endverb
+      \verb{file}
+      \verb Shelley - 2016 - A Model of Human Harm from a Falling Unmanned Airc.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\M3T8MBUC\\Shelley - 2016 - A Model of Human Harm from a Falling Unmanned Airc.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://commons.erau.edu/ijaaa/vol3/iss3/1/
+      \endverb
+      \verb{url}
+      \verb http://commons.erau.edu/ijaaa/vol3/iss3/1/
+      \endverb
+    \endentry
+    \entry{small_aviation_2009}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0b18f3a2c18c7df386cfd50ab26f8519}{%
+           family={Small},
+           familyi={S\bibinitperiod},
+           given={U.\bibnamedelimi A.\bibnamedelimi S.},
+           giveni={U\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0b18f3a2c18c7df386cfd50ab26f8519}
+      \strng{fullhash}{0b18f3a2c18c7df386cfd50ab26f8519}
+      \strng{bibnamehash}{0b18f3a2c18c7df386cfd50ab26f8519}
+      \strng{authorbibnamehash}{0b18f3a2c18c7df386cfd50ab26f8519}
+      \strng{authornamehash}{0b18f3a2c18c7df386cfd50ab26f8519}
+      \strng{authorfullhash}{0b18f3a2c18c7df386cfd50ab26f8519}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Comprehensive Set of Recommendations for {sUAS} Regulatory Development}
+      \field{title}{Aviation Rulemaking Committee ({ARC})}
+      \field{volume}{1}
+      \field{year}{2009}
+      \field{dateera}{ce}
+    \endentry
+    \entry{noauthor_unmanned_2015}{article}{}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Unmanned Aircraft Systems ({UAS}) Registration Task Force ({RTF}) Aviation Rulemaking Committee ({ARC})}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb 2015 - Unmanned Aircraft Systems (UAS) Registration Task .pdf:C\:\\Users\\MICKO\\Zotero\\storage\\CTBGTFLS\\2015 - Unmanned Aircraft Systems (UAS) Registration Task .pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{washington_review_2017}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=bdc5abf931a195d8f0aaa4283f12b870}{%
+           family={Washington},
+           familyi={W\bibinitperiod},
+           given={Achim},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=35d515759e9d02b5771098e5584d2a2a}{%
+           family={Clothier},
+           familyi={C\bibinitperiod},
+           given={Reece\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f2e592d3905272f0aaa04c5382ff690f}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Jose},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5386a48608f09bf7c8134aa62c5540a1}
+      \strng{fullhash}{2c0fe52ae9e2f654de6d662f47cf811d}
+      \strng{bibnamehash}{2c0fe52ae9e2f654de6d662f47cf811d}
+      \strng{authorbibnamehash}{2c0fe52ae9e2f654de6d662f47cf811d}
+      \strng{authornamehash}{5386a48608f09bf7c8134aa62c5540a1}
+      \strng{authorfullhash}{2c0fe52ae9e2f654de6d662f47cf811d}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{There is much effort being directed towards the development of safety regulations for unmanned aircraft systems ({UAS}). National airworthiness authorities have advocated the adoption of a risk-based approach, whereby regulations are driven by the outcomes of a systematic process to assess and manage identiﬁed safety risks. Subsequently, models characterising the primary hazards associated with {UAS} operations have now become critical to the development of regulations and in turn, to the future of the industry. Key to the development of airworthiness regulations for {UAS} is a comprehensive understanding of the risks {UAS} operations pose to people and property on the ground. A comprehensive review of the literature identiﬁed 33 different models (and component sub models) used to estimate ground risk posed by {UAS}. These models comprise failure, impact location, recovery, stress, exposure, incident stress and harm sub-models. The underlying assumptions and treatment of uncertainties in each of these sub-models differ signiﬁcantly between models, which can have a signiﬁcant impact on the development of regulations. This paper reviews the state-of-the-art in research into {UAS} ground risk modelling, discusses how the various sub-models relate to the different components of the regulation, and explores how model-uncertainties potentially impact the development of regulations for {UAS}.}
+      \field{issn}{03760421}
+      \field{journaltitle}{Progress in Aerospace Sciences}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{shortjournal}{Progress in Aerospace Sciences}
+      \field{title}{A review of unmanned aircraft system ground risk models}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{95}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{24\bibrangedash 44}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1016/j.paerosci.2017.10.001
+      \endverb
+      \verb{file}
+      \verb Washington et al. - 2017 - A review of unmanned aircraft system ground risk m.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\C4WW3SHK\\Washington et al. - 2017 - A review of unmanned aircraft system ground risk m.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0376042117301392
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0376042117301392
+      \endverb
+    \endentry
+    \entry{weibel_safety_nodate}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7c1f5ee387dc31bba0454856ac854c68}{%
+           family={Weibel},
+           familyi={W\bibinitperiod},
+           given={Roland\bibnamedelima E},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=33411ed1daff7ae4986ecdc675a5c0e9}{%
+           family={Hansman},
+           familyi={H\bibinitperiod},
+           given={R\bibnamedelima John},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{14fd952841131bce7061406c020d385b}
+      \strng{fullhash}{14fd952841131bce7061406c020d385b}
+      \strng{bibnamehash}{14fd952841131bce7061406c020d385b}
+      \strng{authorbibnamehash}{14fd952841131bce7061406c020d385b}
+      \strng{authornamehash}{14fd952841131bce7061406c020d385b}
+      \strng{authorfullhash}{14fd952841131bce7061406c020d385b}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Safety Considerations for Operation of Different Classes of {UAVs} in the {NAS}}
+      \verb{file}
+      \verb Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\C9Y4TT3V\\Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:application/pdf;Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\93RWHAHX\\Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:application/pdf;Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\5E4DZ724\\Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{wu_development_2012}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a96c2776202a07196eea910de588e7e0}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=35d515759e9d02b5771098e5584d2a2a}{%
+           family={Clothier},
+           familyi={C\bibinitperiod},
+           given={Reece\bibnamedelima A},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{08a54f299d59bcc05ac7b40152f84be4}
+      \strng{fullhash}{08a54f299d59bcc05ac7b40152f84be4}
+      \strng{bibnamehash}{08a54f299d59bcc05ac7b40152f84be4}
+      \strng{authorbibnamehash}{08a54f299d59bcc05ac7b40152f84be4}
+      \strng{authornamehash}{08a54f299d59bcc05ac7b40152f84be4}
+      \strng{authorfullhash}{08a54f299d59bcc05ac7b40152f84be4}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{With the emergence of Unmanned Aircraft Systems ({UAS}) there is a growing need for safety standards and regulatory frameworks to manage the risks associated with their operations. The primary driver for airworthiness regulations (i.e., those governing the design, manufacture, maintenance and operation of {UAS}) are the risks presented to people in the regions overflown by the aircraft. Models characterising the nature of these risks are needed to inform the development of airworthiness regulations. The output from these models should include measures of the collective, individual and societal risk. A brief review of these measures is provided. Based on the review, it was determined that the model of the operation of an {UAS} over inhabited areas must be capable of describing the distribution of possible impact locations, given a failure at a particular point in the flight plan. Existing models either do not take the impact distribution into consideration, or propose complex and computationally expensive methods for its calculation. A computationally efficient approach for estimating the boundary (and in turn area) of the impact distribution for fixed wing unmanned aircraft is proposed. A series of geometric templates that approximate the impact distributions are derived using an empirical analysis of the results obtained from a 6Degree of Freedom (6DoF) simulation. The impact distributions can be aggregated to provide impact footprint distributions for a range of generic phases of flight and missions. The maximum impact footprint areas obtained from the geometric template are shown to have a relative error of typically less than 1\% compared to the areas calculated using the computationally more expensive 6DoF simulation. Computation times for the geometric models are on the order of one second or less, using a standard desktop computer. Future work includes characterising the distribution of impact locations within the footprint boundaries.}
+      \field{langid}{english}
+      \field{title}{The Development of Ground Impact Models for the Analysis of the Risks Associated with Unmanned Aircraft Operations Over Inhabited Areas}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Wu and Clothier - 2012 - The Development of Ground Impact Models for the An.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\TI6FXYDP\\Wu and Clothier - 2012 - The Development of Ground Impact Models for the An.pdf:application/pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

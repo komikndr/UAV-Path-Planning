@@ -152,7 +152,7 @@
         %\rule{5cm}{0.5pt}                   & \rule{5cm}{0.5pt}\\
         %\end{tabular}
     \end{center}
-    %-----------------------------------TABLE OF CONTENT--------
+    %-----------------------------------:TABLE OF CONTENT--------
     \tableofcontents
     \listoffigures
     \listoftables
@@ -160,9 +160,36 @@
     \newpage
     \chapter*{LIST OF ACRONYMS}
     \addcontentsline{toc}{chapter}{List of Abbreviations}
-    \begin{acronym}[UAV]
-        \acro{UAV}{\makebox[3cm][l]{Unmanned Aerial Vehicle}}
-        \acro{GPS}{\makebox[3cm][l]{Global Positioning System}}
+    \begin{acronym}[geoJSON]
+        \acro{A*}{A-star}
+        \acro{AIS}{Abbreviated Injury Scale}
+        \acro{API}{Application Programming Interface}
+        \acro{BBN}{Bayesian Belief Networks}
+        \acro{BC}{Blunt Criteria}
+        \acro{CFIT}{Controlled Flight Into Terrain}
+        \acro{CRS}{Coordinate Reference System}
+        \acro{DOJC}{Dropped or Jettisoned Component}
+        \acro{DoD}{United States Department of Defense}
+        \acro{ETA}{Event Tree Analysis}
+        \acro{FAA}{Federal Aviation Administration}
+        \acro{FMECA}{Failure Mode, Effects and Criticality Analysis}
+        \acro{FTA}{Fault Tree Analysis}
+        \acro{GHSL}{Global Human Settlement Layer}
+        \acro{GIS}{Geographic Information System}
+        \acro{GPS}{Global Positioning System}
+        \acro{GRM}{Ground Risk Model}
+        \acro{geoJSON}{Geographic JavaScript Object Notation}
+        \acro{ICAO}{International Civil Aviation Organization}
+        \acro{KE}{Kinetic Energy}
+        \acro{LOC}{Lost of Control}
+        \acro{MTBF}{Mean Time Between Failure}
+        \acro{OSM}{OpenStreetMap}
+        \acro{PDF}{Probability Density Function}
+        \acro{RRT}{Rapidly Exploring Random Tree}
+        \acro{UDS}{Unpremediated Descent Scenario}
+        \acro{UAS}{Unmanned Aerial System}
+        \acro{UAV}{Unmanned Aerial Vehicle}
+        \acro{UPX}{UAV Pathfinding eXtension}
     \end{acronym}
     \newpage
     
@@ -203,39 +230,38 @@
 
 \chapter{Introduction}
     \section{Introduction}
-        \ac*{UAV} also known as a drone, is getting more recognition in recent years. The
-	    booming of UAVs is caused by the component needed to manufacture the UAV, especially microcontrollers
+        \ac{UAV} also known as a drone, is getting more recognition in recent years. The
+	    booming of UAV is caused by the component needed to manufacture the UAV, especially microcontrollers
 	    getting cheaper, and smaller. Compare to previous UAV iteration, UAV nowadays offers much wider capability,
 	    such as enhanced range, the ability to mount hardware, and camera for example, and of course easily
 	    deployable without requiring many technicians to maintain them.
 
-		    UAVs are often being used in area where it is dangerous, impractical, and expensive for human. The
-	    affordable entry point of using a UAV incentivized emerging industries to exploit the capability that UAVs
-	    offer. Not only that but the existing industry is also getting interested to use UAVs as an augmentation to
+		    UAV are often being used in area where it is dangerous, impractical, and expensive for human. The
+	    affordable entry point of using a UAV incentivized emerging industries to exploit the capability that UAV
+	    offer. Not only that but the existing industry is also getting interested to use UAV as an augmentation to
 	    its existing operational infrastructure. And that industries are, logistics companies, agricultural
 	    companies, multimedia companies, and surveyors to name a few
 
-            Although it provides a great solution, UAVs have the potential to pose risks to people, property, and other
-        aircraft. Many countries have regulations in place that require UAVs to be operated in a safe and
-        responsible manner. Risk-based UAVs path planner can help to ensure that UAVs are operated safely and
+            Although it provides a great solution, UAV have the potential to pose risks to people, property, and other
+        aircraft. Many countries have regulations in place that require UAV to be operated in a safe and
+        responsible manner. Risk-based UAV path planner can help to ensure that UAV are operated safely and
         responsibly. By considering potential risks and hazards, a risk-based approach can help to reduce the
         likelihood of accidents or incidents occurring during the flight. By considering potential risks and
         hazards, this approach can help to reduce the likelihood of accidents or incidents occurring during the
 
-            Other than its impacts towards public, UAVs can also potentially impact the environment, for example by
+            Other than its impacts towards public, UAV can also potentially impact the environment, for example by
         disturbing wildlife or damaging natural habitats. UAV path planner can help to minimize these impacts by
-        establishing rules around the use of UAVs in sensitive areas.
+        establishing rules around the use of UAV in sensitive areas.
     \section{Research purpose}
         For ensuring the safety and efficiency of UAV operations, this research aims to develop a
         UAV trajectory planning based on the risk assessment on the ground.
     \section{Research scope}
         \begin{myitemize}   
-            \item UAVs model that being used in this research are fixed wing and multirotor.
+            \item UAV model that being used in this research are fixed wing and multirotor.
             \item This research only use point mass representation with generalize aerodynamic equation.
-            \item Based on the point above, UAVs failure is assumed to be only power failure, without damage to its shape.
+            \item Based on the point above, UAV failure is assumed to be only power failure, without damage to its shape.
             \item Risk assessed in this paper are combination of human exposed area and area that can cause major accident such as airfields, and power station.
             \item This research use Jakarta, Indonesia as its geographic location, since it has varying building density, rivers, and randoml patch of lands.
-            \item A* and Djikstra pathfinding algorithm are being used for this research.
         \end{myitemize}
         
     \section{Research problem}
@@ -247,8 +273,8 @@
         
     \section{Significance of the study}
         UAV Pathfinder application could be one of the toolkit for UAV operator to plan their safe operation of
-        flying their UAVs, reducing inccident and accident. Developer and researcher could use the library itself as an
-        extension or starting point in the development of the UAS Traffic Management application.
+        flying their UAV, reducing inccident and accident. Developer and researcher could use the library itself as an
+        extension or starting point in the development of the \ac{UAS} Traffic Management application.
         
     \section{Research question}
         \begin{myitemize}
@@ -261,12 +287,12 @@
 \chapter{Literature Review}
     \section{Ground risk model in UAV operation}
         A ground risk model is a type of assessment tool that is used to evaluate the potential risks associated with
-        the operation of UAVs. This model takes into account a variety of factors, including the physical environment in
+        the operation of UAV. This model takes into account a variety of factors, including the physical environment in
         which the UAV will be operating, the capabilities, and the limitations of the UAV itself. The goal of a ground
         risk model is to identify and prioritize potential risks in order to produce inform decision-making and risk
         management strategies for UAV operations.
 
-            There are a number of different approaches that have been taken to develop the ground risk models for UAVs.
+            There are a number of different approaches that have been taken to develop the ground risk models for UAV.
         One approach is the use of probabilistic risk assessment methods, which involve the quantification of risks
         using probability and consequence metrics.\cite{washington_review_2017} compiled many methods to developed
         subcomponent of risk analayis in georeference approach. Another approach is the use of scenario-based methods,
@@ -279,7 +305,7 @@
 
             Overall, the use of ground risk models has the potential to significantly improve the safety and
         effectiveness of UAV operations. By identifying and prioritizing potential risks, ground risk models can help
-        operators make informed decisions about how to mitigate or manage those risks. As the use of UAVs continues to
+        operators make informed decisions about how to mitigate or manage those risks. As the use of UAV continues to
         grow and expand into new applications, the importance of ground risk modeling is likely to increase as well.
 
     \section{Components of ground risk model}
@@ -289,7 +315,7 @@
             \caption{Components of ground risk model}
         \end{figure}
 
-        A ground risk model for unmanned aerial vehicles (UAVs) typically consists of several subcomponents that are
+        A ground risk model for unmanned aerial vehicles (UAV) typically consists of several subcomponents that are
         used to assess the various factors that can impact the safety and effectiveness of UAV operations. However, this
         approach is not new, since many earlier researches already follow a guideline to model these components. \cite{breunig_modeling_nodate}
         provide general guideline for the model, while \cite{washington_review_2017} provide a detailed description for
@@ -311,13 +337,12 @@
 
         \subsection{Failure model}
             A failure model is the first subcomponent in the ground risk model that evaluates the potential for failures
-            in UAVs. This potentially leads to a crash impact in a given variety of factors that can contribute to UAV
+            in UAV. This potentially leads to a crash impact in a given variety of factors that can contribute to UAV
             failures, including design and manufacturing defects, operational errors, and environmental factors.
 
-                The failure model can help to understand on how the UAVs would behave after experiencing the failure,
-            \cite{washington_review_2017} described four distinct events following the failure. Which are Unpremediated
-            descent scenario (UDS), Lost of control (LOC), controlled flight into terrain (CFIT), dropped or jettisoned
-            component(DOJC).
+                The failure model can help to understand on how the UAV would behave after experiencing the failure,
+            \cite{washington_review_2017} described four distinct events following the failure. Which are \ac{UDS}, 
+            \ac{LOC}, \ac{CFIT}, and \ac{DOJC}.
 
             \begin{equation}
                 MTBF = \frac{\rho \pi b^2}{2.78} = k(\rho \pi b^2)
@@ -325,16 +350,15 @@
 
                 Likelihoodness of failure rate described on failure model is divided into two type of formulation. The
             first one is based on historical data and the other one is based on the expert opinion. Data driven
-            historical data are using previous UAVs crash, and its UAVs specification as a starting point for data
-            interpolation and extrapolation for calculating mean time between failure (MTBF) \cite{breunig_modeling_nodate} and \cite{weibel_safety_nodate} for example.
+            historical data are using previous UAV crash, and its UAV specification as a starting point for data
+            interpolation and extrapolation for calculating \ac{MTBF} \cite{breunig_modeling_nodate} and \cite{weibel_safety_nodate} for example.
             However, since UAV industries is in its infancy and an added fact with many variants of UAV already exist in
             short period of time, resulting in data reliability issues. Therefore, it may be more appropriate for UAS to
             utilize a functional approach to calculate the system failure rate. Examples of functional and structural
             decompositions of UAS that may be used to create such a model are given \cite{burke_system-level_2011}.
 
-                To assess the system's dependability, other methods can be utilized, such as Fault Tree Analysis (FTA),
-            Event Tree Analysis (ETA), and Failure Mode, Effects and Criticality Analysis (FMECA)
-            \cite{barr_preliminary_2017}. Bayesian Belief Networks (BBN) \cite{ancel_real-time_2017} have also been used
+                To assess the system's dependability, other methods can be utilized, such as \ac{FTA},
+            \ac{ETA} , and \ac{FMECA} \cite{barr_preliminary_2017}. \ac{BBN} \cite{ancel_real-time_2017} have also been used
             more recently in this regard. \cite{ancel_real-time_2017} provide the most detailed failure risk model
             incorporating real-time monitoring of UAV component status to determine the likelihoodness of failure.
 
@@ -354,7 +378,7 @@
 
             The hypothetical model uses the aerodynamic model to simulate the behavior of the impact location. This
             model can be further separated into a ballistic descent, gliding descent, and planform model. The gliding
-            model such as in assumes the UAVs will continue descending based on their glide profile. The planform model
+            model such as in assumes the UAV will continue descending based on their glide profile. The planform model
             uses the aircraft wings and its layout to calculate the descent trajectory. And the ballistic descent
             calculated the trajectory based on the ballistic profile. Most research use gliding and ballistic descent
             to calculate the impact model.
@@ -363,11 +387,11 @@
                 A_{exp}(\theta) = \pi(r_p + r_{uav})^2 sin(\theta) + (r_p + r_{uav})(h_p + r_{uav})cos(\theta)
             \end{equation}
 
-            \cite{primatesta_ground_2020} added parachute descent, an event where UAVs deployed its parachute when descending. And fly away
+            \cite{primatesta_ground_2020} added parachute descent, an event where UAV deployed its parachute when descending. And fly away
             descent, where the pilot lost control of the UAV, while the UAV automatically maintains a stable cruise.
 
             \cite{wu_development_2012} use a dynamic model assessed for various failure conditions to determine the maximum boundary (and in
-            turn area) of the impact distribution for fixed-wing UAVs. However, like most models, it assumes a uniform
+            turn area) of the impact distribution for fixed-wing UAV. However, like most models, it assumes a uniform
             impact distribution within these boundaries.
 
             While an empirical model using historical aircraft events is used as a starting point by interpolation and
@@ -375,7 +399,7 @@
             on the study conducted by \cite{ale_assessment_2000}
 
         \subsection{Recovery model}
-            A recovery risk model for UAVs is a model used to assess the likelihood of successful recovery of a UAV to a
+            A recovery risk model for UAV is a model used to assess the likelihood of successful recovery of a UAV to a
             optimal or degraded operational state following a failure or malfunction. The model takes into account a
             variety of factors, the nature and severity of the failure, and the environment in which the recovery is
             taking place. The recovery risk model also takes into account the UAV design, capabilities and limitations.
@@ -384,7 +408,7 @@
             process.
                 
                 The type of failure, its method of failure, and the operating environment all influence the likelihood
-            of recovery. For instance, if the UAVs malfunctions and enters a lost-of-control failure state, the
+            of recovery. For instance, if the UAV malfunctions and enters a lost-of-control failure state, the
             existence of a recovery mechanism in this case, a parachute, would slow down the drop velocity and lessen
             any potentially damaging effects of the malfunction. Unfortunately many ground risk models omitted the use
             of the recovery model, with small exception such as the model provided by \cite{shelley_model_2016}, \cite{bleier_risk_2015} and \cite{primatesta_ground_2020} explore the
@@ -395,7 +419,7 @@
                 The stress model explains the unpredictability of harmful circumstances occurring at a specific time and
             place. Depending on the kind of harm being characterized as part of the risk assessment, a specific harmful
             situation is modelled. For instance, stresses may be described as kinetic energy if the outcome to be
-            calculated was human physical harm (KE). While secondary effects such as explosions and the release of
+            calculated was human physical harm modeled in \ac{KE}. While secondary effects such as explosions and the release of
             hazardous chemicals will have distinct related stress qualities that need to be modeled differently. There
             are model proposed by \cite{ball_crash_nodate} to analyze the consequences of heat radiation and explosions which often produces
             by chemical reaction. 
@@ -420,7 +444,7 @@
 
         \subsection{Exposure model}
             An exposure model is a method for determining how affected individual or property may be to dangers related
-            to the use of UAVs.
+            to the use of UAV.
 
             A uniform exposure model is the model of population exposure that is most frequently utilized. The use of
             this approach overlooks possible population clustering within a specified geographic region and, as a
@@ -444,7 +468,7 @@
         \subsection{Incident stress model}
             The incident stress model describes how much stress an individual is exposed to. However, a large number of
             the discovered ground risk models do not take event stress variance into consideration. Therefore, it is
-            presumed that the UAVs KE is entirely directed directly at the human. Although a conservative assumption,
+            presumed that the UAV KE is entirely directed directly at the human. Although a conservative assumption,
             it may cause the degree of risk to be overestimated. Not all studies adopt the sheltering model since most
             information about the material composition of shelters is generally limited to local government databases.
             limiting the range of potential general approaches to building shelter-based models.
@@ -489,8 +513,8 @@
             (measured in Joules), Energy imapct is the impact energy. A number of advancements over this standard
             equation have been presented by \cite{dalamagkidis_evaluating_2008} and \cite{shelley_model_2016} to name a few.
 
-            \cite{magister_small_2010} makes use of a blunt criteria (BC) that relates the kinetic energy on impact with the body's ability to
-            tolerate the energy on impact, which is expressed using the Abbreviated Injury Scale (AIS).
+            \cite{magister_small_2010} makes use of a \ac{BC} that relates the kinetic energy on impact with the body's ability to
+            tolerate the energy on impact, which is expressed using the \ac{AIS}.
         
     \section{Risk informed path finder}
         This study not only for generating the ground risk map for the risk assesment but also measures and finds the
@@ -507,14 +531,14 @@
         calculates the best direction based on its predefine pathway obtained through a pre-operational algorithm and
         real-time sensor data to avoid danger and risk. 
         
-        RRT, or rapidly exploring random tree, is a navigation algorithm for motion planning. It is usually employed as
+        \ac{RRT}, is a navigation algorithm for motion planning. It is usually employed as
         an approximate method for robots to traverse the real world, which is full of dynamic change in the environment.
         This RRT algorithm works by expanding the space tree, where the space, in this case, is a node. If the UAV needs
         to go from point A to D, the UAV then tries to expand the search tree to find the feasible series of nodes to
         traverse through. This RRT can be inserted into various constraints, in this case, risk, where the UAV tries to
         find the branch with the least amount of risk. 
         
-        A* algorithm is one such algorithm that works under the principle of the pre-operational algorithm. A* is a
+        \ac{A*} algorithm is one such algorithm that works under the principle of the pre-operational algorithm. A* is a
         pathfinder algorithm to find the least amount of distance to move into the final position. 
         
         A* itself is an extension of Djikstra's algorithm, where both of them use the so-called cost function \(f(x)\),
@@ -543,10 +567,10 @@
         retrieval and processing, ground risk map calculation, and generating the most optimal path using the pathfinder
         algorithm.
 
-        To collect necessary data, we are using free services provided by OSM(OpenStreetMap)\cite{noauthor_openstreetmap_nodate} to retrieve geographic
-        data, and GHSL(Global Human Settlement Layer)\cite{noauthor_global_nodate} to retrieve population density throughout the earth.
+        To collect necessary data, we are using free services provided by \ac{OSM} \cite{noauthor_openstreetmap_nodate} to retrieve geographic
+        data, and \ac{GHSL} \cite{noauthor_global_nodate} to retrieve population density throughout the earth.
 
-        The GRM is calculated using geographic and population data, and also the type of aircraft that are being used in
+        The \ac{GRM} is calculated using geographic and population data, and also the type of aircraft that are being used in
         the calculation. The result would be descent location, impact energy, and fatality probability heat map. 
         
         After we compute and discretized the GRM. We find the optimal path with the least amount of risk using
@@ -558,11 +582,11 @@
             2004 and has since grown to become one of the largest and most popular sources of geospatial data.
 
             OSM is built on the idea that anyone can contribute to the map by adding and updating data. Users can add
-            data using GPS devices, aerial imagery, or by manually tracing over satellite imagery. The data is then
+            data using \ac{GPS} devices, aerial imagery, or by manually tracing over satellite imagery. The data is then
             stored in a database and made available under an open license, allowing anyone to use and share the data.
 
             There are multiple ways to use the OSM service. To retrieve the geographic data we can send the querry to
-            Overpass API and recieve the defaulted geoJSON data. OSM also provide geocoding and reverse geocoding using
+            Overpass \ac{API} and recieve the defaulted \ac{geoJSON} data. OSM also provide geocoding and reverse geocoding using
             Nominatim API.
 
         \subsection{Population data}
@@ -579,7 +603,7 @@
             development.
 
         \subsection{Geographic Information System}
-            Geographic and population data then stored and processed by GIS(Geographic Information Systems), tools used
+            Geographic and population data then stored and processed by \ac{GIS}, tools used
             for storing, manipulating, and visualizing geographic data. They allow users to analyze and understand spatial
             relationships, patterns, and trends in geographic data. 
             
@@ -606,7 +630,7 @@
         are divided equally in distance into cells. Each cell represented a bounded geographical location. The map can
         be represented by a \(M \times N\) size matrix, which each \(M \times N\) is the number of cells in each row and
         column respectively. Each \(\mathbf{R}(i,j)\) cell has centroid coordinates which represented the geographic
-        location of \((x, y)\) in any coordinate reference system (CRS).
+        location of \((x, y)\) in any coordinate reference system \ac{CRS}.
 
         If we use a slight notation abuse, which is \(\mathbf{R}(i,j)\), each cell coordinate \((i, j)\) is represented
         as a geographical location in which case shifted by \(x\) and \(y\) amount. Figure [Dex] illustrates the Risk map
@@ -684,7 +708,7 @@
             It is worsened by the fact that there are multiple studies with conflicting results when calculating the
             absorption of shelter since there is no consensus when defining the sheltering factor. Some studies by \cite{dalamagkidis_evaluating_2008}
             and \cite{primatesta_ground_2020} use a scale factor from 0 to 1, or 1 to 10 respectively, representing the energy absorption factor
-            of a given building. While \cite{melnyk_third-party_2014} uses a study conducted by the US Department of Defense (DoD)\cite{harwick_approved_2007} regarding
+            of a given building. While \cite{melnyk_third-party_2014} uses a study conducted by the \ac{DoD} \cite{harwick_approved_2007} regarding
             explosive study to measure the energy absorption capability.
 
             Even though it is tempting to use the method given by \cite{melnyk_third-party_2014} and DoD since it has the most accurate data. The
@@ -728,14 +752,14 @@
             The No-fly zone layer refers to a component of a ground risk map or airspace map that delineates areas where
             drone flights are prohibited. The restrictions in these zones can include areas such as:
             \begin{myitemize}
-                \item Regulation agency-defined areas, i.e. FAA, and ICAO. They restrict airports and military areas.
+                \item Regulation agency-defined areas, i.e.\ac{FAA}, and \ac{ICAO}. They restrict airports and military areas.
                 \item Nature-sensitive areas, such as National Park where flying is restricted.
                 \item Safety and security areas, very crowded public areas, such as the city center, or events.
                 \item Operator-defined areas, where areas are restricted by the operator itself for various reason. 
             \end{myitemize}
 
             In this paper, the no-fly zone layer is a georeferenced map similar to the obstacle layer. And generally
-            work in the same method to obstacle layers. The No-fly zone layers explicitly prohibit the flight of UAVs by
+            work in the same method to obstacle layers. The No-fly zone layers explicitly prohibit the flight of UAV by
             using two different values, -1 if flying is forbidden, and 0 if flying is allowed. The no-fly zone layer is
             represented by matrix \(\mathbf{F}(x, y)\) defined as:
             \begin{equation}
@@ -747,7 +771,7 @@
             \end{equation}
 
     \section{Ground Risk Assessment}
-        In this research, the risk is described as the potential to cause harm of UAVs to the population on the ground.
+        In this research, the risk is described as the potential to cause harm of UAV to the population on the ground.
         quantified as the number of fatalities per hour of flight. The risk model is built upon a series of
         consecutively occurring events, each with its probability. These events are denoted as \(P_{event}\),
         \(P_{impact}\), and \(P_{fatality}\).
@@ -761,12 +785,12 @@
         utilized to determine the probable impact area for each type of descent. It is important to note that these
         events are calculated independently of each other. Once the probabilities for each event are computed, they are
         summed up for each cell, resulting in the probability of the drone impacting that particular cell. This
-        probability is described using a 2D Probability Density Function (PDF). For further information on the descent
+        probability is described using a 2D \ac{PDF}. For further information on the descent
         models, please refer to Sections:\ref{sec:descent_events}. The two-dimensional PDF is utilized to calculate the
         probabilities of \(P_{impact}\) and \(P_{fatality}\), considering factors such as population density, sheltering
         factor layer, and impact velocities.
 
-        After calculating the UAVs crash location following an uncontrolled descent, we need to calculate the Pimpact
+        After calculating the UAV crash location following an uncontrolled descent, we need to calculate the Pimpact
         which indicates the likelihood of the UAV strikes individuals. Where the population density and the impact
         exposure area can have its influence. And finally \(P_{fatality}\), which denotes the probability of fatal
         injuries occurring after a person has been impacted. It depends on the kinetic energy at the time of impact and
@@ -945,7 +969,7 @@
             
         Noted that this study assumes and applies constant wind speed and direction when simulating the descent event.
         This assumption arose when the wind effect usually encompasses a large local area which is often greater than
-        medium to micro-sized UAVs. Added to that, the wind only affected only the descent event and not when the drone
+        medium to micro-sized UAV. Added to that, the wind only affected only the descent event and not when the drone
         is normally operating.
             
         \subsection{Probability of Impacting an Individual}
@@ -972,7 +996,7 @@
             
         A study done by \cite{aalmoes_conceptual_2015} proposes two types of solutions. empirical regressionand geometric approach. Which stated
         that, above 500kg the calculation should use the empirical method, or geometric approach if less than 500kg. The
-        empirical data obtained by the Netherland Aerospace Laboratory, NLR, when researching the helicopter crashes
+        empirical data obtained by the Netherland Aerospace Laboratory, when researching the helicopter crashes
         behavior, resulted in \ref{eq:radial} relation. While the geometric approach \ref{eq:human_impact} is using
         human impact model.
 
@@ -1311,7 +1335,7 @@
         mentioned Risk in UPX is rules to determine the probability of fatality in case the UAV happens to malfunction
         and falls in that area.
             
-        UPX was built based on the concern of negative consequences of increase frequency of UAVs flying in urban areas.
+        UPX was built based on the concern of negative consequences of increase frequency of UAV flying in urban areas.
         While UPX is intended to be used to aid UAV operation, its library can be used in any type of aircraft as long
         they provide aerodynamic parameters and aircraft performance data. However, some caveats would be explained in
         the UPX limitation below.
@@ -1342,7 +1366,7 @@
         processor. GeoPandas has geographic spatial and attribute related function such as overlay, spatial join,
         clipping to group, aggregate, and measure geospatial data.
             
-        GeoPandas exports and imports files in standard GIS-supported files such as GeoJSON, the file, and the Shapely
+        GeoPandas exports and imports files in standard GIS-supported files such as geoJSON, the file, and the Shapely
         object, to name a few. In Python GeoPandas tabular data is called GeoDataFrame, and GeoSeries. What
         differentiates between GeoDataFrame and regular DataFrame is the addition of a geometry column. The geometry
         column can contain Multi/Polygon, Multi/Linestring, and Point shapes.
@@ -1373,12 +1397,12 @@
 %---------------------------------------CHAPTER 4-------------------------------------
 \chapter{Results}
     \section{Ground risk map generation}
-        \subsection{UAVs Specification}
-        In this study, we are going to analyze the risk factor of multirotor and fixed-wing UAVs. In comparison, Talon
+        \subsection{UAV Specification}
+        In this study, we are going to analyze the risk factor of multirotor and fixed-wing UAV. In comparison, Talon
         and Parrot Disco are fixed-wing. While DJI Phantom 4 and DJI Inspire 2 are multirotor. Four of them are chosen
         since they are generally known as a go-to standard in the commercial drone industry. Each category is also
         differentiated into two different sizes, where Talon and Inspire 2 are the large size, while Phantom 4 and Disco
-        are much smaller UAVs. All properties are obtained from manufacturer design specifications.
+        are much smaller UAV. All properties are obtained from manufacturer design specifications.
             
         As for the aerodynamic properties of these drones, we are using a very simple drag model. This will not include
         an Induced drag since we cannot predict every possible angle of attack. It is also beneficial to use simplify
@@ -1412,7 +1436,7 @@
                 Parachute area & 1 & 0.5 & 0.5 & 0.5 \\
                 \hline
             \end{tabular}
-            \caption{UAVs Specifications}  % Add caption here
+            \caption{UAV Specifications}  % Add caption here
         \end{table}
 
     \section{Objective}
@@ -1597,7 +1621,7 @@
         Jakarta, the region is smaller than the flyaway radius. This resulted in the outer cells of the region having a
         smaller risk compared to the center cells.
             
-        It is then clear the score represented by shorter-range UAVs such as Parrot Disco, DJI Phantom 4, and DJI
+        It is then clear the score represented by shorter-range UAV such as Parrot Disco, DJI Phantom 4, and DJI
         Inspire 2 has a more defined score compared to the score produced by Talon.
 
         \begin{figure}[H]

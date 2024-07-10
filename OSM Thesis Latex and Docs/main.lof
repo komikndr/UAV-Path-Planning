@@ -1,0 +1,44 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Components of ground risk model}}{12}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Generelized logistic fatality function given energy impact}}{18}{figure.caption.7}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces General overview}}{20}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Population density map}}{23}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Height obstacle map}}{24}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Shelter factor map}}{25}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces General risk assesment flowchart}}{27}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Ballistic descent by aircraft type}}{28}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Glide descent by aircraft type}}{29}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Fly away descent by aircraft type}}{30}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Parachute descent by aircraft type}}{31}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces UPX architecture design}}{40}{figure.caption.19}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Operation objective}}{45}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Talon ballistic PDF}}{45}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Talon glide PDF}}{46}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Talon fly away PDF}}{46}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Talon parachute PDF}}{47}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Talon fatality risk PDF}}{47}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Disco ballistic PDF}}{48}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Disco glide PDF}}{48}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Disco fly away PDF}}{49}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Disco parachute PDF}}{49}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Disco fatality risk PDF}}{50}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces DJI Phantom 4 ballistic PDF}}{50}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces DJI Phantom 4 glide PDF}}{51}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces DJI Phantom 4 fly away PDF}}{51}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces DJI Phantom 4 parachute PDF}}{52}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces DJI Phantom 4 fatality risk PDF}}{52}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces DJI Inspire 2 ballistic PDF}}{53}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces DJI Inspire 2 glide PDF}}{53}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces DJI Inspire 2 fly away PDF}}{54}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces DJI Inspire 2 parachute PDF}}{54}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces DJI Inspire 2 fatality risk PDF}}{55}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Regular A* flight path}}{55}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Talon risk A* flight path}}{56}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Disco risk A* flight path}}{56}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces DJI Phantom 4 risk A* flight path}}{57}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces DJI Inspire 2 risk A* flight path}}{57}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Aircraft risk score}}{59}{figure.caption.47}%
+\addvspace {10\p@ }

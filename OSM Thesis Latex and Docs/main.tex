@@ -20,9 +20,11 @@
 \usepackage{float}
 \usepackage{multirow} % for multirow cells
 \usepackage{array}   % for more flexible column definitions
+\usepackage{tocbibind} 
+\usepackage{acronym}
 % Font setup
-\usepackage{fontspec}
-\setmainfont{Calibri}
+%\usepackage{fontspec}
+%\setmainfont{Calibri}
 \usepackage{enumitem}
 \setlist{leftmargin=5.5mm}
 \newlist{myitemize}{itemize}{3}
@@ -87,7 +89,7 @@
     %------------------- TITLE COVER-----------------------
      \begin{titlepage}
         \begin{center}
-            \textbf{\LARGE Risk Informed UAV Pathfinding, UPX}
+            \textbf{\LARGE Development of Risk-Informed UAV Pathfinder Based on A* Algorithm}
     
             \vspace{0.5cm}
             
@@ -109,7 +111,7 @@
             Department of Aviation Engineering\\
             International University Liaison Indonesia\\
             BSD City\\
-            3 December 2022
+            7 July 2024
                 
         \end{center}
     \end{titlepage}
@@ -151,7 +153,19 @@
         %\end{tabular}
     \end{center}
     %-----------------------------------TABLE OF CONTENT--------
-   \tableofcontents
+    \tableofcontents
+    \listoffigures
+    \listoftables
+   
+    \newpage
+    \chapter*{LIST OF ACRONYMS}
+    \addcontentsline{toc}{chapter}{List of Abbreviations}
+    \begin{acronym}[UAV]
+        \acro{UAV}{\makebox[3cm][l]{Unmanned Aerial Vehicle}}
+        \acro{GPS}{\makebox[3cm][l]{Global Positioning System}}
+    \end{acronym}
+    \newpage
+    
 
 
 %---------------------------------------CHAPTER 1-------------------------------------
@@ -189,7 +203,7 @@
 
 \chapter{Introduction}
     \section{Introduction}
-        Unmanned Aerial vehicles (UAVs) also known as a drone, is getting more recognition in recent years. The
+        \ac*{UAV} also known as a drone, is getting more recognition in recent years. The
 	    booming of UAVs is caused by the component needed to manufacture the UAV, especially microcontrollers
 	    getting cheaper, and smaller. Compare to previous UAV iteration, UAV nowadays offers much wider capability,
 	    such as enhanced range, the ability to mount hardware, and camera for example, and of course easily

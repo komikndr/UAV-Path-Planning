@@ -290,63 +290,89 @@
 \chapter{Literature Review}
     \section{Overview}
         In this part of the literature review, we will discuss two main concepts: the Ground Risk Model and the Path
-        Finder. First, we will examine the Ground Risk Model, which involves discussing the concept of probability
-        within a spatial context. Consider this scenario: if we want to calculate the likelihood of someone being hit by
-        a drone in a specific location, how do we model this phenomenon? As you can see, scenarios like this are key to
-        understanding the Ground Risk Model.
+        Finder. in the first part , we will examine the Ground Risk Model, which involves discussing the concept of
+        probability within a spatial context. Consider this scenario: if we want to calculate the likelihood of someone
+        being hit by a drone in a specific location, how do we model this phenomenon? As you can see, scenarios like
+        this are key to understanding the Ground Risk Model.
 
         Next, we will explore the Path Finder. After identifying a model that answers the question of where a UAV is
         most likely to hit someone, we move on to the next question: how do we navigate the UAV or provide the safest
         route to minimize the risk of severe casualties? This is why we will discuss the Risk-Based Path Finder.
-
+    
+    \section{Ground risk model}
         A ground risk model is a type of assessment tool that is used to evaluate the potential risks associated with
         the operation of UAV. This model takes into account a variety of factors, including the physical environment in
         which the UAV will be operating, the capabilities, and the limitations of the UAV itself. The goal of a ground
         risk model is to identify and prioritize potential risks in order to produce inform decision-making and risk
         management strategies for UAV operations.
 
-            There are a number of different approaches that have been taken to develop the ground risk models for UAV.
-        One approach is the use of probabilistic risk assessment methods, which involve the quantification of risks
-        using probability and consequence metrics.\cite{washington_review_2017} compiled many methods to developed
-        subcomponent of risk analayis in georeference approach. Another approach is the use of scenario-based methods,
-        which involve the development of detailed scenarios that describe potential UAV operations and the associated
-        risks. The scenario usually coupled with safety and hazard level per operation basis. This method is useful for
-        preliminary assesment using method such as risk tree diagram, bayesian belief network
-        \cite{ancel_real-time_2017}, and hazard risk assesment matrix \cite{barr_preliminary_2017}. Although one might
-        seem suggested both method produce difference analaysis but from overall point of view they describe the same
-        phenomena.
+        We found a total of 22 different research papers that contributed to our study on ground risk models. Various
+        approaches have been taken to develop ground risk models for UAVs. One approach is the use of scenario-based
+        methods, as discussed in the research of \cite{ancel_real-time_2017}, which involves the development of detailed
+        scenarios that describe potential UAV operations and the associated risks.
+            
+        To clarify further, in the research done by \cite{ancel_real-time_2017}, there are two common methods for
+        describing the severity of accidents using scenario-based approaches. These scenarios are typically coupled with
+        safety and hazard levels on a per-operation basis. The first method utilizes a lookup table to determine the
+        severity of an accident. The second method represents the scenario as a directed acyclic graph, a type of tree
+        graph, where we start at the root node and traverse based on yes/no questions. These questions can range from
+        simple ones, such as whether the UAV hit a person, to more detailed ones, such as whether the accident caused
+        harm.
+            
+        This method is computed using techniques such as risk tree diagrams, Bayesian belief networks
+        \cite{ancel_real-time_2017}, and hazard risk assessment matrices \cite{barr_preliminary_2017}. Although these
+        methods might produce different analyses, they generally describe the same phenomena.
+            
+        From the description above, it appears that scenario-based models do not suit our needs for a spatially based
+        ground risk model. Essentially, they reduce to questions of general progression from the point of impact to the
+        accident caused by the drone. They provide no information on how the position of the UAV affects the casualty
+        risk of failed operations and only serve as a preliminary assessment.
+            
+        To add a spatial component to our models, we can simply incorporate location information into the yes/no
+        question tree graph. What I mean by this is to propose an idea where, in a certain area, if a UAV somehow falls,
+        does it cause harm, and based on the surrounding environment, does that harm result in fatality?
+            
+        This brings us to the most widely used method, the use of ground probabilistic risk assessment methods, which
+        involve the quantification of risks per area using probability and consequence metrics. Although a greater
+        number of research papers use this method, as compiled by \cite{washington_review_2017}, our concept shown in
+        figure \ref{fig:prime_example} is derived from the prime example of this research conducted by
+        \cite{primatesta_ground_2020}. 
 
-            Overall, the use of ground risk models has the potential to significantly improve the safety and
-        effectiveness of UAV operations. By identifying and prioritizing potential risks, ground risk models can help
-        operators make informed decisions about how to mitigate or manage those risks. As the use of UAV continues to
-        grow and expand into new applications, the importance of ground risk modeling is likely to increase as well.
-
-    \section{Ground risk model}
         \begin{figure}[H]
             \centering
-            \includegraphics[width=\textwidth]{General Image/OSM Drone-GROUND.png}
-            \caption{Components of ground risk model}
+            \includegraphics[width=\textwidth]{General Image/OSM Drone-GROUND.pdf}
+            \caption{Components of ground risk model adopted from \protect\cite{primatesta_ground_2020}}
+            \label{fig:prime_example}
         \end{figure}
 
-        A ground risk model for unmanned aerial vehicles (UAV) typically consists of several subcomponents that are
-        used to assess the various factors that can impact the safety and effectiveness of UAV operations. However, this
-        approach is not new, since many earlier researches already follow a guideline to model these components. \cite{breunig_modeling_2018}
-        provide general guideline for the model, while \cite{washington_review_2017} provide a detailed description for
-        the model. \cite{washington_review_2017} method of compilation is based on \cite{pat-cornell_uncertainties_1996}, which studied the level of
-        analytical detail when modeling the risk formulation. The components in ground risk model are, failure model,
-        impact location model, recovery model, stress model, exposure model, incident stress model, and harm model.
-        \begin{equation}
+        A ground probabilistic risk assesment model, shortened to ground risk model, of an UAV typically consists of
+        several subcomponents that are used to assess the various factors that can impact the safety and effectiveness
+        of UAV operations. These components in ground risk model are, failure model, impact location model, recovery
+        model, stress model, exposure model, incident stress model, and harm model, where it will be explain in further
+        below.
+        
+        However, this approach is not new, since many earlier researches already follow a guideline to model these
+        components. For example \cite{breunig_modeling_2018} provide general guideline for the model, while
+        \cite{washington_review_2017} provide a listing of different kind of research using more or less the same
+        paradign to  describe the model. Where \cite{washington_review_2017} in itself use the method of compilation is
+        based on \cite{pat-cornell_uncertainties_1996}, which studied the level of analytical detail when modeling the
+        risk. We derived our study based on the \cite{primatesta_ground_2020} is simply because it shows the most
+        comprehensive way to calculate the ground risk model. Which can be summerized into equation
+        \ref{eq:general_probability}.
+        
+        \begin{equation}\label{eq:general_probability}
             P_{fatal}(x) = P_{event}(x) \cdot P_{impact}(x) \cdot P_{incident}(x) \cdot P_{harm}(x)
         \end{equation}
 
         All of those models are represented as a result of probability of said event-model occuring. Since all models
         are consecutively occuring from failure model to harm model, each component of the ground risk model are being
         multiplied by one and another. Although in many papers, not all researcher use all of these components in their
-        ground risk model, and often time use different methodology to analysize the same component. For example, \cite{primatesta_ground_2020}
-        only use event, impact location, and fatality model, while \cite{kim_risk-based_2022} use event, impact, exposure, incident stress, and
-        harm model. Despite in a glance that there are difference in modeling the ground risk, sometimes the researcher
-        combine multiple subcomponent as one. Again for example in \cite{primatesta_ground_2020} fatality model component is in fact a combination
-        of incident stress and
+        ground risk model, and often time use different methodology to analysize the same component. For example,
+        \cite{primatesta_ground_2020} only use event, impact location, and fatality model, while
+        \cite{kim_risk-based_2022} use event, impact, exposure, incident stress, and harm model. Despite in a glance
+        that there are difference in modeling the ground risk, sometimes the researcher combine multiple subcomponent as
+        one. Again for example in \cite{primatesta_ground_2020} fatality model component is in fact a combination of
+        incident, stress and harm model.
 
         \subsection{Failure model}
             A failure model is the first subcomponent in the ground risk model that evaluates the potential for failures
@@ -528,6 +554,11 @@
 
             \cite{magister_small_2010} makes use of a \ac{BC} that relates the kinetic energy on impact with the body's ability to
             tolerate the energy on impact, which is expressed using the \ac{AIS}.
+
+        Overall, the use of ground risk models has the potential to significantly improve the safety and
+        effectiveness of UAV operations. By identifying and prioritizing potential risks, ground risk models can help
+        operators make informed decisions about how to mitigate or manage those risks. As the use of UAV continues to
+        grow and expand into new applications, the importance of ground risk modeling is likely to increase as well.
         
     \section{Risk informed path finder}
         This study not only for generating the ground risk map for the risk assesment but also measures and finds the

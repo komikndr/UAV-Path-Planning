@@ -11,3 +11,57 @@ Next, we will explore the Path Finder. After identifying a model that answers th
 to hit someone, we move on to the next question: how do we navigate the UAV or provide the safest route to minimize the
 risk of severe casualties? This is why we will discuss the Risk-Based Path Finder.
 
+
+
+=========================================================================
+
+We found a total of 22 different research papers that contributed to our study on ground risk models. Various approaches
+have been taken to develop ground risk models for UAVs. One approach is the use of scenario-based methods, as discussed
+in the research of \cite{ancel_real-time_2017}, which involves the development of detailed scenarios that describe
+potential UAV operations and the associated risks.
+
+To clarify further, in the research done by \cite{ancel_real-time_2017}, there are two common methods for describing the
+severity of accidents using scenario-based approaches. These scenarios are typically coupled with safety and hazard
+levels on a per-operation basis. The first method utilizes a lookup table to determine the severity of an accident. The
+second method represents the scenario as a directed acyclic graph, a type of tree graph, where we start at the root node
+and traverse based on yes/no questions. These questions can range from simple ones, such as whether the UAV hit a
+person, to more detailed ones, such as whether the accident caused harm.
+
+This method is computed using techniques such as risk tree diagrams, Bayesian belief networks
+\cite{ancel_real-time_2017}, and hazard risk assessment matrices \cite{barr_preliminary_2017}. Although these methods
+might produce different analyses, they generally describe the same phenomena.
+
+From the description above, it appears that scenario-based models do not suit our needs for a spatially based ground
+risk model. Essentially, they reduce to questions of general progression from the point of impact to the accident caused
+by the drone. They provide no information on how the position of the UAV affects the casualty risk of failed operations
+and only serve as a preliminary assessment.
+
+To add a spatial component to our models, we can simply incorporate location information into the yes/no question tree
+graph. What I mean by this is to propose an idea where, in a certain area, if a UAV somehow falls, does it cause harm,
+and based on the surrounding environment, does that harm result in fatality?
+
+This brings us to the most widely used method, the use of ground probabilistic risk assessment methods, which involve
+the quantification of risks per area using probability and consequence metrics. Although a greater number of research
+papers use this method, as compiled by \cite{washington_review_2017}, our concept is derived from the prime example of
+this research conducted by \cite{primatesta_ground_2020}.
+
+
+=========================================================================
+
+A ground risk model for unmanned aerial vehicles (UAV) typically consists of
+several subcomponents that are used to assess the various factors that can impact
+the safety and effectiveness of UAV operations. The components in ground risk model
+are failure model, impact location model, recovery model, stress model, exposure
+model, incident stress model, and harm model, as shown as in Figure 2.1. based on the study
+of \cite{prima} 
+
+
+
+However, this approach is not new,
+since many earlier researches already follow a guideline to model these components.
+Breunig et al., 2018 provide general guideline for the model, while Washington et al.,
+2017 provide a detailed description for the model. Washington et al., 2017 method
+of compilation is based on Pat-Cornell, 1996, which studied the level of analytical
+detail when modeling the risk formulation.
+
+

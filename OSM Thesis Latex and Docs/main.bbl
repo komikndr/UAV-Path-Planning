@@ -230,7 +230,54 @@
       \verb https://arc.aiaa.org/doi/10.2514/6.2017-3273
       \endverb
     \endentry
-    \entry{ball_crash_nodate}{article}{}
+    \entry{austin_4_2024}{online}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=278c8efd1bddb5ad4a3685249804a69e}{%
+           family={Austin},
+           familyi={A\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c63ba4fae45933d2bca21920f4fee6d}{%
+           family={Brewster},
+           familyi={B\bibinitperiod},
+           given={Signe},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{26d49f88e9bf3c9fdf2970dce4ffa872}
+      \strng{fullhash}{26d49f88e9bf3c9fdf2970dce4ffa872}
+      \strng{bibnamehash}{26d49f88e9bf3c9fdf2970dce4ffa872}
+      \strng{authorbibnamehash}{26d49f88e9bf3c9fdf2970dce4ffa872}
+      \strng{authornamehash}{26d49f88e9bf3c9fdf2970dce4ffa872}
+      \strng{authorfullhash}{26d49f88e9bf3c9fdf2970dce4ffa872}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The 4 Best Drones for Photos and Video of 2024 {|} Reviews by Wirecutter}
+      \field{titleaddon}{The Best Drones for Photos and Video}
+      \field{type}{News}
+      \field{urlday}{12}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb The 4 Best Drones for Photos and Video of 2024 | Reviews by Wirecutter:C\:\\Users\\MICKO\\Zotero\\storage\\MVIHMJDH\\best-drones.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nytimes.com/wirecutter/reviews/best-drones/
+      \endverb
+      \verb{url}
+      \verb https://www.nytimes.com/wirecutter/reviews/best-drones/
+      \endverb
+    \endentry
+    \entry{ball_crash_2012}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=77ce134e595ab31c2446ea858d33a028}{%
            family={Ball},
@@ -259,13 +306,16 @@
       \strng{authorfullhash}{453fd8584c2ee25d97f8127225f7d391}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Expanding the permitted airspace permissions for Unmanned Air Systems ({UAS}) is a common desire among multiple military and civilian government organizations. Military groups desire to expand the {UAS} airspace to improve reserve and operational logistics, training exercises, and testing purposes. Civilian agencies, such as police forces, border patrol, and news agencies, would use unmanned air vehicles to conduct aerial surveillance and other missions strongly suited to the {UAS}. Current air space restrictions limit flight to either restricted airspace, or areas with sparse populations. While lifting these restrictions would have a positive impact on operational envelope and flexibility, due diligence must be used to ensure the public is not subjected to unreasonable hazards.}
       \field{langid}{english}
       \field{title}{{CRASH} {LETHALITY} {MODEL}}
+      \field{year}{2012}
+      \field{dateera}{ce}
       \verb{file}
       \verb Ball et al. - CRASH LETHALITY MODEL.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\X6FEQG26\\Ball et al. - CRASH LETHALITY MODEL.pdf:application/pdf
       \endverb
@@ -435,7 +485,7 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S2405896315009477
       \endverb
     \endentry
-    \entry{breunig_modeling_nodate}{article}{}
+    \entry{breunig_modeling_2018}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=8f8954b8994aaf3e7d6e253f75bb352a}{%
            family={Breunig},
@@ -470,12 +520,15 @@
       \strng{authorfullhash}{fa0ba27fc95d05eb6e2f542062a9aa6d}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
       \field{title}{Modeling Risk-Based Approach for Small Unmanned Aircraft Systems}
+      \field{year}{2018}
+      \field{dateera}{ce}
       \verb{file}
       \verb Breunig et al. - Modeling Risk-Based Approach for Small Unmanned Ai.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\6DC2CTKL\\Breunig et al. - Modeling Risk-Based Approach for Small Unmanned Ai.pdf:application/pdf
       \endverb
@@ -760,10 +813,128 @@
       \endverb
       \keyw{Automation,Conferences}
     \endentry
-    \entry{noauthor_faas_nodate}{online}{}
+    \entry{dji_dji_2023}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=153d951385c5fdca0deb46430d4c73e2}{%
+           family={{DJI}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{153d951385c5fdca0deb46430d4c73e2}
+      \strng{fullhash}{153d951385c5fdca0deb46430d4c73e2}
+      \strng{bibnamehash}{153d951385c5fdca0deb46430d4c73e2}
+      \strng{authorbibnamehash}{153d951385c5fdca0deb46430d4c73e2}
+      \strng{authornamehash}{153d951385c5fdca0deb46430d4c73e2}
+      \strng{authorfullhash}{153d951385c5fdca0deb46430d4c73e2}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{DJI} Agriculture - Drones Better Growth, Better Life}
+      \field{urlday}{12}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb DJI Agriculture - Drones Better Growth, Better Life:C\:\\Users\\MICKO\\Zotero\\storage\\5CAB5CRX\\ag.dji.com.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://ag.dji.com/
+      \endverb
+      \verb{url}
+      \verb https://ag.dji.com/
+      \endverb
+    \endentry
+    \entry{faa_ecfr_2016}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=42fa02a45678e5d2e51dea62f7ed634e}{%
+           family={{FAA}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \strng{fullhash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \strng{bibnamehash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \strng{authorbibnamehash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \strng{authornamehash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \strng{authorfullhash}{42fa02a45678e5d2e51dea62f7ed634e}
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{eCFR} :: 14 {CFR} Part 107 -- Small Unmanned Aircraft Systems ({FAR} Part 107)}
+      \field{urlday}{12}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb eCFR \:\: 14 CFR Part 107 -- Small Unmanned Aircraft Systems (FAR Part 107):C\:\\Users\\MICKO\\Zotero\\storage\\8VF6S3FG\\part-107.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-107
+      \endverb
+      \verb{url}
+      \verb https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-107
+      \endverb
+    \endentry
+    \entry{noauthor_global_2023}{online}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{title}{Global Human Settlement - Mission - European Commission}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Global Human Settlement - Mission - European Commission:C\:\\Users\\MICKO\\Zotero\\storage\\35R6MD5T\\about.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://ghsl.jrc.ec.europa.eu/about.php
+      \endverb
+      \verb{url}
+      \verb https://ghsl.jrc.ec.europa.eu/about.php
+      \endverb
+    \endentry
+    \entry{gonzales_faas_2017}{online}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=191965e839e0438551b48a9b52ef4d60}{%
+           family={Gonzales},
+           familyi={G\bibinitperiod},
+           given={Elizabeth},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ceabe618ac5400a9e2134e4859af014}{%
+           family={Murray},
+           familyi={M\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9e0c853359023102f6baab0150800d27}
+      \strng{fullhash}{9e0c853359023102f6baab0150800d27}
+      \strng{bibnamehash}{9e0c853359023102f6baab0150800d27}
+      \strng{authorbibnamehash}{9e0c853359023102f6baab0150800d27}
+      \strng{authornamehash}{9e0c853359023102f6baab0150800d27}
+      \strng{authorfullhash}{9e0c853359023102f6baab0150800d27}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
       \field{note}{Archive Location: world}
@@ -772,6 +943,8 @@
       \field{urlday}{26}
       \field{urlmonth}{5}
       \field{urlyear}{2023}
+      \field{year}{2017}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{doi}
       \verb 10.2514/6.2010-1540
@@ -784,26 +957,6 @@
       \endverb
       \verb{url}
       \verb https://arc.aiaa.org/doi/10.2514/6.2010-1540
-      \endverb
-    \endentry
-    \entry{noauthor_global_nodate}{online}{}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{labeldatesource}{nodate}
-      \field{labeltitlesource}{title}
-      \field{title}{Global Human Settlement - Mission - European Commission}
-      \field{urlday}{8}
-      \field{urlmonth}{5}
-      \field{urlyear}{2023}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb Global Human Settlement - Mission - European Commission:C\:\\Users\\MICKO\\Zotero\\storage\\35R6MD5T\\about.html:text/html
-      \endverb
-      \verb{urlraw}
-      \verb https://ghsl.jrc.ec.europa.eu/about.php
-      \endverb
-      \verb{url}
-      \verb https://ghsl.jrc.ec.europa.eu/about.php
       \endverb
     \endentry
     \entry{harwick_approved_2007}{report}{}
@@ -876,21 +1029,43 @@
       \verb http://www.dtic.mil/docs/citations/ADA463571
       \endverb
     \endentry
-    \entry{noauthor_hazards_nodate}{online}{}
+    \entry{holland_how_2015}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7577153ff6df4c191a3a84d0bee29a66}{%
+           family={Holland},
+           familyi={H\bibinitperiod},
+           given={Jennifer},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7577153ff6df4c191a3a84d0bee29a66}
+      \strng{fullhash}{7577153ff6df4c191a3a84d0bee29a66}
+      \strng{bibnamehash}{7577153ff6df4c191a3a84d0bee29a66}
+      \strng{authorbibnamehash}{7577153ff6df4c191a3a84d0bee29a66}
+      \strng{authornamehash}{7577153ff6df4c191a3a84d0bee29a66}
+      \strng{authorfullhash}{7577153ff6df4c191a3a84d0bee29a66}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Hazards to people and aircraft from flight test debris generated at high altitudes {|} Aerospace Sciences Meetings}
-      \field{urlday}{26}
-      \field{urlmonth}{5}
-      \field{urlyear}{2023}
+      \field{title}{How Drones Are Affecting Wildlife in Surprising Ways}
+      \field{urlday}{12}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2015}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
+      \verb{file}
+      \verb How Drones Are Affecting Wildlife in Surprising Ways:C\:\\Users\\MICKO\\Zotero\\storage\\WDMDQI5L\\150825-drones-animals-wildlife-bears-science-technology.html:text/html
+      \endverb
       \verb{urlraw}
-      \verb https://arc.aiaa.org/doi/abs/10.2514/6.1996-70
+      \verb https://www.nationalgeographic.com/animals/article/150825-drones-animals-wildlife-bears-science-technology
       \endverb
       \verb{url}
-      \verb https://arc.aiaa.org/doi/abs/10.2514/6.1996-70
+      \verb https://www.nationalgeographic.com/animals/article/150825-drones-animals-wildlife-bears-science-technology
       \endverb
     \endentry
     \entry{kim_risk-based_2022}{article}{}
@@ -1231,15 +1406,18 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S095183201300313X
       \endverb
     \endentry
-    \entry{noauthor_openstreetmap_nodate}{online}{}
+    \entry{noauthor_openstreetmap_2022}{online}{}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labeltitlesource}{title}
       \field{title}{{OpenStreetMap} Wiki}
       \field{urlday}{21}
       \field{urlmonth}{9}
       \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{file}
       \verb OpenStreetMap Wiki:C\:\\Users\\MICKO\\Zotero\\storage\\E6N53RY4\\Main_Page.html:text/html
@@ -1251,7 +1429,7 @@
       \verb https://wiki.openstreetmap.org/wiki/Main_Page
       \endverb
     \endentry
-    \entry{pat-cornell_uncertainties_nodate}{article}{}
+    \entry{pat-cornell_uncertainties_1996}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c3a955388c9892789c4da05dff963fde}{%
            family={Pat-Cornell},
@@ -1268,12 +1446,15 @@
       \strng{authorfullhash}{c3a955388c9892789c4da05dff963fde}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
       \field{title}{Uncertainties in risk analysis: Six levels of treatment}
+      \field{year}{1996}
+      \field{dateera}{ce}
       \verb{file}
       \verb Pat-Cornell - Uncertainties in risk analysis Six levels of trea.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\2WWPA3KS\\Pat-Cornell - Uncertainties in risk analysis Six levels of trea.pdf:application/pdf
       \endverb
@@ -1562,7 +1743,7 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0376042117301392
       \endverb
     \endentry
-    \entry{weibel_safety_nodate}{article}{}
+    \entry{weibel_safety_2012}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=7c1f5ee387dc31bba0454856ac854c68}{%
            family={Weibel},
@@ -1585,12 +1766,17 @@
       \strng{authorfullhash}{14fd952841131bce7061406c020d385b}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{day}{19}
       \field{langid}{english}
+      \field{month}{6}
       \field{title}{Safety Considerations for Operation of Different Classes of {UAVs} in the {NAS}}
+      \field{year}{2012}
+      \field{dateera}{ce}
       \verb{file}
       \verb Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\C9Y4TT3V\\Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:application/pdf;Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\93RWHAHX\\Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:application/pdf;Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\5E4DZ724\\Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:application/pdf
       \endverb
@@ -1845,7 +2031,54 @@
       \verb https://arc.aiaa.org/doi/10.2514/6.2017-3273
       \endverb
     \endentry
-    \entry{ball_crash_nodate}{article}{}
+    \entry{austin_4_2024}{online}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=278c8efd1bddb5ad4a3685249804a69e}{%
+           family={Austin},
+           familyi={A\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c63ba4fae45933d2bca21920f4fee6d}{%
+           family={Brewster},
+           familyi={B\bibinitperiod},
+           given={Signe},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{26d49f88e9bf3c9fdf2970dce4ffa872}
+      \strng{fullhash}{26d49f88e9bf3c9fdf2970dce4ffa872}
+      \strng{bibnamehash}{26d49f88e9bf3c9fdf2970dce4ffa872}
+      \strng{authorbibnamehash}{26d49f88e9bf3c9fdf2970dce4ffa872}
+      \strng{authornamehash}{26d49f88e9bf3c9fdf2970dce4ffa872}
+      \strng{authorfullhash}{26d49f88e9bf3c9fdf2970dce4ffa872}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The 4 Best Drones for Photos and Video of 2024 {|} Reviews by Wirecutter}
+      \field{titleaddon}{The Best Drones for Photos and Video}
+      \field{type}{News}
+      \field{urlday}{12}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb The 4 Best Drones for Photos and Video of 2024 | Reviews by Wirecutter:C\:\\Users\\MICKO\\Zotero\\storage\\MVIHMJDH\\best-drones.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nytimes.com/wirecutter/reviews/best-drones/
+      \endverb
+      \verb{url}
+      \verb https://www.nytimes.com/wirecutter/reviews/best-drones/
+      \endverb
+    \endentry
+    \entry{ball_crash_2012}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=77ce134e595ab31c2446ea858d33a028}{%
            family={Ball},
@@ -1874,13 +2107,16 @@
       \strng{authorfullhash}{453fd8584c2ee25d97f8127225f7d391}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Expanding the permitted airspace permissions for Unmanned Air Systems ({UAS}) is a common desire among multiple military and civilian government organizations. Military groups desire to expand the {UAS} airspace to improve reserve and operational logistics, training exercises, and testing purposes. Civilian agencies, such as police forces, border patrol, and news agencies, would use unmanned air vehicles to conduct aerial surveillance and other missions strongly suited to the {UAS}. Current air space restrictions limit flight to either restricted airspace, or areas with sparse populations. While lifting these restrictions would have a positive impact on operational envelope and flexibility, due diligence must be used to ensure the public is not subjected to unreasonable hazards.}
       \field{langid}{english}
       \field{title}{{CRASH} {LETHALITY} {MODEL}}
+      \field{year}{2012}
+      \field{dateera}{ce}
       \verb{file}
       \verb Ball et al. - CRASH LETHALITY MODEL.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\X6FEQG26\\Ball et al. - CRASH LETHALITY MODEL.pdf:application/pdf
       \endverb
@@ -2050,7 +2286,7 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S2405896315009477
       \endverb
     \endentry
-    \entry{breunig_modeling_nodate}{article}{}
+    \entry{breunig_modeling_2018}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=8f8954b8994aaf3e7d6e253f75bb352a}{%
            family={Breunig},
@@ -2085,12 +2321,15 @@
       \strng{authorfullhash}{fa0ba27fc95d05eb6e2f542062a9aa6d}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
       \field{title}{Modeling Risk-Based Approach for Small Unmanned Aircraft Systems}
+      \field{year}{2018}
+      \field{dateera}{ce}
       \verb{file}
       \verb Breunig et al. - Modeling Risk-Based Approach for Small Unmanned Ai.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\6DC2CTKL\\Breunig et al. - Modeling Risk-Based Approach for Small Unmanned Ai.pdf:application/pdf
       \endverb
@@ -2375,10 +2614,128 @@
       \endverb
       \keyw{Automation,Conferences}
     \endentry
-    \entry{noauthor_faas_nodate}{online}{}
+    \entry{dji_dji_2023}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=153d951385c5fdca0deb46430d4c73e2}{%
+           family={{DJI}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{153d951385c5fdca0deb46430d4c73e2}
+      \strng{fullhash}{153d951385c5fdca0deb46430d4c73e2}
+      \strng{bibnamehash}{153d951385c5fdca0deb46430d4c73e2}
+      \strng{authorbibnamehash}{153d951385c5fdca0deb46430d4c73e2}
+      \strng{authornamehash}{153d951385c5fdca0deb46430d4c73e2}
+      \strng{authorfullhash}{153d951385c5fdca0deb46430d4c73e2}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{DJI} Agriculture - Drones Better Growth, Better Life}
+      \field{urlday}{12}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb DJI Agriculture - Drones Better Growth, Better Life:C\:\\Users\\MICKO\\Zotero\\storage\\5CAB5CRX\\ag.dji.com.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://ag.dji.com/
+      \endverb
+      \verb{url}
+      \verb https://ag.dji.com/
+      \endverb
+    \endentry
+    \entry{faa_ecfr_2016}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=42fa02a45678e5d2e51dea62f7ed634e}{%
+           family={{FAA}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \strng{fullhash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \strng{bibnamehash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \strng{authorbibnamehash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \strng{authornamehash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \strng{authorfullhash}{42fa02a45678e5d2e51dea62f7ed634e}
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{eCFR} :: 14 {CFR} Part 107 -- Small Unmanned Aircraft Systems ({FAR} Part 107)}
+      \field{urlday}{12}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb eCFR \:\: 14 CFR Part 107 -- Small Unmanned Aircraft Systems (FAR Part 107):C\:\\Users\\MICKO\\Zotero\\storage\\8VF6S3FG\\part-107.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-107
+      \endverb
+      \verb{url}
+      \verb https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-107
+      \endverb
+    \endentry
+    \entry{noauthor_global_2023}{online}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{title}{Global Human Settlement - Mission - European Commission}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Global Human Settlement - Mission - European Commission:C\:\\Users\\MICKO\\Zotero\\storage\\35R6MD5T\\about.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://ghsl.jrc.ec.europa.eu/about.php
+      \endverb
+      \verb{url}
+      \verb https://ghsl.jrc.ec.europa.eu/about.php
+      \endverb
+    \endentry
+    \entry{gonzales_faas_2017}{online}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=191965e839e0438551b48a9b52ef4d60}{%
+           family={Gonzales},
+           familyi={G\bibinitperiod},
+           given={Elizabeth},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ceabe618ac5400a9e2134e4859af014}{%
+           family={Murray},
+           familyi={M\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9e0c853359023102f6baab0150800d27}
+      \strng{fullhash}{9e0c853359023102f6baab0150800d27}
+      \strng{bibnamehash}{9e0c853359023102f6baab0150800d27}
+      \strng{authorbibnamehash}{9e0c853359023102f6baab0150800d27}
+      \strng{authornamehash}{9e0c853359023102f6baab0150800d27}
+      \strng{authorfullhash}{9e0c853359023102f6baab0150800d27}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
       \field{note}{Archive Location: world}
@@ -2387,6 +2744,8 @@
       \field{urlday}{26}
       \field{urlmonth}{5}
       \field{urlyear}{2023}
+      \field{year}{2017}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{doi}
       \verb 10.2514/6.2010-1540
@@ -2399,26 +2758,6 @@
       \endverb
       \verb{url}
       \verb https://arc.aiaa.org/doi/10.2514/6.2010-1540
-      \endverb
-    \endentry
-    \entry{noauthor_global_nodate}{online}{}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{labeldatesource}{nodate}
-      \field{labeltitlesource}{title}
-      \field{title}{Global Human Settlement - Mission - European Commission}
-      \field{urlday}{8}
-      \field{urlmonth}{5}
-      \field{urlyear}{2023}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb Global Human Settlement - Mission - European Commission:C\:\\Users\\MICKO\\Zotero\\storage\\35R6MD5T\\about.html:text/html
-      \endverb
-      \verb{urlraw}
-      \verb https://ghsl.jrc.ec.europa.eu/about.php
-      \endverb
-      \verb{url}
-      \verb https://ghsl.jrc.ec.europa.eu/about.php
       \endverb
     \endentry
     \entry{harwick_approved_2007}{report}{}
@@ -2491,21 +2830,43 @@
       \verb http://www.dtic.mil/docs/citations/ADA463571
       \endverb
     \endentry
-    \entry{noauthor_hazards_nodate}{online}{}
+    \entry{holland_how_2015}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7577153ff6df4c191a3a84d0bee29a66}{%
+           family={Holland},
+           familyi={H\bibinitperiod},
+           given={Jennifer},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7577153ff6df4c191a3a84d0bee29a66}
+      \strng{fullhash}{7577153ff6df4c191a3a84d0bee29a66}
+      \strng{bibnamehash}{7577153ff6df4c191a3a84d0bee29a66}
+      \strng{authorbibnamehash}{7577153ff6df4c191a3a84d0bee29a66}
+      \strng{authornamehash}{7577153ff6df4c191a3a84d0bee29a66}
+      \strng{authorfullhash}{7577153ff6df4c191a3a84d0bee29a66}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Hazards to people and aircraft from flight test debris generated at high altitudes {|} Aerospace Sciences Meetings}
-      \field{urlday}{26}
-      \field{urlmonth}{5}
-      \field{urlyear}{2023}
+      \field{title}{How Drones Are Affecting Wildlife in Surprising Ways}
+      \field{urlday}{12}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2015}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
+      \verb{file}
+      \verb How Drones Are Affecting Wildlife in Surprising Ways:C\:\\Users\\MICKO\\Zotero\\storage\\WDMDQI5L\\150825-drones-animals-wildlife-bears-science-technology.html:text/html
+      \endverb
       \verb{urlraw}
-      \verb https://arc.aiaa.org/doi/abs/10.2514/6.1996-70
+      \verb https://www.nationalgeographic.com/animals/article/150825-drones-animals-wildlife-bears-science-technology
       \endverb
       \verb{url}
-      \verb https://arc.aiaa.org/doi/abs/10.2514/6.1996-70
+      \verb https://www.nationalgeographic.com/animals/article/150825-drones-animals-wildlife-bears-science-technology
       \endverb
     \endentry
     \entry{kim_risk-based_2022}{article}{}
@@ -2846,15 +3207,18 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S095183201300313X
       \endverb
     \endentry
-    \entry{noauthor_openstreetmap_nodate}{online}{}
+    \entry{noauthor_openstreetmap_2022}{online}{}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labeltitlesource}{title}
       \field{title}{{OpenStreetMap} Wiki}
       \field{urlday}{21}
       \field{urlmonth}{9}
       \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{file}
       \verb OpenStreetMap Wiki:C\:\\Users\\MICKO\\Zotero\\storage\\E6N53RY4\\Main_Page.html:text/html
@@ -2866,7 +3230,7 @@
       \verb https://wiki.openstreetmap.org/wiki/Main_Page
       \endverb
     \endentry
-    \entry{pat-cornell_uncertainties_nodate}{article}{}
+    \entry{pat-cornell_uncertainties_1996}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c3a955388c9892789c4da05dff963fde}{%
            family={Pat-Cornell},
@@ -2883,12 +3247,15 @@
       \strng{authorfullhash}{c3a955388c9892789c4da05dff963fde}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
       \field{title}{Uncertainties in risk analysis: Six levels of treatment}
+      \field{year}{1996}
+      \field{dateera}{ce}
       \verb{file}
       \verb Pat-Cornell - Uncertainties in risk analysis Six levels of trea.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\2WWPA3KS\\Pat-Cornell - Uncertainties in risk analysis Six levels of trea.pdf:application/pdf
       \endverb
@@ -3177,7 +3544,7 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0376042117301392
       \endverb
     \endentry
-    \entry{weibel_safety_nodate}{article}{}
+    \entry{weibel_safety_2012}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=7c1f5ee387dc31bba0454856ac854c68}{%
            family={Weibel},
@@ -3200,12 +3567,17 @@
       \strng{authorfullhash}{14fd952841131bce7061406c020d385b}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{day}{19}
       \field{langid}{english}
+      \field{month}{6}
       \field{title}{Safety Considerations for Operation of Different Classes of {UAVs} in the {NAS}}
+      \field{year}{2012}
+      \field{dateera}{ce}
       \verb{file}
       \verb Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\C9Y4TT3V\\Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:application/pdf;Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\93RWHAHX\\Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:application/pdf;Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\5E4DZ724\\Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:application/pdf
       \endverb

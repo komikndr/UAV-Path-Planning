@@ -1,0 +1,13 @@
+Describe that the literature review consist of two part: ground risk model and path finder.
+
+
+In this part of the literature review, we will discuss two main concepts: the Ground Risk Model and the Path Finder.
+First, we will examine the Ground Risk Model, which involves discussing the concept of probability within a spatial
+context. Consider this scenario: if we want to calculate the likelihood of someone being hit by a drone in a specific
+location, how do we model this phenomenon? As you can see, scenarios like this are key to understanding the Ground Risk
+Model.
+
+Next, we will explore the Path Finder. After identifying a model that answers the question of where a UAV is most likely
+to hit someone, we move on to the next question: how do we navigate the UAV or provide the safest route to minimize the
+risk of severe casualties? This is why we will discuss the Risk-Based Path Finder.
+

@@ -198,13 +198,13 @@
 %---------------------------------------CHAPTER 1-------------------------------------
 
 %s/\[1\]/\cite{washington_review_2017}/g
-%s/\[4\]/\cite{breunig_modeling_nodate}/g
-%s/\[5\]/\cite{pat-cornell_uncertainties_nodate}/g
+%s/\[4\]/\cite{breunig_modeling_2018}/g
+%s/\[5\]/\cite{pat-cornell_uncertainties_1996}/g
 %s/\[6\]/\cite{primatesta_ground_2020}/g
 %s/\[7\]/\cite{kim_risk-based_2022}/g
-%s/\[8\]/\cite{weibel_safety_nodate}/g
+%s/\[8\]/\cite{weibel_safety_2012}/g
 %s/\[9\]/\cite{burke_system-level_2011}/g
-%s/\[10\]/\cite{ball_crash_nodate}/g
+%s/\[10\]/\cite{ball_crash_2012}/g
 %s/\[11\]/\cite{primatesta_ground_2020}/g
 %s/\[12\]/\cite{wu_development_2012}/g
 %s/\[13\]/\cite{melnyk_third-party_2014}/g
@@ -217,41 +217,41 @@
 %s/\[20\]/\cite{clothier_casualty_2007}/g
 %s/\[21\]/\cite{harwick_approved_2007}/g
 %s/\[22\]/\cite{magister_small_2010}/g
-%s/\[23\]/\cite{noauthor_openstreetmap_nodate}/g
-%s/\[24\]/\cite{noauthor_global_nodate}/g
+%s/\[23\]/\cite{noauthor_openstreetmap_2022}/g
+%s/\[24\]/\cite{noauthor_global_2023}/g
 %s/\[25\]/\cite{noauthor_unmanned_2015}/g
 %s/\[26\]/\cite{cour-harbo_ground_2020}/g
 %s/\[27\]/\cite{la_cour-harbo_quantifying_2019}/g
 %s/\[28\]/\cite{aalmoes_conceptual_2015}/g
 %s/\[29\]/\cite{cole_hazards_1997}/g
-%s/\[30\]/\cite{noauthor_hazards_nodate}/g
-%s/\[31\]/\cite{noauthor_faas_nodate}/g
+%s/\[30\]/\cite{cole_hazards_1997}/g
+%s/\[31\]/\cite{gonzales_faas_2017}/g
 %s/\[32\]/\cite{primatesta_risk-aware_2019}/g
 
 \chapter{Introduction}
     \section{Introduction}
-        \ac{UAV} also known as a drone, is getting more recognition in recent years. The
-	    booming of UAV is caused by the component needed to manufacture the UAV, especially microcontrollers
-	    getting cheaper, and smaller. Compare to previous UAV iteration, UAV nowadays offers much wider capability,
-	    such as enhanced range, the ability to mount hardware, and camera for example, and of course easily
-	    deployable without requiring many technicians to maintain them.
+        \ac{UAV} also known as a drone, is getting more recognition in recent years. The booming of UAV is caused by the
+	    component needed to manufacture the UAV, especially microcontrollers getting cheaper, and smaller
+	    \cite{austin_4_2024}. Compare to previous UAV iteration, UAV nowadays offers much wider capability, such as
+	    enhanced range, the ability to mount hardware, and camera for example, and of course easily deployable without
+	    requiring many technicians to maintain them.
 
-		    UAV are often being used in area where it is dangerous, impractical, and expensive for human. The
-	    affordable entry point of using a UAV incentivized emerging industries to exploit the capability that UAV
-	    offer. Not only that but the existing industry is also getting interested to use UAV as an augmentation to
-	    its existing operational infrastructure. And that industries are, logistics companies, agricultural
-	    companies, multimedia companies, and surveyors to name a few
+		    UAV are often being used in area where it is dangerous, impractical, and expensive for human. The affordable
+	    entry point of using a UAV incentivized emerging industries to exploit the capability that UAV offer. Not only
+	    that but the existing industry is also getting interested to use UAV as an augmentation to its existing
+	    operational infrastructure. And that industries are, logistics companies, agricultural companies, multimedia
+	    companies, and surveyors to name a few \cite{dji_dji_2023}.
 
             Although it provides a great solution, UAV have the potential to pose risks to people, property, and other
-        aircraft. Many countries have regulations in place that require UAV to be operated in a safe and
-        responsible manner. Risk-based UAV path planner can help to ensure that UAV are operated safely and
-        responsibly. By considering potential risks and hazards, a risk-based approach can help to reduce the
-        likelihood of accidents or incidents occurring during the flight. By considering potential risks and
-        hazards, this approach can help to reduce the likelihood of accidents or incidents occurring during the
+        aircraft. Many countries have regulations in place that require UAV to be operated in a safe and responsible
+        manner \cite{faa_ecfr_2016}. Risk-based UAV path planner can help to ensure that UAV are operated safely and
+        responsibly. By considering potential risks and hazards, a risk-based approach can help to reduce the likelihood
+        of accidents or incidents occurring during the flight. By considering potential risks and hazards, this approach
+        can help to reduce the likelihood of accidents or incidents occurring during deployment.
 
             Other than its impacts towards public, UAV can also potentially impact the environment, for example by
-        disturbing wildlife or damaging natural habitats. UAV path planner can help to minimize these impacts by
-        establishing rules around the use of UAV in sensitive areas.
+        disturbing wildlife or damaging natural habitats \cite{holland_how_2015}. UAV path planner can help to minimize
+        these impacts by establishing rules around the use of UAV in sensitive areas.
     \section{Research purpose}
         For ensuring the safety and efficiency of UAV operations, this research aims to develop a
         UAV trajectory planning based on the risk assessment on the ground.
@@ -283,9 +283,22 @@
             \item What kind of pathfinding method that produces the quasi-optimal path without sacrificing computational time.
         \end{myitemize}
 
+    \section{Thesis Structure}
+
+
 %---------------------------------------CHAPTER 2-------------------------------------
 \chapter{Literature Review}
-    \section{Ground risk model in UAV operation}
+    \section{Overview}
+        In this part of the literature review, we will discuss two main concepts: the Ground Risk Model and the Path
+        Finder. First, we will examine the Ground Risk Model, which involves discussing the concept of probability
+        within a spatial context. Consider this scenario: if we want to calculate the likelihood of someone being hit by
+        a drone in a specific location, how do we model this phenomenon? As you can see, scenarios like this are key to
+        understanding the Ground Risk Model.
+
+        Next, we will explore the Path Finder. After identifying a model that answers the question of where a UAV is
+        most likely to hit someone, we move on to the next question: how do we navigate the UAV or provide the safest
+        route to minimize the risk of severe casualties? This is why we will discuss the Risk-Based Path Finder.
+
         A ground risk model is a type of assessment tool that is used to evaluate the potential risks associated with
         the operation of UAV. This model takes into account a variety of factors, including the physical environment in
         which the UAV will be operating, the capabilities, and the limitations of the UAV itself. The goal of a ground
@@ -308,7 +321,7 @@
         operators make informed decisions about how to mitigate or manage those risks. As the use of UAV continues to
         grow and expand into new applications, the importance of ground risk modeling is likely to increase as well.
 
-    \section{Components of ground risk model}
+    \section{Ground risk model}
         \begin{figure}[H]
             \centering
             \includegraphics[width=\textwidth]{General Image/OSM Drone-GROUND.png}
@@ -317,9 +330,9 @@
 
         A ground risk model for unmanned aerial vehicles (UAV) typically consists of several subcomponents that are
         used to assess the various factors that can impact the safety and effectiveness of UAV operations. However, this
-        approach is not new, since many earlier researches already follow a guideline to model these components. \cite{breunig_modeling_nodate}
+        approach is not new, since many earlier researches already follow a guideline to model these components. \cite{breunig_modeling_2018}
         provide general guideline for the model, while \cite{washington_review_2017} provide a detailed description for
-        the model. \cite{washington_review_2017} method of compilation is based on \cite{pat-cornell_uncertainties_nodate}, which studied the level of
+        the model. \cite{washington_review_2017} method of compilation is based on \cite{pat-cornell_uncertainties_1996}, which studied the level of
         analytical detail when modeling the risk formulation. The components in ground risk model are, failure model,
         impact location model, recovery model, stress model, exposure model, incident stress model, and harm model.
         \begin{equation}
@@ -351,7 +364,7 @@
                 Likelihoodness of failure rate described on failure model is divided into two type of formulation. The
             first one is based on historical data and the other one is based on the expert opinion. Data driven
             historical data are using previous UAV crash, and its UAV specification as a starting point for data
-            interpolation and extrapolation for calculating \ac{MTBF} \cite{breunig_modeling_nodate} and \cite{weibel_safety_nodate} for example.
+            interpolation and extrapolation for calculating \ac{MTBF} \cite{breunig_modeling_2018} and \cite{weibel_safety_2012} for example.
             However, since UAV industries is in its infancy and an added fact with many variants of UAV already exist in
             short period of time, resulting in data reliability issues. Therefore, it may be more appropriate for UAS to
             utilize a functional approach to calculate the system failure rate. Examples of functional and structural
@@ -373,7 +386,7 @@
             all of the UAV's possible impact points are located. The perimeter of this distribution is calculated based
             on the possible maximum UAV descent trajectory distance.
 
-                The impact location model can be formulated using two different models, hypothetical \cite{ball_crash_nodate},\cite{burke_system-level_2011},\cite{primatesta_ground_2020},\cite{primatesta_ground_2020}
+                The impact location model can be formulated using two different models, hypothetical \cite{ball_crash_2012},\cite{burke_system-level_2011},\cite{primatesta_ground_2020},\cite{primatesta_ground_2020}
             and empirical model.
 
             The hypothetical model uses the aerodynamic model to simulate the behavior of the impact location. This
@@ -421,7 +434,7 @@
             situation is modelled. For instance, stresses may be described as kinetic energy if the outcome to be
             calculated was human physical harm modeled in \ac{KE}. While secondary effects such as explosions and the release of
             hazardous chemicals will have distinct related stress qualities that need to be modeled differently. There
-            are model proposed by \cite{ball_crash_nodate} to analyze the consequences of heat radiation and explosions which often produces
+            are model proposed by \cite{ball_crash_2012} to analyze the consequences of heat radiation and explosions which often produces
             by chemical reaction. 
 
             Depending on the kind of UAV, different stress factors that relate to one or more harmful processes may
@@ -477,7 +490,7 @@
             based on the sheltering effect to calculate how much kinetic energy a certain building can hold. An existing
             study of debris was used to develop the sheltering model.
 
-            In the model described by \cite{ball_crash_nodate}, the amount of KE that is absorbed by the shelter as a result of its
+            In the model described by \cite{ball_crash_2012}, the amount of KE that is absorbed by the shelter as a result of its
             deformation, breaking, and movement as a result of an incident KE is subtracted from the overall risk posed
             by the system.
 
@@ -567,8 +580,8 @@
         retrieval and processing, ground risk map calculation, and generating the most optimal path using the pathfinder
         algorithm.
 
-        To collect necessary data, we are using free services provided by \ac{OSM} \cite{noauthor_openstreetmap_nodate} to retrieve geographic
-        data, and \ac{GHSL} \cite{noauthor_global_nodate} to retrieve population density throughout the earth.
+        To collect necessary data, we are using free services provided by \ac{OSM} \cite{noauthor_openstreetmap_2022} to retrieve geographic
+        data, and \ac{GHSL} \cite{noauthor_global_2023} to retrieve population density throughout the earth.
 
         The \ac{GRM} is calculated using geographic and population data, and also the type of aircraft that are being used in
         the calculation. The result would be descent location, impact energy, and fatality probability heat map. 
@@ -578,7 +591,7 @@
 
     \section{Prerequisite data}
         \subsection{Online geographic data}
-            OSM \cite{noauthor_openstreetmap_nodate} is a collaborative project that aims to create a free, editable map of the world. It was founded in
+            OSM \cite{noauthor_openstreetmap_2022} is a collaborative project that aims to create a free, editable map of the world. It was founded in
             2004 and has since grown to become one of the largest and most popular sources of geospatial data.
 
             OSM is built on the idea that anyone can contribute to the map by adding and updating data. Users can add
@@ -590,7 +603,7 @@
             Nominatim API.
 
         \subsection{Population data}
-            GHSL \cite{noauthor_global_nodate}. It is a dataset produced by the JRC (Joint Research Centre) of the European Commission that
+            GHSL \cite{noauthor_global_2023}. It is a dataset produced by the JRC (Joint Research Centre) of the European Commission that
             offers details on the distribution and location of human settlements worldwide.
 
             The GHSL classifies and examines patterns of urbanization and human settlement using new spatial data mining
@@ -1038,9 +1051,9 @@
                 \hline
                 Energy for hazardous debris & 45 & Joule & \cite{cole_hazards_1997} \\
                 \hline
-                Energy required by fragment for 90\% probability of fatality & 120 & Joule & \cite{noauthor_hazards_nodate} \\
+                Energy required by fragment for 90\% probability of fatality & 120 & Joule & \cite{cole_hazards_1997} \\
                 \hline
-                Energy required by fragment to be hazardous to human & 58 & Joule & \cite{noauthor_faas_nodate} \\
+                Energy required by fragment to be hazardous to human & 58 & Joule & \cite{gonzales_faas_2017} \\
                 \hline
             \end{tabular}
             \caption{Energy correlate to fatality}

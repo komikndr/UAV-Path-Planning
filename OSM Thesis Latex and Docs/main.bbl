@@ -230,6 +230,33 @@
       \verb https://arc.aiaa.org/doi/10.2514/6.2017-3273
       \endverb
     \endentry
+    \entry{arc_unmanned_2015}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d72a48a8ebd238e1497a911e938f46e8}{%
+           family={{ARC}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d72a48a8ebd238e1497a911e938f46e8}
+      \strng{fullhash}{d72a48a8ebd238e1497a911e938f46e8}
+      \strng{bibnamehash}{d72a48a8ebd238e1497a911e938f46e8}
+      \strng{authorbibnamehash}{d72a48a8ebd238e1497a911e938f46e8}
+      \strng{authornamehash}{d72a48a8ebd238e1497a911e938f46e8}
+      \strng{authorfullhash}{d72a48a8ebd238e1497a911e938f46e8}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Unmanned Aircraft Systems ({UAS}) Registration Task Force ({RTF}) Aviation Rulemaking Committee ({ARC})}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb 2015 - Unmanned Aircraft Systems (UAS) Registration Task .pdf:C\:\\Users\\MICKO\\Zotero\\storage\\CTBGTFLS\\2015 - Unmanned Aircraft Systems (UAS) Registration Task .pdf:application/pdf
+      \endverb
+    \endentry
     \entry{austin_4_2024}{online}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=278c8efd1bddb5ad4a3685249804a69e}{%
@@ -825,6 +852,7 @@
       \strng{authorbibnamehash}{153d951385c5fdca0deb46430d4c73e2}
       \strng{authornamehash}{153d951385c5fdca0deb46430d4c73e2}
       \strng{authorfullhash}{153d951385c5fdca0deb46430d4c73e2}
+      \field{extraname}{1}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{extradatescope}{labelyear}
@@ -847,6 +875,44 @@
       \endverb
       \verb{url}
       \verb https://ag.dji.com/
+      \endverb
+    \endentry
+    \entry{dji_consumer_2024}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=153d951385c5fdca0deb46430d4c73e2}{%
+           family={{DJI}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{153d951385c5fdca0deb46430d4c73e2}
+      \strng{fullhash}{153d951385c5fdca0deb46430d4c73e2}
+      \strng{bibnamehash}{153d951385c5fdca0deb46430d4c73e2}
+      \strng{authorbibnamehash}{153d951385c5fdca0deb46430d4c73e2}
+      \strng{authornamehash}{153d951385c5fdca0deb46430d4c73e2}
+      \strng{authorfullhash}{153d951385c5fdca0deb46430d4c73e2}
+      \field{extraname}{2}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Consumer Drones Comparison - {DJI}}
+      \field{titleaddon}{Consumer Drones Comparison}
+      \field{urlday}{12}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Consumer Drones Comparison - Compare Mavic Series and Other Consumer Drones - DJI:C\:\\Users\\MICKO\\Zotero\\storage\\Y35TEWBV\\comparison-consumer-drones.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.dji.com/id/products/comparison-consumer-drones
+      \endverb
+      \verb{url}
+      \verb https://www.dji.com/id/products/comparison-consumer-drones
       \endverb
     \endentry
     \entry{faa_ecfr_2016}{misc}{}
@@ -1406,6 +1472,45 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S095183201300313X
       \endverb
     \endentry
+    \entry{nemire_dji_2015}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7e2ea415627ca0b10970cd77d1573498}{%
+           family={Nemire},
+           familyi={N\bibinitperiod},
+           given={Brad},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7e2ea415627ca0b10970cd77d1573498}
+      \strng{fullhash}{7e2ea415627ca0b10970cd77d1573498}
+      \strng{bibnamehash}{7e2ea415627ca0b10970cd77d1573498}
+      \strng{authorbibnamehash}{7e2ea415627ca0b10970cd77d1573498}
+      \strng{authornamehash}{7e2ea415627ca0b10970cd77d1573498}
+      \strng{authorfullhash}{7e2ea415627ca0b10970cd77d1573498}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{DJI} Launches {GPU}-based High Performance Embedded Computer for Drones {|} {NVIDIA} Technical Blog}
+      \field{urlday}{20}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb DJI Launches GPU-based High Performance Embedded Computer for Drones | NVIDIA Technical Blog:C\:\\Users\\MICKO\\Zotero\\storage\\45ZVFHKG\\dji-launches-gpu-based-high-performance-embedded-computer-for-drones-2.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://developer.nvidia.com/blog/dji-launches-gpu-based-high-performance-embedded-computer-for-drones-2/
+      \endverb
+      \verb{url}
+      \verb https://developer.nvidia.com/blog/dji-launches-gpu-based-high-performance-embedded-computer-for-drones-2/
+      \endverb
+    \endentry
     \entry{noauthor_openstreetmap_2022}{online}{}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
@@ -1665,20 +1770,6 @@
       \field{volume}{1}
       \field{year}{2009}
       \field{dateera}{ce}
-    \endentry
-    \entry{noauthor_unmanned_2015}{article}{}
-      \field{sortinit}{U}
-      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labeltitlesource}{title}
-      \field{langid}{english}
-      \field{title}{Unmanned Aircraft Systems ({UAS}) Registration Task Force ({RTF}) Aviation Rulemaking Committee ({ARC})}
-      \field{year}{2015}
-      \field{dateera}{ce}
-      \verb{file}
-      \verb 2015 - Unmanned Aircraft Systems (UAS) Registration Task .pdf:C\:\\Users\\MICKO\\Zotero\\storage\\CTBGTFLS\\2015 - Unmanned Aircraft Systems (UAS) Registration Task .pdf:application/pdf
-      \endverb
     \endentry
     \entry{washington_review_2017}{article}{}
       \name{author}{3}{}{%
@@ -2031,6 +2122,33 @@
       \verb https://arc.aiaa.org/doi/10.2514/6.2017-3273
       \endverb
     \endentry
+    \entry{arc_unmanned_2015}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d72a48a8ebd238e1497a911e938f46e8}{%
+           family={{ARC}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d72a48a8ebd238e1497a911e938f46e8}
+      \strng{fullhash}{d72a48a8ebd238e1497a911e938f46e8}
+      \strng{bibnamehash}{d72a48a8ebd238e1497a911e938f46e8}
+      \strng{authorbibnamehash}{d72a48a8ebd238e1497a911e938f46e8}
+      \strng{authornamehash}{d72a48a8ebd238e1497a911e938f46e8}
+      \strng{authorfullhash}{d72a48a8ebd238e1497a911e938f46e8}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Unmanned Aircraft Systems ({UAS}) Registration Task Force ({RTF}) Aviation Rulemaking Committee ({ARC})}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb 2015 - Unmanned Aircraft Systems (UAS) Registration Task .pdf:C\:\\Users\\MICKO\\Zotero\\storage\\CTBGTFLS\\2015 - Unmanned Aircraft Systems (UAS) Registration Task .pdf:application/pdf
+      \endverb
+    \endentry
     \entry{austin_4_2024}{online}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=278c8efd1bddb5ad4a3685249804a69e}{%
@@ -2626,6 +2744,7 @@
       \strng{authorbibnamehash}{153d951385c5fdca0deb46430d4c73e2}
       \strng{authornamehash}{153d951385c5fdca0deb46430d4c73e2}
       \strng{authorfullhash}{153d951385c5fdca0deb46430d4c73e2}
+      \field{extraname}{1}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{extradatescope}{labelyear}
@@ -2648,6 +2767,44 @@
       \endverb
       \verb{url}
       \verb https://ag.dji.com/
+      \endverb
+    \endentry
+    \entry{dji_consumer_2024}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=153d951385c5fdca0deb46430d4c73e2}{%
+           family={{DJI}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{153d951385c5fdca0deb46430d4c73e2}
+      \strng{fullhash}{153d951385c5fdca0deb46430d4c73e2}
+      \strng{bibnamehash}{153d951385c5fdca0deb46430d4c73e2}
+      \strng{authorbibnamehash}{153d951385c5fdca0deb46430d4c73e2}
+      \strng{authornamehash}{153d951385c5fdca0deb46430d4c73e2}
+      \strng{authorfullhash}{153d951385c5fdca0deb46430d4c73e2}
+      \field{extraname}{2}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Consumer Drones Comparison - {DJI}}
+      \field{titleaddon}{Consumer Drones Comparison}
+      \field{urlday}{12}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Consumer Drones Comparison - Compare Mavic Series and Other Consumer Drones - DJI:C\:\\Users\\MICKO\\Zotero\\storage\\Y35TEWBV\\comparison-consumer-drones.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.dji.com/id/products/comparison-consumer-drones
+      \endverb
+      \verb{url}
+      \verb https://www.dji.com/id/products/comparison-consumer-drones
       \endverb
     \endentry
     \entry{faa_ecfr_2016}{misc}{}
@@ -3207,6 +3364,45 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S095183201300313X
       \endverb
     \endentry
+    \entry{nemire_dji_2015}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7e2ea415627ca0b10970cd77d1573498}{%
+           family={Nemire},
+           familyi={N\bibinitperiod},
+           given={Brad},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7e2ea415627ca0b10970cd77d1573498}
+      \strng{fullhash}{7e2ea415627ca0b10970cd77d1573498}
+      \strng{bibnamehash}{7e2ea415627ca0b10970cd77d1573498}
+      \strng{authorbibnamehash}{7e2ea415627ca0b10970cd77d1573498}
+      \strng{authornamehash}{7e2ea415627ca0b10970cd77d1573498}
+      \strng{authorfullhash}{7e2ea415627ca0b10970cd77d1573498}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{DJI} Launches {GPU}-based High Performance Embedded Computer for Drones {|} {NVIDIA} Technical Blog}
+      \field{urlday}{20}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb DJI Launches GPU-based High Performance Embedded Computer for Drones | NVIDIA Technical Blog:C\:\\Users\\MICKO\\Zotero\\storage\\45ZVFHKG\\dji-launches-gpu-based-high-performance-embedded-computer-for-drones-2.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://developer.nvidia.com/blog/dji-launches-gpu-based-high-performance-embedded-computer-for-drones-2/
+      \endverb
+      \verb{url}
+      \verb https://developer.nvidia.com/blog/dji-launches-gpu-based-high-performance-embedded-computer-for-drones-2/
+      \endverb
+    \endentry
     \entry{noauthor_openstreetmap_2022}{online}{}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
@@ -3467,20 +3663,6 @@
       \field{year}{2009}
       \field{dateera}{ce}
     \endentry
-    \entry{noauthor_unmanned_2015}{article}{}
-      \field{sortinit}{U}
-      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labeltitlesource}{title}
-      \field{langid}{english}
-      \field{title}{Unmanned Aircraft Systems ({UAS}) Registration Task Force ({RTF}) Aviation Rulemaking Committee ({ARC})}
-      \field{year}{2015}
-      \field{dateera}{ce}
-      \verb{file}
-      \verb 2015 - Unmanned Aircraft Systems (UAS) Registration Task .pdf:C\:\\Users\\MICKO\\Zotero\\storage\\CTBGTFLS\\2015 - Unmanned Aircraft Systems (UAS) Registration Task .pdf:application/pdf
-      \endverb
-    \endentry
     \entry{washington_review_2017}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=bdc5abf931a195d8f0aaa4283f12b870}{%
@@ -3620,6 +3802,7 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{noauthor_unmanned_2015}
 \endrefsection
 \endinput
 

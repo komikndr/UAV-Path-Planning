@@ -315,7 +315,7 @@
         describing the severity of accidents using scenario-based approaches. These scenarios are typically coupled with
         safety and hazard levels on a per-operation basis. The first method utilizes a lookup table to determine the
         severity of an accident. The second method represents the scenario as a directed acyclic graph, a type of tree
-        graph, where we start at the root node and traverse based on yes/no questions. These questions can range from
+        graph, where we start at the root node and traverse based on yes or no questions. These questions can range from
         simple ones, such as whether the UAV hit a person, to more detailed ones, such as whether the accident caused
         harm.
             
@@ -332,11 +332,10 @@
         question tree graph. What I mean by this is to propose an idea where, in a certain area, if a UAV somehow falls,
         does it cause harm, and based on the surrounding environment, does that harm result in fatality?
             
-        This brings us to the most widely used method, the use of ground probabilistic risk assessment methods, which
+        This brings us to the most widely used method, so called ground probabilistic risk assessment methods, which
         involve the quantification of risks per area using probability and consequence metrics. Although a greater
         number of research papers use this method, as compiled by \cite{washington_review_2017}, our concept shown in
-        figure \ref{fig:prime_example} is derived from the prime example of this research conducted by
-        \cite{primatesta_ground_2020}. 
+        figure \ref{fig:prime_example} is derived from the research conducted by \cite{primatesta_ground_2020}. 
 
         \begin{figure}[H]
             \centering
@@ -345,34 +344,46 @@
             \label{fig:prime_example}
         \end{figure}
 
-        A ground probabilistic risk assesment model, shortened to ground risk model, of an UAV typically consists of
-        several subcomponents that are used to assess the various factors that can impact the safety and effectiveness
-        of UAV operations. These components in ground risk model are, failure model, impact location model, recovery
-        model, stress model, exposure model, incident stress model, and harm model, where it will be explain in further
-        below.
-        
-        However, this approach is not new, since many earlier researches already follow a guideline to model these
-        components. For example \cite{breunig_modeling_2018} provide general guideline for the model, while
-        \cite{washington_review_2017} provide a listing of different kind of research using more or less the same
-        paradign to  describe the model. Where \cite{washington_review_2017} in itself use the method of compilation is
-        based on \cite{pat-cornell_uncertainties_1996}, which studied the level of analytical detail when modeling the
-        risk. We derived our study based on the \cite{primatesta_ground_2020} is simply because it shows the most
-        comprehensive way to calculate the ground risk model. Which can be summerized into equation
+        A ground probabilistic risk assessment model, shortened to ground risk model, of a UAV typically consists of
+        several subcomponents that are used to assess various factors that can impact the safety and effectiveness of
+        UAV operations. These components in the ground risk model include the failure model, impact location model,
+        recovery model, stress model, exposure model, incident stress model, and harm model, which will be explained
+        further below.
+
+        However, since this is the most widely used approach, it is not surprising that this approach is not new, as
+        many earlier researchers have already followed guidelines to model these components. For example,
+        \cite{breunig_modeling_2018} provides a general model guideline. These guidelines focus more or less on the
+        probability of said accidents causing fatalities but do not compute the overall area risk.
+            
+        \cite{washington_review_2017} offers a meta-analysis of different kinds of research using more or less the same
+        paradigm to describe the ground risk model. \cite{washington_review_2017} itself uses the method of its analysis
+        based on the guidelines from \cite{pat-cornell_uncertainties_1996}, which studied the level of analytical detail
+        when modeling risk. \cite{pat-cornell_uncertainties_1996} provides us with a degree of certainty ranging from
+        one to six, where one uses a very simple model and six accounts for every possible situation that can affect the
+        model.
+            
+        After a thorough discussion, we derived our study based on \cite{primatesta_ground_2020} simply because it shows
+        the most comprehensive way to calculate the ground risk model, which can be summarized into Equation
         \ref{eq:general_probability}.
         
         \begin{equation}\label{eq:general_probability}
-            P_{fatal}(x) = P_{event}(x) \cdot P_{impact}(x) \cdot P_{incident}(x) \cdot P_{harm}(x)
+            P_{fatal}(x) = P_{event}(x) \cdot P_{impact}(x) \cdot P_{recovery} \cdot P_{stress} \cdot P_{exposure} \cdot P_{incident}(x) \cdot P_{harm}(x)
         \end{equation}
-
-        All of those models are represented as a result of probability of said event-model occuring. Since all models
-        are consecutively occuring from failure model to harm model, each component of the ground risk model are being
-        multiplied by one and another. Although in many papers, not all researcher use all of these components in their
-        ground risk model, and often time use different methodology to analysize the same component. For example,
-        \cite{primatesta_ground_2020} only use event, impact location, and fatality model, while
-        \cite{kim_risk-based_2022} use event, impact, exposure, incident stress, and harm model. Despite in a glance
-        that there are difference in modeling the ground risk, sometimes the researcher combine multiple subcomponent as
-        one. Again for example in \cite{primatesta_ground_2020} fatality model component is in fact a combination of
-        incident, stress and harm model.
+        
+        All of these models are represented as the probability of the said event-model occurring. Where \(P\) is a
+        probability of an event, not to be confused with \(P_{event}\), and \(x\) is the location on a grid map. If we
+        take a closer look at Equation \ref{eq:general_probability}, some \(P_n\) terms do not contain any location
+        parameter. This is because those probabilities are applied as global variables to every area. 
+        
+        Back to the model, since all models occur consecutively from the failure model to the harm model, each component
+        of the ground risk model is multiplied by the others. Although many papers do not use all of these components in
+        their ground risk models and often use different methodologies to analyze the same component, the fundamental
+        approach remains consistent. For example, \cite{primatesta_ground_2020} only use the event, impact location, and
+        fatality models, while \cite{kim_risk-based_2022} use the event, impact, exposure, incident stress, and harm
+        models. Despite apparent differences in modeling ground risk, researchers sometimes combine multiple
+        subcomponents into one. For instance, in \cite{primatesta_ground_2020}, the fatality model component is, in
+        fact, a combination of the incident, stress, and harm models. All the models in ground risk assessment are
+        explained in following sub-chapters.
 
         \subsection{Failure model}
             A failure model is the first subcomponent in the ground risk model that evaluates the potential for failures
@@ -383,27 +394,77 @@
             \cite{washington_review_2017} described four distinct events following the failure. Which are \ac{UDS}, 
             \ac{LOC}, \ac{CFIT}, and \ac{DOJC}.
 
-            \begin{equation}
+            All of these failure events describe how the UAV crashes into the ground. UDS is a mode where the drone
+            automatically enters a safe mode and tries to land as safely as possible. Drone manufacturers often
+            implement this feature when critical components are detected to be defective. UDS can also be triggered when
+            the UAV loses its signal to its pilot. Most mid- and high-priced drones usually have this feature, such as
+            those from \cite{dji_consumer_2024}.
+                
+            Controlled flight into terrain occurs when the UAV still has flight authority, but its main propulsion is no
+            longer working or its battery is at very low power, allowing it to only move its control surface servos. It
+            is similar to UDS, except that in UDS, the UAV still has propulsion power. Also like UDS, if the UAV is
+            advanced enough \cite{nemire_dji_2015}, it can auto-navigate to a safer area.
+                
+            Loss of control scenario occurs when the UAV is no longer responsive and has lost its navigation system,
+            causing it to fly away while maintaining its velocity and altitude until it runs out of energy or crashes
+            into terrain. This condition is much more degraded compared to UDS. Lastly, the "dropped or jettisoned"
+            scenario, probably the least common failure stated by \cite{washington_review_2017}, occurs when some
+            components detach from the drone and fall to the ground.
+
+            Although the definition of a ways that UAV can fell into the terrain, it does not necessarly help us
+            calculate the likelihoodness of a UAV to fell into the ground. With that being said this definition can help
+            us to model the descent model of the ground risk model.
+            
+            If we want to calculate the probability of the drone starts to fail, there are two main models that we can
+            use. The first one is  failure model proposed by \cite{breunig_modeling_2018} and \cite{weibel_safety_2012}
+            where it is based on historical data. Data driven historical data are using previous UAV crash, and its UAV
+            specification as a starting point for data interpolation and extrapolation for calculating so called
+            \ac{MTBF}.
+
+            Unfortunately since UAV industries is in its infancy and an added fact with many variants of UAV already
+            exist in short period of time. There are not enough historical data to make an interpolation, which is an
+            issue commented by \cite{breunig_modeling_2018}, many model using an MTBF simply use a standard assumed by
+            \cite{arc_unmanned_2015} which is average of 1 failure per 100 hours of flight for small UAV.
+
+            Although with its limitation, there are few research that trying to emulate MTBF to solve target level of
+            safety to help certifying authorities to make a propper judgment in regards to ever growing small UAV
+            industry. Such model is developed by \cite{burke_system-level_2011}, where they make a system-level
+            airworthiness tools that predict how safe a UAV is based on the sizes of the aircraft which is explained the
+            equation below \ref{eq:mtbf}.
+
+            \begin{equation}\label{eq:mtbf}
                 MTBF = \frac{\rho \pi b^2}{2.78} = k(\rho \pi b^2)
             \end{equation}
 
-                Likelihoodness of failure rate described on failure model is divided into two type of formulation. The
-            first one is based on historical data and the other one is based on the expert opinion. Data driven
-            historical data are using previous UAV crash, and its UAV specification as a starting point for data
-            interpolation and extrapolation for calculating \ac{MTBF} \cite{breunig_modeling_2018} and \cite{weibel_safety_2012} for example.
-            However, since UAV industries is in its infancy and an added fact with many variants of UAV already exist in
-            short period of time, resulting in data reliability issues. Therefore, it may be more appropriate for UAS to
-            utilize a functional approach to calculate the system failure rate. Examples of functional and structural
-            decompositions of UAS that may be used to create such a model are given \cite{burke_system-level_2011}.
+            Where \(\rho\) is population density, \(b\) is geometric wingspan of the drone, and \(k\) is population
+            correction factor, where k is \(\frac{1}{2.78}\) in a setting where the population density is calculated per
+            square miles.
 
-                To assess the system's dependability, other methods can be utilized, such as \ac{FTA},
-            \ac{ETA} , and \ac{FMECA} \cite{barr_preliminary_2017}. \ac{BBN} \cite{ancel_real-time_2017} have also been used
-            more recently in this regard. \cite{ancel_real-time_2017} provide the most detailed failure risk model
-            incorporating real-time monitoring of UAV component status to determine the likelihoodness of failure.
+            Even if it is tempting to use this equation to calculate MTBF, unfortunately, there are major problems with
+            this approach. First, equation \ref*{eq:mtbf} was developed only for fixed-wing aircraft. Second, this
+            equation is derived as an upper limit failure for UAVs, where the formula is assumed to model a scenario
+            where 1 in 10,000,000 crashes result in fatality.
 
-                All the models also use the assumption that the failure's probability of happening is constant.
-            Therefore, variables like phase, length, environment circumstances, or mission profile that might affect the
-            chance of failure are not taken into account.
+            Aside from system-level airworthiness tool, there are systematic methodologies used in risk management and
+            safety engineering to assess the failure of UAV. These tools are \ac{FTA}, \ac{ETA} , and \ac{FMECA}
+            \cite{barr_preliminary_2017}. Where focuses on identifying root causes of specific failures using logical
+            diagrams. ETA evaluates the outcomes of initiating events and their subsequent paths. And FMECEA identifies
+            potential failure modes, their effects, and prioritizes them based on criticality.
+
+            Also there is a new development using a machine learning model such as \ac{BBN} \cite{ancel_real-time_2017}
+            to be used for failure analysis. Where \cite{ancel_real-time_2017} provide the most detailed failure risk
+            model incorporating real-time monitoring of UAV component status to determine the likelihoodness of failure.
+            BBN itself is a graphical model used for probabilistic reasoning and decision-making, which represents
+            relationships among variables through directed acyclic graphs. In the context of UAV failure analysis, BBNs
+            can help identify the likelihood of various failure modes by modeling the dependencies and interactions
+            between different system components and environmental factors.
+
+            The model such as FTA, ETA, and FMECA sadly only giving us an answer to a question of what is and are the
+            cause of the crash. BBN proposed by \cite{ancel_real-time_2017} also is a only a framework for implementing
+            realtime decision making when it is in operation. Which left us with constant MTBF of 100 hours proposed by
+            the \cite{arc_unmanned_2015}.  We also make  use the assumption that the failure's probability of happening
+            is constant. Therefore, variables like phase, length, environment circumstances, or mission profile that
+            might affect the chance of failure are not taken into account.
 
         \subsection{Impact location model}
             The impact location model describes the position and size of the impact region caused by a UAV crash. Some

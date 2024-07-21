@@ -1564,73 +1564,8 @@
       \verb Pat-Cornell - Uncertainties in risk analysis Six levels of trea.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\2WWPA3KS\\Pat-Cornell - Uncertainties in risk analysis Six levels of trea.pdf:application/pdf
       \endverb
     \endentry
-    \entry{primatesta_risk-aware_2019}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=b491b415a1db6770c2807b7760589c28}{%
-           family={Primatesta},
-           familyi={P\bibinitperiod},
-           given={Stefano},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=bb05c3874a6427a24064a0154ce69933}{%
-           family={Guglieri},
-           familyi={G\bibinitperiod},
-           given={Giorgio},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2eb264a947e6b4be945ee0d7691eff5f}{%
-           family={Rizzo},
-           familyi={R\bibinitperiod},
-           given={Alessandro},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{b8fa178f5abf76af0cbede0db73c2e7b}
-      \strng{fullhash}{a3f7e257820c52fdf756563bf5cc0d96}
-      \strng{bibnamehash}{a3f7e257820c52fdf756563bf5cc0d96}
-      \strng{authorbibnamehash}{a3f7e257820c52fdf756563bf5cc0d96}
-      \strng{authornamehash}{b8fa178f5abf76af0cbede0db73c2e7b}
-      \strng{authorfullhash}{a3f7e257820c52fdf756563bf5cc0d96}
-      \field{extraname}{1}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{This paper presents a risk-aware path planning strategy for Unmanned Aerial Vehicles in urban environments. The aim is to compute an effective path that minimizes the risk to the population, thus enforcing safety of flight operations over inhabited areas. To quantify the risk, the proposed approach uses a risk-map that associates discretized locations of the space with a suitable risk-cost. Path planning is performed in two phases: first, a tentative path is computed off-line on the basis on the information related to static risk factors; then, using a dynamic risk-map, an on-line path planning adjusts and adapts the offline path to dynamically arising conditions. Off-line path planning is performed using {riskA}*, an ad-hoc variant of the A* algorithm, which aims at minimizing the risk. While off-line path planning has no stringent time constraints for its execution, this is not the case for the on-line phase, where a fast response constitutes a critical design parameter. We propose a novel algorithm called Borderland, which uses the check and repair approach to rapidly identify and adjust only the portion of path involved by the inception of relevant dynamical changes in the risk factor. After the path planning, a smoothing process is performed using Dubins curves. Simulation results confirm the suitability of the proposed approach.}
-      \field{issn}{0921-0296, 1573-0409}
-      \field{journaltitle}{Journal of Intelligent \& Robotic Systems}
-      \field{langid}{english}
-      \field{month}{8}
-      \field{number}{2}
-      \field{shortjournal}{J Intell Robot Syst}
-      \field{title}{A Risk-Aware Path Planning Strategy for {UAVs} in Urban Environments}
-      \field{urlday}{5}
-      \field{urlmonth}{1}
-      \field{urlyear}{2023}
-      \field{volume}{95}
-      \field{year}{2019}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{629\bibrangedash 643}
-      \range{pages}{15}
-      \verb{doi}
-      \verb 10.1007/s10846-018-0924-3
-      \endverb
-      \verb{file}
-      \verb Primatesta et al. - 2019 - A Risk-Aware Path Planning Strategy for UAVs in Ur.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\F2EJVFLP\\Primatesta et al. - 2019 - A Risk-Aware Path Planning Strategy for UAVs in Ur.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb http://link.springer.com/10.1007/s10846-018-0924-3
-      \endverb
-      \verb{url}
-      \verb http://link.springer.com/10.1007/s10846-018-0924-3
-      \endverb
-    \endentry
     \entry{primatesta_ground_2020}{article}{}
-      \name{author}{3}{}{%
+      \name{author}{3}{ul=2}{%
         {{un=0,uniquepart=base,hash=b491b415a1db6770c2807b7760589c28}{%
            family={Primatesta},
            familyi={P\bibinitperiod},
@@ -1652,13 +1587,12 @@
            prefix={la},
            prefixi={l\bibinitperiod}}}%
       }
-      \strng{namehash}{b8fa178f5abf76af0cbede0db73c2e7b}
+      \strng{namehash}{6d25feb53e1af666af0067c3f30a0f17}
       \strng{fullhash}{6d25feb53e1af666af0067c3f30a0f17}
       \strng{bibnamehash}{6d25feb53e1af666af0067c3f30a0f17}
       \strng{authorbibnamehash}{6d25feb53e1af666af0067c3f30a0f17}
-      \strng{authornamehash}{b8fa178f5abf76af0cbede0db73c2e7b}
+      \strng{authornamehash}{6d25feb53e1af666af0067c3f30a0f17}
       \strng{authorfullhash}{6d25feb53e1af666af0067c3f30a0f17}
-      \field{extraname}{2}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{extradatescope}{labelyear}
@@ -1694,6 +1628,144 @@
       \endverb
       \verb{url}
       \verb http://link.springer.com/10.1007/s10846-019-01015-z
+      \endverb
+    \endentry
+    \entry{primatesta_risk-based_2020}{article}{}
+      \name{author}{4}{ul=2}{%
+        {{un=0,uniquepart=base,hash=b491b415a1db6770c2807b7760589c28}{%
+           family={Primatesta},
+           familyi={P\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d2a0270e2ad3d265e8ce5968afe49bc3}{%
+           family={Scanavino},
+           familyi={S\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb05c3874a6427a24064a0154ce69933}{%
+           family={Guglieri},
+           familyi={G\bibinitperiod},
+           given={Giorgio},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2eb264a947e6b4be945ee0d7691eff5f}{%
+           family={Rizzo},
+           familyi={R\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Athens, Greece}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{f8b6ed2cd4423a4a388ceb970344732a}
+      \strng{fullhash}{c13fe7561c71ffb889699f5b08f5618a}
+      \strng{bibnamehash}{c13fe7561c71ffb889699f5b08f5618a}
+      \strng{authorbibnamehash}{c13fe7561c71ffb889699f5b08f5618a}
+      \strng{authornamehash}{f8b6ed2cd4423a4a388ceb970344732a}
+      \strng{authorfullhash}{c13fe7561c71ffb889699f5b08f5618a}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The large diffusion of Unmanned Aircraft Systems ({UAS}) requires a suitable strategy to design safe ﬂight missions. In this paper, we propose a novel path planning strategy to compute optimum risk path for {UAS} over populated areas.}
+      \field{eventtitle}{2020 International Conference on Unmanned Aircraft Systems ({ICUAS})}
+      \field{isbn}{978-1-72814-278-4}
+      \field{journaltitle}{2020 International Conference on Unmanned Aircraft Systems ({ICUAS})}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{title}{A Risk-based Path Planning Strategy to Compute Optimum Risk Path for Unmanned Aircraft Systems over Populated Areas}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{641\bibrangedash 650}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ICUAS48674.2020.9213982
+      \endverb
+      \verb{file}
+      \verb Primatesta et al. - 2020 - A Risk-based Path Planning Strategy to Compute Opt.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\KC7SDT74\\Primatesta et al. - 2020 - A Risk-based Path Planning Strategy to Compute Opt.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/9213982/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/9213982/
+      \endverb
+    \endentry
+    \entry{primatesta_risk-aware_2019}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b491b415a1db6770c2807b7760589c28}{%
+           family={Primatesta},
+           familyi={P\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb05c3874a6427a24064a0154ce69933}{%
+           family={Guglieri},
+           familyi={G\bibinitperiod},
+           given={Giorgio},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2eb264a947e6b4be945ee0d7691eff5f}{%
+           family={Rizzo},
+           familyi={R\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b8fa178f5abf76af0cbede0db73c2e7b}
+      \strng{fullhash}{a3f7e257820c52fdf756563bf5cc0d96}
+      \strng{bibnamehash}{a3f7e257820c52fdf756563bf5cc0d96}
+      \strng{authorbibnamehash}{a3f7e257820c52fdf756563bf5cc0d96}
+      \strng{authornamehash}{b8fa178f5abf76af0cbede0db73c2e7b}
+      \strng{authorfullhash}{a3f7e257820c52fdf756563bf5cc0d96}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a risk-aware path planning strategy for Unmanned Aerial Vehicles in urban environments. The aim is to compute an effective path that minimizes the risk to the population, thus enforcing safety of flight operations over inhabited areas. To quantify the risk, the proposed approach uses a risk-map that associates discretized locations of the space with a suitable risk-cost. Path planning is performed in two phases: first, a tentative path is computed off-line on the basis on the information related to static risk factors; then, using a dynamic risk-map, an on-line path planning adjusts and adapts the offline path to dynamically arising conditions. Off-line path planning is performed using {riskA}*, an ad-hoc variant of the A* algorithm, which aims at minimizing the risk. While off-line path planning has no stringent time constraints for its execution, this is not the case for the on-line phase, where a fast response constitutes a critical design parameter. We propose a novel algorithm called Borderland, which uses the check and repair approach to rapidly identify and adjust only the portion of path involved by the inception of relevant dynamical changes in the risk factor. After the path planning, a smoothing process is performed using Dubins curves. Simulation results confirm the suitability of the proposed approach.}
+      \field{issn}{0921-0296, 1573-0409}
+      \field{journaltitle}{Journal of Intelligent \& Robotic Systems}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{2}
+      \field{shortjournal}{J Intell Robot Syst}
+      \field{title}{A Risk-Aware Path Planning Strategy for {UAVs} in Urban Environments}
+      \field{urlday}{5}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{volume}{95}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{629\bibrangedash 643}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/s10846-018-0924-3
+      \endverb
+      \verb{file}
+      \verb Primatesta et al. - 2019 - A Risk-Aware Path Planning Strategy for UAVs in Ur.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\F2EJVFLP\\Primatesta et al. - 2019 - A Risk-Aware Path Planning Strategy for UAVs in Ur.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s10846-018-0924-3
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s10846-018-0924-3
       \endverb
     \endentry
     \entry{shelley_model_2016}{article}{}
@@ -3483,7 +3555,6 @@
       \strng{authorbibnamehash}{a3f7e257820c52fdf756563bf5cc0d96}
       \strng{authornamehash}{b8fa178f5abf76af0cbede0db73c2e7b}
       \strng{authorfullhash}{a3f7e257820c52fdf756563bf5cc0d96}
-      \field{extraname}{1}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{extradatescope}{labelyear}
@@ -3522,7 +3593,7 @@
       \endverb
     \endentry
     \entry{primatesta_ground_2020}{article}{}
-      \name{author}{3}{}{%
+      \name{author}{3}{ul=2}{%
         {{un=0,uniquepart=base,hash=b491b415a1db6770c2807b7760589c28}{%
            family={Primatesta},
            familyi={P\bibinitperiod},
@@ -3544,13 +3615,12 @@
            prefix={la},
            prefixi={l\bibinitperiod}}}%
       }
-      \strng{namehash}{b8fa178f5abf76af0cbede0db73c2e7b}
+      \strng{namehash}{6d25feb53e1af666af0067c3f30a0f17}
       \strng{fullhash}{6d25feb53e1af666af0067c3f30a0f17}
       \strng{bibnamehash}{6d25feb53e1af666af0067c3f30a0f17}
       \strng{authorbibnamehash}{6d25feb53e1af666af0067c3f30a0f17}
-      \strng{authornamehash}{b8fa178f5abf76af0cbede0db73c2e7b}
+      \strng{authornamehash}{6d25feb53e1af666af0067c3f30a0f17}
       \strng{authorfullhash}{6d25feb53e1af666af0067c3f30a0f17}
-      \field{extraname}{2}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{extradatescope}{labelyear}
@@ -3586,6 +3656,80 @@
       \endverb
       \verb{url}
       \verb http://link.springer.com/10.1007/s10846-019-01015-z
+      \endverb
+    \endentry
+    \entry{primatesta_risk-based_2020}{article}{}
+      \name{author}{4}{ul=2}{%
+        {{un=0,uniquepart=base,hash=b491b415a1db6770c2807b7760589c28}{%
+           family={Primatesta},
+           familyi={P\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d2a0270e2ad3d265e8ce5968afe49bc3}{%
+           family={Scanavino},
+           familyi={S\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb05c3874a6427a24064a0154ce69933}{%
+           family={Guglieri},
+           familyi={G\bibinitperiod},
+           given={Giorgio},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2eb264a947e6b4be945ee0d7691eff5f}{%
+           family={Rizzo},
+           familyi={R\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Athens, Greece}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{f8b6ed2cd4423a4a388ceb970344732a}
+      \strng{fullhash}{c13fe7561c71ffb889699f5b08f5618a}
+      \strng{bibnamehash}{c13fe7561c71ffb889699f5b08f5618a}
+      \strng{authorbibnamehash}{c13fe7561c71ffb889699f5b08f5618a}
+      \strng{authornamehash}{f8b6ed2cd4423a4a388ceb970344732a}
+      \strng{authorfullhash}{c13fe7561c71ffb889699f5b08f5618a}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The large diffusion of Unmanned Aircraft Systems ({UAS}) requires a suitable strategy to design safe ﬂight missions. In this paper, we propose a novel path planning strategy to compute optimum risk path for {UAS} over populated areas.}
+      \field{eventtitle}{2020 International Conference on Unmanned Aircraft Systems ({ICUAS})}
+      \field{isbn}{978-1-72814-278-4}
+      \field{journaltitle}{2020 International Conference on Unmanned Aircraft Systems ({ICUAS})}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{title}{A Risk-based Path Planning Strategy to Compute Optimum Risk Path for Unmanned Aircraft Systems over Populated Areas}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{641\bibrangedash 650}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ICUAS48674.2020.9213982
+      \endverb
+      \verb{file}
+      \verb Primatesta et al. - 2020 - A Risk-based Path Planning Strategy to Compute Opt.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\KC7SDT74\\Primatesta et al. - 2020 - A Risk-based Path Planning Strategy to Compute Opt.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/9213982/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/9213982/
       \endverb
     \endentry
     \entry{shelley_model_2016}{article}{}

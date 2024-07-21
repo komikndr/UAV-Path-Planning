@@ -1,21 +1,21 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
 [0] Config.pm:309> INFO - Logfile is 'main.blg'
-[190] biber-MSWIN64:340> INFO - === 
-[261] Biber.pm:418> INFO - Reading 'main.bcf'
-[485] Biber.pm:978> INFO - Found 37 citekeys in bib section 0
-[519] Biber.pm:4401> INFO - Processing section 0
-[535] Biber.pm:4592> INFO - Looking for bibtex file 'UPXNEW.bib' for section 0
-[627] bibtex.pm:1713> INFO - LaTeX decoding ...
-[850] bibtex.pm:1518> INFO - Found BibTeX data source 'UPXNEW.bib'
-[1237] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1237] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1237] Biber.pm:4221> INFO - Sorting list 'apa/apasortcite//global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[1237] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[1333] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1333] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1333] Biber.pm:4221> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[1333] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[1390] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[1465] bbl.pm:757> INFO - Output to main.bbl
-[1465] Biber.pm:130> WARN - I didn't find a database entry for 'noauthor_unmanned_2015' (section 0)
-[1465] Biber.pm:132> INFO - WARNINGS: 1
+[280] biber-MSWIN64:340> INFO - === 
+[382] Biber.pm:418> INFO - Reading 'main.bcf'
+[588] Biber.pm:978> INFO - Found 38 citekeys in bib section 0
+[617] Biber.pm:4401> INFO - Processing section 0
+[654] Biber.pm:4592> INFO - Looking for bibtex file 'UPXNEW.bib' for section 0
+[737] bibtex.pm:1713> INFO - LaTeX decoding ...
+[936] bibtex.pm:1518> INFO - Found BibTeX data source 'UPXNEW.bib'
+[1419] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1419] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1419] Biber.pm:4221> INFO - Sorting list 'apa/apasortcite//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[1419] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[1525] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1525] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1525] Biber.pm:4221> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[1525] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[1622] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1699] bbl.pm:757> INFO - Output to main.bbl
+[1700] Biber.pm:130> WARN - I didn't find a database entry for 'noauthor_unmanned_2015' (section 0)
+[1700] Biber.pm:132> INFO - WARNINGS: 1

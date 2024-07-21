@@ -190,6 +190,7 @@
         \acro{UAS}{Unmanned Aerial System}
         \acro{UAV}{Unmanned Aerial Vehicle}
         \acro{UPX}{UAV Pathfinding eXtension}
+        \acro{CE}{Casualty Expectation}
     \end{acronym}
     \newpage
     
@@ -367,13 +368,13 @@
         \ref{eq:general_probability}.
         
         \begin{equation}\label{eq:general_probability}
-            P_{fatal}(x) = P_{event}(x) \cdot P_{impact}(x) \cdot P_{recovery} \cdot P_{stress} \cdot P_{exposure} \cdot P_{incident}(x) \cdot P_{harm}(x)
+            P_{fatal}(x) = P_{failure}(x) \cdot P_{impact}(x) \cdot P_{recovery} \cdot P_{stress} \cdot P_{exposure} \cdot P_{incident}(x) \cdot P_{harm}(x)
         \end{equation}
         
         All of these models are represented as the probability of the said event-model occurring. Where \(P\) is a
-        probability of an event, not to be confused with \(P_{event}\), and \(x\) is the location on a grid map. If we
-        take a closer look at Equation \ref{eq:general_probability}, some \(P_n\) terms do not contain any location
-        parameter. This is because those probabilities are applied as global variables to every area. 
+        probability of an event and \(x\) is the location on a grid map. If we take a closer look at Equation
+        \ref{eq:general_probability}, some \(P_n\) terms do not contain any location parameter. This is because those
+        probabilities are applied as global variables to every area. 
         
         Back to the model, since all models occur consecutively from the failure model to the harm model, each component
         of the ground risk model is multiplied by the others. Although many papers do not use all of these components in
@@ -413,7 +414,7 @@
 
             Although the definition of a ways that UAV can fell into the terrain, it does not necessarly help us
             calculate the likelihoodness of a UAV to fell into the ground. With that being said this definition can help
-            us to model the descent model of the ground risk model.
+            us to formulate the descent model of the ground risk model.
             
             If we want to calculate the probability of the drone starts to fail, there are two main models that we can
             use. The first one is  failure model proposed by \cite{breunig_modeling_2018} and \cite{weibel_safety_2012}
@@ -430,7 +431,7 @@
             safety to help certifying authorities to make a propper judgment in regards to ever growing small UAV
             industry. Such model is developed by \cite{burke_system-level_2011}, where they make a system-level
             airworthiness tools that predict how safe a UAV is based on the sizes of the aircraft which is explained the
-            equation below \ref{eq:mtbf}.
+            equation \ref{eq:mtbf} below.
 
             \begin{equation}\label{eq:mtbf}
                 MTBF = \frac{\rho \pi b^2}{2.78} = k(\rho \pi b^2)
@@ -438,12 +439,47 @@
 
             Where \(\rho\) is population density, \(b\) is geometric wingspan of the drone, and \(k\) is population
             correction factor, where k is \(\frac{1}{2.78}\) in a setting where the population density is calculated per
-            square miles.
+            square miles. This equation is derived from target level safety algorithm proposed by
+            \cite{burke_system-level_2011}. Which then derived from \ac{CE} equation \ref{eq:CE}
 
-            Even if it is tempting to use this equation to calculate MTBF, unfortunately, there are major problems with
-            this approach. First, equation \ref*{eq:mtbf} was developed only for fixed-wing aircraft. Second, this
-            equation is derived as an upper limit failure for UAVs, where the formula is assumed to model a scenario
-            where 1 in 10,000,000 crashes result in fatality.
+            \begin{equation}\label{eq:CE}
+                CE = P_f \times P_d \times A_l \times P_k \times {S}
+            \end{equation}
+
+            Where \(CE\) is expected casualty rate per flight hours, \(P_f\) is the probability of failure in failure
+            per flight hour, \(P_d\) is the population density in people per square mile, \(A_l\) is the dimensionless
+            lethal area, \(P_k\) is fatality probability, and \(S\) is the dimensionless shelter factor. We then change
+            the \(P_d\) as a \(\rho\) to signified the average in time for population in a given mission area. \(A_l\)
+            is modeled from using the maximum circular area of the UAV itself which is the maximum wing span \(b\) in
+            feet or in the case of multirotor, maximum diagonal distance. Therefore \(A_l\) can be substitute into \(\pi
+            b^2\). Pointer given by \cite{burke_system-level_2011} simply using \(A_l\), which calculate in feet, will
+            give an error when being multiplied by \(\rho\) where it is in square miles. Therefore
+            \cite{burke_system-level_2011} give an error correction to divide \(\rho\) with the number of 1 \(ft^2\) in
+            a 1 \(mile^2\) which roughly is 27.8 million. 
+
+            \cite{burke_system-level_2011} normalized the \(P_k\) to 1 to argue based on the fact provided by
+            \cite{arc_unmanned_2015}. This normalization came from the calculation of kinetic energy for small UAV with
+            a weight of 64 lb with the speed of 100 ft/s, in which the UAV is still in non-lethal configuration. Move on
+            to the \(S\), it describe to be in range where 1 is non-covered area and 0 is fully sheltered. Fully
+            sheltered in this case is when an UAV with the weight of 64 lb and the speed of 100 ft/s crash into a
+            populated building, the occupants will be in no harm condition. If we rearrange the equation and set the
+            \ac{CE} into \(1 \times 10^{-7}\) which also has the same meaning with equivalent level safety, where we
+            will get resulting equation \ref{eq:PF}
+
+            \begin{equation}\label{eq:PF}
+                10^{-7}= P_f \times \frac{\rho}{2.78 \times 10^{-7}} \times \pi b^2
+            \end{equation}
+
+            Since \(P_f\) is probabilty of failure per flight hours which also share the same meaning with \ac{MTBF}, we
+            can change the \(P_f\) into MTBF. And if we rearrange the equation one more time we will get the same
+            equation of \ref{eq:mtbf}. However since that equation is in US customary unit, we must convert it into
+            metric system, where we divided 1 \(m^2\) per 1 \(km^2\). Fortunately it is quite simple, as we just need to
+            change error correction factor from \(2.78 \times 10^{-7}\) into \(10^{-6}\) which resulted into equation
+            \ref{eq:mtbf_metric}
+
+            \begin{equation}\label{eq:mtbf_metric}
+                MTBF = \frac{\rho \pi b^2}{10} = k(\rho \pi b^2)
+            \end{equation}
 
             Aside from system-level airworthiness tool, there are systematic methodologies used in risk management and
             safety engineering to assess the failure of UAV. These tools are \ac{FTA}, \ac{ETA} , and \ac{FMECA}
@@ -461,27 +497,31 @@
 
             The model such as FTA, ETA, and FMECA sadly only giving us an answer to a question of what is and are the
             cause of the crash. BBN proposed by \cite{ancel_real-time_2017} also is a only a framework for implementing
-            realtime decision making when it is in operation. Which left us with constant MTBF of 100 hours proposed by
-            the \cite{arc_unmanned_2015}.  We also make  use the assumption that the failure's probability of happening
-            is constant. Therefore, variables like phase, length, environment circumstances, or mission profile that
-            might affect the chance of failure are not taken into account.
+            realtime decision making when it is in operation. Some researcher also assume a  constant MTBF of 100 hours
+            proposed by the \cite{arc_unmanned_2015}.  We also make  use the assumption that the failure's probability
+            of happening is constant. Therefore, variables like phase, length, environment circumstances, or mission
+            profile that might affect the chance of failure are not taken into account.
 
         \subsection{Impact location model}
             The impact location model describes the position and size of the impact region caused by a UAV crash. Some
             models propose single-point impact, while others consider that, given a specific trajectory, the UAV may
             make contact at a number of different locations. The latter strategy establishes a perimeter around which
             all of the UAV's possible impact points are located. The perimeter of this distribution is calculated based
-            on the possible maximum UAV descent trajectory distance.
+            on the possible maximum UAV descent trajectory distance. The impact location model can be formulated using
+            two different models, hypothetical and empirical model.
 
-                The impact location model can be formulated using two different models, hypothetical \cite{ball_crash_2012},\cite{burke_system-level_2011},\cite{primatesta_ground_2020},\cite{primatesta_ground_2020}
-            and empirical model.
+            Generally speaking, the hypothetical model used in research is often tries to model a relationship between
+            the size of the UAV to the sizes of its impacted area. Some model such as from \cite{primatesta_ground_2020}
+            and \cite{burke_system-level_2011} uses the aerodynamic model to simulate the behavior of the impact
+            location. This model can be further separated into a ballistic descent, gliding descent, and planform model.
+            The ballistic descent calculated the trajectory based on the ballistic profile. The gliding model such as in
+            assumes the UAV will continue descending based on their glide profile. And the planform model uses the
+            aircraft wings and its layout aerodynamic properties to calculate the descent trajectory. 
+            
+            According to \cite{primatesta_risk-based_2020} it is very expensive to calculate full aerodynamic properties
+            per cell in large number of cells in a grid, therefore it is not surpriseing many research use only gliding
+            and ballistic descent to calculate the impact model. 
 
-            The hypothetical model uses the aerodynamic model to simulate the behavior of the impact location. This
-            model can be further separated into a ballistic descent, gliding descent, and planform model. The gliding
-            model such as in assumes the UAV will continue descending based on their glide profile. The planform model
-            uses the aircraft wings and its layout to calculate the descent trajectory. And the ballistic descent
-            calculated the trajectory based on the ballistic profile. Most research use gliding and ballistic descent
-            to calculate the impact model.
 
             \begin{equation}
                 A_{exp}(\theta) = \pi(r_p + r_{uav})^2 sin(\theta) + (r_p + r_{uav})(h_p + r_{uav})cos(\theta)

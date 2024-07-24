@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.2)  21 JUL 2024 14:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.2)  24 JUL 2024 23:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -962,7 +962,7 @@ Chapter 2.
 ]
 
 pdfTeX warning: pdflatex (file ./General Image/OSM Drone-GROUND.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<General Image/OSM Drone-GROUND.pdf, id=691, 746.79pt x 129.6042pt>
+<General Image/OSM Drone-GROUND.pdf, id=693, 746.79pt x 129.6042pt>
 File: General Image/OSM Drone-GROUND.pdf Graphic file (type pdf)
 <use General Image/OSM Drone-GROUND.pdf>
 Package pdftex.def Info: General Image/OSM Drone-GROUND.pdf  used on input line 343.
@@ -1031,9 +1031,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [18]
-Package acronym Info: Label `acro:KE' newly defined as it shall be overridden
-although it is yet undefined on input line 562.
 
+pdfTeX warning: pdflatex (file ./General Image/OSM Drone-Area Exposed.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<General Image/OSM Drone-Area Exposed.pdf, id=805, 340.3917pt x 250.0542pt>
+File: General Image/OSM Drone-Area Exposed.pdf Graphic file (type pdf)
+<use General Image/OSM Drone-Area Exposed.pdf>
+Package pdftex.def Info: General Image/OSM Drone-Area Exposed.pdf  used on input line 542.
+(pdftex.def)             Requested size: 426.79135pt x 313.5361pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1041,7 +1045,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[19]
+[19 <./General Image/OSM Drone-Area Exposed.pdf>]
+Package acronym Info: Label `acro:KE' newly defined as it shall be overridden
+although it is yet undefined on input line 576.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1058,15 +1065,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [21]
-<Plot/logistic_bounded.png, id=848, 409.7709pt x 327.3831pt>
+<Plot/logistic_bounded.png, id=860, 409.7709pt x 327.3831pt>
 File: Plot/logistic_bounded.png Graphic file (type png)
 <use Plot/logistic_bounded.png>
-Package pdftex.def Info: Plot/logistic_bounded.png  used on input line 645.
+Package pdftex.def Info: Plot/logistic_bounded.png  used on input line 659.
 (pdftex.def)             Requested size: 426.79135pt x 340.9949pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[22]
 Package acronym Info: Label `acro:BC' newly defined as it shall be overridden
-although it is yet undefined on input line 656.
+although it is yet undefined on input line 670.
 Package acronym Info: Label `acro:AIS' newly defined as it shall be overridden
-although it is yet undefined on input line 657.
+although it is yet undefined on input line 671.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1075,20 +1091,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[22 <./Plot/logistic_bounded.png>]
+[23 <./Plot/logistic_bounded.png>]
 Package acronym Info: Label `acro:RRT' newly defined as it shall be overridden
-although it is yet undefined on input line 679.
+although it is yet undefined on input line 693.
 Package acronym Info: Label `acro:A*' newly defined as it shall be overridden
-although it is yet undefined on input line 686.
+although it is yet undefined on input line 700.
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[23]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1098,28 +1106,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [24]
 Chapter 3.
-<General Image/OSM Drone-General Overview.png, id=880, 2140.99875pt x 921.4425pt>
+<General Image/OSM Drone-General Overview.png, id=892, 2140.99875pt x 921.4425pt>
 File: General Image/OSM Drone-General Overview.png Graphic file (type png)
 <use General Image/OSM Drone-General Overview.png>
-Package pdftex.def Info: General Image/OSM Drone-General Overview.png  used on input line 707.
+Package pdftex.def Info: General Image/OSM Drone-General Overview.png  used on input line 721.
 (pdftex.def)             Requested size: 426.79135pt x 183.68065pt.
 Package acronym Info: Label `acro:OSM' newly defined as it shall be overridden
-although it is yet undefined on input line 715.
+although it is yet undefined on input line 729.
 Package acronym Info: Label `acro:GHSL' newly defined as it shall be overridden
-although it is yet undefined on input line 716.
-Package acronym Info: Label `acro:GRM' newly defined as it shall be overridden
-although it is yet undefined on input line 718.
-Package acronym Info: Label `acro:GPS' newly defined as it shall be overridden
 although it is yet undefined on input line 730.
+Package acronym Info: Label `acro:GRM' newly defined as it shall be overridden
+although it is yet undefined on input line 732.
+Package acronym Info: Label `acro:GPS' newly defined as it shall be overridden
+although it is yet undefined on input line 744.
 [25
 
  <./General Image/OSM Drone-General Overview.png>]
 Package acronym Info: Label `acro:API' newly defined as it shall be overridden
-although it is yet undefined on input line 734.
+although it is yet undefined on input line 748.
 Package acronym Info: Label `acro:geoJSON' newly defined as it shall be overridden
-although it is yet undefined on input line 734.
+although it is yet undefined on input line 748.
 Package acronym Info: Label `acro:GIS' newly defined as it shall be overridden
-although it is yet undefined on input line 751.
+although it is yet undefined on input line 765.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1130,7 +1138,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [26]
 Package acronym Info: Label `acro:CRS' newly defined as it shall be overridden
-although it is yet undefined on input line 778.
+although it is yet undefined on input line 792.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1140,15 +1148,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [27]
-<Plot/pop_dense.PNG, id=911, 579.3645pt x 322.806pt>
+<Plot/pop_dense.PNG, id=923, 579.3645pt x 322.806pt>
 File: Plot/pop_dense.PNG Graphic file (type png)
 <use Plot/pop_dense.PNG>
-Package pdftex.def Info: Plot/pop_dense.PNG  used on input line 820.
+Package pdftex.def Info: Plot/pop_dense.PNG  used on input line 834.
 (pdftex.def)             Requested size: 426.79135pt x 237.80383pt.
-<Plot/obstacle.png, id=912, 555.7563pt x 294.1389pt>
+<Plot/obstacle.png, id=924, 555.7563pt x 294.1389pt>
 File: Plot/obstacle.png Graphic file (type png)
 <use Plot/obstacle.png>
-Package pdftex.def Info: Plot/obstacle.png  used on input line 834.
+Package pdftex.def Info: Plot/obstacle.png  used on input line 848.
 (pdftex.def)             Requested size: 426.79135pt x 225.88173pt.
 
 
@@ -1160,7 +1168,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [28 <./Plot/pop_dense.PNG>]
 Package acronym Info: Label `acro:DoD' newly defined as it shall be overridden
-although it is yet undefined on input line 856.
+although it is yet undefined on input line 870.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1170,17 +1178,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [29 <./Plot/obstacle.png>]
-<Plot/shelter_factor.png, id=933, 555.7563pt x 293.4162pt>
+<Plot/shelter_factor.png, id=945, 555.7563pt x 293.4162pt>
 File: Plot/shelter_factor.png Graphic file (type png)
 <use Plot/shelter_factor.png>
-Package pdftex.def Info: Plot/shelter_factor.png  used on input line 871.
+Package pdftex.def Info: Plot/shelter_factor.png  used on input line 885.
 (pdftex.def)             Requested size: 426.79135pt x 225.32675pt.
 Package acronym Info: Label `acro:FAA' newly defined as it shall be overridden
-although it is yet undefined on input line 900.
+although it is yet undefined on input line 914.
 Package acronym Info: Label `acro:ICAO' newly defined as it shall be overridden
-although it is yet undefined on input line 900.
+although it is yet undefined on input line 914.
 
-Overfull \hbox (3.51294pt too wide) in paragraph at lines 900--901
+Overfull \hbox (3.51294pt too wide) in paragraph at lines 914--915
 []\OT1/cmr/m/n/12 Regulation agency-defined ar-eas, i.e.[][][]Federal Avi-a-tion Ad-min-is-tra-tion ([])[],
  []
 
@@ -1193,7 +1201,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [30 <./Plot/shelter_factor.png>]
 Package acronym Info: Label `acro:PDF' newly defined as it shall be overridden
-although it is yet undefined on input line 933.
+although it is yet undefined on input line 947.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1203,17 +1211,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [31]
-<General Image/OSM Drone-LOGIC_SUM.png, id=953, 2565.585pt x 846.16125pt>
+<General Image/OSM Drone-LOGIC_SUM.png, id=965, 2565.585pt x 846.16125pt>
 File: General Image/OSM Drone-LOGIC_SUM.png Graphic file (type png)
 <use General Image/OSM Drone-LOGIC_SUM.png>
-Package pdftex.def Info: General Image/OSM Drone-LOGIC_SUM.png  used on input line 951.
+Package pdftex.def Info: General Image/OSM Drone-LOGIC_SUM.png  used on input line 965.
 (pdftex.def)             Requested size: 426.79135pt x 140.75969pt.
 
 
-LaTeX Warning: Citation 'noauthor_unmanned_2015' on page 32 undefined on input line 965.
+LaTeX Warning: Citation 'noauthor_unmanned_2015' on page 32 undefined on input line 979.
 
 
-Overfull \hbox (62.16495pt too wide) in paragraph at lines 964--966
+Overfull \hbox (62.16495pt too wide) in paragraph at lines 978--980
 \OT1/cmr/m/n/12 ing the as-sump-tion from, Shel-ley []Shel-ley, []2016[] and UAS Task Force []
  []
 
@@ -1225,15 +1233,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [32 <./General Image/OSM Drone-LOGIC_SUM.png>]
-<Plot/talon/ballistic.png, id=962, 392.4261pt x 327.3831pt>
+<Plot/talon/ballistic.png, id=974, 392.4261pt x 327.3831pt>
 File: Plot/talon/ballistic.png Graphic file (type png)
 <use Plot/talon/ballistic.png>
-Package pdftex.def Info: Plot/talon/ballistic.png  used on input line 1000.
+Package pdftex.def Info: Plot/talon/ballistic.png  used on input line 1014.
 (pdftex.def)             Requested size: 192.0548pt x 160.2193pt.
-<Plot/phantom4/ballistic.png, id=963, 389.5353pt x 327.3831pt>
+<Plot/phantom4/ballistic.png, id=975, 389.5353pt x 327.3831pt>
 File: Plot/phantom4/ballistic.png Graphic file (type png)
 <use Plot/phantom4/ballistic.png>
-Package pdftex.def Info: Plot/phantom4/ballistic.png  used on input line 1007.
+Package pdftex.def Info: Plot/phantom4/ballistic.png  used on input line 1021.
 (pdftex.def)             Requested size: 192.0548pt x 161.40822pt.
 
 
@@ -1244,25 +1252,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [33 <./Plot/talon/ballistic.png> <./Plot/phantom4/ballistic.png>]
-<Plot/talon/glide.png, id=974, 382.3083pt x 327.3831pt>
+<Plot/talon/glide.png, id=986, 382.3083pt x 327.3831pt>
 File: Plot/talon/glide.png Graphic file (type png)
 <use Plot/talon/glide.png>
-Package pdftex.def Info: Plot/talon/glide.png  used on input line 1032.
+Package pdftex.def Info: Plot/talon/glide.png  used on input line 1046.
 (pdftex.def)             Requested size: 192.0548pt x 164.46544pt.
-<Plot/phantom4/glide.png, id=975, 390.258pt x 327.3831pt>
+<Plot/phantom4/glide.png, id=987, 390.258pt x 327.3831pt>
 File: Plot/phantom4/glide.png Graphic file (type png)
 <use Plot/phantom4/glide.png>
-Package pdftex.def Info: Plot/phantom4/glide.png  used on input line 1039.
+Package pdftex.def Info: Plot/phantom4/glide.png  used on input line 1053.
 (pdftex.def)             Requested size: 192.0548pt x 161.11348pt.
-<Plot/talon/fly_away.png, id=977, 367.8543pt x 327.3831pt>
+<Plot/talon/fly_away.png, id=989, 367.8543pt x 327.3831pt>
 File: Plot/talon/fly_away.png Graphic file (type png)
 <use Plot/talon/fly_away.png>
-Package pdftex.def Info: Plot/talon/fly_away.png  used on input line 1065.
+Package pdftex.def Info: Plot/talon/fly_away.png  used on input line 1079.
 (pdftex.def)             Requested size: 192.0548pt x 170.92456pt.
-<Plot/phantom4/fly_away.png, id=978, 385.1991pt x 327.3831pt>
+<Plot/phantom4/fly_away.png, id=990, 385.1991pt x 327.3831pt>
 File: Plot/phantom4/fly_away.png Graphic file (type png)
 <use Plot/phantom4/fly_away.png>
-Package pdftex.def Info: Plot/phantom4/fly_away.png  used on input line 1072.
+Package pdftex.def Info: Plot/phantom4/fly_away.png  used on input line 1086.
 (pdftex.def)             Requested size: 192.0548pt x 163.23155pt.
 
 
@@ -1273,15 +1281,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [34 <./Plot/talon/glide.png> <./Plot/phantom4/glide.png>]
-<Plot/talon/parachute.png, id=988, 365.6862pt x 357.0138pt>
+<Plot/talon/parachute.png, id=1000, 365.6862pt x 357.0138pt>
 File: Plot/talon/parachute.png Graphic file (type png)
 <use Plot/talon/parachute.png>
-Package pdftex.def Info: Plot/talon/parachute.png  used on input line 1095.
+Package pdftex.def Info: Plot/talon/parachute.png  used on input line 1109.
 (pdftex.def)             Requested size: 192.0548pt x 187.50586pt.
-<Plot/phantom4/parachute.png, id=989, 370.7451pt x 286.1892pt>
+<Plot/phantom4/parachute.png, id=1001, 370.7451pt x 286.1892pt>
 File: Plot/phantom4/parachute.png Graphic file (type png)
 <use Plot/phantom4/parachute.png>
-Package pdftex.def Info: Plot/phantom4/parachute.png  used on input line 1102.
+Package pdftex.def Info: Plot/phantom4/parachute.png  used on input line 1116.
 (pdftex.def)             Requested size: 192.0548pt x 148.25589pt.
 
 
@@ -1332,13 +1340,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [40]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 1330.
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1333.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 1344.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1347.
  (C:\Users\MICKO\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1333.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1347.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1356,10 +1364,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [42]
-<General Image/UPX GENERAL FLOWCHART.png, id=1075, 4045.1125pt x 5460.4pt>
+<General Image/UPX GENERAL FLOWCHART.png, id=1087, 4045.1125pt x 5460.4pt>
 File: General Image/UPX GENERAL FLOWCHART.png Graphic file (type png)
 <use General Image/UPX GENERAL FLOWCHART.png>
-Package pdftex.def Info: General Image/UPX GENERAL FLOWCHART.png  used on input line 1472.
+Package pdftex.def Info: General Image/UPX GENERAL FLOWCHART.png  used on input line 1486.
 (pdftex.def)             Requested size: 426.79135pt x 576.0668pt.
 
 
@@ -1404,17 +1412,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [47]
 Chapter 4.
 
-Overfull \hbox (45.8365pt too wide) in paragraph at lines 1566--1584
+Overfull \hbox (45.8365pt too wide) in paragraph at lines 1580--1598
  [][] 
  []
 
 [48
 
 ]
-<Plot/route.png, id=1112, 570.2103pt x 273.9033pt>
+<Plot/route.png, id=1124, 570.2103pt x 273.9033pt>
 File: Plot/route.png Graphic file (type png)
 <use Plot/route.png>
-Package pdftex.def Info: Plot/route.png  used on input line 1603.
+Package pdftex.def Info: Plot/route.png  used on input line 1617.
 (pdftex.def)             Requested size: 426.79135pt x 205.01738pt.
 
 
@@ -1425,20 +1433,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [49]
-<Plot/talon/ballistic_fpdf.png, id=1118, 555.7563pt x 295.5843pt>
+<Plot/talon/ballistic_fpdf.png, id=1130, 555.7563pt x 295.5843pt>
 File: Plot/talon/ballistic_fpdf.png Graphic file (type png)
 <use Plot/talon/ballistic_fpdf.png>
-Package pdftex.def Info: Plot/talon/ballistic_fpdf.png  used on input line 1612.
+Package pdftex.def Info: Plot/talon/ballistic_fpdf.png  used on input line 1626.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
-<Plot/talon/glide_pdf.png, id=1119, 555.7563pt x 295.5843pt>
+<Plot/talon/glide_pdf.png, id=1131, 555.7563pt x 295.5843pt>
 File: Plot/talon/glide_pdf.png Graphic file (type png)
 <use Plot/talon/glide_pdf.png>
-Package pdftex.def Info: Plot/talon/glide_pdf.png  used on input line 1617.
+Package pdftex.def Info: Plot/talon/glide_pdf.png  used on input line 1631.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
-<Plot/talon/fly_away_pdf.png, id=1120, 555.7563pt x 295.5843pt>
+<Plot/talon/fly_away_pdf.png, id=1132, 555.7563pt x 295.5843pt>
 File: Plot/talon/fly_away_pdf.png Graphic file (type png)
 <use Plot/talon/fly_away_pdf.png>
-Package pdftex.def Info: Plot/talon/fly_away_pdf.png  used on input line 1622.
+Package pdftex.def Info: Plot/talon/fly_away_pdf.png  used on input line 1636.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
 
 
@@ -1449,15 +1457,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [50 <./Plot/route.png> <./Plot/talon/ballistic_fpdf.png>]
-<Plot/talon/parachute_pdf.png, id=1128, 555.7563pt x 295.5843pt>
+<Plot/talon/parachute_pdf.png, id=1140, 555.7563pt x 295.5843pt>
 File: Plot/talon/parachute_pdf.png Graphic file (type png)
 <use Plot/talon/parachute_pdf.png>
-Package pdftex.def Info: Plot/talon/parachute_pdf.png  used on input line 1627.
+Package pdftex.def Info: Plot/talon/parachute_pdf.png  used on input line 1641.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
-<Plot/talon/total_fatality.png, id=1129, 555.7563pt x 295.5843pt>
+<Plot/talon/total_fatality.png, id=1141, 555.7563pt x 295.5843pt>
 File: Plot/talon/total_fatality.png Graphic file (type png)
 <use Plot/talon/total_fatality.png>
-Package pdftex.def Info: Plot/talon/total_fatality.png  used on input line 1632.
+Package pdftex.def Info: Plot/talon/total_fatality.png  used on input line 1646.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
 
 
@@ -1468,15 +1476,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [51 <./Plot/talon/glide_pdf.png> <./Plot/talon/fly_away_pdf.png>]
-<Plot/parrot/ballistic_pdf.png, id=1137, 555.7563pt x 295.5843pt>
+<Plot/parrot/ballistic_pdf.png, id=1149, 555.7563pt x 295.5843pt>
 File: Plot/parrot/ballistic_pdf.png Graphic file (type png)
 <use Plot/parrot/ballistic_pdf.png>
-Package pdftex.def Info: Plot/parrot/ballistic_pdf.png  used on input line 1639.
+Package pdftex.def Info: Plot/parrot/ballistic_pdf.png  used on input line 1653.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
-<Plot/parrot/glide_pdf.png, id=1138, 555.7563pt x 295.5843pt>
+<Plot/parrot/glide_pdf.png, id=1150, 555.7563pt x 295.5843pt>
 File: Plot/parrot/glide_pdf.png Graphic file (type png)
 <use Plot/parrot/glide_pdf.png>
-Package pdftex.def Info: Plot/parrot/glide_pdf.png  used on input line 1644.
+Package pdftex.def Info: Plot/parrot/glide_pdf.png  used on input line 1658.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
 
 
@@ -1487,15 +1495,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [52 <./Plot/talon/parachute_pdf.png> <./Plot/talon/total_fatality.png>]
-<Plot/parrot/fly_away_pdf.png, id=1146, 565.8741pt x 295.5843pt>
+<Plot/parrot/fly_away_pdf.png, id=1158, 565.8741pt x 295.5843pt>
 File: Plot/parrot/fly_away_pdf.png Graphic file (type png)
 <use Plot/parrot/fly_away_pdf.png>
-Package pdftex.def Info: Plot/parrot/fly_away_pdf.png  used on input line 1649.
+Package pdftex.def Info: Plot/parrot/fly_away_pdf.png  used on input line 1663.
 (pdftex.def)             Requested size: 426.79135pt x 222.94151pt.
-<Plot/parrot/parachute_pdf.png, id=1147, 555.7563pt x 295.5843pt>
+<Plot/parrot/parachute_pdf.png, id=1159, 555.7563pt x 295.5843pt>
 File: Plot/parrot/parachute_pdf.png Graphic file (type png)
 <use Plot/parrot/parachute_pdf.png>
-Package pdftex.def Info: Plot/parrot/parachute_pdf.png  used on input line 1654.
+Package pdftex.def Info: Plot/parrot/parachute_pdf.png  used on input line 1668.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
 
 
@@ -1506,10 +1514,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [53 <./Plot/parrot/ballistic_pdf.png> <./Plot/parrot/glide_pdf.png>]
-<Plot/parrot/total_fatality-pdf.png, id=1155, 555.7563pt x 295.5843pt>
+<Plot/parrot/total_fatality-pdf.png, id=1167, 555.7563pt x 295.5843pt>
 File: Plot/parrot/total_fatality-pdf.png Graphic file (type png)
 <use Plot/parrot/total_fatality-pdf.png>
-Package pdftex.def Info: Plot/parrot/total_fatality-pdf.png  used on input line 1659.
+Package pdftex.def Info: Plot/parrot/total_fatality-pdf.png  used on input line 1673.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
 
 
@@ -1520,20 +1528,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [54 <./Plot/parrot/fly_away_pdf.png> <./Plot/parrot/parachute_pdf.png>]
-<Plot/phantom4/ballistic_pdf.png, id=1164, 555.7563pt x 295.5843pt>
+<Plot/phantom4/ballistic_pdf.png, id=1176, 555.7563pt x 295.5843pt>
 File: Plot/phantom4/ballistic_pdf.png Graphic file (type png)
 <use Plot/phantom4/ballistic_pdf.png>
-Package pdftex.def Info: Plot/phantom4/ballistic_pdf.png  used on input line 1666.
+Package pdftex.def Info: Plot/phantom4/ballistic_pdf.png  used on input line 1680.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
-<Plot/phantom4/glide_pdf.png, id=1165, 555.7563pt x 295.5843pt>
+<Plot/phantom4/glide_pdf.png, id=1177, 555.7563pt x 295.5843pt>
 File: Plot/phantom4/glide_pdf.png Graphic file (type png)
 <use Plot/phantom4/glide_pdf.png>
-Package pdftex.def Info: Plot/phantom4/glide_pdf.png  used on input line 1671.
+Package pdftex.def Info: Plot/phantom4/glide_pdf.png  used on input line 1685.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
-<Plot/phantom4/fly_away_pdf.png, id=1166, 555.7563pt x 295.5843pt>
+<Plot/phantom4/fly_away_pdf.png, id=1178, 555.7563pt x 295.5843pt>
 File: Plot/phantom4/fly_away_pdf.png Graphic file (type png)
 <use Plot/phantom4/fly_away_pdf.png>
-Package pdftex.def Info: Plot/phantom4/fly_away_pdf.png  used on input line 1676.
+Package pdftex.def Info: Plot/phantom4/fly_away_pdf.png  used on input line 1690.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
 
 
@@ -1544,15 +1552,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [55 <./Plot/parrot/total_fatality-pdf.png> <./Plot/phantom4/ballistic_pdf.png>]
-<Plot/phantom4/parachute_pdf.png, id=1174, 555.7563pt x 295.5843pt>
+<Plot/phantom4/parachute_pdf.png, id=1186, 555.7563pt x 295.5843pt>
 File: Plot/phantom4/parachute_pdf.png Graphic file (type png)
 <use Plot/phantom4/parachute_pdf.png>
-Package pdftex.def Info: Plot/phantom4/parachute_pdf.png  used on input line 1681.
+Package pdftex.def Info: Plot/phantom4/parachute_pdf.png  used on input line 1695.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
-<Plot/phantom4/total_fatality_pdf.png, id=1175, 555.7563pt x 295.5843pt>
+<Plot/phantom4/total_fatality_pdf.png, id=1187, 555.7563pt x 295.5843pt>
 File: Plot/phantom4/total_fatality_pdf.png Graphic file (type png)
 <use Plot/phantom4/total_fatality_pdf.png>
-Package pdftex.def Info: Plot/phantom4/total_fatality_pdf.png  used on input line 1686.
+Package pdftex.def Info: Plot/phantom4/total_fatality_pdf.png  used on input line 1700.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
 
 
@@ -1563,15 +1571,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [56 <./Plot/phantom4/glide_pdf.png> <./Plot/phantom4/fly_away_pdf.png>]
-<Plot/inspire/ballistic_pdf.png, id=1183, 555.7563pt x 295.5843pt>
+<Plot/inspire/ballistic_pdf.png, id=1195, 555.7563pt x 295.5843pt>
 File: Plot/inspire/ballistic_pdf.png Graphic file (type png)
 <use Plot/inspire/ballistic_pdf.png>
-Package pdftex.def Info: Plot/inspire/ballistic_pdf.png  used on input line 1693.
+Package pdftex.def Info: Plot/inspire/ballistic_pdf.png  used on input line 1707.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
-<Plot/inspire/glide_pdf.png, id=1184, 555.7563pt x 295.5843pt>
+<Plot/inspire/glide_pdf.png, id=1196, 555.7563pt x 295.5843pt>
 File: Plot/inspire/glide_pdf.png Graphic file (type png)
 <use Plot/inspire/glide_pdf.png>
-Package pdftex.def Info: Plot/inspire/glide_pdf.png  used on input line 1698.
+Package pdftex.def Info: Plot/inspire/glide_pdf.png  used on input line 1712.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
 
 
@@ -1582,15 +1590,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [57 <./Plot/phantom4/parachute_pdf.png> <./Plot/phantom4/total_fatality_pdf.png>]
-<Plot/inspire/fly_away_pdf.png, id=1192, 555.7563pt x 295.5843pt>
+<Plot/inspire/fly_away_pdf.png, id=1204, 555.7563pt x 295.5843pt>
 File: Plot/inspire/fly_away_pdf.png Graphic file (type png)
 <use Plot/inspire/fly_away_pdf.png>
-Package pdftex.def Info: Plot/inspire/fly_away_pdf.png  used on input line 1703.
+Package pdftex.def Info: Plot/inspire/fly_away_pdf.png  used on input line 1717.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
-<Plot/inspire/parachute_pdf.png, id=1193, 555.7563pt x 295.5843pt>
+<Plot/inspire/parachute_pdf.png, id=1205, 555.7563pt x 295.5843pt>
 File: Plot/inspire/parachute_pdf.png Graphic file (type png)
 <use Plot/inspire/parachute_pdf.png>
-Package pdftex.def Info: Plot/inspire/parachute_pdf.png  used on input line 1708.
+Package pdftex.def Info: Plot/inspire/parachute_pdf.png  used on input line 1722.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
 
 
@@ -1601,10 +1609,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [58 <./Plot/inspire/ballistic_pdf.png> <./Plot/inspire/glide_pdf.png>]
-<Plot/inspire/total_fatality_pdf.png, id=1201, 555.7563pt x 295.5843pt>
+<Plot/inspire/total_fatality_pdf.png, id=1213, 555.7563pt x 295.5843pt>
 File: Plot/inspire/total_fatality_pdf.png Graphic file (type png)
 <use Plot/inspire/total_fatality_pdf.png>
-Package pdftex.def Info: Plot/inspire/total_fatality_pdf.png  used on input line 1713.
+Package pdftex.def Info: Plot/inspire/total_fatality_pdf.png  used on input line 1727.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
 
 
@@ -1615,20 +1623,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [59 <./Plot/inspire/fly_away_pdf.png> <./Plot/inspire/parachute_pdf.png>]
-<Plot/base_a_star.png, id=1209, 570.2103pt x 273.9033pt>
+<Plot/base_a_star.png, id=1221, 570.2103pt x 273.9033pt>
 File: Plot/base_a_star.png Graphic file (type png)
 <use Plot/base_a_star.png>
-Package pdftex.def Info: Plot/base_a_star.png  used on input line 1722.
+Package pdftex.def Info: Plot/base_a_star.png  used on input line 1736.
 (pdftex.def)             Requested size: 426.79135pt x 205.01738pt.
-<Plot/talon/talon_route.png, id=1210, 570.2103pt x 273.9033pt>
+<Plot/talon/talon_route.png, id=1222, 570.2103pt x 273.9033pt>
 File: Plot/talon/talon_route.png Graphic file (type png)
 <use Plot/talon/talon_route.png>
-Package pdftex.def Info: Plot/talon/talon_route.png  used on input line 1729.
+Package pdftex.def Info: Plot/talon/talon_route.png  used on input line 1743.
 (pdftex.def)             Requested size: 426.79135pt x 205.01738pt.
-<Plot/parrot/parrot_route.png, id=1211, 570.2103pt x 273.9033pt>
+<Plot/parrot/parrot_route.png, id=1223, 570.2103pt x 273.9033pt>
 File: Plot/parrot/parrot_route.png Graphic file (type png)
 <use Plot/parrot/parrot_route.png>
-Package pdftex.def Info: Plot/parrot/parrot_route.png  used on input line 1734.
+Package pdftex.def Info: Plot/parrot/parrot_route.png  used on input line 1748.
 (pdftex.def)             Requested size: 426.79135pt x 205.01738pt.
 
 
@@ -1639,15 +1647,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [60 <./Plot/inspire/total_fatality_pdf.png> <./Plot/base_a_star.png>]
-<Plot/phantom4/phantom_route.png, id=1220, 570.2103pt x 273.9033pt>
+<Plot/phantom4/phantom_route.png, id=1232, 570.2103pt x 273.9033pt>
 File: Plot/phantom4/phantom_route.png Graphic file (type png)
 <use Plot/phantom4/phantom_route.png>
-Package pdftex.def Info: Plot/phantom4/phantom_route.png  used on input line 1739.
+Package pdftex.def Info: Plot/phantom4/phantom_route.png  used on input line 1753.
 (pdftex.def)             Requested size: 426.79135pt x 205.01738pt.
-<Plot/inspire/inspire_route.png, id=1221, 570.2103pt x 273.9033pt>
+<Plot/inspire/inspire_route.png, id=1233, 570.2103pt x 273.9033pt>
 File: Plot/inspire/inspire_route.png Graphic file (type png)
 <use Plot/inspire/inspire_route.png>
-Package pdftex.def Info: Plot/inspire/inspire_route.png  used on input line 1744.
+Package pdftex.def Info: Plot/inspire/inspire_route.png  used on input line 1758.
 (pdftex.def)             Requested size: 426.79135pt x 205.01738pt.
 
 
@@ -1666,10 +1674,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [62 <./Plot/phantom4/phantom_route.png> <./Plot/inspire/inspire_route.png>]
-<Plot/risk_vs_distance.png, id=1237, 714.7503pt x 860.013pt>
+<Plot/risk_vs_distance.png, id=1249, 714.7503pt x 860.013pt>
 File: Plot/risk_vs_distance.png Graphic file (type png)
 <use Plot/risk_vs_distance.png>
-Package pdftex.def Info: Plot/risk_vs_distance.png  used on input line 1774.
+Package pdftex.def Info: Plot/risk_vs_distance.png  used on input line 1788.
 (pdftex.def)             Requested size: 426.79135pt x 513.54471pt.
 
 
@@ -1680,7 +1688,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [63]
-Overfull \hbox (5.78609pt too wide) in paragraph at lines 1780--1789
+Overfull \hbox (5.78609pt too wide) in paragraph at lines 1794--1803
  [][] 
  []
 
@@ -1692,7 +1700,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [64 <./Plot/risk_vs_distance.png>]
-Overfull \hbox (46.58011pt too wide) in paragraph at lines 1823--1836
+Overfull \hbox (46.58011pt too wide) in paragraph at lines 1837--1850
  [][] 
  []
 
@@ -1749,17 +1757,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24316 strings out of 476375
- 433327 string characters out of 5788976
+ 24324 strings out of 476375
+ 433657 string characters out of 5788976
  1870299 words of memory out of 5000000
- 44052 multiletter control sequences out of 15000+600000
+ 44058 multiletter control sequences out of 15000+600000
  520672 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,77p,2504b,5044s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (71 pages, 10333245 bytes).
+Output written on main.pdf (71 pages, 10361323 bytes).
 PDF statistics:
- 1454 PDF objects out of 1728 (max. 8388607)
- 314 named destinations out of 1000 (max. 500000)
- 837 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1468 PDF objects out of 1728 (max. 8388607)
+ 315 named destinations out of 1000 (max. 500000)
+ 842 words of extra memory for PDF output out of 10000 (max. 10000000)
 

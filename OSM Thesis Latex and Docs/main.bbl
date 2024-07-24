@@ -625,12 +625,12 @@
     \endentry
     \entry{clothier_casualty_2007}{article}{}
       \name{author}{4}{}{%
-        {{un=1,uniquepart=given,hash=112ce3f50405c4a2e5a3b3ec599e5c63}{%
+        {{un=0,uniquepart=base,hash=112ce3f50405c4a2e5a3b3ec599e5c63}{%
            family={Clothier},
            familyi={C\bibinitperiod},
            given={Reece},
            giveni={R\bibinitperiod},
-           givenun=1}}%
+           givenun=0}}%
         {{un=0,uniquepart=base,hash=badf27263b10161259313c8e22543623}{%
            family={Walker},
            familyi={W\bibinitperiod},
@@ -915,6 +915,44 @@
       \verb https://www.dji.com/id/products/comparison-consumer-drones
       \endverb
     \endentry
+    \entry{faa_expected_2000}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=42fa02a45678e5d2e51dea62f7ed634e}{%
+           family={{FAA}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {U.S Department of Transportation}%
+      }
+      \strng{namehash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \strng{fullhash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \strng{bibnamehash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \strng{authorbibnamehash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \strng{authornamehash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \strng{authorfullhash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \field{extraname}{1}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{20}
+      \field{month}{8}
+      \field{title}{{EXPECTED} {CASUALTY} {CALCULATIONS} {FOR} {COMMERCIAL} {SPACE} {LAUNCH} {AND} {REENTRY} {MISSIONS}}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Ac4311fn.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\MLIE2HSX\\Ac4311fn.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.faa.gov/about/office_org/headquarters_offices/ast/licenses_permits/media/Ac4311fn.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.faa.gov/about/office_org/headquarters_offices/ast/licenses_permits/media/Ac4311fn.pdf
+      \endverb
+    \endentry
     \entry{faa_ecfr_2016}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=42fa02a45678e5d2e51dea62f7ed634e}{%
@@ -927,6 +965,7 @@
       \strng{authorbibnamehash}{42fa02a45678e5d2e51dea62f7ed634e}
       \strng{authornamehash}{42fa02a45678e5d2e51dea62f7ed634e}
       \strng{authorfullhash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \field{extraname}{2}
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
       \field{extradatescope}{labelyear}
@@ -1942,43 +1981,6 @@
       \field{dateera}{ce}
       \verb{file}
       \verb Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\C9Y4TT3V\\Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:application/pdf;Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\93RWHAHX\\Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:application/pdf;Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\5E4DZ724\\Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:application/pdf
-      \endverb
-    \endentry
-    \entry{wu_development_2012}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=a96c2776202a07196eea910de588e7e0}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Paul},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=1,uniquepart=given,hash=35d515759e9d02b5771098e5584d2a2a}{%
-           family={Clothier},
-           familyi={C\bibinitperiod},
-           given={Reece\bibnamedelima A},
-           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=1}}%
-      }
-      \strng{namehash}{08a54f299d59bcc05ac7b40152f84be4}
-      \strng{fullhash}{08a54f299d59bcc05ac7b40152f84be4}
-      \strng{bibnamehash}{08a54f299d59bcc05ac7b40152f84be4}
-      \strng{authorbibnamehash}{08a54f299d59bcc05ac7b40152f84be4}
-      \strng{authornamehash}{08a54f299d59bcc05ac7b40152f84be4}
-      \strng{authorfullhash}{08a54f299d59bcc05ac7b40152f84be4}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{With the emergence of Unmanned Aircraft Systems ({UAS}) there is a growing need for safety standards and regulatory frameworks to manage the risks associated with their operations. The primary driver for airworthiness regulations (i.e., those governing the design, manufacture, maintenance and operation of {UAS}) are the risks presented to people in the regions overflown by the aircraft. Models characterising the nature of these risks are needed to inform the development of airworthiness regulations. The output from these models should include measures of the collective, individual and societal risk. A brief review of these measures is provided. Based on the review, it was determined that the model of the operation of an {UAS} over inhabited areas must be capable of describing the distribution of possible impact locations, given a failure at a particular point in the flight plan. Existing models either do not take the impact distribution into consideration, or propose complex and computationally expensive methods for its calculation. A computationally efficient approach for estimating the boundary (and in turn area) of the impact distribution for fixed wing unmanned aircraft is proposed. A series of geometric templates that approximate the impact distributions are derived using an empirical analysis of the results obtained from a 6Degree of Freedom (6DoF) simulation. The impact distributions can be aggregated to provide impact footprint distributions for a range of generic phases of flight and missions. The maximum impact footprint areas obtained from the geometric template are shown to have a relative error of typically less than 1\% compared to the areas calculated using the computationally more expensive 6DoF simulation. Computation times for the geometric models are on the order of one second or less, using a standard desktop computer. Future work includes characterising the distribution of impact locations within the footprint boundaries.}
-      \field{langid}{english}
-      \field{title}{The Development of Ground Impact Models for the Analysis of the Risks Associated with Unmanned Aircraft Operations Over Inhabited Areas}
-      \field{year}{2012}
-      \field{dateera}{ce}
-      \verb{file}
-      \verb Wu and Clothier - 2012 - The Development of Ground Impact Models for the An.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\TI6FXYDP\\Wu and Clothier - 2012 - The Development of Ground Impact Models for the An.pdf:application/pdf
       \endverb
     \endentry
   \enddatalist
@@ -2589,12 +2591,12 @@
     \endentry
     \entry{clothier_casualty_2007}{article}{}
       \name{author}{4}{}{%
-        {{un=1,uniquepart=given,hash=112ce3f50405c4a2e5a3b3ec599e5c63}{%
+        {{un=0,uniquepart=base,hash=112ce3f50405c4a2e5a3b3ec599e5c63}{%
            family={Clothier},
            familyi={C\bibinitperiod},
            given={Reece},
            giveni={R\bibinitperiod},
-           givenun=1}}%
+           givenun=0}}%
         {{un=0,uniquepart=base,hash=badf27263b10161259313c8e22543623}{%
            family={Walker},
            familyi={W\bibinitperiod},
@@ -2879,6 +2881,44 @@
       \verb https://www.dji.com/id/products/comparison-consumer-drones
       \endverb
     \endentry
+    \entry{faa_expected_2000}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=42fa02a45678e5d2e51dea62f7ed634e}{%
+           family={{FAA}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {U.S Department of Transportation}%
+      }
+      \strng{namehash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \strng{fullhash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \strng{bibnamehash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \strng{authorbibnamehash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \strng{authornamehash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \strng{authorfullhash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \field{extraname}{1}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{20}
+      \field{month}{8}
+      \field{title}{{EXPECTED} {CASUALTY} {CALCULATIONS} {FOR} {COMMERCIAL} {SPACE} {LAUNCH} {AND} {REENTRY} {MISSIONS}}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Ac4311fn.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\MLIE2HSX\\Ac4311fn.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.faa.gov/about/office_org/headquarters_offices/ast/licenses_permits/media/Ac4311fn.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.faa.gov/about/office_org/headquarters_offices/ast/licenses_permits/media/Ac4311fn.pdf
+      \endverb
+    \endentry
     \entry{faa_ecfr_2016}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=42fa02a45678e5d2e51dea62f7ed634e}{%
@@ -2891,6 +2931,7 @@
       \strng{authorbibnamehash}{42fa02a45678e5d2e51dea62f7ed634e}
       \strng{authornamehash}{42fa02a45678e5d2e51dea62f7ed634e}
       \strng{authorfullhash}{42fa02a45678e5d2e51dea62f7ed634e}
+      \field{extraname}{2}
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
       \field{extradatescope}{labelyear}
@@ -3906,43 +3947,6 @@
       \field{dateera}{ce}
       \verb{file}
       \verb Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\C9Y4TT3V\\Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:application/pdf;Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\93RWHAHX\\Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:application/pdf;Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\5E4DZ724\\Weibel and Hansman - Safety Considerations for Operation of Different C.pdf:application/pdf
-      \endverb
-    \endentry
-    \entry{wu_development_2012}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=a96c2776202a07196eea910de588e7e0}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Paul},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=1,uniquepart=given,hash=35d515759e9d02b5771098e5584d2a2a}{%
-           family={Clothier},
-           familyi={C\bibinitperiod},
-           given={Reece\bibnamedelima A},
-           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=1}}%
-      }
-      \strng{namehash}{08a54f299d59bcc05ac7b40152f84be4}
-      \strng{fullhash}{08a54f299d59bcc05ac7b40152f84be4}
-      \strng{bibnamehash}{08a54f299d59bcc05ac7b40152f84be4}
-      \strng{authorbibnamehash}{08a54f299d59bcc05ac7b40152f84be4}
-      \strng{authornamehash}{08a54f299d59bcc05ac7b40152f84be4}
-      \strng{authorfullhash}{08a54f299d59bcc05ac7b40152f84be4}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{With the emergence of Unmanned Aircraft Systems ({UAS}) there is a growing need for safety standards and regulatory frameworks to manage the risks associated with their operations. The primary driver for airworthiness regulations (i.e., those governing the design, manufacture, maintenance and operation of {UAS}) are the risks presented to people in the regions overflown by the aircraft. Models characterising the nature of these risks are needed to inform the development of airworthiness regulations. The output from these models should include measures of the collective, individual and societal risk. A brief review of these measures is provided. Based on the review, it was determined that the model of the operation of an {UAS} over inhabited areas must be capable of describing the distribution of possible impact locations, given a failure at a particular point in the flight plan. Existing models either do not take the impact distribution into consideration, or propose complex and computationally expensive methods for its calculation. A computationally efficient approach for estimating the boundary (and in turn area) of the impact distribution for fixed wing unmanned aircraft is proposed. A series of geometric templates that approximate the impact distributions are derived using an empirical analysis of the results obtained from a 6Degree of Freedom (6DoF) simulation. The impact distributions can be aggregated to provide impact footprint distributions for a range of generic phases of flight and missions. The maximum impact footprint areas obtained from the geometric template are shown to have a relative error of typically less than 1\% compared to the areas calculated using the computationally more expensive 6DoF simulation. Computation times for the geometric models are on the order of one second or less, using a standard desktop computer. Future work includes characterising the distribution of impact locations within the footprint boundaries.}
-      \field{langid}{english}
-      \field{title}{The Development of Ground Impact Models for the Analysis of the Risks Associated with Unmanned Aircraft Operations Over Inhabited Areas}
-      \field{year}{2012}
-      \field{dateera}{ce}
-      \verb{file}
-      \verb Wu and Clothier - 2012 - The Development of Ground Impact Models for the An.pdf:C\:\\Users\\MICKO\\Zotero\\storage\\TI6FXYDP\\Wu and Clothier - 2012 - The Development of Ground Impact Models for the An.pdf:application/pdf
       \endverb
     \endentry
   \enddatalist

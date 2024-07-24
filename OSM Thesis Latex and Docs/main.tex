@@ -503,40 +503,54 @@
             profile that might affect the chance of failure are not taken into account.
 
         \subsection{Impact location model}
-            The impact location model describes the position and size of the impact region caused by a UAV crash. Some
-            models propose single-point impact, while others consider that, given a specific trajectory, the UAV may
-            make contact at a number of different locations. The latter strategy establishes a perimeter around which
-            all of the UAV's possible impact points are located. The perimeter of this distribution is calculated based
-            on the possible maximum UAV descent trajectory distance. The impact location model can be formulated using
-            two different models, hypothetical and empirical model.
+            The impact location model describes the position and size of the impact region caused by a UAV crash.
+            Various models are employed to determine this impact area, ranging from single-point impact models to more
+            complex models that account for multiple potential impact points along a UAV's trajectory. The latter
+            strategy establishes a perimeter around which all of the UAV's possible impact points are located,
+            calculated based on the maximum descent trajectory distance. The impact location model can be formulated
+            using empirical or hypothetical approaches.
+                
+            Empirical models leverage historical aircraft event data as a starting point, using interpolation and
+            extrapolation algorithms to identify potential impact sites. For example, \cite{melnyk_third-party_2014}
+            categorizes these models based on the study by \cite{ale_assessment_2000}, further refining impact
+            predictions through weight-based classification.
+                
+            Where generally speaking, the hypothetical model in research often attempts to establish a relationship
+            between the size of the UAV and the extent of its impacted area. For instance, models proposed by
+            \cite{primatesta_ground_2020} and \cite{burke_system-level_2011} utilize aerodynamic principles to simulate
+            impact behavior. This model can be further categorized into ballistic descent, gliding descent, and planform
+            models. The ballistic descent calculates the trajectory based on a ballistic profile, while the gliding
+            model assumes the UAV will continue descending along its glide path. The planform model, on the other hand,
+            uses the aircraft's wing and layout aerodynamic properties to determine the descent trajectory.
+                
+            According to \cite{primatesta_risk-based_2020}, it is very costly to calculate full aerodynamic properties
+            per cell in a large grid, which is why many researchers rely on gliding and ballistic descent calculations
+            for impact modeling. Additionally, \cite{primatesta_ground_2020} introduced scenarios such as parachute
+            descent, where the UAV deploys a parachute during descent, and fly-away descent, where the UAV maintains a
+            stable cruise after the pilot loses control.
+                
+            Primatesta uses a method from the US Department of Transportation \cite{faa_expected_2000} for calculating
+            the casualty area of a vertically falling inert piece of debris. According to this method, the casualty area
+            is a circle whose radius is the sum of the radius of a circle with an area equal to the largest
+            cross-sectional area of the debris and the radius of a human being (30 \(cm\)). For these calculations, an
+            acceptable dimension for a human is considered to be a 182.5 \(cm\) tall cylinder with a 30 \(cm\) radius.
+            To account for any horizontal velocity component, such as wind or trajectory angles, the basic casualty area
+            can be calculated using the following equation and figures:
 
-            Generally speaking, the hypothetical model used in research is often tries to model a relationship between
-            the size of the UAV to the sizes of its impacted area. Some model such as from \cite{primatesta_ground_2020}
-            and \cite{burke_system-level_2011} uses the aerodynamic model to simulate the behavior of the impact
-            location. This model can be further separated into a ballistic descent, gliding descent, and planform model.
-            The ballistic descent calculated the trajectory based on the ballistic profile. The gliding model such as in
-            assumes the UAV will continue descending based on their glide profile. And the planform model uses the
-            aircraft wings and its layout aerodynamic properties to calculate the descent trajectory. 
-            
-            According to \cite{primatesta_risk-based_2020} it is very expensive to calculate full aerodynamic properties
-            per cell in large number of cells in a grid, therefore it is not surpriseing many research use only gliding
-            and ballistic descent to calculate the impact model. 
-
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=\textwidth]{General Image/OSM Drone-Area Exposed.pdf}
+                \caption{Area exposed of casualty area}
+            \end{figure}
 
             \begin{equation}
-                A_{exp}(\theta) = \pi(r_p + r_{uav})^2 sin(\theta) + (r_p + r_{uav})(h_p + r_{uav})cos(\theta)
+                A_{exp}(\theta) = \pi (r_p + r_{uav})^2 \sin (\theta) + (r_p + r_{uav})(h_p + r_{uav}) \cos (\theta)
             \end{equation}
 
-            \cite{primatesta_ground_2020} added parachute descent, an event where UAV deployed its parachute when descending. And fly away
-            descent, where the pilot lost control of the UAV, while the UAV automatically maintains a stable cruise.
-
-            \cite{wu_development_2012} use a dynamic model assessed for various failure conditions to determine the maximum boundary (and in
-            turn area) of the impact distribution for fixed-wing UAV. However, like most models, it assumes a uniform
-            impact distribution within these boundaries.
-
-            While an empirical model using historical aircraft events is used as a starting point by interpolation and
-            extrapolation algorithms to pinpoint the impact site. \cite{melnyk_third-party_2014} further classifies these models into weight based
-            on the study conducted by \cite{ale_assessment_2000}
+            Here \(A_{exp}\) is an area exposed in \(m^2 \), $r_p$ and \(h_p\) is the average radius (0.3 \(m\)) and
+            average height (182.5 \(m\)) of a person respectively in meter, $r_{uav}$ is the radius of the UAV in meter,
+            and $\theta$ is the impact angle on the ground. This conservative computation takes into account the maximum
+            radius of the UAV, ensuring a thorough evaluation of the impact area.
 
         \subsection{Recovery model}
             A recovery risk model for UAV is a model used to assess the likelihood of successful recovery of a UAV to a

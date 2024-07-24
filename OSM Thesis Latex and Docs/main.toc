@@ -15,12 +15,12 @@
 \contentsline {section}{\numberline {2.2}Ground risk model}{13}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Failure model}{15}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Impact location model}{18}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Recovery model}{19}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Stress model}{19}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}Exposure model}{20}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.3}Recovery model}{20}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Stress model}{20}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Exposure model}{21}{subsection.2.2.5}%
 \contentsline {subsection}{\numberline {2.2.6}Incident stress model}{21}{subsection.2.2.6}%
-\contentsline {subsection}{\numberline {2.2.7}Harm model}{21}{subsection.2.2.7}%
-\contentsline {section}{\numberline {2.3}Risk informed path finder}{23}{section.2.3}%
+\contentsline {subsection}{\numberline {2.2.7}Harm model}{22}{subsection.2.2.7}%
+\contentsline {section}{\numberline {2.3}Risk informed path finder}{24}{section.2.3}%
 \contentsline {chapter}{\numberline {3}Background Theory and Methodology}{25}{chapter.3}%
 \contentsline {section}{\numberline {3.1}General Overview}{25}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Prerequisite data}{25}{section.3.2}%

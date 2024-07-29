@@ -16,62 +16,62 @@
 \contentsline {subsection}{\numberline {2.2.1}Failure model}{15}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Impact location model}{18}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Recovery model}{20}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Stress model}{20}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}Exposure model}{21}{subsection.2.2.5}%
-\contentsline {subsection}{\numberline {2.2.6}Incident stress model}{21}{subsection.2.2.6}%
-\contentsline {subsection}{\numberline {2.2.7}Harm model}{22}{subsection.2.2.7}%
-\contentsline {section}{\numberline {2.3}Risk informed path finder}{24}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Background Theory and Methodology}{25}{chapter.3}%
-\contentsline {section}{\numberline {3.1}General Overview}{25}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Prerequisite data}{25}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Online geographic data}{25}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Population data}{26}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Geographic Information System}{26}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Risk map}{27}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Georeference layers}{27}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Population density layer}{27}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Obstacle layer}{28}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Sheltering factor layer}{29}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}No-fly zone layer}{30}{subsection.3.3.5}%
-\contentsline {section}{\numberline {3.4}Ground Risk Assessment}{31}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Failure rate}{32}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Descent Event}{32}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Ballistic Descent}{33}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Glide Descent}{33}{subsection.3.4.4}%
-\contentsline {subsection}{\numberline {3.4.5}Fly away}{34}{subsection.3.4.5}%
-\contentsline {subsection}{\numberline {3.4.6}Parachute}{35}{subsection.3.4.6}%
-\contentsline {subsection}{\numberline {3.4.7}Wind effect}{36}{subsection.3.4.7}%
-\contentsline {subsection}{\numberline {3.4.8}Probability of Impacting an Individual}{36}{subsection.3.4.8}%
-\contentsline {subsection}{\numberline {3.4.9}Probability of Fatality}{37}{subsection.3.4.9}%
-\contentsline {section}{\numberline {3.5}Finding optimal path}{38}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Problem statement}{39}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Dijkstra's algorithm}{40}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}A* algorithm}{41}{subsection.3.5.3}%
-\contentsline {section}{\numberline {3.6}UPX, UAV Pathfinding eXtension}{45}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Limitation}{46}{subsection.3.6.1}%
-\contentsline {section}{\numberline {3.7}UPX Python and packages}{46}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Python}{46}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}GeoPandas}{46}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Shapely}{47}{subsection.3.7.3}%
-\contentsline {subsection}{\numberline {3.7.4}Tesspy}{47}{subsection.3.7.4}%
-\contentsline {subsection}{\numberline {3.7.5}OSMnx}{47}{subsection.3.7.5}%
-\contentsline {subsection}{\numberline {3.7.6}NetworkX}{47}{subsection.3.7.6}%
-\contentsline {chapter}{\numberline {4}Results}{48}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Ground risk map generation}{48}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}UAV Specification}{48}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Objective}{49}{section.4.2}%
-\contentsline {section}{\numberline {4.3}PDF risk map}{50}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Talon}{50}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Parrot Disco}{53}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}DJI Phantom 4}{55}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}DJI Inspire 2}{58}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Pathfinder result}{60}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Regular A*}{60}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Risk A*}{61}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Risk result}{62}{subsection.4.4.3}%
-\contentsline {chapter}{\numberline {5}Summary, Conclusion, and Recommendation}{66}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Summary}{66}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Conclusion}{66}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Recommendation}{67}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}For future research}{67}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}For software design}{67}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {2.2.4}Stress model}{21}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Exposure model}{22}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Incident stress model}{22}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}Harm model}{23}{subsection.2.2.7}%
+\contentsline {section}{\numberline {2.3}Risk informed path finder}{25}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Background Theory and Methodology}{26}{chapter.3}%
+\contentsline {section}{\numberline {3.1}General Overview}{26}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Prerequisite data}{26}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Online geographic data}{26}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Population data}{27}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Geographic Information System}{27}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Risk map}{28}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Georeference layers}{28}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Population density layer}{28}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Obstacle layer}{29}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Sheltering factor layer}{30}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}No-fly zone layer}{31}{subsection.3.3.5}%
+\contentsline {section}{\numberline {3.4}Ground Risk Assessment}{32}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Failure rate}{33}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Descent Event}{33}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Ballistic Descent}{34}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Glide Descent}{34}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.5}Fly away}{35}{subsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.4.6}Parachute}{36}{subsection.3.4.6}%
+\contentsline {subsection}{\numberline {3.4.7}Wind effect}{37}{subsection.3.4.7}%
+\contentsline {subsection}{\numberline {3.4.8}Probability of Impacting an Individual}{37}{subsection.3.4.8}%
+\contentsline {subsection}{\numberline {3.4.9}Probability of Fatality}{38}{subsection.3.4.9}%
+\contentsline {section}{\numberline {3.5}Finding optimal path}{39}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Problem statement}{40}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Dijkstra's algorithm}{41}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}A* algorithm}{42}{subsection.3.5.3}%
+\contentsline {section}{\numberline {3.6}UPX, UAV Pathfinding eXtension}{46}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Limitation}{47}{subsection.3.6.1}%
+\contentsline {section}{\numberline {3.7}UPX Python and packages}{47}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Python}{47}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}GeoPandas}{47}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Shapely}{48}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}Tesspy}{48}{subsection.3.7.4}%
+\contentsline {subsection}{\numberline {3.7.5}OSMnx}{48}{subsection.3.7.5}%
+\contentsline {subsection}{\numberline {3.7.6}NetworkX}{48}{subsection.3.7.6}%
+\contentsline {chapter}{\numberline {4}Results}{49}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Ground risk map generation}{49}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}UAV Specification}{49}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Objective}{50}{section.4.2}%
+\contentsline {section}{\numberline {4.3}PDF risk map}{51}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Talon}{51}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Parrot Disco}{54}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}DJI Phantom 4}{56}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}DJI Inspire 2}{59}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Pathfinder result}{61}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Regular A*}{61}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Risk A*}{62}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Risk result}{63}{subsection.4.4.3}%
+\contentsline {chapter}{\numberline {5}Summary, Conclusion, and Recommendation}{67}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Summary}{67}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Conclusion}{67}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Recommendation}{68}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}For future research}{68}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}For software design}{68}{subsection.5.3.2}%

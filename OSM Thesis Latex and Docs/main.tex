@@ -191,6 +191,7 @@
         \acro{UAV}{Unmanned Aerial Vehicle}
         \acro{UPX}{UAV Pathfinding eXtension}
         \acro{CE}{Casualty Expectation}
+        \acro{AGL}{Above Ground Level}
     \end{acronym}
     \newpage
     
@@ -539,7 +540,7 @@
 
             \begin{figure}[H]
                 \centering
-                \includegraphics[width=\textwidth]{General Image/OSM Drone-Area Exposed.pdf}
+                \includegraphics[width=0.75\textwidth]{General Image/OSM Drone-Area Exposed.pdf}
                 \caption{Area exposed of casualty area}
             \end{figure}
 
@@ -547,7 +548,7 @@
                 A_{exp}(\theta) = \pi (r_p + r_{uav})^2 \sin (\theta) + (r_p + r_{uav})(h_p + r_{uav}) \cos (\theta)
             \end{equation}
 
-            Here \(A_{exp}\) is an area exposed in \(m^2 \), $r_p$ and \(h_p\) is the average radius (0.3 \(m\)) and
+            Where \(A_{exp}\) is an area exposed in \(m^2 \), $r_p$ and \(h_p\) is the average radius (0.3 \(m\)) and
             average height (182.5 \(m\)) of a person respectively in meter, $r_{uav}$ is the radius of the UAV in meter,
             and $\theta$ is the impact angle on the ground. This conservative computation takes into account the maximum
             radius of the UAV, ensuring a thorough evaluation of the impact area.
@@ -557,17 +558,66 @@
             optimal or degraded operational state following a failure or malfunction. The model takes into account a
             variety of factors, the nature and severity of the failure, and the environment in which the recovery is
             taking place. The recovery risk model also takes into account the UAV design, capabilities and limitations.
-            For example, a fixed wing UAV will have different recovery options as compared to a multirotor UAV. Also,
-            the flight control system, navigation and sensor capabilities play an important role in the recovery
-            process.
+            For example some UAV has parachute failsafe built into it. This parachute is then deployed when the control
+            logic of the UAV detected major system breakdown. Some high-end UAV will enter a automatic landing or
+            controlled crash into terrain before it deploys its parachute. Although not always it is a general rule of
+            thumb that the UAV that has already equiped by parachute usually already has an advance flight controller.
+            Please note that at the time of this writing, there are little to none database containing every specification
+            of each highend drone.
                 
-                The type of failure, its method of failure, and the operating environment all influence the likelihood
-            of recovery. For instance, if the UAV malfunctions and enters a lost-of-control failure state, the
-            existence of a recovery mechanism in this case, a parachute, would slow down the drop velocity and lessen
-            any potentially damaging effects of the malfunction. Unfortunately many ground risk models omitted the use
-            of the recovery model, with small exception such as the model provided by \cite{shelley_model_2016}, \cite{bleier_risk_2015} and \cite{primatesta_ground_2020} explore the
-            effectiveness of parachutes. As concluded, recovery parachute descent employed by \cite{primatesta_ground_2020} shows significant
-            decrease in the kinetic impact energy, and reduce the overall fatality.
+            Although there is a significant in studying UAV recovery behaviour, only three researches that managed to
+            include recovery model in its ground risk model. \cite{shelley_model_2016} calculated the safest highest
+            possible flight altitude of the UAV based on its weight, or to be precised its resulted kinetic impact. It
+            is showed that under any circumstances UAV with the weight over 1.5 kg must not be flown over a dense
+            population. The study also give a benefit to equiping UAV with parachute will enable most UAV from only
+            permitted to flown in tens of feet to 400 ft \ac{AGL}.
+
+            The reasoning behind the small numbers of parachute descent being incorporate into GRM is because it assumes
+            if the UAV already deployed its parachute, there are little to no threat to population. Hence, most of the
+            reasearcher just give if else statements, where to just ignore its calculation if parachute is installed
+            into the UAV. However some researcher goes into detail to see the effect of UAV impacting the surrounding
+            area even with parachute, after all parachute can be drag by wind and still conatains an energy.
+
+            \cite{primatesta_ground_2020} use parachute descent calculation based on the study from
+            \cite{bleier_risk_2015}, where it calculate possible area where the UAV will land. \cite{bleier_risk_2015}
+            use its calculation based on the relation ship of \(s = V \cdot t\), where \(s\) is distance, \(V\) is
+            velocity and \(t\) is time. The relationship is expanded into include wind effect. Which resulted into
+            equation \ref{eq:vsink} and \ref{eq:bleir}.
+
+            \begin{equation}\label{eq:vsink}
+                t_d = \frac{h} {V_{sink}}
+            \end{equation}
+
+            \begin{equation}\label{eq:bleir}
+                \begin{pmatrix}
+                    x \\
+                    y
+                \end{pmatrix}
+                =
+                \left( V_{\text{wind}} \pm \Delta V_{\text{wind}} \right) \frac{h}{V_{\text{sink}}}
+                \cdot
+                \begin{pmatrix}
+                    \cos \left( \alpha_{\text{wind}} \pm \Delta \alpha_{\text{wind}} \right) \\
+                    \sin \left( \alpha_{\text{wind}} \pm \Delta \alpha_{\text{wind}} \right)
+                \end{pmatrix}
+            \end{equation}
+
+            Where \(t_d\) is time from deployed state to the ground, \(v_{sink}\) is the descent velocity,
+            \(V_{wind}\) and \(\Delta V_{wind}\) is wind speed and random change in wind speed respectively,
+            \(\alpha_{wind}\) and \(\Delta \alpha_{wind}\) is wind angle and random change in wind angle respectively
+
+            We can see how the equation works from figure \ref{fig:area_parachute} below. Please not that
+            \cite{bleier_risk_2015} only shows the equation for north down east coordinate system, where we use general
+            cartesian coordinate for the figure. Back to the figure, if we view how the UAV is fell from the sky from a
+            top down perspective, where the \(0,0\) is the point of deployment and has a wind affecting its descent
+            trajectory. The UAV will take its time to be dragged into the ground by the wind to the red area, where the
+            left most side is the furthest possible point, and vice versa for the right most side of the red area. 
+
+            \begin{figure}[H]
+                \centering\label{fig:area_parachute}
+                \includegraphics[width=0.75\textwidth]{General Image/OSM Drone-Landing zone.pdf}
+                \caption{Range covered by parachute landing}
+            \end{figure}
 
         \subsection{Stress model}
                 The stress model explains the unpredictability of harmful circumstances occurring at a specific time and

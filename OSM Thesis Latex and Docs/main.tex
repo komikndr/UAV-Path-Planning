@@ -369,7 +369,7 @@
         \ref{eq:general_probability}.
         
         \begin{equation}\label{eq:general_probability}
-            P_{fatal}(x) = P_{failure}(x) \cdot P_{impact}(x) \cdot P_{recovery} \cdot P_{stress} \cdot P_{exposure} \cdot P_{incident}(x) \cdot P_{harm}(x)
+            P_{fatal}(x) = P_{failure}(x) \cdot P_{impact}(x) \cdot P_{recovery} \cdot P_{stress} \cdot P_{exposure}(x) \cdot P_{incident}(x) \cdot P_{harm}(x)
         \end{equation}
         
         All of these models are represented as the probability of the said event-model occurring. Where \(P\) is a
@@ -614,19 +614,22 @@
             left most side is the furthest possible point, and vice versa for the right most side of the red area. 
 
             \begin{figure}[H]
-                \centering\label{fig:area_parachute}
+                \centering
                 \includegraphics[width=0.75\textwidth]{General Image/OSM Drone-Landing zone.pdf}
                 \caption{Range covered by parachute landing}
+                \label{fig:area_parachute}
             \end{figure}
 
         \subsection{Stress model}
                 The stress model explains the unpredictability of harmful circumstances occurring at a specific time and
-            place. Depending on the kind of harm being characterized as part of the risk assessment, a specific harmful
-            situation is modelled. For instance, stresses may be described as kinetic energy if the outcome to be
-            calculated was human physical harm modeled in \ac{KE}. While secondary effects such as explosions and the release of
-            hazardous chemicals will have distinct related stress qualities that need to be modeled differently. There
-            are model proposed by \cite{ball_crash_2012} to analyze the consequences of heat radiation and explosions which often produces
-            by chemical reaction. 
+            place. Or in other term what kind of harm are recieved by the population. For instance, stresses may be
+            described as kinetic energy if the outcome to be calculated was human physical harm modeled in \ac{KE}.
+            While secondary effects such as explosions and the release of hazardous chemicals will have distinct related
+            stress qualities that need to be modeled differently. There are model proposed by \cite{ball_crash_2012} to
+            analyze the consequences of heat radiation and explosions which often produces by chemical reaction. 18 of
+            22 of the papers are using only kinetic energy as an only harm type in their ground risk model. This is not
+            surprising since majority of the damage done into human body is kinetic energy based on the bomb explosion
+            effect into human body reserach by \cite{harwick_approved_2007}.
 
             Depending on the kind of UAV, different stress factors that relate to one or more harmful processes may
             exist. Additionally, the UAV's characteristics and its trajectory may be changed to alter the stress profile
@@ -670,25 +673,32 @@
             used by \cite{ancel_real-time_2017} to create a near-real-time model of the population distribution.
 
         \subsection{Incident stress model}
-            The incident stress model describes how much stress an individual is exposed to. However, a large number of
-            the discovered ground risk models do not take event stress variance into consideration. Therefore, it is
-            presumed that the UAV KE is entirely directed directly at the human. Although a conservative assumption,
-            it may cause the degree of risk to be overestimated. Not all studies adopt the sheltering model since most
-            information about the material composition of shelters is generally limited to local government databases.
-            limiting the range of potential general approaches to building shelter-based models.
+            The incident stress model describes how much harm an individual is exposed to. Where in other term, how
+            protected an individual from getting hit by the debris. Some papers such as \cite{primatesta_ground_2020},
+            \cite{cour-harbo_ground_2020}, and \cite{dalamagkidis_evaluating_2008} to name a few, take into account an
+            attenuating factor based on the sheltering effect to calculate how much kinetic energy a certain building
+            can hold. In the model described by \cite{ball_crash_2012}, the amount of KE that is absorbed by the shelter
+            as a result of its deformation, breaking, and movement is then subtracted from the overall risk posed by the
+            system.
 
-            On the other hand, the model that takes into account an attenuating factor uses a straightforward KE model
-            based on the sheltering effect to calculate how much kinetic energy a certain building can hold. An existing
-            study of debris was used to develop the sheltering model.
+            Most of the shelter model in the paper who use it is split into four or five different type of building.
+            From no shelter, sparse tree, small building, medium size building, and large building. Where small building
+            typically describe a residential house or a small shop. Medium sized building where it describe a 2 stories
+            building. And large building is from 3 stories and up. Based on investigations undertaken by the Columbia
+            Accident and Investigation Board and the Department of Defense, \cite{melnyk_third-party_2014}, where it
+            describe a method for calculating the risk from population distribution, most of the shelter are mostly
+            residential structures and commercial buildings.
 
-            In the model described by \cite{ball_crash_2012}, the amount of KE that is absorbed by the shelter as a result of its
-            deformation, breaking, and movement as a result of an incident KE is subtracted from the overall risk posed
-            by the system.
+            As previously mentioned each of these shelter types has its attenuating factor, where it is just a
+            coefficient factors to reduce the ammount of kinetic energy. It can be described as an simple proportional
+            equation \ref{eq:shelter_factor} below
 
-            Based on investigations undertaken by the Columbia Accident and Investigation Board and the Department of
-            Defense, \cite{melnyk_third-party_2014} describe a method for calculating the risk from population distribution within various types
-            of shelters, mostly residential structures and commercial buildings.
+            \begin{equation}\label{eq:shelter_factor}
+                S \cdot E_k
+            \end{equation}
 
+            Where \(S\) is a shelter factor ranging from 0 to 1.0, and \(E_k\) is kinetic energy
+            
         \subsection{Harm model}
             The harm model describe the severity of UAV impact towards the population. The harm model usually measured
             in probability of fatality given UAV impact to a person. The impact harm model can be categorized based on
@@ -724,6 +734,12 @@
         effectiveness of UAV operations. By identifying and prioritizing potential risks, ground risk models can help
         operators make informed decisions about how to mitigate or manage those risks. As the use of UAV continues to
         grow and expand into new applications, the importance of ground risk modeling is likely to increase as well.
+
+        As an summary, think the ground risk model as a series of queestion asked in order. Where the questions are, how
+        likely the will UAV fail, if the UAV fail where will it land, what does the descent landing looks like in
+        ballistic, fly away, glide, or in parachute mode. If it land how likely is it to hit people in certain area. Are
+        people in the somekind of shelter? if it does how safe is it if the drone hit them, does that hit cauase
+        fatality?
         
     \section{Risk informed path finder}
         This study not only for generating the ground risk map for the risk assesment but also measures and finds the

@@ -196,6 +196,7 @@
         \acro{DFS}{Depth-First Search}
         \acro{ACO}{Ant Colony Optimization}
         \acro{RRT}{Rapidly-Exploring Random Tree}
+        \acro{AI}{Artificial Intelligence}
     \end{acronym}
     \newpage
     
@@ -818,6 +819,43 @@
         navigation. However, RRT does not always guarantee the shortest path and can produce suboptimal solutions that
         may require post-processing to refine \cite{lavalle_planning_2006}.
 
+        \subsection{Ant colony optimization}
+        \ac{ACO} is inspired by the behavior of ants seeking paths from their colony to food
+        sources. ACO uses artificial ants that deposit pheromones on paths, influencing subsequent ants to follow and
+        reinforce successful paths.
+                
+        ACO is effective for dynamic and complex problems, adapting well to changes in the environment. It excels at
+        finding multiple paths and can optimize for various criteria, such as risk and distance. However, ACO can be
+        computationally intensive and may require significant tuning to achieve optimal performance
+        \cite{dorigo_ant_2004}.
+
+        \subsection{Generative pathfinding AI}
+        Generative Pathfinding AI leverages advanced machine learning techniques, such as neural networks and
+        reinforcement learning, to generate optimal paths. These methods can learn from vast amounts of data and adapt
+        to complex environments.
+                
+        Generative AI can produce highly efficient and adaptable solutions, particularly in dynamic and uncertain
+        environments. It can integrate multiple factors, such as risk and distance, into its decision-making process.
+        However, these methods require substantial computational resources and extensive training data, which can be a
+        limitation in some applications \cite{silver_mastering_2016}.
+
+        \subsection{Justification for Choosing A*}
+        Among the algorithms reviewed, A* stands out due to its balanced approach combining the benefits of Dijkstra’s
+        Algorithm and Greedy Best-First Search. A* uses a cost function 𝑓 ( 𝑛 ) = 𝑔 ( 𝑛 ) + ℎ ( 𝑛 ) f(n)=g(n)+h(n),
+        where 𝑔 ( 𝑛 ) g(n) represents the cost from the start node to the current node, and ℎ ( 𝑛 ) h(n) is a
+        heuristic estimate of the cost from the current node to the goal. This allows A* to efficiently find the
+        shortest path by prioritizing nodes that are both close to the start and appear close to the goal.
+                
+        A* is particularly advantageous for pre-operational UAV path planning as it ensures the optimal path in terms of
+        both distance and risk. By incorporating a risk coefficient into the cost function, the Risk A* variant can
+        balance the need for short paths with the requirement to minimize exposure to hazardous areas. Studies by
+        \cite{primatesta_ground_2020} and \cite{clothier_casualty_2007} have demonstrated the effectiveness of the Risk
+        A* algorithm in developing ground risk management models, further supporting its suitability for this
+        application.
+                
+        In conclusion, while various pathfinding algorithms offer different benefits, A* provides the most balanced and
+        optimal solution for UAV navigation in terms of minimizing both distance and risk, making it the preferred
+        choice for our study.
 
 
 

@@ -896,8 +896,18 @@ INPUT .\main.aux
 INPUT main.aux
 INPUT main.aux
 OUTPUT main.aux
-OUTPUT main.out
+INPUT .\main.out
+INPUT main.out
+INPUT .\main.out
+INPUT main.out
+INPUT .\main.out
+INPUT main.out
+INPUT .\main.out
+INPUT main.out
 OUTPUT main.pdf
+INPUT .\main.out
+INPUT .\main.out
+OUTPUT main.out
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -958,16 +968,9 @@ INPUT C:\Users\MICKO\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
-OUTPUT main.toc
-OUTPUT main.lof
-OUTPUT main.lot
-INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
-INPUT .\General Image\OSM Drone-GROUND.pdf
-INPUT .\General Image\OSM Drone-GROUND.pdf
-INPUT General Image\OSM Drone-GROUND.pdf
-INPUT .\General Image\OSM Drone-GROUND.pdf
-INPUT .\General Image\OSM Drone-GROUND.pdf
-INPUT .\General Image\OSM Drone-GROUND.pdf
+INPUT .\main.toc
+INPUT main.toc
+INPUT main.toc
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
@@ -992,6 +995,22 @@ INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+OUTPUT main.toc
+INPUT .\main.lof
+INPUT main.lof
+INPUT main.lof
+OUTPUT main.lof
+INPUT .\main.lot
+INPUT main.lot
+INPUT main.lot
+OUTPUT main.lot
+INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT .\General Image\OSM Drone-GROUND.pdf
+INPUT .\General Image\OSM Drone-GROUND.pdf
+INPUT General Image\OSM Drone-GROUND.pdf
+INPUT .\General Image\OSM Drone-GROUND.pdf
+INPUT .\General Image\OSM Drone-GROUND.pdf
+INPUT .\General Image\OSM Drone-GROUND.pdf
 INPUT .\General Image\OSM Drone-Area Exposed.pdf
 INPUT .\General Image\OSM Drone-Area Exposed.pdf
 INPUT General Image\OSM Drone-Area Exposed.pdf

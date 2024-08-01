@@ -192,6 +192,10 @@
         \acro{UPX}{UAV Pathfinding eXtension}
         \acro{CE}{Casualty Expectation}
         \acro{AGL}{Above Ground Level}
+        \acro{BFS}{Bread-First Search}
+        \acro{DFS}{Depth-First Search}
+        \acro{ACO}{Ant Colony Optimization}
+        \acro{RRT}{Rapidly-Exploring Random Tree}
     \end{acronym}
     \newpage
     
@@ -697,18 +701,29 @@
                 S \cdot E_k
             \end{equation}
 
-            Where \(S\) is a shelter factor ranging from 0 to 1.0, and \(E_k\) is kinetic energy
+            Where \(S\) is a shelter factor ranging from 0 to 1.0, and \(E_k\) is kinetic energy in joule
             
         \subsection{Harm model}
             The harm model describe the severity of UAV impact towards the population. The harm model usually measured
             in probability of fatality given UAV impact to a person. The impact harm model can be categorized based on
-            its severity from minor, major, and fatal injury. Many literature paper use impact energy as a variable when
-            it comes to determining the fatality imposed by the UAV. This impact energy can be attenuate depends on the
-            protective shelter arround the population(e.g buildings, trees, and vehicles). The mechanic of injury also
-            varied from blunt force, penetration, laceration, and chemical burns. 
+            its severity from minor, major, and fatal injury.As previously mentioned many literature paper use kinetic
+            impact energy as a variable when it comes to determining the fatality imposed by the UAV.  Of every injury
+            mechanism, the most common studied harm mechanism is a blunt force trauma. According to
+            \cite{shelley_model_2016}, the most likely impact injuries are injuries to the head, particularly skull
+            fracture. 
+
+            For various impact locations, the a charateristic of fatality probability model have been developed as as a
+            function of kinetic energy by \cite{harwick_approved_2007}. The model describes the harm response of an
+            average male, averaged over varying impact orientations, as a binomial regression function. Binomial
+            distribution is a function that map a given input in this case kinentic energy to a false or true statement
+            in this case a resulted fatality. Therefore, given a kinetic energy, does that energy can cause fatality to
+            a person. 
             
-            Of every injury mechanism, the most common studied harm mechanism is blunt force trauma. According to  \cite{shelley_model_2016},
-            the most likely impact injuries are injuries to the head, particularly skull fracture.
+            The binomial distribution is calculated using a sigmoid function, more commonly known as logistic curve.
+            logistic curve probability of fatality described in \cite{shelley_model_2016} is presented in Eqn. 2.4.
+            Where threshold is the impact energy associated with a 50\% probability of a fatality (measured in Joules),
+            Energy imapct is the impact energy. A number of advancements over this standard equation have been presented
+            by \cite{dalamagkidis_evaluating_2008} and \cite{shelley_model_2016} to name a few.
 
             \begin{equation}
                 f(x) = \frac{1}{1+e^-\frac{(x-threshold)}{energy \ impact}}
@@ -720,12 +735,6 @@
                 \caption{Generelized logistic fatality function given energy impact}
             \end{figure}
 
-            For various impact locations, the a charateristic of fatality probability model have been developed as as a
-            function of incident KE \cite{harwick_approved_2007}. The model describes the harm response of an average male, averaged over
-            varying impact orientations, as a standard logistic curve probability of fatality described in Ref. \cite{shelley_model_2016} is
-            presented in Eqn. 2.4. Where threshold is the impact energy associated with a 50\% probability of a fatality
-            (measured in Joules), Energy imapct is the impact energy. A number of advancements over this standard
-            equation have been presented by \cite{dalamagkidis_evaluating_2008} and \cite{shelley_model_2016} to name a few.
 
             \cite{magister_small_2010} makes use of a \ac{BC} that relates the kinetic energy on impact with the body's ability to
             tolerate the energy on impact, which is expressed using the \ac{AIS}.
@@ -741,43 +750,77 @@
         people in the somekind of shelter? if it does how safe is it if the drone hit them, does that hit cauase
         fatality?
         
-    \section{Risk informed path finder}
+    \section{Pathfinding Algorithms}
+
         This study not only for generating the ground risk map for the risk assesment but also measures and finds the
-        path taken by the aircraft to find the least amount of risk and distance traveled required. 
-        
+        path taken by the aircraft to find the least amount of risk and distance traveled required. That is why
+        pathfinding algorithms are essential for UAV navigation, particularly for determining safe and efficient routes.
         There are multiple pathfinders, or in general, a method that is being used in the UAV industry as a navigation
         algorithm. All of these algorithms have different criteria, operating principles, and goals to complete.
+        Therefore we are trying to reviews several common pathfinding algorithms, highlighting their advantages and
+        limitations, and explains why the A* algorithm is selected for our study.
         
         Navigation algorithms are generally categorized into 2 parts based on the operational time: pre-operational
         algorithm and real-time operational algorithm. 
-        
-        The pre-operational algorithm defines a general pathway that is going to be inserted into the UAV flight
-        controller. At the same time, the real-time operational algorithm is the algorithm where the UAV actively
-        calculates the best direction based on its predefine pathway obtained through a pre-operational algorithm and
-        real-time sensor data to avoid danger and risk. 
-        
-        \ac{RRT}, is a navigation algorithm for motion planning. It is usually employed as
-        an approximate method for robots to traverse the real world, which is full of dynamic change in the environment.
-        This RRT algorithm works by expanding the space tree, where the space, in this case, is a node. If the UAV needs
-        to go from point A to D, the UAV then tries to expand the search tree to find the feasible series of nodes to
-        traverse through. This RRT can be inserted into various constraints, in this case, risk, where the UAV tries to
-        find the branch with the least amount of risk. 
-        
-        \ac{A*} algorithm is one such algorithm that works under the principle of the pre-operational algorithm. A* is a
-        pathfinder algorithm to find the least amount of distance to move into the final position. 
-        
-        A* itself is an extension of Djikstra's algorithm, where both of them use the so-called cost function \(f(x)\),
-        where the cost function is usually a distance cost. We can extend this concept by multiplying by the risk
-        coefficient to create a modified Risk A* algorithm, which it calculates the optimal distance and risk involved
-        in the operation. 
-        
-        A study conducted by \cite{primatesta_ground_2020} and \cite{clothier_casualty_2007} shows how to implement the risk A* algorithm when developing ground risk
-        management. However, a study conducted by Primatesta gives more detail in implementing the algorithm itself,
-        while Wu and Clothier implement a much more simpler method by separating and calculating independent A* for risk
-        and distance. 
-        
-        Since the ground risk model for this study is pre-operational, the Risk A* method would be chosen to calculate
-        the general distance and risk score of the pathway.
+
+        \subsection{Bread-first search}
+        \ac{BFS} is a fundamental algorithm that explores all nodes at the current depth level before moving on to the next
+        level. This makes BFS an effective method for finding the shortest path in unweighted graphs. It works by
+        starting at the root node and exploring all neighboring nodes. Then, it moves to the nearest nodes and explores
+        their unexplored neighbors, continuing this process until the goal is reached.
+
+        One of the main advantages of BFS is its guarantee to find the shortest path in terms of the number of edges in
+        unweighted graphs. This algorithm is also straightforward and easy to implement. However, BFS can be very
+        memory-intensive as it needs to store all nodes at the current depth level before proceeding to the next, which
+        can be inefficient for large graphs or when memory resources are limited. Furthermore, BFS does not perform well
+        on weighted graphs where the cost of traversing edges varies significantly \cite{cormen_introduction_2022}.
+
+        \subsection{Depth-first search} 
+        \ac{DFS} explores as far down a branch as possible before backtracking, making it useful for exhaustive searches
+        of all possible paths. DFS starts at the root node and explores each branch to its fullest before moving to the
+        next branch. This approach can be beneficial in situations where the complete path needs to be explored or
+        specific deep paths are of interest.
+
+        DFS is less memory-intensive than BFS since it only needs to store the nodes along a single path from the root.
+        It is also simple to implement. However, DFS does not guarantee finding the shortest path. In cases of deep or
+        potentially infinite graphs, DFS can get stuck in long paths, leading to inefficiency. This characteristic makes
+        DFS less suitable for pathfinding where the shortest or optimal path is required \cite{knuth_art_1997}.
+
+        \subsection{Djikstra's algorithm}
+        Dijkstra's Algorithm is a widely used method for finding the shortest path in graphs with non-negative edge
+        weights. It works by maintaining a set of nodes whose shortest distance from the source is known and repeatedly
+        expanding the shortest known path by one edge. The algorithm uses a priority queue to efficiently select the
+        node with the smallest tentative distance.
+
+        Dijkstra’s Algorithm guarantees finding the shortest path in weighted graphs without negative weights, making it
+        highly reliable for a variety of applications. It is efficient when implemented with a priority queue,
+        especially for sparse graphs. However, the algorithm can be computationally intensive for very large graphs,
+        which limits its scalability. For graphs with uniform weights, simpler algorithms like BFS may be more efficient
+        \cite{dijkstra_note_2022}.
+
+        \subsection{Greedy best-first search}
+        Greedy Best-First Search is an algorithm that uses a heuristic to prioritize nodes that appear to be closest to
+        the goal. Unlike Dijkstra’s Algorithm, which considers the cost to reach the current node and the estimated cost
+        to reach the goal, Greedy Best-First Search only uses the heuristic estimate.
+
+        The main advantage of Greedy Best-First Search is its speed, as it often finds a path faster than algorithms
+        like Dijkstra’s. However, this speed comes at the cost of not guaranteeing the shortest path, especially in
+        graphs where the heuristic is not perfectly accurate. This algorithm can be useful when a quick, approximate
+        solution is needed rather than an exact shortest path \cite{russell_artificial_2016}.
+
+        \subsection{Rapidly-exploring random tree}
+        \ac{RRT} is a popular pathfinding algorithm used in robotics for motion planning in high-dimensional spaces. RRT
+        works by randomly sampling points in the space and connecting them to the nearest node in the existing tree,
+        effectively expanding the tree in unexplored regions.
+
+        RRT is highly efficient in covering large search spaces and handling dynamic environments, making it suitable
+        for real-time applications. It can be modified with various constraints, such as minimizing risk for UAV
+        navigation. However, RRT does not always guarantee the shortest path and can produce suboptimal solutions that
+        may require post-processing to refine \cite{lavalle_planning_2006}.
+
+
+
+
 
 %---------------------------------------CHAPTER 3-------------------------------------
 \chapter{Background Theory and Methodology}

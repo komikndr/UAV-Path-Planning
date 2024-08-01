@@ -1,10 +1,11 @@
 # Fdb version 3
-["biber main"] 1722385232 "main.bcf" "main.bbl" "main" 1722385615
-  "main.bcf" 1722385254 133210 a227e13c0aa4b69a5004d46fd7922c7d "pdflatex"
+["biber main"] 1722543370 "main.bcf" "main.bbl" "main" 1722543462
+  "UPXNEW.bib" 1722542757 88472 db2bfe448a75d71a3b7fd1af4d639f55 ""
+  "main.bcf" 1722543460 133437 74556434d5e76daaf9bc22f84dba50cb "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1722385615 "d:/UAV-Path-Planning/OSM Thesis Latex and Docs/main.tex" "main.pdf" "main" 1722385615
+["pdflatex"] 1722543434 "d:/UAV-Path-Planning/OSM Thesis Latex and Docs/main.tex" "main.pdf" "main" 1722543462
   "C:/Users/MICKO/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1721122026 350297 af98bc8545486766ffec5a5000d88bd7 ""
   "C:/Users/MICKO/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1675284794 23173873 8a15b728742fc0b002bcb6945af1feda ""
   "C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1001775420 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -195,15 +196,15 @@
   "Plot/talon/parachute_pdf.png" 1719839569 291876 f80e9789be7c2433e9939daf45d0ab42 ""
   "Plot/talon/talon_route.png" 1719839817 352427 44660c2339724ee275b7c4bac82d5cf2 ""
   "Plot/talon/total_fatality.png" 1719839595 302843 ce5fac1a270c84f9c3b1f6bee21d033d ""
-  "d:/UAV-Path-Planning/OSM Thesis Latex and Docs/main.tex" 1722385603 123874 b34d182454a440606dd185dec693be81 ""
-  "main.aux" 1722385615 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "main.bbl" 1722385236 203409 adc4bddd26f76b0dd39439b16df1d48b "biber main"
-  "main.lof" 0 -1 0 "pdflatex"
-  "main.lot" 0 -1 0 "pdflatex"
-  "main.out" 0 -1 0 "pdflatex"
-  "main.run.xml" 1722385614 2423 6987615b5e6929e3a5c7a90f0277abd2 "pdflatex"
-  "main.tex" 1722385603 123874 b34d182454a440606dd185dec693be81 ""
-  "main.toc" 0 -1 0 "pdflatex"
+  "d:/UAV-Path-Planning/OSM Thesis Latex and Docs/main.tex" 1722543339 126899 38b460f2ed41b3d628d4cbdb5f561582 ""
+  "main.aux" 1722543460 49929 a76056b3bb8ef424ac704f9cc428de6e "pdflatex"
+  "main.bbl" 1722543380 217669 4b410f21898bd13fef3b2c091bf271df "biber main"
+  "main.lof" 1722543460 4569 3da33022809bd4fb331466939d06020d "pdflatex"
+  "main.lot" 1722543460 730 363b5681a69fd7ddb3c2483978ec7ba3 "pdflatex"
+  "main.out" 1722543460 11584 0c1cfdf7fd05dde2a9d42fdad44221f8 "pdflatex"
+  "main.run.xml" 1722543460 2423 6987615b5e6929e3a5c7a90f0277abd2 "pdflatex"
+  "main.tex" 1722543339 126899 38b460f2ed41b3d628d4cbdb5f561582 ""
+  "main.toc" 1722543460 6703 f7650cea004f44cee0de6ec0e26d1d94 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

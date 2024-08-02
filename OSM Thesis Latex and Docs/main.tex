@@ -195,8 +195,8 @@
         \acro{BFS}{Bread-First Search}
         \acro{DFS}{Depth-First Search}
         \acro{ACO}{Ant Colony Optimization}
-        \acro{RRT}{Rapidly-Exploring Random Tree}
         \acro{AI}{Artificial Intelligence}
+        \acro{GBFS}{Greedy Best-First Search}
     \end{acronym}
     \newpage
     
@@ -752,7 +752,6 @@
         fatality?
         
     \section{Pathfinding Algorithms}
-
         This study not only for generating the ground risk map for the risk assesment but also measures and finds the
         path taken by the aircraft to find the least amount of risk and distance traveled required. That is why
         pathfinding algorithms are essential for UAV navigation, particularly for determining safe and efficient routes.
@@ -761,14 +760,23 @@
         Therefore we are trying to reviews several common pathfinding algorithms, highlighting their advantages and
         limitations, and explains why the A* algorithm is selected for our study.
         
-        Navigation algorithms are generally categorized into 2 parts based on the operational time: pre-operational
-        algorithm and real-time operational algorithm. 
+        \subsection{Bread-First Search}
+        \ac{BFS} is a fundamental searching algorithm where it works by starting at the root node and exploring all
+        neighboring nodes. Then, it moves to the nearest nodes and explores their unexplored neighbors, continuing this
+        process until the goal is reached. For a more analogous example, you are at a crowded networking event,
+        beginning at the entrance, and you need to locate a colleague. You initially survey all individuals in the
+        immediate vicinity, then progress incrementally, systematically examining each subsequent group. This methodical
+        approach ensures you comprehensively search each "level" before advancing further.
 
-        \subsection{Bread-first search}
-        \ac{BFS} is a fundamental algorithm that explores all nodes at the current depth level before moving on to the next
-        level. This makes BFS an effective method for finding the shortest path in unweighted graphs. It works by
-        starting at the root node and exploring all neighboring nodes. Then, it moves to the nearest nodes and explores
-        their unexplored neighbors, continuing this process until the goal is reached.
+        We can see how the algorithm supposed to "walk" on the simple graph tree on the figure \ref{fig:bfs}. Where we
+        start at the left-most node, and it spread between its current neighbor first before increment to the right.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.5\textwidth]{General Image/OSM Drone-BFS.pdf}
+            \caption{BFS graph tree}
+            \label{fig:bfs}
+        \end{figure}
 
         One of the main advantages of BFS is its guarantee to find the shortest path in terms of the number of edges in
         unweighted graphs. This algorithm is also straightforward and easy to implement. However, BFS can be very
@@ -779,8 +787,15 @@
         \subsection{Depth-first search} 
         \ac{DFS} explores as far down a branch as possible before backtracking, making it useful for exhaustive searches
         of all possible paths. DFS starts at the root node and explores each branch to its fullest before moving to the
-        next branch. This approach can be beneficial in situations where the complete path needs to be explored or
-        specific deep paths are of interest.
+        next branch, we can see the algorithm works on the figure \ref{fig:dfs}. This approach can be beneficial in
+        situations where the complete path needs to be explored or specific deep paths are of interest.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.5\textwidth]{General Image/OSM Drone-DFS.pdf}
+            \caption{DFS graph tree}
+            \label{fig:dfs}
+        \end{figure}
 
         DFS is less memory-intensive than BFS since it only needs to store the nodes along a single path from the root.
         It is also simple to implement. However, DFS does not guarantee finding the shortest path. In cases of deep or
@@ -791,28 +806,93 @@
         Dijkstra's Algorithm is a widely used method for finding the shortest path in graphs with non-negative edge
         weights. It works by maintaining a set of nodes whose shortest distance from the source is known and repeatedly
         expanding the shortest known path by one edge. The algorithm uses a priority queue to efficiently select the
-        node with the smallest tentative distance.
+        node with the smallest tentative distance. This algorithm can be represented by equation \ref{eq:djikstra} and
+        can be expanded into equation \ref{eq:djikstrageneral}
 
-        Dijkstra’s Algorithm guarantees finding the shortest path in weighted graphs without negative weights, making it
+        \begin{equation}\label{eq:djikstrageneral}
+            f(n) = \min_{} \{ g(n)\}
+        \end{equation}
+
+        Equation \ref{eq:djikstrageneral} is a generalized form of the algorithm, where to find the shortest distance,
+        we must minimized the cost function of \(g(n)\). The cost function can be a weight between node connection or
+        the distance between the node. Since we mostly interested in calculating optimum distance, we then expand the
+        cost function to calculate euclidean distance \(w(u,v)\) as is cost function. Which resulted in equation
+        \ref{eq:djikstra} below
+
+        \begin{equation}\label{eq:djikstra}
+            d(v) = \min_{u \in V} \{ d(u) + w(u, v) \}
+        \end{equation}
+
+        Where \(d(v)\) is the shortest known distance from the start node to node v. \(u\) is a node in the graph that
+        is adjacent to v. \(V\) is the set of all nodes in the graph. And \(w(u, v)\) is the weight, or cost, of the
+        edge connecting nodes \(u\) and \(v\).
+
+        Dijkstra's Algorithm guarantees finding the shortest path in weighted graphs without negative weights, making it
         highly reliable for a variety of applications. It is efficient when implemented with a priority queue,
         especially for sparse graphs. However, the algorithm can be computationally intensive for very large graphs,
         which limits its scalability. For graphs with uniform weights, simpler algorithms like BFS may be more efficient
         \cite{dijkstra_note_2022}.
 
         \subsection{Greedy best-first search}
-        Greedy Best-First Search is an algorithm that uses a heuristic to prioritize nodes that appear to be closest to
-        the goal. Unlike Dijkstra’s Algorithm, which considers the cost to reach the current node and the estimated cost
-        to reach the goal, Greedy Best-First Search only uses the heuristic estimate.
+        \ac{GBFS} is an algorithm that uses a heuristic to prioritize nodes that appear to be closest to
+        the goal. Unlike Dijkstra's Algorithm, which considers the cost to reach the current node and the estimated cost
+        to reach the goal, Greedy Best-First Search only uses the heuristic estimate, as is in equation \ref{eq:gbfs}.
 
-        The main advantage of Greedy Best-First Search is its speed, as it often finds a path faster than algorithms
-        like Dijkstra’s. However, this speed comes at the cost of not guaranteeing the shortest path, especially in
-        graphs where the heuristic is not perfectly accurate. This algorithm can be useful when a quick, approximate
-        solution is needed rather than an exact shortest path \cite{russell_artificial_2016}.
+        \begin{equation}\label{eq:gbfs}
+            f(n) = \min_{} \{ h(n)\}
+        \end{equation}
 
+        Where instead of cost function \(g(n)\) we use only heuristic function of \(h_(n)\). Heuristic function can be
+        any function that suited the use cases of the algorithm. But when we are discussing about spatial based path
+        finder, we commonly use distances as a cost function. 
+
+        Even though in a glance that it might seems that this algorithm heuristic function use the same function cost as
+        in the Dijkstra's algorithm. Be aware that in Dijkstra that it use sum of all is traversed node. While in greedy
+        algorithm it only measure the distance between the current node to its final node. Take a look at figure
+        \ref{fig:greedybfs}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.75\textwidth]{General Image/OSM Drone-gbfs vs dijkstra.pdf}
+            \caption{Differences of cost function between GBFS and Dijkstra's}
+            \label{fig:greedybfs}
+        \end{figure}
+
+        As you can see, when there is blocked path between start node colored in green and the end node colored in orange.
+        The cost function of the Dijkstra's algorithm compound its true per step distance, while the GBFS point straight
+        from the start to the end. 
+        
+        GBFS required much lower computation resource and relatively easy to implement. However, this speed comes at the
+        cost of not guaranteeing the shortest path, especially in graphs where the heuristic is not perfectly accurate.
+        This algorithm can be useful when a quick, approximate solution is needed rather than an exact shortest path
+        \cite{russell_artificial_2016}.
+
+        \subsection{A*}
+        The A* algorithm essentially combines the distance calculation of Dijkstra's algorithm with an additional
+        heuristic function that estimates the remaining distance to the goal, shown in \ref{eq:astar}. This heuristic
+        guides the search process more efficiently toward the goal, often reducing the number of nodes that need to be
+        explored. 
+
+        \begin{equation}\label{eq:astar}
+            f(n) = \min_{} \{g(n) + h(n)\}
+        \end{equation}
+
+        The A* algorithm is a widely used pathfinding and graph traversal algorithm that is known for its efficiency and
+        accuracy since by using a heuristic function, A* often explores fewer nodes than Dijkstra's algorithm,
+        especially in large graphs. Also A* is guaranteed to find the shortest path if the heuristic function is
+        admissible. However since the performance of A* heavily depends on the quality of the heuristic function. An
+        inappropriate heuristic can degrade the efficiency.
+        
         \subsection{Rapidly-exploring random tree}
         \ac{RRT} is a popular pathfinding algorithm used in robotics for motion planning in high-dimensional spaces. RRT
         works by randomly sampling points in the space and connecting them to the nearest node in the existing tree,
         effectively expanding the tree in unexplored regions.
+
+        \begin{equation}
+            T \leftarrow T \cup \{ x_{new} \}
+        \end{equation}
+T: The existing tree of nodes.
+x new ​ : A newly sampled node that is connected to the nearest node in the tree.
 
         RRT is highly efficient in covering large search spaces and handling dynamic environments, making it suitable
         for real-time applications. It can be modified with various constraints, such as minimizing risk for UAV
@@ -823,6 +903,13 @@
         \ac{ACO} is inspired by the behavior of ants seeking paths from their colony to food
         sources. ACO uses artificial ants that deposit pheromones on paths, influencing subsequent ants to follow and
         reinforce successful paths.
+        
+        \begin{equation}
+            \tau_{ij}(t+1) = (1 - \rho) \tau_{ij}(t) + \Delta\tau_{ij}(t)
+        \end{equation}
+The pheromone level on edge 𝑖 i to 𝑗 j at time 𝑡 t.
+ρ: The evaporation rate of the pheromone.
+Δτ ij ​ (t): The amount of pheromone added to edge 𝑖 i to 𝑗j based on the quality of the solutions found.
                 
         ACO is effective for dynamic and complex problems, adapting well to changes in the environment. It excels at
         finding multiple paths and can optimize for various criteria, such as risk and distance. However, ACO can be
@@ -839,25 +926,21 @@
         However, these methods require substantial computational resources and extensive training data, which can be a
         limitation in some applications \cite{silver_mastering_2016}.
 
-        \subsection{Justification for Choosing A*}
+        \subsection{Justification for choosing A*}
         Among the algorithms reviewed, A* stands out due to its balanced approach combining the benefits of Dijkstra’s
-        Algorithm and Greedy Best-First Search. A* uses a cost function 𝑓 ( 𝑛 ) = 𝑔 ( 𝑛 ) + ℎ ( 𝑛 ) f(n)=g(n)+h(n),
-        where 𝑔 ( 𝑛 ) g(n) represents the cost from the start node to the current node, and ℎ ( 𝑛 ) h(n) is a
-        heuristic estimate of the cost from the current node to the goal. This allows A* to efficiently find the
-        shortest path by prioritizing nodes that are both close to the start and appear close to the goal.
-                
-        A* is particularly advantageous for pre-operational UAV path planning as it ensures the optimal path in terms of
-        both distance and risk. By incorporating a risk coefficient into the cost function, the Risk A* variant can
-        balance the need for short paths with the requirement to minimize exposure to hazardous areas. Studies by
-        \cite{primatesta_ground_2020} and \cite{clothier_casualty_2007} have demonstrated the effectiveness of the Risk
-        A* algorithm in developing ground risk management models, further supporting its suitability for this
-        application.
-                
-        In conclusion, while various pathfinding algorithms offer different benefits, A* provides the most balanced and
-        optimal solution for UAV navigation in terms of minimizing both distance and risk, making it the preferred
-        choice for our study.
-
-
+        Algorithm and Greedy Best-First Search. A* uses a cost function 𝑓 ( 𝑛) = 𝑔 ( 𝑛) + ℎ ( 𝑛) f(n)=g(n)+h(n), where 𝑔 (
+        𝑛 ) g(n) represents the cost from the start node to the current node, and ℎ ( 𝑛 ) h(n) is a heuristic estimate of the
+        cost from the current node to the goal. This allows A* to efficiently find the shortest path by prioritizing nodes that
+        are both close to the start and appear close to the goal.
+            
+        A* is particularly advantageous for pre-operational UAV path planning as it ensures the optimal path in terms of both
+        distance and risk. By incorporating a risk coefficient into the cost function, the Risk A* variant can balance the need
+        for short paths with the requirement to minimize exposure to hazardous areas. Studies by \cite{primatesta_ground_2020}
+        and \cite{clothier_casualty_2007} have demonstrated the effectiveness of the Risk A* algorithm in developing ground risk
+        management models, further supporting its suitability for this application.
+            
+        In conclusion, while various pathfinding algorithms offer different benefits, A* provides the most balanced and optimal
+        solution for UAV navigation in terms of minimizing both distance and risk, making it the preferred choice for our study.
 
 
 %---------------------------------------CHAPTER 3-------------------------------------

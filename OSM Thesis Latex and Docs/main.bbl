@@ -887,6 +887,35 @@
       \endverb
       \keyw{Automation,Conferences}
     \endentry
+    \entry{dask_development_team_dask_2016}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0e0cd20d3f1c25d7671f7ccb1921c231}{%
+           family={{Dask Development Team}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{0e0cd20d3f1c25d7671f7ccb1921c231}
+      \strng{fullhash}{0e0cd20d3f1c25d7671f7ccb1921c231}
+      \strng{bibnamehash}{0e0cd20d3f1c25d7671f7ccb1921c231}
+      \strng{authorbibnamehash}{0e0cd20d3f1c25d7671f7ccb1921c231}
+      \strng{authornamehash}{0e0cd20d3f1c25d7671f7ccb1921c231}
+      \strng{authorfullhash}{0e0cd20d3f1c25d7671f7ccb1921c231}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dask: Library for dynamic task scheduling}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb http://dask.pydata.org
+      \endverb
+      \verb{url}
+      \verb http://dask.pydata.org
+      \endverb
+    \endentry
     \entry{dijkstra_note_2022}{inbook}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=2066778d476d4368455cb8e3ba6d03b4}{%
@@ -1976,6 +2005,56 @@
       \field{year}{2016}
       \field{dateera}{ce}
     \endentry
+    \entry{russell_artificial_2010}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=18ee0a7bfc995f40254c9d425c977a49}{%
+           family={Russell},
+           familyi={R\bibinitperiod},
+           given={Stuart\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5de798d5fa3c0236c0478134cd23f52a}{%
+           family={Norvig},
+           familyi={N\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5e313a551f14d86a5958c804b661f644}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={Ernest},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Upper Saddle River}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{598a3ad9742abcf5554a0573000094b6}
+      \strng{fullhash}{5f7c0e9daf4f053f0513ab05a253f495}
+      \strng{bibnamehash}{5f7c0e9daf4f053f0513ab05a253f495}
+      \strng{authorbibnamehash}{5f7c0e9daf4f053f0513ab05a253f495}
+      \strng{authornamehash}{598a3ad9742abcf5554a0573000094b6}
+      \strng{authorfullhash}{5f7c0e9daf4f053f0513ab05a253f495}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{3rd ed}
+      \field{isbn}{978-0-13-604259-4}
+      \field{pagetotal}{1132}
+      \field{series}{Prentice Hall series in artificial intelligence}
+      \field{shorttitle}{Artificial intelligence}
+      \field{title}{Artificial intelligence: a modern approach}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \keyw{Artificial intelligence}
+    \endentry
     \entry{shelley_model_2016}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=f7a12783bf07926f2fd3b1fe67585518}{%
@@ -2138,6 +2217,35 @@
       \field{volume}{1}
       \field{year}{2009}
       \field{dateera}{ce}
+    \endentry
+    \entry{the_apache_software_foundation_sparkr_2024}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f57c55dac81a8285538aae51dacc9857}{%
+           family={{The Apache Software Foundation}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{f57c55dac81a8285538aae51dacc9857}
+      \strng{fullhash}{f57c55dac81a8285538aae51dacc9857}
+      \strng{bibnamehash}{f57c55dac81a8285538aae51dacc9857}
+      \strng{authorbibnamehash}{f57c55dac81a8285538aae51dacc9857}
+      \strng{authornamehash}{f57c55dac81a8285538aae51dacc9857}
+      \strng{authorfullhash}{f57c55dac81a8285538aae51dacc9857}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{SparkR}: R Front End for 'Apache Spark'}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.apache.org https://spark.apache.org
+      \endverb
+      \verb{url}
+      \verb https://www.apache.org%20https://spark.apache.org
+      \endverb
     \endentry
     \entry{washington_review_2017}{article}{}
       \name{author}{3}{}{%
@@ -3110,6 +3218,35 @@
       \endverb
       \keyw{Automation,Conferences}
     \endentry
+    \entry{dask_development_team_dask_2016}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0e0cd20d3f1c25d7671f7ccb1921c231}{%
+           family={{Dask Development Team}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{0e0cd20d3f1c25d7671f7ccb1921c231}
+      \strng{fullhash}{0e0cd20d3f1c25d7671f7ccb1921c231}
+      \strng{bibnamehash}{0e0cd20d3f1c25d7671f7ccb1921c231}
+      \strng{authorbibnamehash}{0e0cd20d3f1c25d7671f7ccb1921c231}
+      \strng{authornamehash}{0e0cd20d3f1c25d7671f7ccb1921c231}
+      \strng{authorfullhash}{0e0cd20d3f1c25d7671f7ccb1921c231}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dask: Library for dynamic task scheduling}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb http://dask.pydata.org
+      \endverb
+      \verb{url}
+      \verb http://dask.pydata.org
+      \endverb
+    \endentry
     \entry{dijkstra_note_2022}{inbook}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=2066778d476d4368455cb8e3ba6d03b4}{%
@@ -4199,6 +4336,56 @@
       \field{year}{2016}
       \field{dateera}{ce}
     \endentry
+    \entry{russell_artificial_2010}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=18ee0a7bfc995f40254c9d425c977a49}{%
+           family={Russell},
+           familyi={R\bibinitperiod},
+           given={Stuart\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5de798d5fa3c0236c0478134cd23f52a}{%
+           family={Norvig},
+           familyi={N\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5e313a551f14d86a5958c804b661f644}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={Ernest},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Upper Saddle River}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{598a3ad9742abcf5554a0573000094b6}
+      \strng{fullhash}{5f7c0e9daf4f053f0513ab05a253f495}
+      \strng{bibnamehash}{5f7c0e9daf4f053f0513ab05a253f495}
+      \strng{authorbibnamehash}{5f7c0e9daf4f053f0513ab05a253f495}
+      \strng{authornamehash}{598a3ad9742abcf5554a0573000094b6}
+      \strng{authorfullhash}{5f7c0e9daf4f053f0513ab05a253f495}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{3rd ed}
+      \field{isbn}{978-0-13-604259-4}
+      \field{pagetotal}{1132}
+      \field{series}{Prentice Hall series in artificial intelligence}
+      \field{shorttitle}{Artificial intelligence}
+      \field{title}{Artificial intelligence: a modern approach}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \keyw{Artificial intelligence}
+    \endentry
     \entry{shelley_model_2016}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=f7a12783bf07926f2fd3b1fe67585518}{%
@@ -4361,6 +4548,35 @@
       \field{volume}{1}
       \field{year}{2009}
       \field{dateera}{ce}
+    \endentry
+    \entry{the_apache_software_foundation_sparkr_2024}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f57c55dac81a8285538aae51dacc9857}{%
+           family={{The Apache Software Foundation}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{f57c55dac81a8285538aae51dacc9857}
+      \strng{fullhash}{f57c55dac81a8285538aae51dacc9857}
+      \strng{bibnamehash}{f57c55dac81a8285538aae51dacc9857}
+      \strng{authorbibnamehash}{f57c55dac81a8285538aae51dacc9857}
+      \strng{authornamehash}{f57c55dac81a8285538aae51dacc9857}
+      \strng{authorfullhash}{f57c55dac81a8285538aae51dacc9857}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{SparkR}: R Front End for 'Apache Spark'}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.apache.org https://spark.apache.org
+      \endverb
+      \verb{url}
+      \verb https://www.apache.org%20https://spark.apache.org
+      \endverb
     \endentry
     \entry{washington_review_2017}{article}{}
       \name{author}{3}{}{%

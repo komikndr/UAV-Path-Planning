@@ -881,67 +881,221 @@
         accuracy since by using a heuristic function, A* often explores fewer nodes than Dijkstra's algorithm,
         especially in large graphs. Also A* is guaranteed to find the shortest path if the heuristic function is
         admissible. However since the performance of A* heavily depends on the quality of the heuristic function. An
-        inappropriate heuristic can degrade the efficiency.
+        inappropriate heuristic can degrade the efficiency \cite{knuth_art_1997}.
+
+        \subsubsection{Risk-based A*}
+        Instead of using none weighted graph in a normal A*, we can insert weighted factor in each node. This weight
+        factor is the risk itself, where now not only it tries to minimized the path length but it also tries to find
+        the path with the least ammount of risk. This new function is The Risk-Based A* algorithm which is an extension
+        of the standard A* algorithm. The cost function for the Risk-Based A* algorithm is modified to include a risk
+        component. The cost function \( f_{\text{risk}}(x) \) is given by on equation \ref{eq:riskastar}:
+
+        \begin{equation}\label{eq:riskastar}
+        f_{\text{risk}}(x) = g(x) + h(x) + R(x)
+        \end{equation}
+        
+        where:
+        \begin{itemize}
+          \item \( g(x) \) is the actual distance from the start node to the current node.
+          \item \( h(x) \) is the heuristic estimate of the distance from the current node to the goal.
+          \item \( R(x) \) is the risk associated with the path from the start node to the current node.
+        \end{itemize}
+        
+        In this formula, \( f_{\text{risk}}(x) \) represents the total cost of a path, considering both distance and
+        risk. By minimizing this cost function, the algorithm finds the path that balances the shortest distance with
+        the least risk.
         
         \subsection{Rapidly-exploring random tree}
-        \ac{RRT} is a popular pathfinding algorithm used in robotics for motion planning in high-dimensional spaces. RRT
-        works by randomly sampling points in the space and connecting them to the nearest node in the existing tree,
-        effectively expanding the tree in unexplored regions.
-
-        \begin{equation}
-            T \leftarrow T \cup \{ x_{new} \}
+        The Rapidly-exploring Random Tree (RRT) algorithm is a widely used method for solving motion planning problems,
+        particularly in high-dimensional spaces and environments with obstacles. It is extensively utilized in robotics
+        for pathfinding and motion planning. The algorithm works by incrementally building a space-filling tree that
+        explores the feasible regions of the state space. RRT is especially advantageous in scenarios where the
+        environment is dynamic and complex, making it challenging to find a path using traditional methods.
+            
+        RRT operates in a state space, where each state represents a configuration of the system, such as the position
+        and orientation of a robot. The algorithm constructs a tree \( T \) that starts at the initial state \(
+        x_{\text{init}} \) and incrementally expands towards unexplored regions of the state space. Each node in the
+        tree represents a state, and each edge represents a feasible transition between states. The tree is expanded by
+        randomly sampling a state \( x_{\text{rand}} \) in the state space, finding the nearest node \(
+        x_{\text{nearest}} \) in the tree to this random state, and then creating a new node \( x_{\text{new}} \) in the
+        direction of \( x_{\text{rand}} \) from \( x_{\text{nearest}} \).
+            
+        The RRT algorithm's main steps can be summarized as follows: 1. Initialize the tree \( T \) with the initial
+        state \( x_{\text{init}} \). 2. Repeat until the goal state is reached or a maximum number of iterations is
+        exceeded:
+           \begin{itemize}
+             \item Randomly sample a state \( x_{\text{rand}} \) from the state space.
+             \item Find the nearest node \( x_{\text{nearest}} \) in the tree \( T \) to \( x_{\text{rand}} \).
+             \item Create a new node \( x_{\text{new}} \) by moving from \( x_{\text{nearest}} \) towards \(
+             x_{\text{rand}} \).
+             \item Add the new node \( x_{\text{new}} \) to the tree \( T \).
+           \end{itemize}
+       
+        Mathematically, the nearest node \( x_{\text{nearest}} \) is found using the Euclidean distance, show in
+        equation \ref{eq:ecrrt}:
+        \begin{equation}\label{eq:ecrrt}
+            x_{\text{nearest}} = \arg \min_{x \in T} \| x - x_{\text{rand}} \|
         \end{equation}
-T: The existing tree of nodes.
-x new ​ : A newly sampled node that is connected to the nearest node in the tree.
 
-        RRT is highly efficient in covering large search spaces and handling dynamic environments, making it suitable
-        for real-time applications. It can be modified with various constraints, such as minimizing risk for UAV
-        navigation. However, RRT does not always guarantee the shortest path and can produce suboptimal solutions that
-        may require post-processing to refine \cite{lavalle_planning_2006}.
+        where \( \| \cdot \| \) denotes the Euclidean norm. The new node \( x_{\text{new}} \) is then generated by
+        moving a fixed step size \( \delta \) from \( x_{\text{nearest}} \) towards \( x_{\text{rand}} \), shown in
+        equation \ref{eq:rrtstepsize}:
+        \begin{equation}\label{eq:rrtstepsize}
+            x_{\text{new}} = x_{\text{nearest}} + \delta \cdot \frac{x_{\text{rand}} - x_{\text{nearest}}}{\| x_{\text{rand}} - x_{\text{nearest}} \|}
+        \end{equation}
+
+        Here, \( \delta \) is the step size, and the direction vector \( \frac{x_{\text{rand}} - x_{\text{nearest}}}{\|
+        x_{\text{rand}} - x_{\text{nearest}} \|} \) ensures the new node is on the line connecting \( x_{\text{nearest}}
+        \) and \( x_{\text{rand}} \).
+
+        In layman's terms, the RRT algorithm can be likened to a person exploring a forest. The person starts at a known
+        location (initial state) and randomly picks a direction to move towards (randomly sampled state). They then find
+        the closest point they have already explored (nearest node) and take a step in the direction of the new point
+        (new node). This process is repeated, expanding the area explored until the destination is reached or the
+        exploration is halted.
+       
+        The RRT algorithm is advantageous because it efficiently explores large state spaces by focusing on unvisited
+        regions. This exploration property makes it suitable for high-dimensional and complex environments. However, RRT
+        may not always find the optimal path, and its performance can be sensitive to the choice of step size \( \delta
+        \) and the distribution of random samples \( x_{\text{rand}} \). Extensions and variations of RRT, such as RRT*
+        and Informed RRT*, have been developed to address some of these limitations by improving path optimality and
+        convergence rates. But we are not going to dive deeper into these extension since RRT itself is for real time on
+        the fly path finder, where our paper is for calculating pre-flight ground risk model.
+       
+        In conclusion, the RRT algorithm is a powerful tool for motion planning in robotics, capable of handling complex
+        and dynamic environments. Its ability to rapidly explore the state space makes it a popular choice for real-time
+        pathfinding applications. \cite{lavalle_planning_2006}.
+
 
         \subsection{Ant colony optimization}
-        \ac{ACO} is inspired by the behavior of ants seeking paths from their colony to food
-        sources. ACO uses artificial ants that deposit pheromones on paths, influencing subsequent ants to follow and
-        reinforce successful paths.
-        
-        \begin{equation}
-            \tau_{ij}(t+1) = (1 - \rho) \tau_{ij}(t) + \Delta\tau_{ij}(t)
+        \ac{ACO} algorithm is a probabilistic technique inspired by the foraging behavior of ants. It is used for
+        finding optimal paths in graphs, and it is particularly effective for solving combinatorial optimization
+        problems such as the travelling salesman problem \cite{dorigo_ant_2004}. ACO simulates the behavior of ants
+        searching for food, where ants deposit pheromones on paths they take, and these pheromones guide subsequent ants
+        towards promising paths.
+            
+        The algorithm operates in the following steps: 1. Initialize pheromone levels on all edges of the graph. 2. For
+        each iteration, simulate the movement of multiple ants:
+           \begin{itemize}
+             \item Each ant constructs a solution by moving from one node to another based on the probability influenced
+             by pheromone levels and heuristic information.
+             \item Update pheromone levels based on the quality of the solutions constructed by the ants.
+           \end{itemize}
+        3. Repeat the iterations until a termination condition is met (e.g., a maximum number of iterations or
+        convergence).
+       
+        The probability \( p_{ij}(t) \) that an ant moves from node \( i \) to node \( j \) at time \( t \) is given by
+        equation \ref{eq:aconodefinder}:
+
+        \begin{equation}\label{eq:aconodefinder}
+        p_{ij}(t) = \frac{[\tau_{ij}(t)]^\alpha [\eta_{ij}]^\beta}{\sum_{k \in \mathcal{N}_i} [\tau_{ik}(t)]^\alpha [\eta_{ik}]^\beta}
         \end{equation}
-The pheromone level on edge 𝑖 i to 𝑗 j at time 𝑡 t.
-ρ: The evaporation rate of the pheromone.
-Δτ ij ​ (t): The amount of pheromone added to edge 𝑖 i to 𝑗j based on the quality of the solutions found.
-                
-        ACO is effective for dynamic and complex problems, adapting well to changes in the environment. It excels at
-        finding multiple paths and can optimize for various criteria, such as risk and distance. However, ACO can be
-        computationally intensive and may require significant tuning to achieve optimal performance
-        \cite{dorigo_ant_2004}.
+
+        where:
+        \begin{itemize}
+          \item \( \tau_{ij}(t) \) is the pheromone level on edge \( (i, j) \) at time \( t \).
+          \item \( \eta_{ij} \) is the heuristic information (e.g., the inverse of the distance between nodes \( i \)
+          and \( j \)).
+          \item \( \alpha \) and \( \beta \) are parameters that control the influence of pheromone and heuristic
+          information, respectively.
+          \item \( \mathcal{N}_i \) is the set of neighboring nodes of node \( i \).
+        \end{itemize}
+        
+        The pheromone update rule is given by:
+        \begin{equation}
+        \tau_{ij}(t + 1) = (1 - \rho) \tau_{ij}(t) + \Delta \tau_{ij}(t)
+        \end{equation}
+        where:
+        \begin{itemize}
+          \item \( \rho \) is the evaporation rate, representing the pheromone evaporation over time.
+          \item \( \Delta \tau_{ij}(t) \) is the amount of pheromone deposited by the ants, typically proportional to
+          the quality of the solution.
+        \end{itemize}
+        
+        In layman's terms, the ACO algorithm can be likened to a group of ants exploring different paths to find the
+        shortest route to food. As ants travel, they leave a trail (pheromone) that other ants can follow. Over time,
+        the paths with stronger pheromone trails attract more ants, reinforcing good paths and eventually leading to the
+        discovery of the optimal route.
+        
+        The Ant Colony Optimization algorithm offers several advantages. It is highly effective for tackling complex
+        optimization problems, making it a versatile tool for a wide range of applications. The algorithm's ability to
+        find near-optimal solutions within a reasonable timeframe adds to its appeal, especially for time-sensitive
+        tasks. Furthermore, ACO is adaptable to dynamic changes in the environment, allowing it to maintain performance
+        even when conditions shift. However, the algorithm is not without its drawbacks. It can require significant
+        computational resources, particularly for large-scale problems, which may limit its practicality in
+        resource-constrained settings. Additionally, the performance of ACO is sensitive to parameter settings,
+        necessitating careful tuning to achieve optimal results. There is also a risk of converging to a suboptimal
+        solution if the algorithm is not properly managed, highlighting the importance of adequate oversight and
+        control.
+        
+        In conclusion, the ACO algorithm is a robust and flexible optimization technique that mimics the natural
+        behavior of ants to solve complex problems. Its ability to adapt and find near-optimal solutions makes it a
+        valuable tool in various applications \cite{dorigo_ant_2004}.
 
         \subsection{Generative pathfinding AI}
-        Generative Pathfinding AI leverages advanced machine learning techniques, such as neural networks and
-        reinforcement learning, to generate optimal paths. These methods can learn from vast amounts of data and adapt
-        to complex environments.
-                
-        Generative AI can produce highly efficient and adaptable solutions, particularly in dynamic and uncertain
-        environments. It can integrate multiple factors, such as risk and distance, into its decision-making process.
-        However, these methods require substantial computational resources and extensive training data, which can be a
-        limitation in some applications \cite{silver_mastering_2016}.
-
-        \subsection{Justification for choosing A*}
-        Among the algorithms reviewed, A* stands out due to its balanced approach combining the benefits of Dijkstra’s
-        Algorithm and Greedy Best-First Search. A* uses a cost function 𝑓 ( 𝑛) = 𝑔 ( 𝑛) + ℎ ( 𝑛) f(n)=g(n)+h(n), where 𝑔 (
-        𝑛 ) g(n) represents the cost from the start node to the current node, and ℎ ( 𝑛 ) h(n) is a heuristic estimate of the
-        cost from the current node to the goal. This allows A* to efficiently find the shortest path by prioritizing nodes that
-        are both close to the start and appear close to the goal.
+        Generative Pathfinding AI algorithms leverage advanced machine learning techniques, particularly generative
+        models, to discover optimal paths in complex environments. These algorithms utilize neural networks, such as
+        Generative adversarial networks (GANs), to generate feasible and efficient paths. By learning from data, these
+        models can generalize to new, unseen environments and provide robust pathfinding solutions
+        \cite{silver_mastering_2016}.
             
-        A* is particularly advantageous for pre-operational UAV path planning as it ensures the optimal path in terms of both
-        distance and risk. By incorporating a risk coefficient into the cost function, the Risk A* variant can balance the need
-        for short paths with the requirement to minimize exposure to hazardous areas. Studies by \cite{primatesta_ground_2020}
-        and \cite{clothier_casualty_2007} have demonstrated the effectiveness of the Risk A* algorithm in developing ground risk
-        management models, further supporting its suitability for this application.
+        The algorithm operates in the following steps: 1. Train a generative model on a dataset of known paths. 2. Use
+        the trained model to generate new paths by sampling from the learned distribution. 3. Evaluate the generated
+        paths based on specific criteria (e.g., shortest distance, minimal risk).
             
-        In conclusion, while various pathfinding algorithms offer different benefits, A* provides the most balanced and optimal
-        solution for UAV navigation in terms of minimizing both distance and risk, making it the preferred choice for our study.
+        The generative model's objective is to learn the distribution of optimal paths. For instance, in the case of
+        GANs, the generator \( G \) aims to produce paths that are indistinguishable from real paths, while the
+        discriminator \( D \) tries to distinguish between real and generated paths. The loss function for GANs is given
+        by:
+        \begin{equation}
+        \min_G \max_D \mathbb{E}_{x \sim p_{\text{data}}(x)}[\log D(x)] + \mathbb{E}_{z \sim p_z(z)}[\log(1 - D(G(z)))]
+        \end{equation}
+        where:
+        \begin{itemize}
+          \item \( x \) represents real paths.
+          \item \( z \) is a random noise vector.
+          \item \( p_{\text{data}}(x) \) is the distribution of real paths.
+          \item \( p_z(z) \) is the distribution of the noise vector.
+        \end{itemize}
+        
+        In layman's terms, Generative Pathfinding AI can be thought of as an intelligent system that learns from
+        examples of good paths and then creates new paths that are similar to the ones it learned. It's like a student
+        learning to solve maze puzzles by looking at many examples and then being able to solve new mazes it has never
+        seen before.
+        
+        Generative Pathfinding AI offers several significant advantages. The most notable is its capability to learn and
+        generalize from vast amounts of data \cite{russell_artificial_2010}, enabling it to adapt to complex and dynamic
+        environments efficiently. This adaptability makes it suitable for scenarios where the environment is continually
+        changing or unpredictable. Additionally, it can efficiently generate multiple path solutions, providing a
+        variety of options to choose from, which is particularly useful in decision-making processes
+        \cite{russell_artificial_2010}. However, these advantages come with some challenges. Generative Pathfinding AI
+        requires large amounts of training data to achieve high performance, which may not always be readily available.
+        The training process itself is computationally intensive, demanding substantial computational resources and
+        time. Moreover, the paths generated by the model need to be validated for feasibility, as not all generated
+        paths will be practical or optimal. This validation step is crucial to ensure the reliability of the solutions
+        provided by the AI.
+        
+        In summary, Generative Pathfinding AI represents a cutting-edge approach to pathfinding, leveraging the power
+        of machine learning to discover efficient paths in complex environments. Its ability to learn and adapt makes it
+        a promising tool for a wide range of applications.
 
+        \subsection{Justification for choosing risk-based A*}
+        Among the algorithms reviewed, A* stands out due to its balanced approach combining the benefits of Dijkstra's
+        Algorithm and Greedy Best-First Search. A* is particularly advantageous for pre-operational UAV path planning as
+        it ensures the optimal path in terms of both distance and risk. By incorporating a risk coefficient into the
+        cost function, the Risk A* variant can balance the need for short paths with the requirement to minimize
+        exposure to hazardous areas. Studies by \cite{primatesta_ground_2020} and \cite{clothier_casualty_2007} have
+        demonstrated the effectiveness of the Risk A* algorithm in developing ground risk management models, further
+        supporting its suitability for this application.
+            
+        While generative pathfinding AI algorithms offer advanced capabilities by learning from vast amounts of data and
+        adapting to complex environments, they come with significant drawbacks. The training process for these models is
+        prohibitively expensive, requiring substantial computational resources and time. This makes them less practical
+        for applications where resources are limited or quick deployment is necessary.
+            
+        In conclusion, while various pathfinding algorithms offer different benefits, A* provides the most balanced and
+        optimal solution for UAV navigation in terms of minimizing both distance and risk, making it the preferred
+        choice for our study.
 
 %---------------------------------------CHAPTER 3-------------------------------------
 \chapter{Background Theory and Methodology}
@@ -2131,7 +2285,56 @@ The pheromone level on edge 𝑖 i to 𝑗 j at time 𝑡 t.
 
     \section{Recommendation}
         \subsection{For future research}
+        Create an improvement in the methodology to use a much more elegant solution to smooth out the curve by using
+        the combination of the Dublin curve and spline interpolation instead of using a simple spline method. Create a
+        feedback loop where the risk re-apply itself to the ground risk pdf for each time step to give a much more
+        realistic scenario.
+        
+        Use a space partitioning algorithm such as a binary tree or RTree for the geographic area. This is to prevent
+        over-boundary risk problems that Talon encountered. This is because the binary tree will expand to every region
+        that overlaps with the furthest flight distance. Not only that, the partitioning algorithm can theoretically
+        increase the performance of calculation since it frees up memory when the partitioned area is not being
+        calculated.
+
         \subsection{For software design}
+        And as for the software design, UPX is currently written purely inPython. This is because it is for proof of
+        concept for the research paper, where the development time is much more critical than the performance. However,
+        if in the future there are similar methods and come across in using UPX. These are some key notes to improving
+        the software.
+
+        In order to effectively compute the risk map in great detail for each region, it is highly recommended to
+        utilize distributed systems such as Apache Spark and Dask. These platforms are designed to handle massive
+        amounts of data efficiently by distributing the workload across multiple nodes, allowing for parallel processing
+        and significant reductions in computation time.
+        
+        \textbf{Apache Spark} is a powerful distributed computing framework that can process large datasets quickly
+        through in-memory computing capabilities. It supports a wide range of operations, including SQL queries,
+        streaming data, and complex analytics. By leveraging Spark's robust ecosystem, we can perform extensive risk
+        calculations and data analyses across large geographic areas without the bottlenecks associated with traditional
+        single-machine processing, \cite{the_apache_software_foundation_sparkr_2024}.
+        
+        \textbf{Dask} is another excellent option for distributed computing, particularly for Python-based workflows. It
+        enables parallel computing by extending Python's native data structures, such as NumPy arrays and Pandas
+        DataFrames, to operate in a distributed manner. Dask is highly flexible and can seamlessly integrate with
+        existing Python code, making it an ideal choice for scaling up data processing tasks and risk map computations, 
+        \cite{dask_development_team_dask_2016}.
+        
+        Implementing these distributed systems offers several advantages:
+        \begin{itemize}
+          \item \textbf{Scalability:} Both Spark and Dask can scale horizontally by adding more nodes to the cluster,
+          accommodating growing data volumes and computational demands.
+          \item \textbf{Efficiency:} Distributed computing significantly reduces the time required to process large
+          datasets, enabling faster and more detailed risk assessments.
+          \item \textbf{Flexibility:} These platforms support a wide range of data processing and analysis tasks, making
+          them versatile tools for comprehensive risk mapping and other analytical needs.
+          \item \textbf{Resilience:} Distributed systems are designed to handle node failures gracefully, ensuring
+          reliable and continuous operation even in the face of hardware or software issues.
+        \end{itemize}
+        
+        By integrating Spark or Dask into the software design for risk map computation, we can achieve a higher level of
+        detail and accuracy in risk assessments, ultimately leading to more informed decision-making and better
+        management of potential hazards.
+
 
 \printbibliography
 \end{document}

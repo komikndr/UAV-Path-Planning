@@ -720,25 +720,30 @@
             in this case a resulted fatality. Therefore, given a kinetic energy, does that energy can cause fatality to
             a person. 
             
-            The binomial distribution is calculated using a sigmoid function, more commonly known as logistic curve.
-            logistic curve probability of fatality described in \cite{shelley_model_2016} is presented in Eqn. 2.4.
-            Where threshold is the impact energy associated with a 50\% probability of a fatality (measured in Joules),
-            Energy imapct is the impact energy. A number of advancements over this standard equation have been presented
-            by \cite{dalamagkidis_evaluating_2008} and \cite{shelley_model_2016} to name a few.
+            The binomial distribution is calculated using a sigmoid function, more commonly known as logistic curve,
+            shown in figure \ref{fig:logistic}. logistic curve probability of fatality described in
+            \cite{shelley_model_2016} is presented in equation \ref{eq:logistic}. Where threshold is the impact energy
+            associated with a 50\% probability of a fatality (measured in Joules), Energy imapct is the impact energy. A
+            number of advancements over this standard equation have been presented by
+            \cite{dalamagkidis_evaluating_2008} and \cite{shelley_model_2016} to name a few.
 
-            \begin{equation}
+            \begin{equation}\ref{eq:logisic}
                 f(x) = \frac{1}{1+e^-\frac{(x-threshold)}{energy \ impact}}
             \end{equation}
 
-            \begin{figure}[H]
+            \begin{figure}[H]\label{fig:logistic}
                 \centering
-                \includegraphics[width=\textwidth]{Plot/logistic_bounded.png}
+                \includegraphics[width=0.8\textwidth]{Plot/logistic_bounded.pdf}
                 \caption{Generelized logistic fatality function given energy impact}
             \end{figure}
 
-
-            \cite{magister_small_2010} makes use of a \ac{BC} that relates the kinetic energy on impact with the body's ability to
-            tolerate the energy on impact, which is expressed using the \ac{AIS}.
+            \cite{magister_small_2010} makes use of a \ac{BC} that relates the kinetic energy on impact with the body's
+            ability to tolerate the energy on impact, which is expressed using the \ac{AIS}. The Blunt Criterion is a
+            parameter used to assess the severity of blunt force trauma, taking into account the energy transferred
+            during the impact and the body's tolerance to that energy. The Abbreviated Injury Scale  is a globally
+            accepted scoring system used to classify and describe the severity of injuries. The AIS assigns a numerical
+            value to injuries ranging from 1 (minor) to 6 (fatal), providing a standardized method to quantify the
+            impact of injuries.
 
         Overall, the use of ground risk models has the potential to significantly improve the safety and
         effectiveness of UAV operations. By identifying and prioritizing potential risks, ground risk models can help
@@ -871,17 +876,45 @@
         The A* algorithm essentially combines the distance calculation of Dijkstra's algorithm with an additional
         heuristic function that estimates the remaining distance to the goal, shown in \ref{eq:astar}. This heuristic
         guides the search process more efficiently toward the goal, often reducing the number of nodes that need to be
-        explored. 
+        explored. This become apparent when exploring very large ammount of grid cells where dijkstra need to explore
+        every cell to determine least ammount of distance, where A* just need to move into the direction of the
+        heuristic vector.
 
         \begin{equation}\label{eq:astar}
             f(n) = \min_{} \{g(n) + h(n)\}
         \end{equation}
 
         The A* algorithm is a widely used pathfinding and graph traversal algorithm that is known for its efficiency and
-        accuracy since by using a heuristic function, A* often explores fewer nodes than Dijkstra's algorithm,
-        especially in large graphs. Also A* is guaranteed to find the shortest path if the heuristic function is
-        admissible. However since the performance of A* heavily depends on the quality of the heuristic function. An
-        inappropriate heuristic can degrade the efficiency \cite{knuth_art_1997}.
+        accuracy. By using a heuristic function, A* often explores fewer nodes than Dijkstra's algorithm, especially in
+        large graphs. A* is guaranteed to find the shortest path if the heuristic function is admissible. An admissible
+        heuristic is one that never overestimates the cost to reach the goal; in other words, it is always optimistic.
+        This ensures that A* will always find the optimal path. However, the performance of A* heavily depends on the
+        quality of the heuristic function. An inappropriate heuristic can degrade the efficiency \cite{knuth_art_1997}.
+
+        An admissible heuristic is one that never overestimates the cost to reach the goal. The Euclidean distance is a
+        common example of an admissible heuristic for pathfinding in a 2D plane because it represents the shortest
+        possible straight-line distance between two points.
+            
+        For two points \(A\) and \(B\) with coordinates \((x_1, y_1)\) and \((x_2, y_2)\) respectively, the Euclidean
+        distance \(h(A, B)\) is given by:
+
+        \begin{equation}
+            h(A, B) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
+        \end{equation}
+            
+        This heuristic is admissible because it never overestimates the true shortest path distance, which would be
+        along the actual path in the grid or graph.
+            
+        In contrast, a non-admissible heuristic overestimates the cost to reach the goal. For example, let’s define a
+        heuristic \(h'(A, B)\) as:
+            
+        \begin{equation}
+            h'(A, B) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} + 5
+        \end{equation}
+            
+        In this case, \(h'(A, B)\) is not admissible because it always overestimates the actual shortest path by an
+        additional 5 cells. This overestimation can lead the A* algorithm to make incorrect decisions about which nodes
+        to explore, potentially causing it to miss the optimal path.
 
         \subsubsection{Risk-based A*}
         Instead of using none weighted graph in a normal A*, we can insert weighted factor in each node. This weight
@@ -903,7 +936,8 @@
         
         In this formula, \( f_{\text{risk}}(x) \) represents the total cost of a path, considering both distance and
         risk. By minimizing this cost function, the algorithm finds the path that balances the shortest distance with
-        the least risk.
+        the least risk. \cite{primatesta_ground_2020} and \cite{la_cour-harbo_quantifying_2019} use this method to find
+        the overall least risk path with the least possible distance to take to.
         
         \subsection{Rapidly-exploring random tree}
         The Rapidly-exploring Random Tree (RRT) algorithm is a widely used method for solving motion planning problems,
@@ -946,7 +980,16 @@
 
         Here, \( \delta \) is the step size, and the direction vector \( \frac{x_{\text{rand}} - x_{\text{nearest}}}{\|
         x_{\text{rand}} - x_{\text{nearest}} \|} \) ensures the new node is on the line connecting \( x_{\text{nearest}}
-        \) and \( x_{\text{rand}} \).
+        \) and \( x_{\text{rand}} \). To give more clarity, take a look at figure \ref{fig:rrt} below, where the root
+        node 1 try to reach the final node 4 by spawning node \(x_{rand}\) and extends its connection to the nearest
+        node \(X_{nearest}\)
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.75\textwidth]{General Image/OSM Drone-RRT.pdf}
+            \caption{Simplified RRT Graph}
+            \label{fig:rrt}
+        \end{figure}
 
         In layman's terms, the RRT algorithm can be likened to a person exploring a forest. The person starts at a known
         location (initial state) and randomly picks a direction to move towards (randomly sampled state). They then find
@@ -959,18 +1002,28 @@
         may not always find the optimal path, and its performance can be sensitive to the choice of step size \( \delta
         \) and the distribution of random samples \( x_{\text{rand}} \). Extensions and variations of RRT, such as RRT*
         and Informed RRT*, have been developed to address some of these limitations by improving path optimality and
-        convergence rates. But we are not going to dive deeper into these extension since RRT itself is for real time on
-        the fly path finder, where our paper is for calculating pre-flight ground risk model.
+        convergence rates. RRT* works by pruning a longer path that take to the same node, take a look at figure
+        \ref{fig:rrtstar} where 2 lower node 3 is not pruned in RRT but pruned in RRT*
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.9\textwidth]{General Image/OSM Drone-RRTvsRRTstar.pdf}
+            \caption{RRT vs RRT*}
+            \label{fig:rrtstar}
+        \end{figure}
+        
        
         In conclusion, the RRT algorithm is a powerful tool for motion planning in robotics, capable of handling complex
         and dynamic environments. Its ability to rapidly explore the state space makes it a popular choice for real-time
-        pathfinding applications. \cite{lavalle_planning_2006}.
+        pathfinding applications \cite{lavalle_planning_2006}, however because since it excel to find solution fast, it
+        is not guarantee to be optimal. But we are not going to dive deeper into these extension since RRT itself is for
+        real time on the fly path finder, where our paper is for calculating pre-flight ground risk model.
 
 
         \subsection{Ant colony optimization}
         \ac{ACO} algorithm is a probabilistic technique inspired by the foraging behavior of ants. It is used for
         finding optimal paths in graphs, and it is particularly effective for solving combinatorial optimization
-        problems such as the travelling salesman problem \cite{dorigo_ant_2004}. ACO simulates the behavior of ants
+        problems such as the travelling salesman problem \cite{dorigo_ant_2007}. ACO simulates the behavior of ants
         searching for food, where ants deposit pheromones on paths they take, and these pheromones guide subsequent ants
         towards promising paths.
             
@@ -1012,10 +1065,19 @@
           the quality of the solution.
         \end{itemize}
         
-        In layman's terms, the ACO algorithm can be likened to a group of ants exploring different paths to find the
-        shortest route to food. As ants travel, they leave a trail (pheromone) that other ants can follow. Over time,
-        the paths with stronger pheromone trails attract more ants, reinforcing good paths and eventually leading to the
-        discovery of the optimal route.
+        The ACO algorithm can be likened to a group of ants exploring different paths to find the shortest route to
+        food. As ants travel, they leave a trail (pheromone) that other ants can follow. Over time, the paths with
+        stronger pheromone trails attract more ants, reinforcing good paths and eventually leading to the discovery of
+        the optimal route. Take a look at figure \ref{fig:aco} below where the first iteration all path has the same
+        ammount of pheromone, but after couple of iterations the shorter path has a much more pheromone since ant agent
+        traverse it more often, where the least likely route has its pheromone evaporated.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{General Image/OSM Drone-ACO.pdf}
+            \caption{Graph with ACO to optimize shortest total route}
+            \label{fig:aco}
+        \end{figure}
         
         The Ant Colony Optimization algorithm offers several advantages. It is highly effective for tackling complex
         optimization problems, making it a versatile tool for a wide range of applications. The algorithm's ability to
@@ -1023,14 +1085,16 @@
         tasks. Furthermore, ACO is adaptable to dynamic changes in the environment, allowing it to maintain performance
         even when conditions shift. However, the algorithm is not without its drawbacks. It can require significant
         computational resources, particularly for large-scale problems, which may limit its practicality in
-        resource-constrained settings. Additionally, the performance of ACO is sensitive to parameter settings,
-        necessitating careful tuning to achieve optimal results. There is also a risk of converging to a suboptimal
-        solution if the algorithm is not properly managed, highlighting the importance of adequate oversight and
-        control.
+        resource-constrained settings. Additionally like any other complex algorithm with hyperparameters, the
+        performance of ACO is sensitive to parameter settings, necessitating careful tuning to achieve optimal results.
+        There is also a risk of converging to a suboptimal solution if the algorithm is not properly managed,
+        highlighting the importance of adequate oversight and control \cite{dorigo_ant_2007}.
         
-        In conclusion, the ACO algorithm is a robust and flexible optimization technique that mimics the natural
-        behavior of ants to solve complex problems. Its ability to adapt and find near-optimal solutions makes it a
-        valuable tool in various applications \cite{dorigo_ant_2004}.
+        Although the ACO algorithm is a robust and flexible optimization technique that mimics the natural behavior of
+        ants to solve complex problems. The problem it tries to solve is not suitable for finding ground risk model.
+        Remember that ACO is try to spread the ant to explore every possible cells to determine the shortest distance to
+        cover every cell.
+        
 
         \subsection{Generative pathfinding AI}
         Generative Pathfinding AI algorithms leverage advanced machine learning techniques, particularly generative
@@ -1043,26 +1107,6 @@
         the trained model to generate new paths by sampling from the learned distribution. 3. Evaluate the generated
         paths based on specific criteria (e.g., shortest distance, minimal risk).
             
-        The generative model's objective is to learn the distribution of optimal paths. For instance, in the case of
-        GANs, the generator \( G \) aims to produce paths that are indistinguishable from real paths, while the
-        discriminator \( D \) tries to distinguish between real and generated paths. The loss function for GANs is given
-        by:
-        \begin{equation}
-        \min_G \max_D \mathbb{E}_{x \sim p_{\text{data}}(x)}[\log D(x)] + \mathbb{E}_{z \sim p_z(z)}[\log(1 - D(G(z)))]
-        \end{equation}
-        where:
-        \begin{itemize}
-          \item \( x \) represents real paths.
-          \item \( z \) is a random noise vector.
-          \item \( p_{\text{data}}(x) \) is the distribution of real paths.
-          \item \( p_z(z) \) is the distribution of the noise vector.
-        \end{itemize}
-        
-        In layman's terms, Generative Pathfinding AI can be thought of as an intelligent system that learns from
-        examples of good paths and then creates new paths that are similar to the ones it learned. It's like a student
-        learning to solve maze puzzles by looking at many examples and then being able to solve new mazes it has never
-        seen before.
-        
         Generative Pathfinding AI offers several significant advantages. The most notable is its capability to learn and
         generalize from vast amounts of data \cite{russell_artificial_2010}, enabling it to adapt to complex and dynamic
         environments efficiently. This adaptability makes it suitable for scenarios where the environment is continually
@@ -1102,7 +1146,7 @@
     \section{General Overview}
         \begin{figure}[H]
             \centering
-            \includegraphics[width=\textwidth]{General Image/OSM Drone-General Overview.png}
+            \includegraphics[width=\textwidth]{General Image/OSM Drone-General Overview.pdf}
             \caption{General overview}
         \end{figure}
 

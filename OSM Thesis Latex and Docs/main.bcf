@@ -2894,46 +2894,48 @@
     <bcf:citekey order="80" intorder="1">dijkstra_note_2022</bcf:citekey>
     <bcf:citekey order="81" intorder="1">russell_artificial_2016</bcf:citekey>
     <bcf:citekey order="82" intorder="1">knuth_art_1997</bcf:citekey>
-    <bcf:citekey order="83" intorder="1">lavalle_planning_2006</bcf:citekey>
-    <bcf:citekey order="84" intorder="1">dorigo_ant_2004</bcf:citekey>
-    <bcf:citekey order="85" intorder="1">dorigo_ant_2004</bcf:citekey>
-    <bcf:citekey order="86" intorder="1">silver_mastering_2016</bcf:citekey>
-    <bcf:citekey order="87" intorder="1">russell_artificial_2010</bcf:citekey>
-    <bcf:citekey order="88" intorder="1">russell_artificial_2010</bcf:citekey>
-    <bcf:citekey order="89" intorder="1">primatesta_ground_2020</bcf:citekey>
-    <bcf:citekey order="90" intorder="1">clothier_casualty_2007</bcf:citekey>
-    <bcf:citekey order="91" intorder="1">noauthor_openstreetmap_2022</bcf:citekey>
-    <bcf:citekey order="92" intorder="1">noauthor_global_2023</bcf:citekey>
+    <bcf:citekey order="83" intorder="1">primatesta_ground_2020</bcf:citekey>
+    <bcf:citekey order="84" intorder="1">la_cour-harbo_quantifying_2019</bcf:citekey>
+    <bcf:citekey order="85" intorder="1">lavalle_planning_2006</bcf:citekey>
+    <bcf:citekey order="86" intorder="1">dorigo_ant_2007</bcf:citekey>
+    <bcf:citekey order="87" intorder="1">dorigo_ant_2007</bcf:citekey>
+    <bcf:citekey order="88" intorder="1">silver_mastering_2016</bcf:citekey>
+    <bcf:citekey order="89" intorder="1">russell_artificial_2010</bcf:citekey>
+    <bcf:citekey order="90" intorder="1">russell_artificial_2010</bcf:citekey>
+    <bcf:citekey order="91" intorder="1">primatesta_ground_2020</bcf:citekey>
+    <bcf:citekey order="92" intorder="1">clothier_casualty_2007</bcf:citekey>
     <bcf:citekey order="93" intorder="1">noauthor_openstreetmap_2022</bcf:citekey>
     <bcf:citekey order="94" intorder="1">noauthor_global_2023</bcf:citekey>
-    <bcf:citekey order="95" intorder="1">primatesta_ground_2020</bcf:citekey>
-    <bcf:citekey order="96" intorder="1">dalamagkidis_evaluating_2008</bcf:citekey>
+    <bcf:citekey order="95" intorder="1">noauthor_openstreetmap_2022</bcf:citekey>
+    <bcf:citekey order="96" intorder="1">noauthor_global_2023</bcf:citekey>
     <bcf:citekey order="97" intorder="1">primatesta_ground_2020</bcf:citekey>
-    <bcf:citekey order="98" intorder="1">melnyk_third-party_2014</bcf:citekey>
-    <bcf:citekey order="99" intorder="1">harwick_approved_2007</bcf:citekey>
+    <bcf:citekey order="98" intorder="1">dalamagkidis_evaluating_2008</bcf:citekey>
+    <bcf:citekey order="99" intorder="1">primatesta_ground_2020</bcf:citekey>
     <bcf:citekey order="100" intorder="1">melnyk_third-party_2014</bcf:citekey>
-    <bcf:citekey order="101" intorder="1">klepeis_national_2001</bcf:citekey>
-    <bcf:citekey order="102" intorder="1">primatesta_ground_2020</bcf:citekey>
-    <bcf:citekey order="103" intorder="1">shelley_model_2016</bcf:citekey>
-    <bcf:citekey order="104" intorder="1">noauthor_unmanned_2015</bcf:citekey>
-    <bcf:citekey order="105" intorder="1">cour-harbo_ground_2020</bcf:citekey>
-    <bcf:citekey order="106" intorder="1">la_cour-harbo_quantifying_2019</bcf:citekey>
-    <bcf:citekey order="107" intorder="1">la_cour-harbo_quantifying_2019</bcf:citekey>
-    <bcf:citekey order="108" intorder="1">melnyk_third-party_2014</bcf:citekey>
-    <bcf:citekey order="109" intorder="1">ale_assessment_2000</bcf:citekey>
-    <bcf:citekey order="110" intorder="1">aalmoes_conceptual_2015</bcf:citekey>
-    <bcf:citekey order="111" intorder="1">cole_hazards_1997</bcf:citekey>
-    <bcf:citekey order="112" intorder="1">cole_hazards_1997</bcf:citekey>
-    <bcf:citekey order="113" intorder="1">gonzales_faas_2017</bcf:citekey>
-    <bcf:citekey order="114" intorder="1">dalamagkidis_evaluating_2008</bcf:citekey>
-    <bcf:citekey order="115" intorder="1">primatesta_ground_2020</bcf:citekey>
-    <bcf:citekey order="116" intorder="1">melnyk_third-party_2014</bcf:citekey>
-    <bcf:citekey order="117" intorder="1">harwick_approved_2007</bcf:citekey>
+    <bcf:citekey order="101" intorder="1">harwick_approved_2007</bcf:citekey>
+    <bcf:citekey order="102" intorder="1">melnyk_third-party_2014</bcf:citekey>
+    <bcf:citekey order="103" intorder="1">klepeis_national_2001</bcf:citekey>
+    <bcf:citekey order="104" intorder="1">primatesta_ground_2020</bcf:citekey>
+    <bcf:citekey order="105" intorder="1">shelley_model_2016</bcf:citekey>
+    <bcf:citekey order="106" intorder="1">noauthor_unmanned_2015</bcf:citekey>
+    <bcf:citekey order="107" intorder="1">cour-harbo_ground_2020</bcf:citekey>
+    <bcf:citekey order="108" intorder="1">la_cour-harbo_quantifying_2019</bcf:citekey>
+    <bcf:citekey order="109" intorder="1">la_cour-harbo_quantifying_2019</bcf:citekey>
+    <bcf:citekey order="110" intorder="1">melnyk_third-party_2014</bcf:citekey>
+    <bcf:citekey order="111" intorder="1">ale_assessment_2000</bcf:citekey>
+    <bcf:citekey order="112" intorder="1">aalmoes_conceptual_2015</bcf:citekey>
+    <bcf:citekey order="113" intorder="1">cole_hazards_1997</bcf:citekey>
+    <bcf:citekey order="114" intorder="1">cole_hazards_1997</bcf:citekey>
+    <bcf:citekey order="115" intorder="1">gonzales_faas_2017</bcf:citekey>
+    <bcf:citekey order="116" intorder="1">dalamagkidis_evaluating_2008</bcf:citekey>
+    <bcf:citekey order="117" intorder="1">primatesta_ground_2020</bcf:citekey>
     <bcf:citekey order="118" intorder="1">melnyk_third-party_2014</bcf:citekey>
     <bcf:citekey order="119" intorder="1">harwick_approved_2007</bcf:citekey>
-    <bcf:citekey order="120" intorder="1">primatesta_risk-aware_2019</bcf:citekey>
-    <bcf:citekey order="121" intorder="1">the_apache_software_foundation_sparkr_2024</bcf:citekey>
-    <bcf:citekey order="122" intorder="1">dask_development_team_dask_2016</bcf:citekey>
+    <bcf:citekey order="120" intorder="1">melnyk_third-party_2014</bcf:citekey>
+    <bcf:citekey order="121" intorder="1">harwick_approved_2007</bcf:citekey>
+    <bcf:citekey order="122" intorder="1">primatesta_risk-aware_2019</bcf:citekey>
+    <bcf:citekey order="123" intorder="1">the_apache_software_foundation_sparkr_2024</bcf:citekey>
+    <bcf:citekey order="124" intorder="1">dask_development_team_dask_2016</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

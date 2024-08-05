@@ -733,6 +733,44 @@
       \verb https://www.osti.gov/biblio/468556
       \endverb
     \endentry
+    \entry{commission_ghsl_2023}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a9bee3ff64e0ef4f06532e455eb1658f}{%
+           family={Commission},
+           familyi={C\bibinitperiod},
+           given={European},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a7850894d051e79950128442997df6e7}{%
+           family={Centre},
+           familyi={C\bibinitperiod},
+           given={Joint\bibnamedelima Research},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Publications Office of the European Union}%
+      }
+      \strng{namehash}{32e21e0ae67e68816cbf0433071ba495}
+      \strng{fullhash}{32e21e0ae67e68816cbf0433071ba495}
+      \strng{bibnamehash}{32e21e0ae67e68816cbf0433071ba495}
+      \strng{authorbibnamehash}{32e21e0ae67e68816cbf0433071ba495}
+      \strng{authornamehash}{32e21e0ae67e68816cbf0433071ba495}
+      \strng{authorfullhash}{32e21e0ae67e68816cbf0433071ba495}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{GHSL} data package 2023}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb doi/10.2760/098587
+      \endverb
+    \endentry
     \entry{cormen_introduction_2022}{book}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=835b8c52757d98c15859b416316d9820}{%
@@ -1124,29 +1162,6 @@
       \endverb
       \verb{url}
       \verb https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-107
-      \endverb
-    \endentry
-    \entry{noauthor_global_2023}{online}{}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labeltitlesource}{title}
-      \field{title}{Global Human Settlement - Mission - European Commission}
-      \field{urlday}{8}
-      \field{urlmonth}{5}
-      \field{urlyear}{2023}
-      \field{year}{2023}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb Global Human Settlement - Mission - European Commission:C\:\\Users\\MICKO\\Zotero\\storage\\35R6MD5T\\about.html:text/html
-      \endverb
-      \verb{urlraw}
-      \verb https://ghsl.jrc.ec.europa.eu/about.php
-      \endverb
-      \verb{url}
-      \verb https://ghsl.jrc.ec.europa.eu/about.php
       \endverb
     \endentry
     \entry{gonzales_faas_2017}{online}{}
@@ -1744,13 +1759,26 @@
       \verb https://developer.nvidia.com/blog/dji-launches-gpu-based-high-performance-embedded-computer-for-drones-2/
       \endverb
     \endentry
-    \entry{noauthor_openstreetmap_2022}{online}{}
+    \entry{openstreet_overpass_2022}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=770d1d5c6f84a09598fb6336a8136fd8}{%
+           family={{OpenStreet}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{770d1d5c6f84a09598fb6336a8136fd8}
+      \strng{fullhash}{770d1d5c6f84a09598fb6336a8136fd8}
+      \strng{bibnamehash}{770d1d5c6f84a09598fb6336a8136fd8}
+      \strng{authorbibnamehash}{770d1d5c6f84a09598fb6336a8136fd8}
+      \strng{authornamehash}{770d1d5c6f84a09598fb6336a8136fd8}
+      \strng{authorfullhash}{770d1d5c6f84a09598fb6336a8136fd8}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{OpenStreetMap} Wiki}
+      \field{title}{Overpass {API} - {OpenStreetMap} Wiki}
       \field{urlday}{21}
       \field{urlmonth}{9}
       \field{urlyear}{2022}
@@ -1758,14 +1786,38 @@
       \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{file}
-      \verb OpenStreetMap Wiki:C\:\\Users\\MICKO\\Zotero\\storage\\E6N53RY4\\Main_Page.html:text/html
+      \verb Overpass API - OpenStreetMap Wiki:C\:\\Users\\MICKO\\Zotero\\storage\\N63QKBP9\\Overpass_API.html:text/html
       \endverb
       \verb{urlraw}
-      \verb https://wiki.openstreetmap.org/wiki/Main_Page
+      \verb https://wiki.openstreetmap.org/wiki/Overpass_API
       \endverb
       \verb{url}
-      \verb https://wiki.openstreetmap.org/wiki/Main_Page
+      \verb https://wiki.openstreetmap.org/wiki/Overpass_API
       \endverb
+    \endentry
+    \entry{openstreetmap_contributors_planet_2017}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=602f2591276bacf4409eba4a627cff11}{%
+           family={{OpenStreetMap contributors}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{602f2591276bacf4409eba4a627cff11}
+      \strng{fullhash}{602f2591276bacf4409eba4a627cff11}
+      \strng{bibnamehash}{602f2591276bacf4409eba4a627cff11}
+      \strng{authorbibnamehash}{602f2591276bacf4409eba4a627cff11}
+      \strng{authornamehash}{602f2591276bacf4409eba4a627cff11}
+      \strng{authorfullhash}{602f2591276bacf4409eba4a627cff11}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Published: https://www.openstreetmap.org}
+      \field{title}{Planet dump retrieved from https://planet.osm.org}
+      \field{year}{2017}
+      \field{dateera}{ce}
     \endentry
     \entry{pat-cornell_uncertainties_1996}{article}{}
       \name{author}{1}{}{%
@@ -3095,6 +3147,44 @@
       \verb https://www.osti.gov/biblio/468556
       \endverb
     \endentry
+    \entry{commission_ghsl_2023}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a9bee3ff64e0ef4f06532e455eb1658f}{%
+           family={Commission},
+           familyi={C\bibinitperiod},
+           given={European},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a7850894d051e79950128442997df6e7}{%
+           family={Centre},
+           familyi={C\bibinitperiod},
+           given={Joint\bibnamedelima Research},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Publications Office of the European Union}%
+      }
+      \strng{namehash}{32e21e0ae67e68816cbf0433071ba495}
+      \strng{fullhash}{32e21e0ae67e68816cbf0433071ba495}
+      \strng{bibnamehash}{32e21e0ae67e68816cbf0433071ba495}
+      \strng{authorbibnamehash}{32e21e0ae67e68816cbf0433071ba495}
+      \strng{authornamehash}{32e21e0ae67e68816cbf0433071ba495}
+      \strng{authorfullhash}{32e21e0ae67e68816cbf0433071ba495}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{GHSL} data package 2023}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb doi/10.2760/098587
+      \endverb
+    \endentry
     \entry{cormen_introduction_2022}{book}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=835b8c52757d98c15859b416316d9820}{%
@@ -3486,29 +3576,6 @@
       \endverb
       \verb{url}
       \verb https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-107
-      \endverb
-    \endentry
-    \entry{noauthor_global_2023}{online}{}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labeltitlesource}{title}
-      \field{title}{Global Human Settlement - Mission - European Commission}
-      \field{urlday}{8}
-      \field{urlmonth}{5}
-      \field{urlyear}{2023}
-      \field{year}{2023}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb Global Human Settlement - Mission - European Commission:C\:\\Users\\MICKO\\Zotero\\storage\\35R6MD5T\\about.html:text/html
-      \endverb
-      \verb{urlraw}
-      \verb https://ghsl.jrc.ec.europa.eu/about.php
-      \endverb
-      \verb{url}
-      \verb https://ghsl.jrc.ec.europa.eu/about.php
       \endverb
     \endentry
     \entry{gonzales_faas_2017}{online}{}
@@ -4106,13 +4173,26 @@
       \verb https://developer.nvidia.com/blog/dji-launches-gpu-based-high-performance-embedded-computer-for-drones-2/
       \endverb
     \endentry
-    \entry{noauthor_openstreetmap_2022}{online}{}
+    \entry{openstreet_overpass_2022}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=770d1d5c6f84a09598fb6336a8136fd8}{%
+           family={{OpenStreet}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{770d1d5c6f84a09598fb6336a8136fd8}
+      \strng{fullhash}{770d1d5c6f84a09598fb6336a8136fd8}
+      \strng{bibnamehash}{770d1d5c6f84a09598fb6336a8136fd8}
+      \strng{authorbibnamehash}{770d1d5c6f84a09598fb6336a8136fd8}
+      \strng{authornamehash}{770d1d5c6f84a09598fb6336a8136fd8}
+      \strng{authorfullhash}{770d1d5c6f84a09598fb6336a8136fd8}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{OpenStreetMap} Wiki}
+      \field{title}{Overpass {API} - {OpenStreetMap} Wiki}
       \field{urlday}{21}
       \field{urlmonth}{9}
       \field{urlyear}{2022}
@@ -4120,14 +4200,38 @@
       \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{file}
-      \verb OpenStreetMap Wiki:C\:\\Users\\MICKO\\Zotero\\storage\\E6N53RY4\\Main_Page.html:text/html
+      \verb Overpass API - OpenStreetMap Wiki:C\:\\Users\\MICKO\\Zotero\\storage\\N63QKBP9\\Overpass_API.html:text/html
       \endverb
       \verb{urlraw}
-      \verb https://wiki.openstreetmap.org/wiki/Main_Page
+      \verb https://wiki.openstreetmap.org/wiki/Overpass_API
       \endverb
       \verb{url}
-      \verb https://wiki.openstreetmap.org/wiki/Main_Page
+      \verb https://wiki.openstreetmap.org/wiki/Overpass_API
       \endverb
+    \endentry
+    \entry{openstreetmap_contributors_planet_2017}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=602f2591276bacf4409eba4a627cff11}{%
+           family={{OpenStreetMap contributors}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{602f2591276bacf4409eba4a627cff11}
+      \strng{fullhash}{602f2591276bacf4409eba4a627cff11}
+      \strng{bibnamehash}{602f2591276bacf4409eba4a627cff11}
+      \strng{authorbibnamehash}{602f2591276bacf4409eba4a627cff11}
+      \strng{authornamehash}{602f2591276bacf4409eba4a627cff11}
+      \strng{authorfullhash}{602f2591276bacf4409eba4a627cff11}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Published: https://www.openstreetmap.org}
+      \field{title}{Planet dump retrieved from https://planet.osm.org}
+      \field{year}{2017}
+      \field{dateera}{ce}
     \endentry
     \entry{pat-cornell_uncertainties_1996}{article}{}
       \name{author}{1}{}{%
@@ -4742,7 +4846,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{noauthor_unmanned_2015}
 \endrefsection
 \endinput
 

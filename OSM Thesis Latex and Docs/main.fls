@@ -1023,8 +1023,6 @@ INPUT General Image\OSM Drone-Landing zone.pdf
 INPUT .\General Image\OSM Drone-Landing zone.pdf
 INPUT .\General Image\OSM Drone-Landing zone.pdf
 INPUT .\General Image\OSM Drone-Landing zone.pdf
-INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
-INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
 INPUT .\Plot\logistic_bounded.pdf
 INPUT .\Plot\logistic_bounded.pdf
 INPUT Plot\logistic_bounded.pdf
@@ -1073,6 +1071,21 @@ INPUT General Image\OSM Drone-General Overview.pdf
 INPUT .\General Image\OSM Drone-General Overview.pdf
 INPUT .\General Image\OSM Drone-General Overview.pdf
 INPUT .\General Image\OSM Drone-General Overview.pdf
+INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
+INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
+INPUT .\General Image\OSM Drone-RISK.pdf
+INPUT .\General Image\OSM Drone-RISK.pdf
+INPUT General Image\OSM Drone-RISK.pdf
+INPUT .\General Image\OSM Drone-RISK.pdf
+INPUT .\General Image\OSM Drone-RISK.pdf
+INPUT .\General Image\OSM Drone-RISK.pdf
+INPUT .\Plot\talon\total_fatality.png
+INPUT .\Plot\talon\total_fatality.png
+INPUT Plot\talon\total_fatality.png
+INPUT .\Plot\talon\total_fatality.png
+INPUT .\Plot\talon\total_fatality.png
+INPUT .\Plot\talon\total_fatality.png
+INPUT .\Plot\talon\total_fatality.png
 INPUT .\Plot\pop_dense.PNG
 INPUT .\Plot\pop_dense.PNG
 INPUT Plot\pop_dense.PNG
@@ -1094,13 +1107,12 @@ INPUT .\Plot\shelter_factor.png
 INPUT .\Plot\shelter_factor.png
 INPUT .\Plot\shelter_factor.png
 INPUT .\Plot\shelter_factor.png
-INPUT .\General Image\OSM Drone-LOGIC_SUM.png
-INPUT .\General Image\OSM Drone-LOGIC_SUM.png
-INPUT General Image\OSM Drone-LOGIC_SUM.png
-INPUT .\General Image\OSM Drone-LOGIC_SUM.png
-INPUT .\General Image\OSM Drone-LOGIC_SUM.png
-INPUT .\General Image\OSM Drone-LOGIC_SUM.png
-INPUT .\General Image\OSM Drone-LOGIC_SUM.png
+INPUT .\General Image\OSM Drone-LOGIC_SUM.pdf
+INPUT .\General Image\OSM Drone-LOGIC_SUM.pdf
+INPUT General Image\OSM Drone-LOGIC_SUM.pdf
+INPUT .\General Image\OSM Drone-LOGIC_SUM.pdf
+INPUT .\General Image\OSM Drone-LOGIC_SUM.pdf
+INPUT .\General Image\OSM Drone-LOGIC_SUM.pdf
 INPUT .\Plot\talon\ballistic.png
 INPUT .\Plot\talon\ballistic.png
 INPUT Plot\talon\ballistic.png
@@ -1209,9 +1221,6 @@ INPUT .\Plot\talon\parachute_pdf.png
 INPUT .\Plot\talon\total_fatality.png
 INPUT .\Plot\talon\total_fatality.png
 INPUT Plot\talon\total_fatality.png
-INPUT .\Plot\talon\total_fatality.png
-INPUT .\Plot\talon\total_fatality.png
-INPUT .\Plot\talon\total_fatality.png
 INPUT .\Plot\talon\total_fatality.png
 INPUT .\Plot\parrot\ballistic_pdf.png
 INPUT .\Plot\parrot\ballistic_pdf.png

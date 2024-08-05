@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1722748923 "main.bcf" "main.bbl" "main" 1722767056
-  "UPXNEW.bib" 1722632558 89108 9858bf23350dbc8dfb59ccc37e008756 ""
-  "main.bcf" 1722767056 134401 d0cfa5ee384a6477f08cde2d32f05668 "pdflatex"
+["biber main"] 1722848950 "main.bcf" "main.bbl" "main" 1722851976
+  "UPXNEW.bib" 1722785944 89319 3982663cb702d65cf1723494ec84526d ""
+  "main.bcf" 1722851975 134481 cf7a993d8596323500be3a4824d0bcc8 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1722767047 "d:/UAV-Path-Planning/OSM Thesis Latex and Docs/main.tex" "main.pdf" "main" 1722767056
+["pdflatex"] 1722851965 "d:/UAV-Path-Planning/OSM Thesis Latex and Docs/main.tex" "main.pdf" "main" 1722851976
   "C:/Users/MICKO/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1721122026 350297 af98bc8545486766ffec5a5000d88bd7 ""
   "C:/Users/MICKO/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1675284794 23173873 8a15b728742fc0b002bcb6945af1feda ""
   "C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1001775420 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -157,8 +157,9 @@
   "General Image/OSM Drone-DFS.pdf" 1722583357 20463 0780a58cd89642f9f336ce6bf7fbc099 ""
   "General Image/OSM Drone-GROUND.pdf" 1722384131 21042 1c2c232960a7f1ba927206934fe34b58 ""
   "General Image/OSM Drone-General Overview.pdf" 1722695736 15426 89a4e41095793dab1ec1a29a7446b8ad ""
-  "General Image/OSM Drone-LOGIC_SUM.png" 1720115217 128300 7e77548f772b21c25eaca1963f0cfe2c ""
+  "General Image/OSM Drone-LOGIC_SUM.pdf" 1722851920 18079 d5b4d8cc76f30e0f6a2cc024a19361d0 ""
   "General Image/OSM Drone-Landing zone.pdf" 1722264994 17649 10ae4d498b45de96cf9a31ef7b5d594f ""
+  "General Image/OSM Drone-RISK.pdf" 1722839582 20971 c2e9fe3a2dc49c6679fb21df08f539ba ""
   "General Image/OSM Drone-RRT.pdf" 1722750785 27377 540aa30d7270caa1862c1dbb8439c277 ""
   "General Image/OSM Drone-RRTvsRRTstar.pdf" 1722751296 27684 9199828ce837d0b78c2f84c6344438eb ""
   "General Image/OSM Drone-gbfs vs dijkstra.pdf" 1722598200 17766 84940a89c9ac910a94348e226ac5a9d8 ""
@@ -202,15 +203,15 @@
   "Plot/talon/parachute_pdf.png" 1719839569 291876 f80e9789be7c2433e9939daf45d0ab42 ""
   "Plot/talon/talon_route.png" 1719839817 352427 44660c2339724ee275b7c4bac82d5cf2 ""
   "Plot/talon/total_fatality.png" 1719839595 302843 ce5fac1a270c84f9c3b1f6bee21d033d ""
-  "d:/UAV-Path-Planning/OSM Thesis Latex and Docs/main.tex" 1722767027 153617 108f685ea469b63328d0c072975f5bce ""
-  "main.aux" 1722767056 55363 1e00798b006e2213b3c329eb3be780cf "pdflatex"
-  "main.bbl" 1722748933 236181 9d9fb5cc41f614469af8d80458d6d2b3 "biber main"
-  "main.lof" 1722767056 5224 36f9ee15fedbc5295826fccae068adf9 "pdflatex"
-  "main.lot" 1722767056 730 e11807bb01d143a48d4905adab47da1e "pdflatex"
-  "main.out" 1722767056 12306 dc74e7d9df7b4c3cc4a120e2112bcc17 "pdflatex"
-  "main.run.xml" 1722767056 2423 6987615b5e6929e3a5c7a90f0277abd2 "pdflatex"
-  "main.tex" 1722767027 153617 108f685ea469b63328d0c072975f5bce ""
-  "main.toc" 1722767056 7144 f3c640bde7a2c4f30084215bf2877848 "pdflatex"
+  "d:/UAV-Path-Planning/OSM Thesis Latex and Docs/main.tex" 1722851945 159891 36fc2e1412c5f4fab9289f3f46aafa8f ""
+  "main.aux" 1722851975 57518 3f8d08ae8e1931b795a4ba5b8dfd1327 "pdflatex"
+  "main.bbl" 1722849008 241043 edeca0100c5fb8038b218e962ed69e51 "biber main"
+  "main.lof" 1722851975 5589 f3a826034a2f35513a878eb9c035c4a9 "pdflatex"
+  "main.lot" 1722851975 760 52febd8f0c9919d113684d32567c8121 "pdflatex"
+  "main.out" 1722851975 11991 0b0bb26238231cfab00b8a9c3c36a2e7 "pdflatex"
+  "main.run.xml" 1722851975 2423 6987615b5e6929e3a5c7a90f0277abd2 "pdflatex"
+  "main.tex" 1722851945 159891 36fc2e1412c5f4fab9289f3f46aafa8f ""
+  "main.toc" 1722851975 7116 c2730fde63d6c63f90f48f1ecb2e46eb "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

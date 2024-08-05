@@ -179,6 +179,7 @@
         \acro{GPS}{Global Positioning System}
         \acro{GRM}{Ground Risk Model}
         \acro{geoJSON}{Geographic JavaScript Object Notation}
+        \acro{EPSG}{European Petroleum Survey Group}
         \acro{ICAO}{International Civil Aviation Organization}
         \acro{KE}{Kinetic Energy}
         \acro{LOC}{Lost of Control}
@@ -197,6 +198,7 @@
         \acro{ACO}{Ant Colony Optimization}
         \acro{AI}{Artificial Intelligence}
         \acro{GBFS}{Greedy Best-First Search}
+        \acro{JRC}{Joint Research Centre}
     \end{acronym}
     \newpage
     
@@ -476,11 +478,19 @@
                 10^{-7}= P_f \times \frac{\rho}{2.78 \times 10^{-7}} \times \pi b^2
             \end{equation}
 
-            Since \(P_f\) is probabilty of failure per flight hours which also share the same meaning with \ac{MTBF}, we
-            can change the \(P_f\) into MTBF. And if we rearrange the equation one more time we will get the same
-            equation of \ref{eq:mtbf}. However since that equation is in US customary unit, we must convert it into
-            metric system, where we divided 1 \(m^2\) per 1 \(km^2\). Fortunately it is quite simple, as we just need to
-            change error correction factor from \(2.78 \times 10^{-7}\) into \(10^{-6}\) which resulted into equation
+            \begin{equation}
+                P_f =  \frac{\rho}{2.78} \times \pi b^2
+            \end{equation}
+
+            \begin{equation}
+                P_f =  \frac{k}{2.78} \times \pi b^2
+            \end{equation}
+
+            Since \(P_f\) is probabilty of failure per flight hours which also the inverse of the \ac{MTBF}, we can
+            change the \(P_f\) into MTBF. And if we rearrange the equation one more time we will get the same equation
+            of \ref{eq:mtbf}. However since that equation is in US customary unit, we must convert it into metric
+            system, where we divided 1 \(m^2\) per 1 \(km^2\). Fortunately it is quite simple, as we just need to change
+            error correction factor from \(2.78 \times 10^{-7}\) into \(10^{-6}\) which resulted into equation
             \ref{eq:mtbf_metric}
 
             \begin{equation}\label{eq:mtbf_metric}
@@ -727,14 +737,14 @@
             number of advancements over this standard equation have been presented by
             \cite{dalamagkidis_evaluating_2008} and \cite{shelley_model_2016} to name a few.
 
-            \begin{equation}\ref{eq:logisic}
+            \begin{equation}\label{eq:logisic}
                 f(x) = \frac{1}{1+e^-\frac{(x-threshold)}{energy \ impact}}
             \end{equation}
 
             \begin{figure}[H]\label{fig:logistic}
                 \centering
                 \includegraphics[width=0.8\textwidth]{Plot/logistic_bounded.pdf}
-                \caption{Generelized logistic fatality function given energy impact}
+                \caption{Generalized logistic fatality function given energy impact}
             \end{figure}
 
             \cite{magister_small_2010} makes use of a \ac{BC} that relates the kinetic energy on impact with the body's
@@ -1143,7 +1153,7 @@
 
 %---------------------------------------CHAPTER 3-------------------------------------
 \chapter{Background Theory and Methodology}
-    \section{General Overview}
+    \section{General Methodology}
         \begin{figure}[H]
             \centering
             \includegraphics[width=\textwidth]{General Image/OSM Drone-General Overview.pdf}
@@ -1154,31 +1164,39 @@
         retrieval and processing, ground risk map calculation, and generating the most optimal path using the pathfinder
         algorithm.
 
-        To collect necessary data, we are using free services provided by \ac{OSM} \cite{noauthor_openstreetmap_2022} to retrieve geographic
-        data, and \ac{GHSL} \cite{noauthor_global_2023} to retrieve population density throughout the earth.
+        To collect necessary data, we are using free services provided by \ac{OSM},
+        \cite{openstreetmap_contributors_planet_2017}, to retrieve geographic data, and \ac{GHSL} ,
+        \cite{commission_ghsl_2023}, to retrieve population density throughout the earth.
 
-        The \ac{GRM} is calculated using geographic and population data, and also the type of aircraft that are being used in
-        the calculation. The result would be descent location, impact energy, and fatality probability heat map. 
+        The \ac{GRM} is calculated using geographic and population data, and also the type of aircraft that are being
+        used in the calculation. The result would be descent location, impact energy, and fatality probability heat map. 
         
         After we compute and discretized the GRM. We find the optimal path with the least amount of risk using
         pathfinding algorithms, where the result would be compared.
 
-    \section{Prerequisite data}
+    \section{Data retrieval and processing}
         \subsection{Online geographic data}
-            OSM \cite{noauthor_openstreetmap_2022} is a collaborative project that aims to create a free, editable map of the world. It was founded in
-            2004 and has since grown to become one of the largest and most popular sources of geospatial data.
-
-            OSM is built on the idea that anyone can contribute to the map by adding and updating data. Users can add
-            data using \ac{GPS} devices, aerial imagery, or by manually tracing over satellite imagery. The data is then
-            stored in a database and made available under an open license, allowing anyone to use and share the data.
-
-            There are multiple ways to use the OSM service. To retrieve the geographic data we can send the querry to
-            Overpass \ac{API} and recieve the defaulted \ac{geoJSON} data. OSM also provide geocoding and reverse geocoding using
-            Nominatim API.
+        OSM is a collaborative project that aims to create a free, editable map of the world. It was founded in 2004 and
+        has since grown to become one of the largest and most popular sources of geospatial data.
+            
+        OSM is built on the idea that anyone can contribute to the map by adding and updating data. Users can add data
+        using \ac{GPS} devices, aerial imagery, or by manually tracing over satellite imagery. The data is then stored
+        in a database and made available under an open license, allowing anyone to use and share the data.
+            
+        There are multiple ways to use the OSM service. To retrieve the geographic data, we can send the query to
+        Overpass \ac{API} and receive the defaulted \ac{geoJSON} data \cite{openstreet_overpass_2022}. OSM also provides
+        geocoding and reverse geocoding using the Nominatim API.
+            
+        Geocoding is the process of converting addresses or other human-readable location descriptions into geographic
+        coordinates (latitude and longitude). This is useful for mapping addresses, analyzing spatial data, and
+        integrating location-based services into applications. Reverse geocoding, on the other hand, is the process of
+        converting geographic coordinates into a human-readable address. This is useful for identifying the address of a
+        specific point on a map, providing location information in a user-friendly format, and enhancing the usability
+        of geographic data.
 
         \subsection{Population data}
-            GHSL \cite{noauthor_global_2023}. It is a dataset produced by the JRC (Joint Research Centre) of the European Commission that
-            offers details on the distribution and location of human settlements worldwide.
+            GHSL \cite{commission_ghsl_2023} is a dataset produced by the JRC (Joint Research Centre) of the European
+            Commission that offers details on the distribution and location of human settlements worldwide.
 
             The GHSL classifies and examines patterns of urbanization and human settlement using new spatial data mining
             technologies and remote sensing data, such as satellite images. The dataset is periodically updated to
@@ -1189,11 +1207,11 @@
             and can assist planners in making better-educated choices concerning urbanization and sustainable
             development.
 
-        \subsection{Geographic Information System}
-            Geographic and population data then stored and processed by \ac{GIS}, tools used
-            for storing, manipulating, and visualizing geographic data. They allow users to analyze and understand spatial
-            relationships, patterns, and trends in geographic data. 
-            
+            \subsection{Geographic Information System}
+            Geographic and population data are stored and processed by \ac{GIS}, which are tools used for storing,
+            manipulating, and visualizing geographic data. GIS allows users to analyze and understand spatial
+            relationships, patterns, and trends in geographic data.
+                
             GIS consists of several key components:
             \begin{myitemize}
                 \item Data: GIS uses data that is linked to a geographic location. This data can be in the form of
@@ -1207,12 +1225,12 @@
                 \item Analysis: GIS allows users to perform spatial analysis on the data, such as calculating the
                 distance between two locations or identifying patterns in the data.
             \end{myitemize}
+            
+            There are multiple GIS software suites, ranging from standalone programs such as ArcGIS and QGIS to
+            package-based libraries for Python, such as GeoPandas and Rasterio. In this paper, we are going to use
+            GeoPandas and Rasterio along with their supporting libraries.
 
-            There are multiple GIS software suites, from standalone programs such as ArcGIS, and QGIS, to package base
-            library for python, such as GeoPandas, Rasterio. In this paper we are going to use GeoPandas and Rasterio
-            and its supporting libaries.
-
-    \section{Risk map}
+    \section{Ground risk map calculation}
         The Risk map is a graphic representation depicting a potential risk associated with the UAV operation. Risk maps
         are divided equally in distance into cells. Each cell represented a bounded geographical location. The map can
         be represented by a \(M \times N\) size matrix, which each \(M \times N\) is the number of cells in each row and
@@ -1220,10 +1238,27 @@
         location of \((x, y)\) in any coordinate reference system \ac{CRS}.
 
         If we use a slight notation abuse, which is \(\mathbf{R}(i,j)\), each cell coordinate \((i, j)\) is represented
-        as a geographical location in which case shifted by \(x\) and \(y\) amount. Figure [Dex] illustrates the Risk map
-        matrix.
+        as a geographical location in which case shifted by \(x\) and \(y\) amount. Figure \ref{fig:riskmatrix}
+        illustrates the Risk map matrix. If we actually deployed ground risk map using real world map it should have
+        look like in the figure \ref{fig:riskmap}, where we are going to use North Jakarta as our testing ground and
+        Parrot Talon as our drone. This map that are in \ac{CRS} of \ac{EPSG} 4236 are showing us the fatality if
+        certain UAV failed and fall down.
 
-        \subsection{Georeference layers}
+        \begin{figure}[H]
+            \label{fig:riskmatrix}
+            \centering
+            \includegraphics[width=\textwidth]{General Image/OSM Drone-RISK.pdf}
+            \caption{Grid risk matrix cell representation}
+        \end{figure}
+
+        \begin{figure}[H]
+            \label{fig:riskmap}
+            \centering
+            \includegraphics[width=\textwidth]{Plot/talon/total_fatality.png}
+            \caption{Talon ground risk map fatality distribution}
+        \end{figure}
+
+        \subsection{Geographic feature}
             In a sense risk map is constructed by stacking layer of features, each layer itself is obtain by analyzing
             each geographical feature and population density to calculate the ground risk map. In this paper, multilayer
             frameworks are used based on the work of \cite{primatesta_ground_2020}. As the name implied, this framework contains multiple
@@ -1255,9 +1290,15 @@
             In this study, the population density layer is represented by a 2D georeference map with each cell
             corresponding to the value of population per cell area size with cell area in unit \(m^2\), therefore
             \(people/m^2\). Logically, the map would be in matrix form, \textbf{D}, with each cell element of
-            \(\mathbf{D}(x, y)\).
-
+            \(\mathbf{D}(x, y)\). Figure \ref{fig:population} illustrates the population density of North Jakarta. The
+            map uses a color gradient to depict varying levels of population density. Areas with higher population
+            densities are shown in yellow lighter shades, while areas with lower population densities are represented in
+            darker purple shades. This allows for quick identification of densely populated neighborhoods as well as
+            less crowded areas. The data for this map is derived from \cite{commission_ghsl_2023}, ensuring accurate and
+            up-to-date insights into the population distribution. 
+            
             \begin{figure}[H]
+                \label{fig:population}
                 \centering
                 \includegraphics[width=\textwidth]{Plot/pop_dense.PNG}
                 \caption{Population density map}
@@ -1266,74 +1307,88 @@
         \subsection{Obstacle layer}
             Obstacle layer describe which cell has contains a building or geographic feature which higher than flight
             altitude of UAV. the data can easily be gathered by filtering, and mark it as impasable terrain. since it is
-            just another georeference layer, we can represent the as a matrix \(\mathbf{O}(x, y)\) which describe maximum height of
-            building in a given cells.
+            just another georeference layer, we can represent the as a matrix \(\mathbf{O}(x, y)\) which describe
+            maximum height of building in a given cells. 
 
-            Noted that this layer does not explicitly accounted into risk factor analysis, but instead only for
-            determining each cell is impasable for path finder.
+            Figure \ref{fig:obstacle} illustrates the obstacle map for North Jakarta, which highlights the height of
+            buildings in the area in meter. This map is a crucial tool for urban planning and navigation, especially for
+            UAV and other low-flying aircraft. The map uses a color-coded system to indicate the heights of different
+            buildings, providing a clear visual representation of vertical obstacles. Noted that this layer does not
+            explicitly accounted into risk factor analysis, but instead only for determining each cell is impasable for
+            path finder.
+
             \begin{figure}[H]
+                \label{fig:obstacle}
                 \centering
                 \includegraphics[width=\textwidth]{Plot/obstacle.png}
                 \caption{Height obstacle map}
             \end{figure}
 
-        \subsection{Sheltering factor layer}
-            Sheltering Factor layer is a term for describing, the layer that focuses on assessing the presence and
-            characteristics of physical structures or objects that can provide shelter. It is represented with a matrix
-            \textbf{S}, where each element \(\mathbf{S}(x, y)\) assumes the sheltering factor value of the corresponding
-            location.
-
-            The sheltering factor layer takes into account factors such as the size, shape, material, and location of
-            the structures or objects in the drone's operating environment. It aims to assess how these factors can
-            influence the risk of fatality in case of failure.
-
-            Unfortunately, it is impractical to evaluate the sheltering element in full detail in a study of this kind
-            because it is a very complex scenario. The dynamic of drone collision is a complication in itself,
-            particularly since detailed physical building features, like material or wall thickness, are recorded
-            differently around the world.
-
-            It is worsened by the fact that there are multiple studies with conflicting results when calculating the
-            absorption of shelter since there is no consensus when defining the sheltering factor. Some studies by \cite{dalamagkidis_evaluating_2008}
-            and \cite{primatesta_ground_2020} use a scale factor from 0 to 1, or 1 to 10 respectively, representing the energy absorption factor
-            of a given building. While \cite{melnyk_third-party_2014} uses a study conducted by the \ac{DoD} \cite{harwick_approved_2007} regarding
-            explosive study to measure the energy absorption capability.
-
-            Even though it is tempting to use the method given by \cite{melnyk_third-party_2014} and DoD since it has the most accurate data. The
-            study conducted by them is more suitable for singular operation-specific evaluation i.e. best case use for
-            generating event tree, and not suited for generating risk map. There are also multiple problems when using
-            this method, such as the lack of accurate data on building material geographic maps, especially when OSM do
-            not provide a building material data, which would result in inaccurate measurement.
-
-            From the previous statement, in this paper, we would use the scale factor proposed by \cite{klepeis_national_2001} and \cite{primatesta_ground_2020} as a
-            foundation for sheltering factor risk generation. Since it provides a general method to calculate a risk
-            factor. Table 3.1 is the shelter factor for types of features.
-            
-            \begin{figure}[H]
-                \centering
-                \includegraphics[width=\textwidth]{Plot/shelter_factor.png}
-                \caption{Shelter factor map}
-            \end{figure}
-
-
-            \begin{table}[H]
-                \centering
-                \begin{tabular}{|p{4cm}|p{4cm}|}
-                    Sheltering Factor & Type \\
-                    \hline
-                    0 & No shelters \\
-                    \hline
-                    0.25 & Sparse trees \\
-                    \hline
-                    0.5 & Low building \\
-                    \hline
-                    0.75 & High building \\
-                    \hline
-                    1.0 & Industrial building \\
-                    \hline
-                \end{tabular}
-                \caption{Sheltering factor}
-            \end{table}
-
+            \subsection{Sheltering Factor Layer}
+                The Sheltering Factor layer focuses on assessing the presence and characteristics of physical structures
+                or objects that can provide shelter. It is represented with a matrix \textbf{S}, where each element
+                \(\mathbf{S}(x, y)\) assumes the sheltering factor value of the corresponding location.
+                        
+                The sheltering factor layer takes into account factors such as the size, shape, material, and location
+                of the structures or objects in the drone's operating environment. It aims to assess how these factors
+                can influence the risk of fatality in case of failure.
+                        
+                Unfortunately, it is impractical to evaluate the sheltering element in full detail in a study of this
+                kind because it is a very complex scenario. The dynamics of drone collision are a complication in
+                itself, particularly since detailed physical building features, like material or wall thickness, are
+                recorded differently around the world.
+                        
+                This issue is compounded by the fact that multiple studies have conflicting results when calculating the
+                absorption of shelter since there is no consensus on defining the sheltering factor. Some studies by
+                \cite{dalamagkidis_evaluating_2008} and \cite{primatesta_ground_2020} use a scale factor from 0 to 1 or
+                1 to 10, respectively, representing the energy absorption factor of a given building. Meanwhile,
+                \cite{melnyk_third-party_2014} utilizes a study conducted by the \ac{DoD} \cite{harwick_approved_2007}
+                regarding explosive studies to measure the energy absorption capability.
+                        
+                Even though it is tempting to use the method given by \cite{melnyk_third-party_2014} and the DoD since
+                it has the most accurate data, the study conducted by them is more suitable for singular
+                operation-specific evaluation (i.e., best used for generating event trees) and not suited for generating
+                risk maps. There are also multiple problems when using this method, such as the lack of accurate data on
+                building material geographic maps, especially when OSM does not provide building material data, which
+                would result in inaccurate measurements.
+                        
+                Given these considerations, in this paper, we will use the scale factor proposed by
+                \cite{klepeis_national_2001} and \cite{primatesta_ground_2020} as a foundation for sheltering factor
+                risk generation since it provides a general method to calculate a risk factor. Table
+                \ref{tab:sheltering_factor} shows the sheltering factor for different types of features.
+                        
+                Figure \ref{fig:shelter_factor_map} shows the sheltering factor map, which visually represents the
+                sheltering factors across different geographic locations. The map uses color coding to indicate various
+                levels of sheltering, providing a clear understanding of areas that offer different degrees of
+                protection.
+                     
+             \begin{figure}[H]
+                 \centering
+                 \includegraphics[width=\textwidth]{Plot/shelter_factor.png}
+                 \caption{Shelter factor map with varying levels of sheltering provided by physical structures and objects across different locations.}
+                 \label{fig:shelter_factor_map}
+             \end{figure}
+             
+             \begin{table}[H]
+                 \centering
+                 \caption{Sheltering factor values for different types of features.}
+                 \label{tab:sheltering_factor}
+                 \begin{tabular}{|p{4cm}|p{4cm}|}
+                     \hline
+                     Sheltering Factor & Type \\
+                     \hline
+                     0 & No shelters \\
+                     \hline
+                     0.25 & Sparse trees \\
+                     \hline
+                     0.5 & Low building \\
+                     \hline
+                     0.75 & High building \\
+                     \hline
+                     1.0 & Industrial building \\
+                     \hline
+                 \end{tabular}
+             \end{table}
 
         \subsection{No-fly zone layer}
             The No-fly zone layer refers to a component of a ground risk map or airspace map that delineates areas where
@@ -1360,51 +1415,107 @@
     \section{Ground Risk Assessment}
         In this research, the risk is described as the potential to cause harm of UAV to the population on the ground.
         quantified as the number of fatalities per hour of flight. The risk model is built upon a series of
-        consecutively occurring events, each with its probability. These events are denoted as \(P_{event}\),
-        \(P_{impact}\), and \(P_{fatality}\).
-
-        \begin{equation}
-            P_{casualty}(x) = P_{event}(x) \cdot P_{impact}(x) \cdot P_{fatality}(x)
+        consecutively occurring events, each with its probability. which can be summarized into Equation
+        \ref{eq:fullprobability}.
+        
+        \begin{equation}\label{eq:fullprobability}
+            P_{fatal}(x) = P_{failure}(x) \cdot P_{impact}(x) \cdot P_{recovery} \cdot P_{stress} \cdot P_{exposure}(x) \cdot P_{incident}(x) \cdot P_{harm}(x)
         \end{equation}
 
-        \(P_{event}\) represents the probability of the UAV losing control and descending into the ground. This paper
-        considers four types of events: Ballistic, Unpowered Glide, Flyaway, and Parachute. Mathematical models are
-        utilized to determine the probable impact area for each type of descent. It is important to note that these
-        events are calculated independently of each other. Once the probabilities for each event are computed, they are
-        summed up for each cell, resulting in the probability of the drone impacting that particular cell. This
-        probability is described using a 2D \ac{PDF}. For further information on the descent
-        models, please refer to Sections:\ref{sec:descent_events}. The two-dimensional PDF is utilized to calculate the
-        probabilities of \(P_{impact}\) and \(P_{fatality}\), considering factors such as population density, sheltering
-        factor layer, and impact velocities.
+        \begin{myitemize}
+            \item \(P_{failure}(x)\): Represents the probability of the UAV losing control and descending to the ground.
+            This probability is calculated using the MTBF, which measures the average time between failures of the UAV. 
+                    
+            \item \(P_{impact}(x)\): Describes the likelihood of the UAV impacting a specific location on the ground.
+            This probability is derived from a two-dimensional Probability Density Function that considers various
+            descent scenarios, such as ballistic, unpowered glide, flyaway, and parachute descent. These events are
+            calculated independently, and their probabilities are summed for each cell in the grid to determine the
+            overall impact probability for that cell.
+                    
+            \item \(P_{recovery}\): Accounts for the effectiveness of any recovery mechanisms, such as parachutes, that
+            can reduce the severity of the UAV's impact. The probability of successful recovery is factored into the
+            overall risk model to determine the likelihood of a controlled descent versus an uncontrolled crash.
+                    
+            \item \(P_{stress}\): Refers to the probability of harm caused by the kinetic energy of the UAV at the time
+            of impact. This probability is calculated using models that relate kinetic energy to injury severity, such
+            as blunt force trauma models. 
+                    
+            \item \(P_{exposure}(x)\): Represents the probability of individuals being exposed to the UAV impact, based
+            on population density. This probability is determined using population distribution data and the impact
+            exposure area, which indicates the likelihood of the UAV striking individuals in the area.
+                    
+            \item \(P_{incident}(x)\): Involves the sheltering factor, which assesses the presence and characteristics
+            of physical structures or objects that can provide shelter. This probability is represented by the
+            sheltering factor matrix, \(\mathbf{S}(x, y)\), which assigns sheltering factor values to different
+            locations based on the type and characteristics of structures present.
+        \end{myitemize}
 
-        After calculating the UAV crash location following an uncontrolled descent, we need to calculate the Pimpact
-        which indicates the likelihood of the UAV strikes individuals. Where the population density and the impact
-        exposure area can have its influence. And finally \(P_{fatality}\), which denotes the probability of fatal
-        injuries occurring after a person has been impacted. It depends on the kinetic energy at the time of impact and
-        the sheltering factor.
+        This paper considers four types of events: Ballistic, Unpowered Glide, Flyaway, and Parachute. Mathematical
+        models are utilized to determine the probable impact area for each type of descent. It is important to note that
+        these events are calculated independently of each other. Once the probabilities for each event are computed,
+        they are summed up for each cell, resulting in the probability of the drone impacting that particular cell,
+        shown in the figure \ref{fig:summer}. This probability is described using a 2D \ac{PDF}. For further information
+        on the descent models, please refer to Sections:\ref{sec:descent_events}. The two-dimensional PDF is utilized to
+        calculate the probabilities of \(P_{impact}\) and \(P_{fatality}\), considering factors such as population
+        density, sheltering factor layer, and impact velocities.
 
-        The overall probability of casualty, \(P_{casualty}(x)\), is then computed. The \textbf{R} is a matrix
-        containing calculated of said \(P_{casualty}(x)\) in every element of \(\mathbf{R}(x, y)\). This approach allows
+        \begin{figure}[H]
+            \label{fig:summer}
+            \centering
+            \includegraphics[width=\textwidth]{General Image/OSM Drone-LOGIC_SUM.pdf}
+            \caption{Type of descent event probability being summed}
+        \end{figure}
+
+        After calculating the UAV crash location following an uncontrolled descent, we need to calculate the
+        \(P_{impact}\) which indicates the likelihood of the UAV strikes individuals. Where the population density and
+        the impact exposure area can have its influence. And finally \(P_{fatality}\), which denotes the probability of
+        fatal injuries occurring after a person has been impacted. It depends on the kinetic energy at the time of
+        impact and the sheltering factor.
+
+        The overall probability of fatality, \(P_{fatal}(x)\), is then computed. The \textbf{R} is a matrix
+        containing calculated of said \(P_{fatal}(x)\) in every element of \(\mathbf{R}(x, y)\). This approach allows
         for the assessment of risk associated with UAS flights by considering various factors and probabilistic models
         for different events during the flight.
 
-        \begin{figure}[H]
-            \centering
-            \includegraphics[width=\textwidth]{General Image/OSM Drone-LOGIC_SUM.png}
-            \caption{General risk assesment flowchart}
-        \end{figure}
-
-        \subsection{Failure rate}
+       \subsection{Failure rate}
         The failure rate is a metric used to measure the reliability or average failure rate of a system or component.
-        In this study, the MTBF would represent the failure rate. Where MTBF stands for Mean Time Between Failures. MTBF
-        represents the average amount of time that elapses between consecutive failures of a system or component.
-            
-        MTBF is often expressed in time units, but usually it measures in hours, however, it can also be measured in
-        other such as days or years. A higher MTBF value indicates a longer expected time between failures, suggesting a
-        more reliable system or component.
-            
-        MTBF is typically calculated using historical failure data. Where this study using the assumption from, Shelley
-        \cite{shelley_model_2016} and UAS Task Force \cite{noauthor_unmanned_2015} is set into 100 hours. 
+        In this study, the MTBF (Mean Time Between Failures) represents the failure rate. MTBF is defined as the average
+        amount of time that elapses between consecutive failures of a system or component. 
+
+        According to \cite{shelley_model_2016}, failure rate can be calculated using equation shown in equation
+        \ref{eq:mtbf_final} where \(\rho\) is the population density, \(b\) is the wingspan, and \(k\) is a conversion
+        factor. The value of \(k\) is 1/10 when the population density data is given by people per square meter or
+        square kilometer, and 1/2.78 when using square feet or square miles. Since MTBF is an inverse of \(P_{failure}\)
+        we can rearanged into equation \ref{eq:pfatal_final}. If we calculated both MTBF and the \(P_{failure}\) of
+        various UAVs in metrics using North Jakarta population density of 14,464 people per square kilometer. We will
+        get the result shown in table \ref{tab:mtbf}
+        
+        \begin{equation}\label{eq:mtbf_final}
+            MTBF = \frac{\rho \pi b^2}{10} = k(\rho \pi b^2)
+        \end{equation}
+
+        \begin{equation}\label{eq:pfatal_final}
+            P_f =  \frac{\rho}{k} \times \pi b^2
+        \end{equation}
+
+        \begin{table}[H]
+            \label{tab:mtbf}
+            \centering
+            \caption{MTBF and \(P_{fatal}\) for Various UAVs}
+            \begin{tabular}{|l|c|c|c|}
+                \hline
+                UAV Model & Wingspan (meters) & MTBF (hours) & \(P_{fatal}\) \\
+                \hline
+                Talon & 0.88 & 35,965.76 & 0.000278 \\
+                \hline
+                Parrot Disco & 0.575 & 13,483.80 & 0.000104 \\
+                \hline
+                Phantom 4 & 0.2 & 1,818.36 & 0.000014 \\
+                \hline
+                Inspire 2 & 0.4 & 7,273.44 & 0.000055 \\
+                \hline
+            \end{tabular}
+        \end{table}
 
         \subsection{Descent Event}\label{sec:descent_events} Information on how the UAV descended into the ground is
         required for ground risk management. The impact area and the kinetic energy at impact are determined according
@@ -1422,7 +1533,7 @@
         impact velocities. These velocities are instrumental in computing the probabilities of impact (\(P_{impact}\))
         and fatality (\(P_{fatality}\)).
 
-        \subsection{Ballistic Descent}
+        \subsubsection{Ballistic descent}
         The occurrence of ballistic descent arises when the aircraft experiences a catastrophic failure, such as a
         structural failure that results in the loss of most of its lift. Consequently, the vehicle undergoes a descent
         solely driven by the forces of gravity and drag.
@@ -1454,7 +1565,7 @@
             \label{fig:ballistic_descent}
         \end{figure}
 
-        \subsection{Glide Descent}
+        \subsubsection{Glide descent}
         Uncontrolled glide may arise depending on the configuration of the aircraft. It is an event when UAV flight
         profiles are governed solely by the glide ratio or autorotation angle. This event could happen when aircraft
         loses its power but still retains most of its lift capability.
@@ -1486,7 +1597,7 @@
             \label{fig:ballistic_descent}
         \end{figure}
 
-        \subsection{Fly away}
+        \subsubsection{Fly away}
         The fly-away event occurs when the operator loses complete control over the UAV, while the onboard flight
         control maintains the stability of the vehicle. As a result, the UAS can fly in any direction until it crashes
         on the ground. This event is modeled based on a reference paper \cite{la_cour-harbo_quantifying_2019} , which proposes a model comprising two
@@ -1519,7 +1630,7 @@
             \label{fig:ballistic_descent}
         \end{figure}
 
-        \subsection{Parachute}
+        \subsubsection{Parachute}
         The parachute descent starts when the UAV flies downward while the parachute is fully extended. The power plants
         are typically shut off and the parachute is opened when a problem occurs. After the emergency detection and the
         parachute fully opening, there is, however, a small delay. The only factors affecting the drop at this point are
@@ -1619,6 +1730,7 @@
 
         \begin{table}[H]
             \centering
+            \caption{Energy correlate to fatality}
             \begin{tabular}{|p{6cm}|p{1.5cm}|p{1.5cm}|p{4cm}|}
                 \hline
                 Information & Value & Unit & Source \\
@@ -1630,7 +1742,6 @@
                 Energy required by fragment to be hazardous to human & 58 & Joule & \cite{gonzales_faas_2017} \\
                 \hline
             \end{tabular}
-            \caption{Energy correlate to fatality}
         \end{table}
 
         This study would be using more comprehensive $P_{fatality}$ Equation \ref{eq:fatality}, with $\alpha$ as
@@ -2005,6 +2116,7 @@
 
         \begin{table}[H]
             \centering
+            \caption{UAV Specifications}  % Add caption here
             \begin{tabular}{| l | l | l | l | l |}
                 \hline
                 \textbf{Specification} & \textbf{Talon} & \textbf{Parrot Disco} & \textbf{Phantom 4} & \textbf{Inspire 2} \\
@@ -2023,7 +2135,6 @@
                 Parachute area & 1 & 0.5 & 0.5 & 0.5 \\
                 \hline
             \end{tabular}
-            \caption{UAV Specifications}  % Add caption here
         \end{table}
 
     \section{Objective}
@@ -2218,6 +2329,7 @@
         \end{figure}
 
         \begin{table}[H]
+            \caption{Total pathway risk} % Caption at the bottom
             \centering
             \begin{tabular}{| l  l  l  l  l |}
                 \hline
@@ -2228,11 +2340,11 @@
                 Risk vs distance ratio & 0.000148 & 0.000148 & 0.000165 & 0.000149 \\
                 \hline
             \end{tabular}
-            \caption{Total pathway risk (\%)} % Caption at the bottom
         \end{table}
 
     \begin{table}[H]
         \centering
+        \caption{Pathway risk statistic} % Caption at the bottom
         \begin{tabular}{|l l l l l l |}
             \hline
                   &  & \textbf{Ballistic} & \textbf{Glide} & \textbf{Flyaway} & \textbf{Final Risk} \\
@@ -2256,12 +2368,12 @@
             \hline
         \end{tabular}
         \captionsetup{justification=justified} % Caption justification
-        \caption{Pathway risk statistic (\%)} % Caption at the bottom
         \label{tab:pathway-risk}
     \end{table}
 
     \begin{table}[H]
         \centering
+        \caption{Combine total map risk statistic (\%)} % Caption at the bottom
         \begin{tabular}{|lllll|}
             \hline
             \textbf{} & \textbf{Talon} & \textbf{Disco} & \textbf{Phantom 4} & \textbf{Inspire 2} \\
@@ -2275,7 +2387,6 @@
             \hline
         \end{tabular}
         \captionsetup{justification=justified} % Caption justification
-        \caption{Combine total map risk statistic (\%)} % Caption at the bottom
         \label{tab:total-map-risk}
     \end{table}
 

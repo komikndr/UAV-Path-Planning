@@ -292,7 +292,6 @@
             \item What kind of pathfinding method that produces the quasi-optimal path without sacrificing computational time.
         \end{myitemize}
 
-    \section{Thesis Structure}
 
 
 %---------------------------------------CHAPTER 2-------------------------------------
@@ -307,6 +306,7 @@
         Next, we will explore the Path Finder. After identifying a model that answers the question of where a UAV is
         most likely to hit someone, we move on to the next question: how do we navigate the UAV or provide the safest
         route to minimize the risk of severe casualties? This is why we will discuss the Risk-Based Path Finder.
+
     
     \section{Ground risk model}
         A ground risk model is a type of assessment tool that is used to evaluate the potential risks associated with
@@ -737,14 +737,15 @@
             number of advancements over this standard equation have been presented by
             \cite{dalamagkidis_evaluating_2008} and \cite{shelley_model_2016} to name a few.
 
-            \begin{equation}\label{eq:logisic}
+            \begin{equation}\label{eq:logistic}
                 f(x) = \frac{1}{1+e^-\frac{(x-threshold)}{energy \ impact}}
             \end{equation}
 
-            \begin{figure}[H]\label{fig:logistic}
+            \begin{figure}[H]
                 \centering
                 \includegraphics[width=0.8\textwidth]{Plot/logistic_bounded.pdf}
                 \caption{Generalized logistic fatality function given energy impact}
+                \label{fig:logistic}
             \end{figure}
 
             \cite{magister_small_2010} makes use of a \ac{BC} that relates the kinetic energy on impact with the body's
@@ -960,8 +961,9 @@
         and orientation of a robot. The algorithm constructs a tree \( T \) that starts at the initial state \(
         x_{\text{init}} \) and incrementally expands towards unexplored regions of the state space. Each node in the
         tree represents a state, and each edge represents a feasible transition between states. The tree is expanded by
-        randomly sampling a state \( x_{\text{rand}} \) in the state space, finding the nearest node \(
-        x_{\text{nearest}} \) in the tree to this random state, and then creating a new node \( x_{\text{new}} \) in the
+        randomly sampling a state \( x_{\text{rand}} \) in the state space, finding the nearest node
+        \(x_{\text{nearest}} \) 
+        in the tree to this random state, and then creating a new node \( x_{\text{new}} \) in the
         direction of \( x_{\text{rand}} \) from \( x_{\text{nearest}} \).
             
         The RRT algorithm's main steps can be summarized as follows: 1. Initialize the tree \( T \) with the initial
@@ -1153,6 +1155,76 @@
 
 %---------------------------------------CHAPTER 3-------------------------------------
 \chapter{Background Theory and Methodology}
+    \section{Case study}
+        \subsection{UAV Specification}
+        In this study, we are going to analyze the risk factor of multirotor and fixed-wing UAV. In comparison, Talon
+        and Parrot Disco are fixed-wing. While DJI Phantom 4 and DJI Inspire 2 are multirotor. Four of them are chosen
+        since they are generally known as a go-to standard in the commercial drone industry. Each category is also
+        differentiated into two different sizes, where Talon and Inspire 2 are the large size, while Phantom 4 and Disco
+        are much smaller UAV. All properties are obtained from manufacturer design specifications.
+            
+        As for the aerodynamic properties of these drones, we are using a very simple drag model. This will not include
+        an Induced drag since we cannot predict every possible angle of attack. It is also beneficial to use simplify
+        drag model since it would give a higher impact velocity, which increases the impact energy and results in a much
+        more conservative value.
+            
+        It is worth mentioning the mechanic of the glide model in this risk analyzer. Since only fixed wings are capable
+        of gliding, and to an extent, a variable-pitch helicopter by autorotation, it is almost impossible to make a
+        glide descent on a fixed-pitch propeller multirotor. Where for the multirotor, ballistic descent is the more
+        likely outcome, even though there is little to no damage in the aircraft. It is then assumed that a glide
+        descent, and to an extent a glide speed in multirotor, as a low powered horizontal descent where the power is
+        barely sustaining a hover maneuver.
+
+        \begin{table}[H]
+            \centering
+            \caption{UAV Specifications}  % Add caption here
+            \begin{tabular}{| l | l | l | l | l |}
+                \hline
+                \textbf{Specification} & \textbf{Talon} & \textbf{Parrot Disco} & \textbf{Phantom 4} & \textbf{Inspire 2} \\
+                \hline
+                Type & Fixed wing & Fixed wing & Quadcopter & Quadcopter \\
+                Mass (kg) & 3.75 & 0.75 & 1.4 & 4.25 \\
+                Front area (m$^2$) & 0.1 & 0.07 & 0.02 & 0.04 \\
+                Radius (m) & 0.88 & 0.575 & 0.2 & 0.4 \\
+                Maximum flight time & 1.25 h & 45 min & 20 min & 25 min \\
+                Ballistic drag coefficient & N(0.9, 0.2) & N(0.9, 0.2) & N(0.7, 0.2) & N(0.7, 0.2) \\
+                Horizontal initial speed (m/s) & N(18, 2.5) & N(15, 2.5) & U(0, 15) & U(0, 20) \\
+                Vertical initial speed (m/s) & 0 & 0 & 0 & 0 \\
+                Glide speed (m/s) & 16 & 12 & 7.5 & 10 \\
+                Glide ratio & N(12, 2) & N(2.7, 0.8) & N(2.7, 0.8) & N(2.7, 0.8) \\
+                Parachute drag coefficient & N(13, 0.2) & N(0.9, 0.2) & N(0.9, 0.2) & N(0.9, 0.2) \\
+                Parachute area & 1 & 0.5 & 0.5 & 0.5 \\
+                \hline
+            \end{tabular}
+            \begin{minipage}{\textwidth}
+                \footnotesize
+                \(N(\mu, \sigma)\) represents a normal distribution.
+
+                \(U(start, end)\) represents a uniform distribution.
+            \end{minipage}
+        \end{table}
+
+    \section{Objective location}
+        The ground risk would be performed in North Jakarta, Indonesia. The place is chosen for its dense population, an
+        assortment of building heights, large water bodies, and multiple residential and commercial zone areas. Shown in \ref{fig:map}
+
+        And for the operation itself, the UAV would be flying from Pluit Village to Jakarta Sailing Vocational School. This
+        objective is chosen based on the criteria previously mentioned.
+
+        We would compare the performance of the Risk A* Algorithm vs the Normal A* algorithm. We do not include Djikstra's
+        algorithm in this section since the A* algorithm provided by the NetworkX library is already admissible and able to
+        obtain optimal pathways.
+
+        It is worth mentioning the normal A* is the same for all types of aircraft since aircraft properties are only
+        important in Risk A* in generating various descent PDFs.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{Plot/route.png}
+            \caption{Operation objective}
+            \label{fig:map}
+        \end{figure}
+
     \section{General Methodology}
         \begin{figure}[H]
             \centering
@@ -1245,17 +1317,17 @@
         certain UAV failed and fall down.
 
         \begin{figure}[H]
-            \label{fig:riskmatrix}
             \centering
-            \includegraphics[width=\textwidth]{General Image/OSM Drone-RISK.pdf}
+            \includegraphics[width=0.75\textwidth]{General Image/OSM Drone-RISK.pdf}
             \caption{Grid risk matrix cell representation}
+            \label{fig:riskmatrix}
         \end{figure}
 
         \begin{figure}[H]
-            \label{fig:riskmap}
             \centering
             \includegraphics[width=\textwidth]{Plot/talon/total_fatality.png}
             \caption{Talon ground risk map fatality distribution}
+            \label{fig:riskmap}
         \end{figure}
 
         \subsection{Geographic feature}
@@ -1298,10 +1370,10 @@
             up-to-date insights into the population distribution. 
             
             \begin{figure}[H]
-                \label{fig:population}
                 \centering
                 \includegraphics[width=\textwidth]{Plot/pop_dense.PNG}
                 \caption{Population density map}
+                \label{fig:population}
             \end{figure}
 
         \subsection{Obstacle layer}
@@ -1318,10 +1390,10 @@
             path finder.
 
             \begin{figure}[H]
-                \label{fig:obstacle}
                 \centering
                 \includegraphics[width=\textwidth]{Plot/obstacle.png}
                 \caption{Height obstacle map}
+                \label{fig:obstacle}
             \end{figure}
 
             \subsection{Sheltering Factor Layer}
@@ -1460,10 +1532,10 @@
         density, sheltering factor layer, and impact velocities.
 
         \begin{figure}[H]
-            \label{fig:summer}
             \centering
             \includegraphics[width=\textwidth]{General Image/OSM Drone-LOGIC_SUM.pdf}
             \caption{Type of descent event probability being summed}
+            \label{fig:summer}
         \end{figure}
 
         After calculating the UAV crash location following an uncontrolled descent, we need to calculate the
@@ -1499,7 +1571,6 @@
         \end{equation}
 
         \begin{table}[H]
-            \label{tab:mtbf}
             \centering
             \caption{MTBF and \(P_{fatal}\) for Various UAVs}
             \begin{tabular}{|l|c|c|c|}
@@ -1515,6 +1586,7 @@
                 Inspire 2 & 0.4 & 7,273.44 & 0.000055 \\
                 \hline
             \end{tabular}
+            \label{tab:mtbf}
         \end{table}
 
         \subsection{Descent Event}\label{sec:descent_events} Information on how the UAV descended into the ground is
@@ -1532,6 +1604,23 @@
         Furthermore, the model generates a two-dimensional matrix containing the estimated horizontal and vertical
         impact velocities. These velocities are instrumental in computing the probabilities of impact (\(P_{impact}\))
         and fatality (\(P_{fatality}\)).
+
+        \subsubsection{Drone type}
+        Drones come in various types, each with distinct descent characteristics, especially in terms of glide and
+        range. Fixed-wing drones, like the Talon, are designed to mimic the flight of traditional airplanes, with wings
+        that provide lift and enable longer glide distances. These drones are typically more efficient for covering
+        large areas and can maintain flight with minimal power consumption. On the other hand, multirotor drones, such
+        as the DJI Phantom4, utilize multiple rotors to achieve vertical takeoff and landing. These drones are highly
+        maneuverable and can hover in place, but they generally have a shorter range and less efficient glide
+        capabilities compared to fixed-wing counterparts.
+            
+        For our testing, we have selected the Talon as a representative fixed-wing drone and the DJI Phantom as a
+        representative multirotor drone. These models are chosen due to their mid-range pricing, making them accessible
+        for a wide range of applications while still offering reliable performance. The Talon's fixed-wing design allows
+        us to assess its glide characteristics over long distances, while the DJI Phantom4's multirotor setup provides
+        insights into its descent behavior. By comparing these two types of drones, we aim to better understand their
+        respective strengths and weaknesses in various scenarios, ultimately guiding users in selecting the appropriate
+        drone type for their specific needs.
 
         \subsubsection{Ballistic descent}
         The occurrence of ballistic descent arises when the aircraft experiences a catastrophic failure, such as a
@@ -1600,12 +1689,12 @@
         \subsubsection{Fly away}
         The fly-away event occurs when the operator loses complete control over the UAV, while the onboard flight
         control maintains the stability of the vehicle. As a result, the UAS can fly in any direction until it crashes
-        on the ground. This event is modeled based on a reference paper \cite{la_cour-harbo_quantifying_2019} , which proposes a model comprising two
-        components. Firstly, the probability of ground impact decreases linearly with the distance from the UAS position
-        until reaching the maximum distance the vehicle can travel. Secondly, the vertical motion of the vehicle is
-        taken into account, with a higher probability of ground impact near the UAS position, modeled as a normal
-        distribution centered around the UAS position. These two contributions are combined linearly using a scaling
-        factor.
+        on the ground. This event is modeled based on a reference paper \cite{la_cour-harbo_quantifying_2019} , which
+        proposes a model comprising two components. Firstly, the probability of ground impact decreases linearly with
+        the distance from the UAS position until reaching the maximum distance the vehicle can travel. Secondly, the
+        vertical motion of the vehicle is taken into account, with a higher probability of ground impact near the UAS
+        position, modeled as a normal distribution centered around the UAS position. These two contributions are
+        combined linearly using a scaling factor.
             
         In this study, equal probabilities are assumed for both scenarios to be conservative. It is assumed that the
         fly-away event terminates with an uncontrolled glide descent. Unlike other descent events, the fly-away event
@@ -1636,10 +1725,10 @@
         parachute fully opening, there is, however, a small delay. The only factors affecting the drop at this point are
         the parachute's aerodynamic features, which are intended to slow the vertical speed.
             
-        To model this event, a methodology described in a referenced paper \cite{la_cour-harbo_quantifying_2019}is employed. The authors of the paper
-        consider factors such as the mass of the vehicle, as well as the physical properties of the parachute, including
-        its area and drag coefficient. Notably, the presence of wind significantly alters the descent dynamics,
-        affecting the direction and velocity of the descent.
+        To model this event, a methodology described in a referenced paper \cite{la_cour-harbo_quantifying_2019}is
+        employed. The authors of the paper consider factors such as the mass of the vehicle, as well as the physical
+        properties of the parachute, including its area and drag coefficient. Notably, the presence of wind
+        significantly alters the descent dynamics, affecting the direction and velocity of the descent.
 
         \begin{figure}[H]
             \centering
@@ -1768,11 +1857,6 @@
         straight path from point A to point B since there is little to no obstacle. Instead, the risk factor has a
         bigger impact on the Pathfinder compared to real physical obstacles.
 
-        There are many types of pathfinder algorithms with each of its advantage, disadvantage, and its most effective
-        usage of operation. In this paper, we would be using A* and Dijkstra's algorithm to find the optimal path and
-        compare each algorithm. There is an explanation in section [A] for reasons why we are not going to use other
-        algorithms.
-
         \subsection{Problem statement}
         \textbf{Given:}
         \begin{myitemize}
@@ -1807,17 +1891,15 @@
             \item \(d(G)\) is minimized.           
         \end{myitemize}
         The objective is to find the path \(P\) that minimizes the cumulative risk factor, taking into account the risk
-        factors associated with each cell in the grid.
+        factors associated with each cell in the grid. We are going to use Risk A* as the pathfinder algorithm.
             
-        This problem can be solved using various algorithms such as Dijkstra's algorithm, A*, or even extensions like
-        Risk-Aware A* that consider risk factors in the pathfinding process.
             
         Noted that the specific formulation and constraints of the problem may vary depending on additional
         considerations such as movement constraints, specific risk factor calculations, and other domain-specific
         requirements. The above problem statement provides a general framework for finding the shortest path based on
         risk factor in a grid system.
 
-        \textbf{Graph}
+        \subsection{Graph}
         Before using any pathfinder algorithm, the grid map must be defined in the graph. In computer science and
         mathematics, a graph is a data structure that represents a collection of interconnected nodes, called vertices,
         \((V)\), and the relationships between them, called edges, \((E)\).
@@ -1844,7 +1926,7 @@
         \subsection{Dijkstra's algorithm}
         Dijkstra's algorithm is a well-known and widely used algorithm for finding the shortest path between a given
         source node and all other nodes in a graph. It guarantees optimality, meaning it always finds the shortest path,
-        as long as the graph has non-negative edge weights.
+        as long as the graph has non-negative edge weights \cite{dijkstra_note_2022}.
 
         Dijkstra's algorithm uses a cost function to calculate the shortest path from a given start node to all other
         nodes in a graph. The distance in Djikstra's case is represented as a cost function of \(g(x)\).
@@ -1879,8 +1961,7 @@
         that it explores paths with lower total costs, gradually converging towards the shortest path from the start
         node to each node in the graph.
 
-        \begin{algorithm}
-        \caption{Dijkstra’s Algorithm}
+        \begin{figure}[H]
         \begin{algorithmic}[1]
         \Function{Dijkstra}{start, goal}
             \State distances $\gets$ \{\}
@@ -1918,7 +1999,8 @@
             \State \Return path
         \EndFunction
         \end{algorithmic}
-        \end{algorithm}
+        \caption{Dijsktra's pseudocode algoithm}
+        \end{figure}
 
         \subsection{A* algorithm}
         A* algorithm is an extension of the Dijkstra algorithm and uses a heuristic function to guide the search. From
@@ -1965,19 +2047,14 @@
 
         To summarize, when there is a single unique optimal path, A* can discover it more efficiently than Dijkstra's
         algorithm by utilizing an admissible heuristic function. While Dijkstra's algorithm has the capability to
-        eventually find the absolute optimal path given sufficient time. By comparing the results of A* and Dijkstra's
-        algorithm, we can assess the performance of A*.
+        eventually find the absolute optimal path given sufficient time. 
 
-        \begin{algorithm}
-        \caption{A* Algorithm}
+        \begin{figure}[H]
         \begin{algorithmic}[1]
         \Function{AStar}{start, goal}
-            \State openSet $\gets \{\text{start}\}$
-            \State closedSet $\gets \{\}$
-            \State cameFrom $\gets \{\}$
-            \State gScore $\gets \{\}$
-            \State hScore $\gets \{\}$
-            \State fScore $\gets \{\}$
+            \State openSet $\gets \{\text{start}\}$; closedSet $\gets \{\}$
+            \State cameFrom $\gets \{\}$; gScore $\gets \{\}$
+            \State hScore $\gets \{\}$;  fScore $\gets \{\}$
             \State gScore[start] $\gets 0$
             \State hScore[start] $\gets$ \Call{heuristic}{start, goal}
             \State fScore[start] $\gets$ gScore[start] + hScore[start]
@@ -2016,17 +2093,11 @@
             \State \Return path
         \EndFunction
         \end{algorithmic}
-        \end{algorithm}
-
-    \section{UPX, UAV Pathfinding eXtension}
-
-        \begin{figure}[H]
-            \centering
-            \includegraphics[width=\textwidth]{General Image/UPX GENERAL FLOWCHART.png}
-            \caption{UPX architecture design}
-            \label{fig:UPX_arch}
+        \caption{A* pseudocode algoithm}
         \end{figure}
-        
+
+    \section{Implementation of risk-based UAV path finder}
+        \subsection{Instrumentation}
         UAV Pathfinding eXtension, UPX, is both a python libraries and application to find the optimal risk-informed
         flight path. In general, UPX works by retrieving geographic data from OSM, receiving geographic data, then being
         discretized and aggregated. The risk map is then converted into a graph for the pathfinding algorithm. The risk
@@ -2038,128 +2109,169 @@
         they provide aerodynamic parameters and aircraft performance data. However, some caveats would be explained in
         the UPX limitation below.
 
-        \subsection{Limitation}
-        Firstly, UPX is strictly for a preliminary assessment only. It does not handle real-world phenomena such as
+        Since UPX is strictly for a preliminary assessment only. It does not handle real-world phenomena such as
         sudden wind gale, rain, storm, or other aircraft that, unfortunately, are present in the path of the UAV. For
         that reason only, we hope the pilot practice safe flying and the UAV itself is provided with the failsafe
         feature.
 
-    \section{UPX Python and packages}
-        \subsection{Python}
+    \subsection{General working principle}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{General Image/UPX GENERAL FLOWCHART.png}
+            \caption{UPX architecture design}
+            \label{fig:UPX_arch}
+        \end{figure}
+
+        \subsubsection{Data Collection Using OSM and Nominatim}
+        In the initial stage of the UPX architecture, data collection is performed using OpenStreetMap and the Nominatim
+        API. User input is processed to retrieve relevant geographic data, which includes points of interest, streets,
+        buildings, and other geographic features. The Nominatim API is used to geocode addresses and locations,
+        converting them into geographic coordinates. This collected data forms the foundation for further processing in
+        UPX.
+            
+        \subsubsection{Tessellation and Geopandas Centroid Calculation}
+        Once the geographic data has been collected, the next step involves tessellating the data into polygons using
+        TessPy. This tessellation process is essential as it converts the continuous geographic area into a discrete
+        grid array, making it easier to manage and analyze. Each cell in the grid represents a polygon, which will be
+        used for detailed analysis. Noted that polygon is a term use by GIS community to indicate any 2D spatial shape,
+        which can include triangle to any n-gon. GeoPandas is then used to find the centroid of each polygon. The
+        centroid acts as an anchor position for the cell, providing a reference point that simplifies further
+        calculations and analyses. To give more clarity refer to figure \ref{fig:tassel} below
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.75\textwidth]{General Image/OSM Drone-Tessel.pdf}
+            \caption{Tesselation process, color does not represent anything}
+            \label{fig:tassel}
+        \end{figure}
+            
+        \subsubsection{Spatial Join and Attribute Aggregation}
+        After tessellation, the polygons undergo spatial joins using GeoPandas. This process links the geographic cells
+        with their respective attributes, such as population density, land use, and other risk factors. Aggregating
+        these attributes is crucial for the risk analysis, as they help determine the probability of fatality in case of
+        a UAV malfunction. If you take a closer look into the figure \ref{fig:sjoin} below, the upper part of the layer
+        map is applied aggregate per row basis, or per field basis. This is because map provided by the OSM is already
+        spatially align with each other, since it uses the same CRS. However we need to combine both the aggregated
+        geographic map and the actual impact PDF. This is because the there are spatial differences we need to align
+        them using spatial join. Spatial join, or to be precised, spatial inner join essentially stack on top of another
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{General Image/OSM Drone-Attribute.pdf}
+            \caption{Spatial join and attribute aggregation, color does not represent anything}
+            \label{fig:sjoin}
+        \end{figure}
+
+            
+        \subsubsection{Aerodynamic Analysis}
+        Each cell undergoes detailed aerodynamic analysis, where calculations for various descent scenarios are
+        performed. These scenarios include ballistic descent, glide descent, fly away, and parachute deployment. The
+        results of these calculations are incorporated into the risk map, providing a comprehensive assessment of risk
+        levels across different geographic areas.
+            
+        \subsubsection{Risk Analysis and Ground Risk Module Computation}
+        The risk analysis involves computing the probability of descent events, impacts, and fatalities. This is
+        processed using a ground risk module, which evaluates the likelihood of these events occurring within each cell.
+        This step is critical for understanding the potential consequences of a UAV malfunction and for creating an
+        informed risk map.
+            
+        \subsubsection{Converting Cells into a Graph}
+        The next stage involves converting the tessellated cells and their associated risk attributes into a graph
+        structure suitable for pathfinding algorithms. This is achieved using the libpysal Queen Contiguity procedure,
+        which connects each node (representing a cell) to its neighboring nodes. This graph structure allows for
+        efficient navigation and analysis. Take a look at figure \ref{fig:queen} below to see the concept being applied.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.75\textwidth]{General Image/OSM Drone-graph convert.pdf}
+            \caption{Graph convert, color does not represent anything}
+            \label{fig:queen}
+        \end{figure}
+
+        \subsubsection{Pathfinding Using Risk-A*}
+        The stage involves running the Pathfinder algorithm. This algorithm uses the risk-informed graph and applies the
+        Risk-A* method to identify the optimal flight path for the UAV. The Risk-A* algorithm takes into account the
+        risk values associated with each cell, ensuring the UAV avoids high-risk areas and selects the safest possible
+        route.
+            
+        \subsubsection{Smoothing the Path}
+        To avoid jagged paths, a Gaussian average is applied for path smoothing. This ensures that the resulting flight
+        path is more realistic and manageable, reducing unnecessary sharp turns and optimizing the route.
+            
+        \subsubsection{FileHandle Module for Utility and I/O Purposes}
+        The FileHandle module in UPX is dedicated to utility and I/O purposes. It manages the saving and loading of
+        geographic and aggregate maps, ensuring that data can be efficiently stored and retrieved throughout the various
+        stages of the process.
+
+        \subsection{UPX Python and packages}
+        \subsubsection{Python}
         Python is an interpreted programming language. Interpreted language has the benefit of being an easier language
         to compare to a compiled language. Added to this, it has massive scientific-related packages and libraries.
         Combine with quick deployment and its STEM library, it is a perfect choice for engineering, mathematics, and
         physics analysis. Based on previous criteria it is a great choice for creating UAV path planner applications and
         libraries.
-            
+
         While Python indeed has a great advantage. Unfortunately, its comparatively easy language came with a great
         price. An interpreted language is inherently slow, 8 to 100 times slower compared to C/C++ language. Base Python
         language also cannot use more than one thread because its GIL, Global Interpreter Lock, prevents the threads
         from sharing memories and create a parallel workload. Fortunately, most of the heavy calculation is handled by
         the c/c++ library, where Python uses the caller function to launch the libraries.
 
-        \subsection{GeoPandas}
+        \subsubsection{GeoPandas}
         GeoPandas is one of the GIS libraries built for tabulating and analyzing geographicalspatial analysis in python.
         GeoPandas itself can be regarded as the extension of Pandas library, where Pandas is general tabular data
         processor. GeoPandas has geographic spatial and attribute related function such as overlay, spatial join,
         clipping to group, aggregate, and measure geospatial data.
-            
+
         GeoPandas exports and imports files in standard GIS-supported files such as geoJSON, the file, and the Shapely
         object, to name a few. In Python GeoPandas tabular data is called GeoDataFrame, and GeoSeries. What
         differentiates between GeoDataFrame and regular DataFrame is the addition of a geometry column. The geometry
         column can contain Multi/Polygon, Multi/Linestring, and Point shapes.
 
-        \subsection{Shapely}
+        \subsubsection{Shapely}
         Shapely is a geomeytry calculation and manipulation packages available for python. Many of geospatial function
         in GeoPandas relies on Shapely itself. Overlay, clipping, spatial binary combination in GeoPandas can be found
         in Shapely. In this paper Shapely is being uses to create custom filter for heat map function of aircraft
         falling probability.
 
-        \subsection{Tesspy}
+        \subsubsection{Tesspy}
         Tesspy, a tesselation library for Python. Its purpose, as the name implies, is to create a tesselated polygon.
         Tesspy can be used as long as the polygon object is derived from the Shapely object. Tesspy offers type of
         tessellated map that commonly use for geospatial processing. Square grid, hexbin, Voronoi city block, and
         adaptive square is the type of tesselated maps, to name a few.
 
-        \subsection{OSMnx}
+        \subsubsection{OSMnx}
         OSMNx is a combination of OSM and NetworkX. OSMNx is mainly being uses to create graph representation of the
         road network. It uses the GeoPandas data frame, to build the network, as long as the roads in question are
         connected at least with another road. But for this paper, OSMNx is only being used as a geocoder and reverse
         geocoder to retrieve GeoPandas data.
 
-        \subsection{NetworkX}
+        \subsubsection{NetworkX}
         To create a graph structure, NetworkX provides the necessary function to do that. NetworkX offers graph
         creation, graph traversal algorithms, and graph manipulation. The graph, as previously mentioned, in a
         combination of nodes and edges. The A* pathfinder for the UAV Path finder also uses the NetworkX built-in A*.
 
 %---------------------------------------CHAPTER 4-------------------------------------
 \chapter{Results}
-    \section{Ground risk map generation}
-        \subsection{UAV Specification}
-        In this study, we are going to analyze the risk factor of multirotor and fixed-wing UAV. In comparison, Talon
-        and Parrot Disco are fixed-wing. While DJI Phantom 4 and DJI Inspire 2 are multirotor. Four of them are chosen
-        since they are generally known as a go-to standard in the commercial drone industry. Each category is also
-        differentiated into two different sizes, where Talon and Inspire 2 are the large size, while Phantom 4 and Disco
-        are much smaller UAV. All properties are obtained from manufacturer design specifications.
-            
-        As for the aerodynamic properties of these drones, we are using a very simple drag model. This will not include
-        an Induced drag since we cannot predict every possible angle of attack. It is also beneficial to use simplify
-        drag model since it would give a higher impact velocity, which increases the impact energy and results in a much
-        more conservative value.
-            
-        It is worth mentioning the mechanic of the glide model in this risk analyzer. Since only fixed wings are capable
-        of gliding, and to an extent, a variable-pitch helicopter by autorotation, it is almost impossible to make a
-        glide descent on a fixed-pitch propeller multirotor. Where for the multirotor, ballistic descent is the more
-        likely outcome, even though there is little to no damage in the aircraft. It is then assumed that a glide
-        descent, and to an extent a glide speed in multirotor, as a low powered horizontal descent where the power is
-        barely sustaining a hover maneuver
-
-        \begin{table}[H]
-            \centering
-            \caption{UAV Specifications}  % Add caption here
-            \begin{tabular}{| l | l | l | l | l |}
-                \hline
-                \textbf{Specification} & \textbf{Talon} & \textbf{Parrot Disco} & \textbf{Phantom 4} & \textbf{Inspire 2} \\
-                \hline
-                Type & Fixed wing & Fixed wing & Quadcopter & Quadcopter \\
-                Mass (kg) & 3.75 & 0.75 & 1.4 & 4.25 \\
-                Front area (m$^2$) & 0.1 & 0.07 & 0.02 & 0.04 \\
-                Radius (m) & 0.88 & 0.575 & 0.2 & 0.4 \\
-                Maximum flight time & 1.25 h & 45 min & 20 min & 25 min \\
-                Ballistic drag coefficient & N(0.9, 0.2) & N(0.9, 0.2) & N(0.7, 0.2) & N(0.7, 0.2) \\
-                Horizontal initial speed (m/s) & N(18, 2.5) & N(15, 2.5) & U(0, 15) & U(0, 20) \\
-                Vertical initial speed (m/s) & 0 & 0 & 0 & 0 \\
-                Glide speed (m/s) & 16 & 12 & 7.5 & 10 \\
-                Glide ratio & N(12, 2) & N(2.7, 0.8) & N(2.7, 0.8) & N(2.7, 0.8) \\
-                Parachute drag coefficient & N(13, 0.2) & N(0.9, 0.2) & N(0.9, 0.2) & N(0.9, 0.2) \\
-                Parachute area & 1 & 0.5 & 0.5 & 0.5 \\
-                \hline
-            \end{tabular}
-        \end{table}
-
-    \section{Objective}
-    The ground risk would be performed in North Jakarta, Indonesia. The place is chosen for its dense population, an
-    assortment of building heights, large water bodies, and multiple residential and commercial zone areas. Shown in \ref{fig:map}
-        
-    And for the operation itself, the UAV would be flying from Pluit Village to Jakarta Sailing Vocational School. This
-    objective is chosen based on the criteria previously mentioned.
-        
-    We would compare the performance of the Risk A* Algorithm vs the Normal A* algorithm. We do not include Djikstra's
-    algorithm in this section since the A* algorithm provided by the NetworkX library is already admissible and able to
-    obtain optimal pathways.
-        
-    It is worth mentioning the normal A* is the same for all types of aircraft since aircraft properties are only
-    important in Risk A* in generating various descent PDFs.
-
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=\textwidth]{Plot/route.png}
-        \caption{Operation objective}
-        \label{fig:map}
-    \end{figure}
 
     \section{PDF risk map}
-        \subsection{Talon}
+        \subsection{Ballistic descent}
+        The provided images illustrate ballistic impact probability maps for four different drones: DJI Inspire , Parrot
+       , DJI Phantom, and Talon. Each map is a grid representation where each cell denotes the probability of the drone
+       falling within that specific area. The color gradient, ranging from purple to yellow, indicates the probability
+       scale, with purple representing lower probabilities and yellow representing higher probabilities.
+            
+        From these maps, we can observe distinct patterns for each type of drone. The DJI Inspire and DJI Phantom maps
+        show a higher concentration of yellow, indicating a higher probability of falling within certain central areas.
+        This might suggest that these drones, likely due to their multirotor design, have a more focused descent
+        pattern. However since we calculate every drone as a point mass and not accounted for the shape of the UAV, this
+        pattern likely came because both DJI Inspire and Parrot has higher velocity compare to Phantom and Talon, which
+        resulted much greater range covered per grid map when falling down.
+        
+        Which is why Talon and Disco a exhibit a more widespread distribution of probabilities, with less concentration
+        in specific areas. The Talon's map, in particular, demonstrates a broader area of impact, which aligns with the
+        expected behavior of much higher horizontal velocity compare to the others.
+
         \begin{figure}[H]
             \centering
             \includegraphics[width=\textwidth]{Plot/talon/ballistic_fpdf.png}
@@ -2167,30 +2279,39 @@
         \end{figure}
         \begin{figure}[H]
             \centering
-            \includegraphics[width=\textwidth]{Plot/talon/glide_pdf.png}
-            \caption{Talon glide PDF}
-        \end{figure}
-        \begin{figure}[H]
-            \centering
-            \includegraphics[width=\textwidth]{Plot/talon/fly_away_pdf.png}
-            \caption{Talon fly away PDF}
-        \end{figure}
-        \begin{figure}[H]
-            \centering
-            \includegraphics[width=\textwidth]{Plot/talon/parachute_pdf.png}
-            \caption{Talon parachute PDF}
-        \end{figure}
-        \begin{figure}[H]
-            \centering
-            \includegraphics[width=\textwidth]{Plot/talon/total_fatality.png}
-            \caption{Talon fatality risk PDF}
-        \end{figure}
-
-        \subsection{Parrot Disco}
-        \begin{figure}[H]
-            \centering
             \includegraphics[width=\textwidth]{Plot/parrot/ballistic_pdf.png}
             \caption{Disco ballistic PDF}
+        \end{figure}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{Plot/phantom4/ballistic_pdf.png}
+            \caption{DJI Phantom 4 ballistic PDF}
+        \end{figure}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{Plot/inspire/ballistic_pdf.png}
+            \caption{DJI Inspire 2 ballistic PDF}
+        \end{figure}
+
+        \subsection{Glide}
+        The second set of figure represents glide impact probability maps. These maps display the likelihood of a drone
+        impacting specific areas while gliding, with the color gradient ranging from purple to yellow indicating lower
+        to higher probabilities.
+            
+        These glide probability maps for these drones does not reflect their notable differences in their descent
+        behaviors. It should be noted from previous chapter that multirotor and fixed wing has a different glide
+        behaviour. Where a multirotor drone, should show a more scattered distribution of probabilities with notable
+        concentrations of yellow in certain areas, suggesting that these drones has lower glide ratio. And a fixed-wing
+        drone, should displays a distinct pattern with broader areas of high probability spread across the map,
+        reflecting its capability to glide over longer distances before descending. However these map show a more or
+        less same behavior. This is because since we using altitude 400 m, where it is the maximum distance allowed by
+        \cite{arc_unmanned_2015}, even if the fixed wing fall, it will only cover maximum of 4.8 km for the case of
+        talon.
+            
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{Plot/talon/glide_pdf.png}
+            \caption{Talon glide PDF}
         \end{figure}
         \begin{figure}[H]
             \centering
@@ -2199,30 +2320,35 @@
         \end{figure}
         \begin{figure}[H]
             \centering
-            \includegraphics[width=\textwidth]{Plot/parrot/fly_away_pdf.png}
-            \caption{Disco fly away PDF}
-        \end{figure}
-        \begin{figure}[H]
-            \centering
-            \includegraphics[width=\textwidth]{Plot/parrot/parachute_pdf.png}
-            \caption{Disco parachute PDF}
-        \end{figure}
-        \begin{figure}[H]
-            \centering
-            \includegraphics[width=\textwidth]{Plot/parrot/total_fatality-pdf.png}
-            \caption{Disco fatality risk PDF}
-        \end{figure}
-
-        \subsection{DJI Phantom 4}
-        \begin{figure}[H]
-            \centering
-            \includegraphics[width=\textwidth]{Plot/phantom4/ballistic_pdf.png}
-            \caption{DJI Phantom 4 ballistic PDF}
-        \end{figure}
-        \begin{figure}[H]
-            \centering
             \includegraphics[width=\textwidth]{Plot/phantom4/glide_pdf.png}
             \caption{DJI Phantom 4 glide PDF}
+        \end{figure}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{Plot/inspire/glide_pdf.png}
+            \caption{DJI Inspire 2 glide PDF}
+        \end{figure}
+
+        \subsection{Fly Away}
+        The third set of images showcases flyaway impact probability maps for the same four drones. Examining these
+        maps reveals varied flyaway patterns for each drone type. The DJI Inspire and DJI Phantom show more localized
+        high-probability areas, with significant concentrations of green and yellow, particularly in specific sections
+        of the map. This indicates a higher chance of these drones impacting within confined zones, which may correlate
+        with their operational characteristics and flight control systems. The DJI Parrot map displays a broader
+        distribution of probabilities, with higher impact probabilities spread more evenly across a larger area,
+        suggesting that in a flyaway event, this drone could potentially impact a wider range of locations. The Talon,
+        consistent with its fixed-wing nature, demonstrates distinct zones with both very low and very high
+        probabilities, reflecting its ability to cover extensive distances during a flyaway scenario.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{Plot/talon/fly_away_pdf.png}
+            \caption{Talon fly away PDF}
+        \end{figure}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{Plot/parrot/fly_away_pdf.png}
+            \caption{Disco fly away PDF}
         \end{figure}
         \begin{figure}[H]
             \centering
@@ -2231,43 +2357,86 @@
         \end{figure}
         \begin{figure}[H]
             \centering
-            \includegraphics[width=\textwidth]{Plot/phantom4/parachute_pdf.png}
-            \caption{DJI Phantom 4 parachute PDF}
-        \end{figure}
-        \begin{figure}[H]
-            \centering
-            \includegraphics[width=\textwidth]{Plot/phantom4/total_fatality_pdf.png}
-            \caption{DJI Phantom 4 fatality risk PDF}
-        \end{figure}
-
-        \subsection{DJI Inspire 2}
-        \begin{figure}[H]
-            \centering
-            \includegraphics[width=\textwidth]{Plot/inspire/ballistic_pdf.png}
-            \caption{DJI Inspire 2 ballistic PDF}
-        \end{figure}
-        \begin{figure}[H]
-            \centering
-            \includegraphics[width=\textwidth]{Plot/inspire/glide_pdf.png}
-            \caption{DJI Inspire 2 glide PDF}
-        \end{figure}
-        \begin{figure}[H]
-            \centering
             \includegraphics[width=\textwidth]{Plot/inspire/fly_away_pdf.png}
             \caption{DJI Inspire 2 fly away PDF}
+        \end{figure}
+
+        \subsection{Parachute}
+        The parachute deployment maps exhibit a consistent and almost uniform distribution across different drones. This
+        uniformity stems from the assumption that the drones will descend solely using parachutes in the event of a
+        malfunction or emergency. Consequently, the descent pattern is less influenced by the specific flight
+        characteristics of the drones, resulting in similar probability distributions regardless of the drone type.
+            
+        Due to this assumption, the parachute deployment scenarios are characterized by a predictable and controlled
+        descent path. This uniformity in distribution ensures that the impact probabilities are evenly spread across the
+        area, providing a reliable measure for risk assessment and safety planning. The consistent patterns observed in
+        the parachute deployment maps simplify the task of determining safe operational zones and preparing for
+        potential emergency scenarios, as the descent behavior remains largely unaffected by the drone's inherent flight
+        dynamics.
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{Plot/talon/parachute_pdf.png}
+            \caption{Talon parachute PDF}
+        \end{figure}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{Plot/parrot/parachute_pdf.png}
+            \caption{Disco parachute PDF}
+        \end{figure}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{Plot/phantom4/parachute_pdf.png}
+            \caption{DJI Phantom 4 parachute PDF}
         \end{figure}
         \begin{figure}[H]
             \centering
             \includegraphics[width=\textwidth]{Plot/inspire/parachute_pdf.png}
             \caption{DJI Inspire 2 parachute PDF}
         \end{figure}
+
+        \subsection{Total Fatality}
+        A total fatality risk map integrates various hazard models, including ballistic, parachute, glide, and fly-away
+        trajectories, to provide a comprehensive visual representation of potential fatality risks in a given area. This
+        map combines data from multiple descent event to assess the likelihood and impact of different types of hazards
+        that could lead to fatalities. Ballistic models estimate the trajectories and impact points of high-speed
+        projectiles, while parachute models account for objects descending more slowly under a parachute. Glide models
+        track the paths of objects that can travel significant horizontal distances while descending, and fly-away
+        models consider the risks posed by uncontrolled, drifting objects. By overlaying these models, the total
+        fatality risk map offers a detailed and multifaceted view of potential danger zones, helping to inform safety
+        measures and emergency response planning.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{Plot/talon/total_fatality.png}
+            \caption{Talon total fatality PDF}
+        \end{figure}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{Plot/parrot/total_fatality-pdf.png}
+            \caption{Disco total fatality PDF}
+        \end{figure}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{Plot/phantom4/total_fatality_pdf.png}
+            \caption{DJI Phantom 4 total fatality PDF}
+        \end{figure}
         \begin{figure}[H]
             \centering
             \includegraphics[width=\textwidth]{Plot/inspire/total_fatality_pdf.png}
-            \caption{DJI Inspire 2 fatality risk PDF}
+            \caption{DJI Inspire 2 total fatality PDF}
         \end{figure}
 
     \section{Pathfinder result}
+        The implementation of risk-aware A* algorithms across four drone models shows similarities primarily due to
+        these drones belonging to the same weight class. Although their specific flight characteristics may differ,
+        their classification within the same weight category means they share comparable physical properties. This
+        similarity ensures that, at a glance, the risk-aware A* algorithms applied to these drones produce simmilar
+        pathfinding results. However, a closer examination on the next section reveals distinctions in how each drone's
+        specific risk profiles and operational constraints influence the finer details of route optimization. Despite
+        their shared weight class, we must not ignore the subtle variations in performance, sensor capabilities, and
+        response to environmental factors lead to differences that become apparent in more complex scenarios and longer
+        missions.
+        
         \label{fig:regularastar}
         \subsection{Regular A*}
         \begin{figure}[H]
@@ -2299,100 +2468,165 @@
         \end{figure}
 
         \subsection{Risk result}
-        From \ref{fig:regularastar}, It is not surprising that the traveled distance of Normal A* is the shortest of the
-        rest of the risk A*. And also, it is interesting to see that the normal A* has the highest risk, although it is
-        logical to think that normal A* inversely correlates to its risk A* counterpart. It is not guaranteed for a
-        normal A* to have the highest risk score. However, normal A* will guarantee to have the shortest path length
-        compared to risk A*.
+        This table \ref{tab:pathway-risk} is an expansion of the previous table, providing a detailed
+        explanation of each risk factor associated with the paths taken by various drones. It highlights the specific
+        risks from ballistic, glide, and flyaway incidents, as well as the final risk for each drone. The inclusion of
+        the Normal A* algorithm showcases a comparative analysis, revealing that while it may incur slightly more risk,
+        it also offers a similar range of risk factors and potentially shorter distances. This analysis helps to better
+        understand the trade-offs between risk and distance for each algorithm.
             
-        To look at different properties, we can also measure the risk-to-traveled distance ratio, which can be thought
-        of as how much the algorithm tried to avoid critical areas by extending the pathway to a much safer option. This
-        example is clearly shown in DJI Phantom 4, where DJI Phantom 4 shares almost the same risk as normal A* with a
-        0.02 difference, But takes a pathway that is 163 meters longer.
+        Normal A* utilizes the Talon distribution but does not implement the Risk A* pathfinder. As seen in Figure
+        \ref{fig:regularastar}, the traveled distance of Normal A* is the shortest among the risk A* algorithms.
+        Interestingly, Normal A* has the highest risk score, which may seem counterintuitive, as one might expect an
+        inverse correlation between Normal A* and its risk A* counterpart. While it is not guaranteed for Normal A* to
+        have the highest risk score, it will consistently produce the shortest path length compared to risk A*.
             
-        After looking at the graph, it is tempting to use Talon since it has the lowest traveled distance and also risk
-        score. However, this resulted from the limitation in the way that the program is built, which of course, needs
-        some improvement.
+        To assess different properties, we can measure the risk-to-traveled distance ratio, reflecting how much the
+        algorithm attempts to avoid critical areas by extending the pathway to safer options. This is clearly
+        illustrated in the DJI Phantom 4, which shares almost the same risk as Normal A* with only a 0.02 difference,
+        yet takes a path that is 163 meters longer.
             
-        The problem lies in the Flyaway descent of this aircraft. This is because Talon has a long-range flight before
-        crashing into the ground. Now the main problem is since we only use 1 cluster of geographic regions, North
-        Jakarta, the region is smaller than the flyaway radius. This resulted in the outer cells of the region having a
-        smaller risk compared to the center cells.
-            
-        It is then clear the score represented by shorter-range UAV such as Parrot Disco, DJI Phantom 4, and DJI
-        Inspire 2 has a more defined score compared to the score produced by Talon.
+        Upon reviewing the graph, it may be tempting to choose Talon due to its lowest traveled distance and risk score.
+        However, this result stems from the limitations of the program's design, which certainly needs improvement. The
+        problem lies in the flyaway descent of this aircraft. Talon has a long-range flight before crashing into the
+        ground. Since we are only using one cluster of geographic regions, North Jakarta, the region is smaller than the
+        flyaway radius. This results in the outer cells of the region having a smaller risk compared to the center
+        cells. It is clear that the scores represented by shorter-range UAVs such as Parrot Disco, DJI Phantom 4, and
+        DJI Inspire 2 have more defined scores compared to those produced by Talon.
+
+
+        The table \ref{tab:total-pathway-risk} and figure \ref{fig:total-path1} illustrates the total pathway risks
+        associated with different algorithms, including Talon, Disco, Phantom 4, Inspire 2, and Normal A*. It outlines
+        the paths taken by these algorithms, the risks involved on those paths, and the average risk per distance
+        traveled. Notably, while the Normal A* algorithm exhibits a higher total risk involved, it also has the shortest
+        distance traveled, indicating a trade-off between risk and efficiency in pathfinding.
 
         \begin{figure}[H]
             \centering
             \includegraphics[width=\textwidth]{Plot/risk_vs_distance.png}
             \caption{Aircraft risk score}
+            \label{fig:total-path1}
         \end{figure}
 
+
         \begin{table}[H]
-            \caption{Total pathway risk} % Caption at the bottom
+            \caption{Total Pathway Risk} % Caption at the bottom
             \centering
-            \begin{tabular}{| l  l  l  l  l |}
+            \begin{tabular}{| l  l  l  l  l  l |}
                 \hline
-                \textbf{Parameter} & \textbf{Talon} & \textbf{Disco} & \textbf{Phantom 4} & \textbf{Inspire 2} \\
+                \textbf{Parameter} & \textbf{Talon} & \textbf{Disco} & \textbf{Phantom 4} & \textbf{Inspire 2} & \textbf{Normal A*} \\
                 \hline
-                Total travelled distance & 4917.651992 & 5120.845475 & 5066.796306 & 5147.428533 \\
-                Total risk involved & 0.727661 & 0.759534 & 0.834316 & 0.765401 \\
-                Risk vs distance ratio & 0.000148 & 0.000148 & 0.000165 & 0.000149 \\
+                Total travelled distance (m) & \(4917.65\) & \(5120.85\) & \(5066.80\) & \(5147.43\) & \(4903.00\) \\
+                Total risk involved (\%) & \(0.7277\) & \(0.7595\) & \(0.8343\) & \(0.7654\) & \(0.8531\) \\
+                Risk vs distance ratio (\% fatal/m) & \(1.48 \times 10^{-4}\) & \(1.48 \times 10^{-4}\) & \(1.65 \times 10^{-4}\) & \(1.49 \times 10^{-4}\) & \(1.74 \times 10^{-4}\) \\
                 \hline
             \end{tabular}
+            \label{tab:total-pathway-risk}
         \end{table}
+
+    This table  \ref{tab:pathway-risk} is an expansion of the previous table, providing a detailed
+    explanation of each risk factor associated with the paths taken by various drones. It highlights the specific risks
+    from ballistic, glide, and flyaway incidents, as well as the final risk for each drone. The inclusion of the Normal
+    A* algorithm showcases a comparative analysis, revealing that while it may incur slightly more risk, it also offers
+    a similar range of risk factors and potentially shorter distances. This analysis helps to better understand the
+    trade-offs between risk and distance for each algorithm.
 
     \begin{table}[H]
         \centering
-        \caption{Pathway risk statistic} % Caption at the bottom
+        \caption{Pathway Risk Statistic} % Caption at the bottom
         \begin{tabular}{|l l l l l l |}
             \hline
                   &  & \textbf{Ballistic} & \textbf{Glide} & \textbf{Flyaway} & \textbf{Final Risk} \\
-            \textbf{Drone} &\textbf{Stat}  &  &  &  &  \\
+            \textbf{Drone} & \textbf{Stat}  &  &  &  &  \\
             \hline
-            \textbf{Talon} & min & 7.55e-02 & 3.14e-01 & 0.00e+00 & 5.36e-03 \\
-                           & max & 5.38e-01 & 5.38e-01 & 7.76e-03 & 1.08e-02 \\
-                           & avg & 4.74e-01 & 4.83e-01 & 8.47e-04 & 9.57e-03 \\
+            \textbf{Talon} & min & \(7.55 \times 10^{-2}\) & \(3.14 \times 10^{-1}\) & \(0.00 \times 10^{0}\) & \(5.36 \times 10^{-3}\) \\
+                           & max & \(5.38 \times 10^{-1}\) & \(5.38 \times 10^{-1}\) & \(7.76 \times 10^{-3}\) & \(1.08 \times 10^{-2}\) \\
+                           & avg & \(4.74 \times 10^{-1}\) & \(4.83 \times 10^{-1}\) & \(8.47 \times 10^{-4}\) & \(9.57 \times 10^{-3}\) \\
             \hline
-            \textbf{Disco} & min & 5.63e-02 & 4.03e-01 & 5.38e-05 & 6.25e-03 \\
-                           & max & 5.38e-01 & 5.38e-01 & 6.02e-02 & 1.13e-02 \\
-                           & avg & 4.66e-01 & 5.06e-01 & 1.93e-02 & 9.91e-03 \\
+            \textbf{Disco} & min & \(5.63 \times 10^{-2}\) & \(4.03 \times 10^{-1}\) & \(5.38 \times 10^{-5}\) & \(6.25 \times 10^{-3}\) \\
+                           & max & \(5.38 \times 10^{-1}\) & \(5.38 \times 10^{-1}\) & \(6.02 \times 10^{-2}\) & \(1.13 \times 10^{-2}\) \\
+                           & avg & \(4.66 \times 10^{-1}\) & \(5.06 \times 10^{-1}\) & \(1.93 \times 10^{-2}\) & \(9.91 \times 10^{-3}\) \\
             \hline
-            \textbf{DJI Phantom 4} & min & 8.50e-02 & 3.99e-01 & 7.19e-03 & 6.85e-03 \\
-                                    & max & 5.39e-01 & 5.38e-01 & 1.79e-01 & 1.23e-02 \\
-                                    & avg & 4.87e-01 & 5.05e-01 & 9.19e-02 & 1.08e-02 \\
+            \textbf{DJI Phantom 4} & min & \(8.50 \times 10^{-2}\) & \(3.99 \times 10^{-1}\) & \(7.19 \times 10^{-3}\) & \(6.85 \times 10^{-3}\) \\
+                                    & max & \(5.39 \times 10^{-1}\) & \(5.38 \times 10^{-1}\) & \(1.79 \times 10^{-1}\) & \(1.23 \times 10^{-2}\) \\
+                                    & avg & \(4.87 \times 10^{-1}\) & \(5.05 \times 10^{-1}\) & \(9.19 \times 10^{-2}\) & \(1.08 \times 10^{-2}\) \\
             \hline
-            \textbf{DJI Inspire 2} & min & 6.03e-05 & 3.14e-01 & 0.00e+00 & 5.50e-03 \\
-                                    & max & 5.38e-01 & 5.38e-01 & 8.72e-02 & 1.13e-02 \\
-                                    & avg & 4.63e-01 & 4.83e-01 & 3.50e-02 & 9.81e-03 \\
+            \textbf{DJI Inspire 2} & min & \(6.03 \times 10^{-5}\) & \(3.14 \times 10^{-1}\) & \(0.00 \times 10^{0}\) & \(5.50 \times 10^{-3}\) \\
+                                    & max & \(5.38 \times 10^{-1}\) & \(5.38 \times 10^{-1}\) & \(8.72 \times 10^{-2}\) & \(1.13 \times 10^{-2}\) \\
+                                    & avg & \(4.63 \times 10^{-1}\) & \(4.83 \times 10^{-1}\) & \(3.50 \times 10^{-2}\) & \(9.81 \times 10^{-3}\) \\
+            \hline
+            \textbf{Normal A*} & min & \(7.57 \times 10^{-2}\) & \(3.15 \times 10^{-1}\) & \(1.00 \times 10^{-6}\) & \(5.37 \times 10^{-3}\) \\
+                               & max & \(5.39 \times 10^{-1}\) & \(5.39 \times 10^{-1}\) & \(7.78 \times 10^{-3}\) & \(1.09 \times 10^{-2}\) \\
+                               & avg & \(4.75 \times 10^{-1}\) & \(4.84 \times 10^{-1}\) & \(8.50 \times 10^{-4}\) & \(9.58 \times 10^{-3}\) \\
             \hline
         \end{tabular}
         \captionsetup{justification=justified} % Caption justification
         \label{tab:pathway-risk}
     \end{table}
 
+
+
+    This table \ref{tab:total-map-risk} presents the average risk statistics in North Jakarta. It is
+    important to note that the probabilities for ballistic impact, fly away, parachute, and glide primarily measure the
+    likelihood of falling into a grid. In contrast, the fatality risk encompasses a comprehensive assessment of ground
+    risk mode, providing a more holistic view of the potential hazards in the area.
+
     \begin{table}[H]
         \centering
-        \caption{Combine total map risk statistic (\%)} % Caption at the bottom
+        \caption{Areal map risk statistic of North Jakarta (\%)} % Caption at the bottom
         \begin{tabular}{|lllll|}
             \hline
             \textbf{} & \textbf{Talon} & \textbf{Disco} & \textbf{Phantom 4} & \textbf{Inspire 2} \\
             \hline
-            {Ballistic impact probability} & 3357.142553 & 3303.336594 & 3452.695201 & 3284.220663 \\
-            {Fly away impact probability} & 6.004905 & 136.521018 & 651.025645 & 248.005463 \\
-            {Glide impact probability} & 3420.454716 & 3584.184491 & 3576.983890 & 3420.454716 \\
-            {Parachute impact probability} & 3635.634721 & 3616.844608 & 3624.644006 & 3631.138685 \\
-            {Total fatality risk probability} & 67.836022 & 69.526808 & 76.807047 & 69.526808 \\
-            {Average areal total fatality risk} & 0.009572 & 0.009810 & 0.010838 & 0.009810 \\
+            {Avg Ballistic impact probability (pct)} & \(2.28 \times 10^{-3}\%\) & \(2.25 \times 10^{-3}\%\) & \(2.35 \times 10^{-3}\%\) & \(2.24 \times 10^{-3}\%\) \\
+            {Avg Fly away impact probability (pct)} & \(4.1 \times 10^{-5}\%\) & \(9.3 \times 10^{-5}\%\) & \(4.44 \times 10^{-4}\%\) & \(1.69 \times 10^{-4}\%\) \\
+            {Avg Glide impact probability (pct)} & \(2.33 \times 10^{-3}\%\) & \(2.44 \times 10^{-3}\%\) & \(2.44 \times 10^{-3}\%\) & \(2.33 \times 10^{-3}\%\) \\
+            {Avg Parachute impact probability (pct)} & \(2.48 \times 10^{-3}\%\) & \(2.46 \times 10^{-3}\%\) & \(2.47 \times 10^{-3}\%\) & \(2.48 \times 10^{-3}\%\) \\
+            {Avg Total fatality risk probability (pct)} & \(4.62 \times 10^{-5}\%\) & \(4.74 \times 10^{-5}\%\) & \(5.23 \times 10^{-5}\%\) & \(4.74 \times 10^{-5}\%\) \\
             \hline
         \end{tabular}
-        \captionsetup{justification=justified} % Caption justification
         \label{tab:total-map-risk}
     \end{table}
 
+    \subsection{Summarized result}
+        \begin{myitemize}
+            \item Talon having $9.57 \times 10^{-3}$ fatality per flight hour
+            \item Parrot Disco having $9.91 \times 10^{-3}$ fatality per flight hour
+            \item Phantom 4 having $1.08 \times 10^{-2}$ fatality per flight hour
+            \item Inspire 2 having $9.81 \times 10^{-3}$ fatality per flight hour
+        \end{myitemize}
+        With a traveled distance of each aircraft being:
+        \begin{myitemize}
+            \item Talon, with 4,918 m
+            \item Parrot Disco, with 5,121 m
+            \item Phantom 4, with 5,066 m
+            \item Inspire 2, with 5,147 m
+            \item Any Aircraft Without Risk involved, with 4,903 m
+        \end{myitemize}
+        And average path risk of aircraft:
+        \begin{myitemize}
+            \item Talon, with $1.48 \times 10^{-4}$ fatality per flight hour
+            \item Parrot Disco, with $1.48 \times 10^{-4}$ fatality per flight hour
+            \item Phantom 4, with $1.65 \times 10^{-4}$ fatality per flight hour
+            \item Inspire 2, with $1.49 \times 10^{-4}$ fatality per flight hour
+            \item Any Aircraft Without Risk involved, with $1.74 \times 10^{-4}$ fatality per flight hour
+        \end{myitemize}
 
+
+    \section{Comparison with previous research}
+    When comparing our results to the findings from Shelley’s research on Target Level Safety, we find that our average
+    fatality factor aligns closely, maintaining a range of approximately \(1 \times 10^{-7}\) \cite{shelley_model_2016}.
+    Additionally, the average risk path reported by Primatesta and Courharbo shows values in the range of \(1 \times
+    10^{-8}\), which is not surprising given their utilization of significantly shorter paths, leading to the lowest
+    total path risk observed in their study \cite{primatesta_risk-based_2020}. This illustrates how path optimization
+    can greatly impact the overall risk assessment of UAV operations, highlighting the importance of route planning in
+    achieving safety benchmarks.
+
+
+
+    
 %---------------------------------------CHAPTER 5-------------------------------------
-\chapter{Summary, Conclusion, and Recommendation}
+\chapter{Conclusion, and Recommendation}
     \section{Summary}
     In the summary ground, a risk map is a discrete PDF in the shape of a grid containing the possible fatality risk of
     each cell element. It is obtained by multiplying the possible outcome of multiple layers contributing to each risk.
@@ -2413,30 +2647,13 @@
     a modified A* pathfinding algorithm, which uses risk and distance to measure the most optimal path.
 
     \section{Conclusion}
-    Using ground risk management to measure the total area fatality of impact risk resulted in an average of:
+        In conclusion, the findings of this study underscore the critical importance of optimizing flight paths in UAV
+        operations to minimize associated risks. The analysis revealed a strong correlation between pathway length and
+        risk factors, emphasizing that shorter, well-planned routes tend to result in lower risk levels. This highlights
+        the need for effective route planning and risk assessment strategies to enhance safety and operational
+        efficiency. As UAV technology continues to advance, ongoing research and development in risk management will be
+        essential to ensure safe and reliable operations in diverse environments.
 
-    \begin{myitemize}
-        \item Talon having $9.57 \times 10^{-3}$ fatality per flight hour
-        \item Parrot Disco having $9.91 \times 10^{-3}$ fatality per flight hour
-        \item Phantom 4 having $1.08 \times 10^{-2}$ fatality per flight hour
-        \item Inspire 2 having $9.81 \times 10^{-3}$ fatality per flight hour
-    \end{myitemize}
-    With a traveled distance of each aircraft being:
-    \begin{myitemize}
-        \item Talon, with 4,918 m
-        \item Parrot Disco, with 5,121 m
-        \item Phantom 4, with 5,066 m
-        \item Inspire 2, with 5,147 m
-        \item Any Aircraft Without Risk involved, with 4,903 m
-    \end{myitemize}
-    And average path risk of aircraft:
-    \begin{myitemize}
-        \item Talon, with $1.48 \times 10^{-4}$ fatality per flight hour
-        \item Parrot Disco, with $1.48 \times 10^{-4}$ fatality per flight hour
-        \item Phantom 4, with $1.65 \times 10^{-4}$ fatality per flight hour
-        \item Inspire 2, with $1.49 \times 10^{-4}$ fatality per flight hour
-        \item Any Aircraft Without Risk involved, with $1.74 \times 10^{-4}$ fatality per flight hour
-    \end{myitemize}
 
     \section{Recommendation}
         \subsection{For future research}
@@ -2451,7 +2668,6 @@
         increase the performance of calculation since it frees up memory when the partitioned area is not being
         calculated.
 
-        \subsection{For software design}
         And as for the software design, UPX is currently written purely inPython. This is because it is for proof of
         concept for the research paper, where the development time is much more critical than the performance. However,
         if in the future there are similar methods and come across in using UPX. These are some key notes to improving
@@ -2461,6 +2677,7 @@
         utilize distributed systems such as Apache Spark and Dask. These platforms are designed to handle massive
         amounts of data efficiently by distributing the workload across multiple nodes, allowing for parallel processing
         and significant reductions in computation time.
+
         
         \textbf{Apache Spark} is a powerful distributed computing framework that can process large datasets quickly
         through in-memory computing capabilities. It supports a wide range of operations, including SQL queries,

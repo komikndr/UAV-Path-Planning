@@ -1,87 +1,100 @@
 \contentsline {chapter}{Contents}{2}{chapter*.1}%
 \contentsline {chapter}{List of Figures}{6}{chapter*.2}%
-\contentsline {chapter}{List of Tables}{8}{chapter*.3}%
-\contentsline {chapter}{List of Abbreviations}{9}{chapter*.4}%
-\contentsline {chapter}{\numberline {1}Introduction}{11}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Introduction}{11}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Research purpose}{11}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Research scope}{11}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Research problem}{12}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Significance of the study}{12}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Research question}{12}{section.1.6}%
-\contentsline {section}{\numberline {1.7}Thesis Structure}{12}{section.1.7}%
-\contentsline {chapter}{\numberline {2}Literature Review}{13}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Overview}{13}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Ground risk model}{13}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Failure model}{15}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Impact location model}{18}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Recovery model}{20}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Stress model}{21}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}Exposure model}{22}{subsection.2.2.5}%
-\contentsline {subsection}{\numberline {2.2.6}Incident stress model}{23}{subsection.2.2.6}%
-\contentsline {subsection}{\numberline {2.2.7}Harm model}{23}{subsection.2.2.7}%
-\contentsline {section}{\numberline {2.3}Pathfinding Algorithms}{25}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Bread-First Search}{25}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Depth-first search}{26}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Djikstra's algorithm}{27}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Greedy best-first search}{27}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}A*}{28}{subsection.2.3.5}%
-\contentsline {subsubsection}{Risk-based A*}{30}{equation.2.3.18}%
-\contentsline {subsection}{\numberline {2.3.6}Rapidly-exploring random tree}{30}{subsection.2.3.6}%
-\contentsline {subsection}{\numberline {2.3.7}Ant colony optimization}{33}{subsection.2.3.7}%
-\contentsline {subsection}{\numberline {2.3.8}Generative pathfinding AI}{35}{subsection.2.3.8}%
-\contentsline {subsection}{\numberline {2.3.9}Justification for choosing risk-based A*}{36}{subsection.2.3.9}%
-\contentsline {chapter}{\numberline {3}Background Theory and Methodology}{37}{chapter.3}%
-\contentsline {section}{\numberline {3.1}General Methodology}{37}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Data retrieval and processing}{37}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Online geographic data}{37}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Population data}{38}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Geographic Information System}{38}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Ground risk map calculation}{39}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Geographic feature}{41}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Population density layer}{41}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Obstacle layer}{42}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Sheltering Factor Layer}{43}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}No-fly zone layer}{45}{subsection.3.3.5}%
-\contentsline {section}{\numberline {3.4}Ground Risk Assessment}{45}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Failure rate}{47}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Descent Event}{48}{subsection.3.4.2}%
-\contentsline {subsubsection}{Ballistic descent}{48}{subsection.3.4.2}%
-\contentsline {subsubsection}{Glide descent}{49}{figure.caption.57}%
-\contentsline {subsubsection}{Fly away}{50}{figure.caption.58}%
-\contentsline {subsubsection}{Parachute}{51}{figure.caption.59}%
-\contentsline {subsection}{\numberline {3.4.3}Wind effect}{52}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Probability of Impacting an Individual}{52}{subsection.3.4.4}%
-\contentsline {subsection}{\numberline {3.4.5}Probability of Fatality}{53}{subsection.3.4.5}%
-\contentsline {section}{\numberline {3.5}Finding optimal path}{54}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Problem statement}{55}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Dijkstra's algorithm}{56}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}A* algorithm}{57}{subsection.3.5.3}%
-\contentsline {section}{\numberline {3.6}UPX, UAV Pathfinding eXtension}{61}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Limitation}{62}{subsection.3.6.1}%
-\contentsline {section}{\numberline {3.7}UPX Python and packages}{62}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Python}{62}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}GeoPandas}{62}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Shapely}{63}{subsection.3.7.3}%
-\contentsline {subsection}{\numberline {3.7.4}Tesspy}{63}{subsection.3.7.4}%
-\contentsline {subsection}{\numberline {3.7.5}OSMnx}{63}{subsection.3.7.5}%
-\contentsline {subsection}{\numberline {3.7.6}NetworkX}{63}{subsection.3.7.6}%
-\contentsline {chapter}{\numberline {4}Results}{64}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Ground risk map generation}{64}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}UAV Specification}{64}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Objective}{65}{section.4.2}%
-\contentsline {section}{\numberline {4.3}PDF risk map}{66}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Talon}{66}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Parrot Disco}{69}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}DJI Phantom 4}{71}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}DJI Inspire 2}{74}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Pathfinder result}{76}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Regular A*}{76}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Risk A*}{77}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Risk result}{78}{subsection.4.4.3}%
-\contentsline {chapter}{\numberline {5}Summary, Conclusion, and Recommendation}{82}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Summary}{82}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Conclusion}{82}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Recommendation}{83}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}For future research}{83}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}For software design}{83}{subsection.5.3.2}%
+\contentsline {chapter}{List of Tables}{9}{chapter*.3}%
+\contentsline {chapter}{List of Abbreviations}{10}{chapter*.4}%
+\contentsline {chapter}{\numberline {1}Introduction}{12}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{12}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Research purpose}{12}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Research scope}{12}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Research problem}{13}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Significance of the study}{13}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Research question}{13}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Literature Review}{14}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Overview}{14}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Ground risk model}{14}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Failure model}{16}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Impact location model}{19}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Recovery model}{21}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Stress model}{22}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Exposure model}{23}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Incident stress model}{24}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}Harm model}{24}{subsection.2.2.7}%
+\contentsline {section}{\numberline {2.3}Pathfinding Algorithms}{26}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Bread-First Search}{26}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Depth-first search}{27}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Djikstra's algorithm}{28}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Greedy best-first search}{28}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}A*}{29}{subsection.2.3.5}%
+\contentsline {subsubsection}{Risk-based A*}{31}{equation.2.3.18}%
+\contentsline {subsection}{\numberline {2.3.6}Rapidly-exploring random tree}{31}{subsection.2.3.6}%
+\contentsline {subsection}{\numberline {2.3.7}Ant colony optimization}{34}{subsection.2.3.7}%
+\contentsline {subsection}{\numberline {2.3.8}Generative pathfinding AI}{36}{subsection.2.3.8}%
+\contentsline {subsection}{\numberline {2.3.9}Justification for choosing risk-based A*}{37}{subsection.2.3.9}%
+\contentsline {chapter}{\numberline {3}Background Theory and Methodology}{38}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Case study}{38}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}UAV Specification}{38}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Objective location}{39}{section.3.2}%
+\contentsline {section}{\numberline {3.3}General Methodology}{40}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Data retrieval and processing}{41}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Online geographic data}{41}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Population data}{41}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Geographic Information System}{42}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Ground risk map calculation}{42}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Geographic feature}{43}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Population density layer}{44}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Obstacle layer}{45}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Sheltering Factor Layer}{46}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}No-fly zone layer}{48}{subsection.3.5.5}%
+\contentsline {section}{\numberline {3.6}Ground Risk Assessment}{48}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Failure rate}{50}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Descent Event}{51}{subsection.3.6.2}%
+\contentsline {subsubsection}{Drone type}{51}{subsection.3.6.2}%
+\contentsline {subsubsection}{Ballistic descent}{52}{subsection.3.6.2}%
+\contentsline {subsubsection}{Glide descent}{53}{figure.caption.59}%
+\contentsline {subsubsection}{Fly away}{53}{figure.caption.60}%
+\contentsline {subsubsection}{Parachute}{54}{figure.caption.61}%
+\contentsline {subsection}{\numberline {3.6.3}Wind effect}{55}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Probability of Impacting an Individual}{55}{subsection.3.6.4}%
+\contentsline {subsection}{\numberline {3.6.5}Probability of Fatality}{56}{subsection.3.6.5}%
+\contentsline {section}{\numberline {3.7}Finding optimal path}{57}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Problem statement}{57}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Graph}{59}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Dijkstra's algorithm}{59}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}A* algorithm}{61}{subsection.3.7.4}%
+\contentsline {section}{\numberline {3.8}Implementation of risk-based UAV path finder}{64}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Instrumentation}{64}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}General working principle}{65}{subsection.3.8.2}%
+\contentsline {subsubsection}{Data Collection Using OSM and Nominatim}{66}{figure.caption.66}%
+\contentsline {subsubsection}{Tessellation and Geopandas Centroid Calculation}{66}{figure.caption.66}%
+\contentsline {subsubsection}{Spatial Join and Attribute Aggregation}{66}{figure.caption.67}%
+\contentsline {subsubsection}{Aerodynamic Analysis}{67}{figure.caption.68}%
+\contentsline {subsubsection}{Risk Analysis and Ground Risk Module Computation}{67}{figure.caption.68}%
+\contentsline {subsubsection}{Converting Cells into a Graph}{68}{figure.caption.68}%
+\contentsline {subsubsection}{Pathfinding Using Risk-A*}{68}{figure.caption.69}%
+\contentsline {subsubsection}{Smoothing the Path}{68}{figure.caption.69}%
+\contentsline {subsubsection}{FileHandle Module for Utility and I/O Purposes}{68}{figure.caption.69}%
+\contentsline {subsection}{\numberline {3.8.3}UPX Python and packages}{69}{subsection.3.8.3}%
+\contentsline {subsubsection}{Python}{69}{subsection.3.8.3}%
+\contentsline {subsubsection}{GeoPandas}{69}{subsection.3.8.3}%
+\contentsline {subsubsection}{Shapely}{69}{subsection.3.8.3}%
+\contentsline {subsubsection}{Tesspy}{70}{subsection.3.8.3}%
+\contentsline {subsubsection}{OSMnx}{70}{subsection.3.8.3}%
+\contentsline {subsubsection}{NetworkX}{70}{subsection.3.8.3}%
+\contentsline {chapter}{\numberline {4}Results}{71}{chapter.4}%
+\contentsline {section}{\numberline {4.1}PDF risk map}{71}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Ballistic descent}{71}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Glide}{73}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Fly Away}{75}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Parachute}{77}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Total Fatality}{79}{subsection.4.1.5}%
+\contentsline {section}{\numberline {4.2}Pathfinder result}{81}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Regular A*}{82}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Risk A*}{82}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Risk result}{84}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Summarized result}{88}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Comparison with previous research}{89}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Conclusion, and Recommendation}{90}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Summary}{90}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Conclusion}{90}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Recommendation}{91}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}For future research}{91}{subsection.5.3.1}%

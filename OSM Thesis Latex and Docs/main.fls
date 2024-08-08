@@ -1065,6 +1065,21 @@ INPUT General Image\OSM Drone-ACO.pdf
 INPUT .\General Image\OSM Drone-ACO.pdf
 INPUT .\General Image\OSM Drone-ACO.pdf
 INPUT .\General Image\OSM Drone-ACO.pdf
+INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT .\Plot\route.png
+INPUT .\Plot\route.png
+INPUT Plot\route.png
+INPUT .\Plot\route.png
+INPUT .\Plot\route.png
+INPUT .\Plot\route.png
+INPUT .\Plot\route.png
 INPUT .\General Image\OSM Drone-General Overview.pdf
 INPUT .\General Image\OSM Drone-General Overview.pdf
 INPUT General Image\OSM Drone-General Overview.pdf
@@ -1183,13 +1198,24 @@ INPUT .\General Image\UPX GENERAL FLOWCHART.png
 INPUT .\General Image\UPX GENERAL FLOWCHART.png
 INPUT .\General Image\UPX GENERAL FLOWCHART.png
 INPUT .\General Image\UPX GENERAL FLOWCHART.png
-INPUT .\Plot\route.png
-INPUT .\Plot\route.png
-INPUT Plot\route.png
-INPUT .\Plot\route.png
-INPUT .\Plot\route.png
-INPUT .\Plot\route.png
-INPUT .\Plot\route.png
+INPUT .\General Image\OSM Drone-Tessel.pdf
+INPUT .\General Image\OSM Drone-Tessel.pdf
+INPUT General Image\OSM Drone-Tessel.pdf
+INPUT .\General Image\OSM Drone-Tessel.pdf
+INPUT .\General Image\OSM Drone-Tessel.pdf
+INPUT .\General Image\OSM Drone-Tessel.pdf
+INPUT .\General Image\OSM Drone-Attribute.pdf
+INPUT .\General Image\OSM Drone-Attribute.pdf
+INPUT General Image\OSM Drone-Attribute.pdf
+INPUT .\General Image\OSM Drone-Attribute.pdf
+INPUT .\General Image\OSM Drone-Attribute.pdf
+INPUT .\General Image\OSM Drone-Attribute.pdf
+INPUT .\General Image\OSM Drone-graph convert.pdf
+INPUT .\General Image\OSM Drone-graph convert.pdf
+INPUT General Image\OSM Drone-graph convert.pdf
+INPUT .\General Image\OSM Drone-graph convert.pdf
+INPUT .\General Image\OSM Drone-graph convert.pdf
+INPUT .\General Image\OSM Drone-graph convert.pdf
 INPUT .\Plot\talon\ballistic_fpdf.png
 INPUT .\Plot\talon\ballistic_fpdf.png
 INPUT Plot\talon\ballistic_fpdf.png
@@ -1197,31 +1223,6 @@ INPUT .\Plot\talon\ballistic_fpdf.png
 INPUT .\Plot\talon\ballistic_fpdf.png
 INPUT .\Plot\talon\ballistic_fpdf.png
 INPUT .\Plot\talon\ballistic_fpdf.png
-INPUT .\Plot\talon\glide_pdf.png
-INPUT .\Plot\talon\glide_pdf.png
-INPUT Plot\talon\glide_pdf.png
-INPUT .\Plot\talon\glide_pdf.png
-INPUT .\Plot\talon\glide_pdf.png
-INPUT .\Plot\talon\glide_pdf.png
-INPUT .\Plot\talon\glide_pdf.png
-INPUT .\Plot\talon\fly_away_pdf.png
-INPUT .\Plot\talon\fly_away_pdf.png
-INPUT Plot\talon\fly_away_pdf.png
-INPUT .\Plot\talon\fly_away_pdf.png
-INPUT .\Plot\talon\fly_away_pdf.png
-INPUT .\Plot\talon\fly_away_pdf.png
-INPUT .\Plot\talon\fly_away_pdf.png
-INPUT .\Plot\talon\parachute_pdf.png
-INPUT .\Plot\talon\parachute_pdf.png
-INPUT Plot\talon\parachute_pdf.png
-INPUT .\Plot\talon\parachute_pdf.png
-INPUT .\Plot\talon\parachute_pdf.png
-INPUT .\Plot\talon\parachute_pdf.png
-INPUT .\Plot\talon\parachute_pdf.png
-INPUT .\Plot\talon\total_fatality.png
-INPUT .\Plot\talon\total_fatality.png
-INPUT Plot\talon\total_fatality.png
-INPUT .\Plot\talon\total_fatality.png
 INPUT .\Plot\parrot\ballistic_pdf.png
 INPUT .\Plot\parrot\ballistic_pdf.png
 INPUT Plot\parrot\ballistic_pdf.png
@@ -1229,34 +1230,6 @@ INPUT .\Plot\parrot\ballistic_pdf.png
 INPUT .\Plot\parrot\ballistic_pdf.png
 INPUT .\Plot\parrot\ballistic_pdf.png
 INPUT .\Plot\parrot\ballistic_pdf.png
-INPUT .\Plot\parrot\glide_pdf.png
-INPUT .\Plot\parrot\glide_pdf.png
-INPUT Plot\parrot\glide_pdf.png
-INPUT .\Plot\parrot\glide_pdf.png
-INPUT .\Plot\parrot\glide_pdf.png
-INPUT .\Plot\parrot\glide_pdf.png
-INPUT .\Plot\parrot\glide_pdf.png
-INPUT .\Plot\parrot\fly_away_pdf.png
-INPUT .\Plot\parrot\fly_away_pdf.png
-INPUT Plot\parrot\fly_away_pdf.png
-INPUT .\Plot\parrot\fly_away_pdf.png
-INPUT .\Plot\parrot\fly_away_pdf.png
-INPUT .\Plot\parrot\fly_away_pdf.png
-INPUT .\Plot\parrot\fly_away_pdf.png
-INPUT .\Plot\parrot\parachute_pdf.png
-INPUT .\Plot\parrot\parachute_pdf.png
-INPUT Plot\parrot\parachute_pdf.png
-INPUT .\Plot\parrot\parachute_pdf.png
-INPUT .\Plot\parrot\parachute_pdf.png
-INPUT .\Plot\parrot\parachute_pdf.png
-INPUT .\Plot\parrot\parachute_pdf.png
-INPUT .\Plot\parrot\total_fatality-pdf.png
-INPUT .\Plot\parrot\total_fatality-pdf.png
-INPUT Plot\parrot\total_fatality-pdf.png
-INPUT .\Plot\parrot\total_fatality-pdf.png
-INPUT .\Plot\parrot\total_fatality-pdf.png
-INPUT .\Plot\parrot\total_fatality-pdf.png
-INPUT .\Plot\parrot\total_fatality-pdf.png
 INPUT .\Plot\phantom4\ballistic_pdf.png
 INPUT .\Plot\phantom4\ballistic_pdf.png
 INPUT Plot\phantom4\ballistic_pdf.png
@@ -1264,34 +1237,6 @@ INPUT .\Plot\phantom4\ballistic_pdf.png
 INPUT .\Plot\phantom4\ballistic_pdf.png
 INPUT .\Plot\phantom4\ballistic_pdf.png
 INPUT .\Plot\phantom4\ballistic_pdf.png
-INPUT .\Plot\phantom4\glide_pdf.png
-INPUT .\Plot\phantom4\glide_pdf.png
-INPUT Plot\phantom4\glide_pdf.png
-INPUT .\Plot\phantom4\glide_pdf.png
-INPUT .\Plot\phantom4\glide_pdf.png
-INPUT .\Plot\phantom4\glide_pdf.png
-INPUT .\Plot\phantom4\glide_pdf.png
-INPUT .\Plot\phantom4\fly_away_pdf.png
-INPUT .\Plot\phantom4\fly_away_pdf.png
-INPUT Plot\phantom4\fly_away_pdf.png
-INPUT .\Plot\phantom4\fly_away_pdf.png
-INPUT .\Plot\phantom4\fly_away_pdf.png
-INPUT .\Plot\phantom4\fly_away_pdf.png
-INPUT .\Plot\phantom4\fly_away_pdf.png
-INPUT .\Plot\phantom4\parachute_pdf.png
-INPUT .\Plot\phantom4\parachute_pdf.png
-INPUT Plot\phantom4\parachute_pdf.png
-INPUT .\Plot\phantom4\parachute_pdf.png
-INPUT .\Plot\phantom4\parachute_pdf.png
-INPUT .\Plot\phantom4\parachute_pdf.png
-INPUT .\Plot\phantom4\parachute_pdf.png
-INPUT .\Plot\phantom4\total_fatality_pdf.png
-INPUT .\Plot\phantom4\total_fatality_pdf.png
-INPUT Plot\phantom4\total_fatality_pdf.png
-INPUT .\Plot\phantom4\total_fatality_pdf.png
-INPUT .\Plot\phantom4\total_fatality_pdf.png
-INPUT .\Plot\phantom4\total_fatality_pdf.png
-INPUT .\Plot\phantom4\total_fatality_pdf.png
 INPUT .\Plot\inspire\ballistic_pdf.png
 INPUT .\Plot\inspire\ballistic_pdf.png
 INPUT Plot\inspire\ballistic_pdf.png
@@ -1299,6 +1244,27 @@ INPUT .\Plot\inspire\ballistic_pdf.png
 INPUT .\Plot\inspire\ballistic_pdf.png
 INPUT .\Plot\inspire\ballistic_pdf.png
 INPUT .\Plot\inspire\ballistic_pdf.png
+INPUT .\Plot\talon\glide_pdf.png
+INPUT .\Plot\talon\glide_pdf.png
+INPUT Plot\talon\glide_pdf.png
+INPUT .\Plot\talon\glide_pdf.png
+INPUT .\Plot\talon\glide_pdf.png
+INPUT .\Plot\talon\glide_pdf.png
+INPUT .\Plot\talon\glide_pdf.png
+INPUT .\Plot\parrot\glide_pdf.png
+INPUT .\Plot\parrot\glide_pdf.png
+INPUT Plot\parrot\glide_pdf.png
+INPUT .\Plot\parrot\glide_pdf.png
+INPUT .\Plot\parrot\glide_pdf.png
+INPUT .\Plot\parrot\glide_pdf.png
+INPUT .\Plot\parrot\glide_pdf.png
+INPUT .\Plot\phantom4\glide_pdf.png
+INPUT .\Plot\phantom4\glide_pdf.png
+INPUT Plot\phantom4\glide_pdf.png
+INPUT .\Plot\phantom4\glide_pdf.png
+INPUT .\Plot\phantom4\glide_pdf.png
+INPUT .\Plot\phantom4\glide_pdf.png
+INPUT .\Plot\phantom4\glide_pdf.png
 INPUT .\Plot\inspire\glide_pdf.png
 INPUT .\Plot\inspire\glide_pdf.png
 INPUT Plot\inspire\glide_pdf.png
@@ -1306,6 +1272,27 @@ INPUT .\Plot\inspire\glide_pdf.png
 INPUT .\Plot\inspire\glide_pdf.png
 INPUT .\Plot\inspire\glide_pdf.png
 INPUT .\Plot\inspire\glide_pdf.png
+INPUT .\Plot\talon\fly_away_pdf.png
+INPUT .\Plot\talon\fly_away_pdf.png
+INPUT Plot\talon\fly_away_pdf.png
+INPUT .\Plot\talon\fly_away_pdf.png
+INPUT .\Plot\talon\fly_away_pdf.png
+INPUT .\Plot\talon\fly_away_pdf.png
+INPUT .\Plot\talon\fly_away_pdf.png
+INPUT .\Plot\parrot\fly_away_pdf.png
+INPUT .\Plot\parrot\fly_away_pdf.png
+INPUT Plot\parrot\fly_away_pdf.png
+INPUT .\Plot\parrot\fly_away_pdf.png
+INPUT .\Plot\parrot\fly_away_pdf.png
+INPUT .\Plot\parrot\fly_away_pdf.png
+INPUT .\Plot\parrot\fly_away_pdf.png
+INPUT .\Plot\phantom4\fly_away_pdf.png
+INPUT .\Plot\phantom4\fly_away_pdf.png
+INPUT Plot\phantom4\fly_away_pdf.png
+INPUT .\Plot\phantom4\fly_away_pdf.png
+INPUT .\Plot\phantom4\fly_away_pdf.png
+INPUT .\Plot\phantom4\fly_away_pdf.png
+INPUT .\Plot\phantom4\fly_away_pdf.png
 INPUT .\Plot\inspire\fly_away_pdf.png
 INPUT .\Plot\inspire\fly_away_pdf.png
 INPUT Plot\inspire\fly_away_pdf.png
@@ -1313,6 +1300,27 @@ INPUT .\Plot\inspire\fly_away_pdf.png
 INPUT .\Plot\inspire\fly_away_pdf.png
 INPUT .\Plot\inspire\fly_away_pdf.png
 INPUT .\Plot\inspire\fly_away_pdf.png
+INPUT .\Plot\talon\parachute_pdf.png
+INPUT .\Plot\talon\parachute_pdf.png
+INPUT Plot\talon\parachute_pdf.png
+INPUT .\Plot\talon\parachute_pdf.png
+INPUT .\Plot\talon\parachute_pdf.png
+INPUT .\Plot\talon\parachute_pdf.png
+INPUT .\Plot\talon\parachute_pdf.png
+INPUT .\Plot\parrot\parachute_pdf.png
+INPUT .\Plot\parrot\parachute_pdf.png
+INPUT Plot\parrot\parachute_pdf.png
+INPUT .\Plot\parrot\parachute_pdf.png
+INPUT .\Plot\parrot\parachute_pdf.png
+INPUT .\Plot\parrot\parachute_pdf.png
+INPUT .\Plot\parrot\parachute_pdf.png
+INPUT .\Plot\phantom4\parachute_pdf.png
+INPUT .\Plot\phantom4\parachute_pdf.png
+INPUT Plot\phantom4\parachute_pdf.png
+INPUT .\Plot\phantom4\parachute_pdf.png
+INPUT .\Plot\phantom4\parachute_pdf.png
+INPUT .\Plot\phantom4\parachute_pdf.png
+INPUT .\Plot\phantom4\parachute_pdf.png
 INPUT .\Plot\inspire\parachute_pdf.png
 INPUT .\Plot\inspire\parachute_pdf.png
 INPUT Plot\inspire\parachute_pdf.png
@@ -1320,6 +1328,24 @@ INPUT .\Plot\inspire\parachute_pdf.png
 INPUT .\Plot\inspire\parachute_pdf.png
 INPUT .\Plot\inspire\parachute_pdf.png
 INPUT .\Plot\inspire\parachute_pdf.png
+INPUT .\Plot\talon\total_fatality.png
+INPUT .\Plot\talon\total_fatality.png
+INPUT Plot\talon\total_fatality.png
+INPUT .\Plot\talon\total_fatality.png
+INPUT .\Plot\parrot\total_fatality-pdf.png
+INPUT .\Plot\parrot\total_fatality-pdf.png
+INPUT Plot\parrot\total_fatality-pdf.png
+INPUT .\Plot\parrot\total_fatality-pdf.png
+INPUT .\Plot\parrot\total_fatality-pdf.png
+INPUT .\Plot\parrot\total_fatality-pdf.png
+INPUT .\Plot\parrot\total_fatality-pdf.png
+INPUT .\Plot\phantom4\total_fatality_pdf.png
+INPUT .\Plot\phantom4\total_fatality_pdf.png
+INPUT Plot\phantom4\total_fatality_pdf.png
+INPUT .\Plot\phantom4\total_fatality_pdf.png
+INPUT .\Plot\phantom4\total_fatality_pdf.png
+INPUT .\Plot\phantom4\total_fatality_pdf.png
+INPUT .\Plot\phantom4\total_fatality_pdf.png
 INPUT .\Plot\inspire\total_fatality_pdf.png
 INPUT .\Plot\inspire\total_fatality_pdf.png
 INPUT Plot\inspire\total_fatality_pdf.png
@@ -1383,6 +1409,8 @@ INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb

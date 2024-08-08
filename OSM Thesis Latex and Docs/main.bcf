@@ -2933,9 +2933,13 @@
     <bcf:citekey order="119" intorder="1">harwick_approved_2007</bcf:citekey>
     <bcf:citekey order="120" intorder="1">melnyk_third-party_2014</bcf:citekey>
     <bcf:citekey order="121" intorder="1">harwick_approved_2007</bcf:citekey>
-    <bcf:citekey order="122" intorder="1">primatesta_risk-aware_2019</bcf:citekey>
-    <bcf:citekey order="123" intorder="1">the_apache_software_foundation_sparkr_2024</bcf:citekey>
-    <bcf:citekey order="124" intorder="1">dask_development_team_dask_2016</bcf:citekey>
+    <bcf:citekey order="122" intorder="1">dijkstra_note_2022</bcf:citekey>
+    <bcf:citekey order="123" intorder="1">primatesta_risk-aware_2019</bcf:citekey>
+    <bcf:citekey order="124" intorder="1">arc_unmanned_2015</bcf:citekey>
+    <bcf:citekey order="125" intorder="1">shelley_model_2016</bcf:citekey>
+    <bcf:citekey order="126" intorder="1">primatesta_risk-based_2020</bcf:citekey>
+    <bcf:citekey order="127" intorder="1">the_apache_software_foundation_sparkr_2024</bcf:citekey>
+    <bcf:citekey order="128" intorder="1">dask_development_team_dask_2016</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

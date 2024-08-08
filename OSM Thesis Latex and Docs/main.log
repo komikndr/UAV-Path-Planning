@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.2)  8 AUG 2024 20:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.2)  8 AUG 2024 20:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -671,56 +671,7 @@ Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
- (main.aux
-
-LaTeX Warning: Label `fig:fixed_wing' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:fixed_wing' multiply defined.
-
-
-LaTeX Warning: Label `fig:multirotor' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:multirotor' multiply defined.
-
-
-LaTeX Warning: Label `fig:ballistic_descent' multiply defined.
-
-
-LaTeX Warning: Label `fig:fixed_wing' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:fixed_wing' multiply defined.
-
-
-LaTeX Warning: Label `fig:multirotor' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:multirotor' multiply defined.
-
-
-LaTeX Warning: Label `fig:ballistic_descent' multiply defined.
-
-
-LaTeX Warning: Label `fig:fixed_wing' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:fixed_wing' multiply defined.
-
-
-LaTeX Warning: Label `fig:multirotor' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:multirotor' multiply defined.
-
-
-LaTeX Warning: Label `fig:ballistic_descent' multiply defined.
-
-
-LaTeX Warning: Label `eq:fatality' multiply defined.
-
-)
+ (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
@@ -777,11 +728,10 @@ LaTeX Font Info:    ... okay on input line 88.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 88.
-(main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
- (C:\Users\MICKO\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+(C:\Users\MICKO\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count450
 \scratchdimen=\dimen186
@@ -835,7 +785,7 @@ Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
 Package biblatex Info: Reference section=0 on input line 88.
 Package biblatex Info: Reference segment=0 on input line 88.
-<General Image/IULISymbol.PNG, id=319, 419.166pt x 319.79475pt>
+<General Image/IULISymbol.PNG, id=3, 419.166pt x 319.79475pt>
 File: General Image/IULISymbol.PNG Graphic file (type png)
 <use General Image/IULISymbol.PNG>
 Package pdftex.def Info: General Image/IULISymbol.PNG  used on input line 103.
@@ -851,109 +801,265 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 
+LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 156.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.156     \tableofcontents
-                           [1] (main.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
- (C:\Users\MICKO\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
- (C:\Users\MICKO\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[3]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[4])
+                           [1]
+No file main.toc.
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[5] (main.lof [6
+[2
 
 ]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[7])
+No file main.lof.
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
+[3
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[8] (main.lot)
+]
+No file main.lot.
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [9
+[4
 
 ]
 
-LaTeX Warning: Hyper reference `acro:A*' on page 10 undefined on input line 164.
+LaTeX Warning: Hyper reference `acro:A*' on page 5 undefined on input line 164.
 
 
-LaTeX Warning: Hyper reference `acro:A*' on page 10 undefined on input line 164.
+LaTeX Warning: Hyper reference `acro:A*' on page 5 undefined on input line 164.
 
 
-LaTeX Warning: Hyper reference `acro:RRT' on page 10 undefined on input line 189.
+LaTeX Warning: Hyper reference `acro:AIS' on page 5 undefined on input line 165.
 
 
-LaTeX Warning: Hyper reference `acro:RRT' on page 10 undefined on input line 189.
+LaTeX Warning: Hyper reference `acro:AIS' on page 5 undefined on input line 165.
 
-[10
+
+LaTeX Warning: Hyper reference `acro:API' on page 5 undefined on input line 166.
+
+
+LaTeX Warning: Hyper reference `acro:API' on page 5 undefined on input line 166.
+
+
+LaTeX Warning: Hyper reference `acro:BBN' on page 5 undefined on input line 167.
+
+
+LaTeX Warning: Hyper reference `acro:BBN' on page 5 undefined on input line 167.
+
+
+LaTeX Warning: Hyper reference `acro:BC' on page 5 undefined on input line 168.
+
+
+LaTeX Warning: Hyper reference `acro:BC' on page 5 undefined on input line 168.
+
+
+LaTeX Warning: Hyper reference `acro:CFIT' on page 5 undefined on input line 169.
+
+
+LaTeX Warning: Hyper reference `acro:CFIT' on page 5 undefined on input line 169.
+
+
+LaTeX Warning: Hyper reference `acro:CRS' on page 5 undefined on input line 170.
+
+
+LaTeX Warning: Hyper reference `acro:CRS' on page 5 undefined on input line 170.
+
+
+LaTeX Warning: Hyper reference `acro:DOJC' on page 5 undefined on input line 171.
+
+
+LaTeX Warning: Hyper reference `acro:DOJC' on page 5 undefined on input line 171.
+
+
+LaTeX Warning: Hyper reference `acro:DoD' on page 5 undefined on input line 172.
+
+
+LaTeX Warning: Hyper reference `acro:DoD' on page 5 undefined on input line 172.
+
+
+LaTeX Warning: Hyper reference `acro:ETA' on page 5 undefined on input line 173.
+
+
+LaTeX Warning: Hyper reference `acro:ETA' on page 5 undefined on input line 173.
+
+
+LaTeX Warning: Hyper reference `acro:FAA' on page 5 undefined on input line 174.
+
+
+LaTeX Warning: Hyper reference `acro:FAA' on page 5 undefined on input line 174.
+
+
+LaTeX Warning: Hyper reference `acro:FMECA' on page 5 undefined on input line 175.
+
+
+LaTeX Warning: Hyper reference `acro:FMECA' on page 5 undefined on input line 175.
+
+
+LaTeX Warning: Hyper reference `acro:FTA' on page 5 undefined on input line 176.
+
+
+LaTeX Warning: Hyper reference `acro:FTA' on page 5 undefined on input line 176.
+
+
+LaTeX Warning: Hyper reference `acro:GHSL' on page 5 undefined on input line 177.
+
+
+LaTeX Warning: Hyper reference `acro:GHSL' on page 5 undefined on input line 177.
+
+
+LaTeX Warning: Hyper reference `acro:GIS' on page 5 undefined on input line 178.
+
+
+LaTeX Warning: Hyper reference `acro:GIS' on page 5 undefined on input line 178.
+
+
+LaTeX Warning: Hyper reference `acro:GPS' on page 5 undefined on input line 179.
+
+
+LaTeX Warning: Hyper reference `acro:GPS' on page 5 undefined on input line 179.
+
+
+LaTeX Warning: Hyper reference `acro:GRM' on page 5 undefined on input line 180.
+
+
+LaTeX Warning: Hyper reference `acro:GRM' on page 5 undefined on input line 180.
+
+
+LaTeX Warning: Hyper reference `acro:geoJSON' on page 5 undefined on input line 181.
+
+
+LaTeX Warning: Hyper reference `acro:geoJSON' on page 5 undefined on input line 181.
+
+
+LaTeX Warning: Hyper reference `acro:EPSG' on page 5 undefined on input line 182.
+
+
+LaTeX Warning: Hyper reference `acro:EPSG' on page 5 undefined on input line 182.
+
+
+LaTeX Warning: Hyper reference `acro:ICAO' on page 5 undefined on input line 183.
+
+
+LaTeX Warning: Hyper reference `acro:ICAO' on page 5 undefined on input line 183.
+
+
+LaTeX Warning: Hyper reference `acro:KE' on page 5 undefined on input line 184.
+
+
+LaTeX Warning: Hyper reference `acro:KE' on page 5 undefined on input line 184.
+
+
+LaTeX Warning: Hyper reference `acro:LOC' on page 5 undefined on input line 185.
+
+
+LaTeX Warning: Hyper reference `acro:LOC' on page 5 undefined on input line 185.
+
+
+LaTeX Warning: Hyper reference `acro:MTBF' on page 5 undefined on input line 186.
+
+
+LaTeX Warning: Hyper reference `acro:MTBF' on page 5 undefined on input line 186.
+
+
+LaTeX Warning: Hyper reference `acro:OSM' on page 5 undefined on input line 187.
+
+
+LaTeX Warning: Hyper reference `acro:OSM' on page 5 undefined on input line 187.
+
+
+LaTeX Warning: Hyper reference `acro:PDF' on page 5 undefined on input line 188.
+
+
+LaTeX Warning: Hyper reference `acro:PDF' on page 5 undefined on input line 188.
+
+
+LaTeX Warning: Hyper reference `acro:RRT' on page 5 undefined on input line 189.
+
+
+LaTeX Warning: Hyper reference `acro:RRT' on page 5 undefined on input line 189.
+
+
+LaTeX Warning: Hyper reference `acro:UDS' on page 5 undefined on input line 190.
+
+
+LaTeX Warning: Hyper reference `acro:UDS' on page 5 undefined on input line 190.
+
+
+LaTeX Warning: Hyper reference `acro:UAS' on page 5 undefined on input line 191.
+
+
+LaTeX Warning: Hyper reference `acro:UAS' on page 5 undefined on input line 191.
+
+
+LaTeX Warning: Hyper reference `acro:UAV' on page 5 undefined on input line 192.
+
+
+LaTeX Warning: Hyper reference `acro:UAV' on page 5 undefined on input line 192.
+
+[5
 
 ]
 
-LaTeX Warning: Hyper reference `acro:UPX' on page 11 undefined on input line 193.
+LaTeX Warning: Hyper reference `acro:UPX' on page 6 undefined on input line 193.
 
 
-LaTeX Warning: Hyper reference `acro:UPX' on page 11 undefined on input line 193.
+LaTeX Warning: Hyper reference `acro:UPX' on page 6 undefined on input line 193.
 
 
-LaTeX Warning: Hyper reference `acro:AI' on page 11 undefined on input line 199.
+LaTeX Warning: Hyper reference `acro:CE' on page 6 undefined on input line 194.
 
 
-LaTeX Warning: Hyper reference `acro:AI' on page 11 undefined on input line 199.
+LaTeX Warning: Hyper reference `acro:CE' on page 6 undefined on input line 194.
 
 
-LaTeX Warning: Hyper reference `acro:JRC' on page 11 undefined on input line 201.
+LaTeX Warning: Hyper reference `acro:AGL' on page 6 undefined on input line 195.
 
 
-LaTeX Warning: Hyper reference `acro:JRC' on page 11 undefined on input line 201.
+LaTeX Warning: Hyper reference `acro:AGL' on page 6 undefined on input line 195.
+
+
+LaTeX Warning: Hyper reference `acro:BFS' on page 6 undefined on input line 196.
+
+
+LaTeX Warning: Hyper reference `acro:BFS' on page 6 undefined on input line 196.
+
+
+LaTeX Warning: Hyper reference `acro:DFS' on page 6 undefined on input line 197.
+
+
+LaTeX Warning: Hyper reference `acro:DFS' on page 6 undefined on input line 197.
+
+
+LaTeX Warning: Hyper reference `acro:ACO' on page 6 undefined on input line 198.
+
+
+LaTeX Warning: Hyper reference `acro:ACO' on page 6 undefined on input line 198.
+
+
+LaTeX Warning: Hyper reference `acro:AI' on page 6 undefined on input line 199.
+
+
+LaTeX Warning: Hyper reference `acro:AI' on page 6 undefined on input line 199.
+
+
+LaTeX Warning: Hyper reference `acro:GBFS' on page 6 undefined on input line 200.
+
+
+LaTeX Warning: Hyper reference `acro:GBFS' on page 6 undefined on input line 200.
+
+
+LaTeX Warning: Hyper reference `acro:JRC' on page 6 undefined on input line 201.
+
+
+LaTeX Warning: Hyper reference `acro:JRC' on page 6 undefined on input line 201.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -962,31 +1068,53 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11]
+
+LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 203.
+
+[6]
 Chapter 1.
 Package acronym Info: Label `acro:UAV' newly defined as it shall be overridden
 although it is yet undefined on input line 242.
-[12
+
+Package acronym Warning: Acronym `UAV' is not defined on input line 242.
+
+
+Package acronym Warning: Acronym `UAV' is not defined on input line 242.
+
+[7
 
 ]
 Package acronym Info: Label `acro:UAS' newly defined as it shall be overridden
 although it is yet undefined on input line 286.
 
 
+Package acronym Warning: Acronym `UAS' is not defined on input line 286.
+
+
+Package acronym Warning: Acronym `UAS' is not defined on input line 286.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[13]
+
+LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 298.
+
+[8]
 Chapter 2.
-[14
+[9
 
 ]
 
+LaTeX Warning: Reference `fig:prime_example' on page 10 undefined on input line 347.
+
+
+
 pdfTeX warning: pdflatex (file ./General Image/OSM Drone-GROUND.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<General Image/OSM Drone-GROUND.pdf, id=761, 746.79pt x 129.6042pt>
+<General Image/OSM Drone-GROUND.pdf, id=122, 746.79pt x 129.6042pt>
 File: General Image/OSM Drone-GROUND.pdf Graphic file (type pdf)
 <use General Image/OSM Drone-GROUND.pdf>
 Package pdftex.def Info: General Image/OSM Drone-GROUND.pdf  used on input line 351.
@@ -998,16 +1126,56 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[15 <./General Image/OSM Drone-GROUND.pdf>]
+
+LaTeX Warning: Reference `LastPage' on page 10 undefined on input line 373.
+
+[10 <./General Image/OSM Drone-GROUND.pdf>]
+
+LaTeX Warning: Reference `eq:general_probability' on page 11 undefined on input line 376.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 378.
+(C:\Users\MICKO\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 378.
+ (C:\Users\MICKO\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+LaTeX Warning: Reference `eq:general_probability' on page 11 undefined on input line 384.
+
 Package acronym Info: Label `acro:UDS' newly defined as it shall be overridden
 although it is yet undefined on input line 403.
+
+Package acronym Warning: Acronym `UDS' is not defined on input line 403.
+
+
+Package acronym Warning: Acronym `UDS' is not defined on input line 403.
+
 Package acronym Info: Label `acro:LOC' newly defined as it shall be overridden
 although it is yet undefined on input line 404.
+
+Package acronym Warning: Acronym `LOC' is not defined on input line 404.
+
+
+Package acronym Warning: Acronym `LOC' is not defined on input line 404.
+
 Package acronym Info: Label `acro:CFIT' newly defined as it shall be overridden
 although it is yet undefined on input line 404.
+
+Package acronym Warning: Acronym `CFIT' is not defined on input line 404.
+
+
+Package acronym Warning: Acronym `CFIT' is not defined on input line 404.
+
 Package acronym Info: Label `acro:DOJC' newly defined as it shall be overridden
 although it is yet undefined on input line 404.
 
+Package acronym Warning: Acronym `DOJC' is not defined on input line 404.
+
+
+Package acronym Warning: Acronym `DOJC' is not defined on input line 404.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1015,12 +1183,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[16]
+
+LaTeX Warning: Reference `LastPage' on page 11 undefined on input line 412.
+
+[11]
 Package acronym Info: Label `acro:MTBF' newly defined as it shall be overridden
 although it is yet undefined on input line 431.
+
+
+Package acronym Warning: Acronym `MTBF' is not defined on input line 431.
+
+
+Package acronym Warning: Acronym `MTBF' is not defined on input line 431.
+
+
+LaTeX Warning: Reference `eq:mtbf' on page 12 undefined on input line 442.
+
 Package acronym Info: Label `acro:CE' newly defined as it shall be overridden
 although it is yet undefined on input line 451.
 
+Package acronym Warning: Acronym `CE' is not defined on input line 451.
+
+
+Package acronym Warning: Acronym `CE' is not defined on input line 451.
+
+
+LaTeX Warning: Reference `eq:CE' on page 12 undefined on input line 451.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1028,14 +1217,49 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[17]
+
+LaTeX Warning: Reference `LastPage' on page 12 undefined on input line 453.
+
+[12]
+
+Package acronym Warning: Acronym `CE' is not defined on input line 474.
+
+
+LaTeX Warning: Reference `eq:PF' on page 13 undefined on input line 475.
+
+
+Package acronym Warning: Acronym `MTBF' is not defined on input line 489.
+
+
+LaTeX Warning: Reference `eq:mtbf' on page 13 undefined on input line 491.
+
+
+LaTeX Warning: Reference `eq:mtbf_metric' on page 13 undefined on input line 494.
+
 Package acronym Info: Label `acro:FTA' newly defined as it shall be overridden
 although it is yet undefined on input line 501.
+
+Package acronym Warning: Acronym `FTA' is not defined on input line 501.
+
+
+Package acronym Warning: Acronym `FTA' is not defined on input line 501.
+
 Package acronym Info: Label `acro:ETA' newly defined as it shall be overridden
 although it is yet undefined on input line 501.
+
+Package acronym Warning: Acronym `ETA' is not defined on input line 501.
+
+
+Package acronym Warning: Acronym `ETA' is not defined on input line 501.
+
 Package acronym Info: Label `acro:FMECA' newly defined as it shall be overridden
 although it is yet undefined on input line 501.
 
+Package acronym Warning: Acronym `FMECA' is not defined on input line 501.
+
+
+Package acronym Warning: Acronym `FMECA' is not defined on input line 501.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1043,21 +1267,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[18]
+
+LaTeX Warning: Reference `LastPage' on page 13 undefined on input line 505.
+
+[13]
 Package acronym Info: Label `acro:BBN' newly defined as it shall be overridden
 although it is yet undefined on input line 506.
 
 
+Package acronym Warning: Acronym `BBN' is not defined on input line 506.
+
+
+Package acronym Warning: Acronym `BBN' is not defined on input line 506.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[19]
+
+LaTeX Warning: Reference `LastPage' on page 14 undefined on input line 541.
+
+[14]
 
 pdfTeX warning: pdflatex (file ./General Image/OSM Drone-Area Exposed.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<General Image/OSM Drone-Area Exposed.pdf, id=873, 340.3917pt x 250.0542pt>
+<General Image/OSM Drone-Area Exposed.pdf, id=226, 340.3917pt x 250.0542pt>
 File: General Image/OSM Drone-Area Exposed.pdf Graphic file (type pdf)
 <use General Image/OSM Drone-Area Exposed.pdf>
 Package pdftex.def Info: General Image/OSM Drone-Area Exposed.pdf  used on input line 558.
@@ -1069,9 +1305,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[20 <./General Image/OSM Drone-Area Exposed.pdf>]
+
+LaTeX Warning: Reference `LastPage' on page 15 undefined on input line 570.
+
+[15 <./General Image/OSM Drone-Area Exposed.pdf>]
 Package acronym Info: Label `acro:AGL' newly defined as it shall be overridden
 although it is yet undefined on input line 588.
+
+
+Package acronym Warning: Acronym `AGL' is not defined on input line 588.
+
+
+Package acronym Warning: Acronym `AGL' is not defined on input line 588.
+
+
+LaTeX Warning: Reference `eq:vsink' on page 16 undefined on input line 600.
+
+
+LaTeX Warning: Reference `eq:bleir' on page 16 undefined on input line 600.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1080,10 +1331,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[21]
+
+LaTeX Warning: Reference `LastPage' on page 16 undefined on input line 618.
+
+[16]
+
+LaTeX Warning: Reference `fig:area_parachute' on page 17 undefined on input line 624.
+
+
 
 pdfTeX warning: pdflatex (file ./General Image/OSM Drone-Landing zone.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<General Image/OSM Drone-Landing zone.pdf, id=909, 239.93639pt x 91.3011pt>
+<General Image/OSM Drone-Landing zone.pdf, id=258, 239.93639pt x 91.3011pt>
 File: General Image/OSM Drone-Landing zone.pdf Graphic file (type pdf)
 <use General Image/OSM Drone-Landing zone.pdf>
 Package pdftex.def Info: General Image/OSM Drone-Landing zone.pdf  used on input line 633.
@@ -1091,13 +1349,11 @@ Package pdftex.def Info: General Image/OSM Drone-Landing zone.pdf  used on input
 Package acronym Info: Label `acro:KE' newly defined as it shall be overridden
 although it is yet undefined on input line 641.
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+Package acronym Warning: Acronym `KE' is not defined on input line 641.
 
-[22 <./General Image/OSM Drone-Landing zone.pdf>]
+
+Package acronym Warning: Acronym `KE' is not defined on input line 641.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1105,7 +1361,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[23]
+
+LaTeX Warning: Reference `LastPage' on page 17 undefined on input line 654.
+
+[17 <./General Image/OSM Drone-Landing zone.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1113,16 +1372,50 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[24]
-<Plot/logistic_bounded.pdf, id=970, 409.62848pt x 327.20317pt>
+
+LaTeX Warning: Reference `LastPage' on page 18 undefined on input line 698.
+
+[18]
+
+LaTeX Warning: Reference `eq:shelter_factor' on page 19 undefined on input line 709.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 19 undefined on input line 732.
+
+[19]
+
+LaTeX Warning: Reference `fig:logistic' on page 20 undefined on input line 734.
+
+
+LaTeX Warning: Reference `eq:logistic' on page 20 undefined on input line 735.
+
+<Plot/logistic_bounded.pdf, id=319, 409.62848pt x 327.20317pt>
 File: Plot/logistic_bounded.pdf Graphic file (type pdf)
 <use Plot/logistic_bounded.pdf>
 Package pdftex.def Info: Plot/logistic_bounded.pdf  used on input line 746.
 (pdftex.def)             Requested size: 341.43437pt x 272.73187pt.
 Package acronym Info: Label `acro:BC' newly defined as it shall be overridden
 although it is yet undefined on input line 751.
+
+Package acronym Warning: Acronym `BC' is not defined on input line 751.
+
+
+Package acronym Warning: Acronym `BC' is not defined on input line 751.
+
 Package acronym Info: Label `acro:AIS' newly defined as it shall be overridden
 although it is yet undefined on input line 752.
+
+Package acronym Warning: Acronym `AIS' is not defined on input line 752.
+
+
+Package acronym Warning: Acronym `AIS' is not defined on input line 752.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1131,13 +1424,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[25 <./Plot/logistic_bounded.pdf>]
+
+LaTeX Warning: Reference `LastPage' on page 20 undefined on input line 763.
+
+[20 <./Plot/logistic_bounded.pdf>]
 Package acronym Info: Label `acro:BFS' newly defined as it shall be overridden
 although it is yet undefined on input line 780.
 
 
+Package acronym Warning: Acronym `BFS' is not defined on input line 780.
+
+
+Package acronym Warning: Acronym `BFS' is not defined on input line 780.
+
+
+LaTeX Warning: Reference `fig:bfs' on page 21 undefined on input line 787.
+
+
+
 pdfTeX warning: pdflatex (file ./General Image/OSM Drone-BFS.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<General Image/OSM Drone-BFS.pdf, id=1018, 257.04028pt x 210.7875pt>
+<General Image/OSM Drone-BFS.pdf, id=365, 257.04028pt x 210.7875pt>
 File: General Image/OSM Drone-BFS.pdf Graphic file (type pdf)
 <use General Image/OSM Drone-BFS.pdf>
 Package pdftex.def Info: General Image/OSM Drone-BFS.pdf  used on input line 792.
@@ -1149,13 +1455,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[26]
+
+LaTeX Warning: Reference `LastPage' on page 21 undefined on input line 796.
+
+[21]
 Package acronym Info: Label `acro:DFS' newly defined as it shall be overridden
 although it is yet undefined on input line 804.
 
 
+Package acronym Warning: Acronym `DFS' is not defined on input line 804.
+
+
+Package acronym Warning: Acronym `DFS' is not defined on input line 804.
+
+
+LaTeX Warning: Reference `fig:dfs' on page 22 undefined on input line 806.
+
+
+
 pdfTeX warning: pdflatex (file ./General Image/OSM Drone-DFS.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<General Image/OSM Drone-DFS.pdf, id=1027, 257.04028pt x 210.7875pt>
+<General Image/OSM Drone-DFS.pdf, id=374, 257.04028pt x 210.7875pt>
 File: General Image/OSM Drone-DFS.pdf Graphic file (type pdf)
 <use General Image/OSM Drone-DFS.pdf>
 Package pdftex.def Info: General Image/OSM Drone-DFS.pdf  used on input line 811.
@@ -1167,9 +1486,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[27 <./General Image/OSM Drone-BFS.pdf> <./General Image/OSM Drone-DFS.pdf>]
+
+LaTeX Warning: Reference `LastPage' on page 22 undefined on input line 820.
+
+[22 <./General Image/OSM Drone-BFS.pdf> <./General Image/OSM Drone-DFS.pdf>]
+
+LaTeX Warning: Reference `eq:djikstra' on page 23 undefined on input line 825.
+
+
+LaTeX Warning: Reference `eq:djikstrageneral' on page 23 undefined on input line 826.
+
+
+LaTeX Warning: Reference `eq:djikstrageneral' on page 23 undefined on input line 832.
+
+
+LaTeX Warning: Reference `eq:djikstra' on page 23 undefined on input line 836.
+
 Package acronym Info: Label `acro:GBFS' newly defined as it shall be overridden
 although it is yet undefined on input line 853.
+
+Package acronym Warning: Acronym `GBFS' is not defined on input line 853.
+
+
+Package acronym Warning: Acronym `GBFS' is not defined on input line 853.
+
+
+LaTeX Warning: Reference `eq:gbfs' on page 23 undefined on input line 855.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1178,22 +1520,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[28]
+
+LaTeX Warning: Reference `LastPage' on page 23 undefined on input line 859.
+
+[23]
+
+LaTeX Warning: Reference `fig:greedybfs' on page 24 undefined on input line 868.
+
+
 
 pdfTeX warning: pdflatex (file ./General Image/OSM Drone-gbfs vs dijkstra.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<General Image/OSM Drone-gbfs vs dijkstra.pdf, id=1070, 363.27718pt x 181.6386pt>
+<General Image/OSM Drone-gbfs vs dijkstra.pdf, id=415, 363.27718pt x 181.6386pt>
 File: General Image/OSM Drone-gbfs vs dijkstra.pdf Graphic file (type pdf)
 <use General Image/OSM Drone-gbfs vs dijkstra.pdf>
 Package pdftex.def Info: General Image/OSM Drone-gbfs vs dijkstra.pdf  used on input line 872.
 (pdftex.def)             Requested size: 320.0935pt x 160.05585pt.
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+LaTeX Warning: Reference `eq:astar' on page 24 undefined on input line 888.
 
-[29 <./General Image/OSM Drone-gbfs vs dijkstra.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1201,7 +1545,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[30]
+
+LaTeX Warning: Reference `LastPage' on page 24 undefined on input line 894.
+
+[24 <./General Image/OSM Drone-gbfs vs dijkstra.pdf>]
+
+LaTeX Warning: Reference `eq:riskastar' on page 25 undefined on input line 935.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1209,10 +1559,34 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[31]
+
+LaTeX Warning: Reference `LastPage' on page 25 undefined on input line 936.
+
+[25]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 26 undefined on input line 977.
+
+[26]
+
+LaTeX Warning: Reference `eq:ecrrt' on page 27 undefined on input line 981.
+
+
+LaTeX Warning: Reference `eq:rrtstepsize' on page 27 undefined on input line 988.
+
+
+LaTeX Warning: Reference `fig:rrt' on page 27 undefined on input line 995.
+
+
 
 pdfTeX warning: pdflatex (file ./General Image/OSM Drone-RRT.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<General Image/OSM Drone-RRT.pdf, id=1112, 288.11641pt x 295.1025pt>
+<General Image/OSM Drone-RRT.pdf, id=452, 288.11641pt x 295.1025pt>
 File: General Image/OSM Drone-RRT.pdf Graphic file (type pdf)
 <use General Image/OSM Drone-RRT.pdf>
 Package pdftex.def Info: General Image/OSM Drone-RRT.pdf  used on input line 1001.
@@ -1224,25 +1598,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[32]
+
+LaTeX Warning: Reference `LastPage' on page 27 undefined on input line 1011.
+
+[27 <./General Image/OSM Drone-RRT.pdf>]
+
+LaTeX Warning: Reference `fig:rrtstar' on page 28 undefined on input line 1018.
+
+
 
 pdfTeX warning: pdflatex (file ./General Image/OSM Drone-RRTvsRRTstar.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<General Image/OSM Drone-RRTvsRRTstar.pdf, id=1122, 615.25856pt x 257.04028pt>
+<General Image/OSM Drone-RRTvsRRTstar.pdf, id=470, 615.25856pt x 257.04028pt>
 File: General Image/OSM Drone-RRTvsRRTstar.pdf Graphic file (type pdf)
 <use General Image/OSM Drone-RRTvsRRTstar.pdf>
 Package pdftex.def Info: General Image/OSM Drone-RRTvsRRTstar.pdf  used on input line 1022.
 (pdftex.def)             Requested size: 384.1096pt x 160.47328pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[33 <./General Image/OSM Drone-RRT.pdf>]
 Package acronym Info: Label `acro:ACO' newly defined as it shall be overridden
 although it is yet undefined on input line 1036.
 
+Package acronym Warning: Acronym `ACO' is not defined on input line 1036.
+
+
+Package acronym Warning: Acronym `ACO' is not defined on input line 1036.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1250,10 +1628,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[34 <./General Image/OSM Drone-RRTvsRRTstar.pdf>]
+
+LaTeX Warning: Reference `LastPage' on page 28 undefined on input line 1042.
+
+[28 <./General Image/OSM Drone-RRTvsRRTstar.pdf>]
+
+LaTeX Warning: Reference `eq:aconodefinder' on page 29 undefined on input line 1053.
+
+
+LaTeX Warning: Reference `fig:aco' on page 29 undefined on input line 1083.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 29 undefined on input line 1086.
+
+[29]
 
 pdfTeX warning: pdflatex (file ./General Image/OSM Drone-ACO.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<General Image/OSM Drone-ACO.pdf, id=1159, 662.475pt x 139.4811pt>
+<General Image/OSM Drone-ACO.pdf, id=498, 662.475pt x 139.4811pt>
 File: General Image/OSM Drone-ACO.pdf Graphic file (type pdf)
 <use General Image/OSM Drone-ACO.pdf>
 Package pdftex.def Info: General Image/OSM Drone-ACO.pdf  used on input line 1089.
@@ -1265,7 +1663,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[35 <./General Image/OSM Drone-ACO.pdf>]
+
+LaTeX Warning: Reference `LastPage' on page 30 undefined on input line 1121.
+
+[30 <./General Image/OSM Drone-ACO.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1273,30 +1674,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[36]
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+LaTeX Warning: Reference `LastPage' on page 31 undefined on input line 1157.
 
-[37]
+[31]
 Chapter 3.
 
 Overfull \hbox (45.8365pt too wide) in paragraph at lines 1181--1205
  [][] 
  []
 
-[38
+[32
 
 ]
-<Plot/route.png, id=1201, 570.2103pt x 273.9033pt>
+
+LaTeX Warning: Reference `fig:map' on page 33 undefined on input line 1209.
+
+<Plot/route.png, id=536, 570.2103pt x 273.9033pt>
 File: Plot/route.png Graphic file (type png)
 <use Plot/route.png>
 Package pdftex.def Info: Plot/route.png  used on input line 1223.
 (pdftex.def)             Requested size: 426.79135pt x 205.01738pt.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1304,37 +1702,90 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[39]
+
+LaTeX Warning: Reference `LastPage' on page 33 undefined on input line 1227.
+
+[33]
 
 pdfTeX warning: pdflatex (file ./General Image/OSM Drone-General Overview.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<General Image/OSM Drone-General Overview.pdf, id=1209, 445.665pt x 159.71669pt>
+<General Image/OSM Drone-General Overview.pdf, id=545, 445.665pt x 159.71669pt>
 File: General Image/OSM Drone-General Overview.pdf Graphic file (type pdf)
 <use General Image/OSM Drone-General Overview.pdf>
 Package pdftex.def Info: General Image/OSM Drone-General Overview.pdf  used on input line 1231.
 (pdftex.def)             Requested size: 426.79135pt x 152.9534pt.
 Package acronym Info: Label `acro:OSM' newly defined as it shall be overridden
 although it is yet undefined on input line 1239.
+
+Package acronym Warning: Acronym `OSM' is not defined on input line 1239.
+
+
+Package acronym Warning: Acronym `OSM' is not defined on input line 1239.
+
 Package acronym Info: Label `acro:GHSL' newly defined as it shall be overridden
 although it is yet undefined on input line 1240.
+
+Package acronym Warning: Acronym `GHSL' is not defined on input line 1240.
+
+
+Package acronym Warning: Acronym `GHSL' is not defined on input line 1240.
+
+
+Overfull \hbox (11.2647pt too wide) in paragraph at lines 1239--1242
+[]\OT1/cmr/m/n/12 Open-StreetMap con-trib-u-tors, []2017[], to re-trieve ge-o-graphic data, and [][][]\OT1/cmr/bx/n/12 GHSL! \OT1/cmr/m/n/12 ([])[]
+ []
+
 Package acronym Info: Label `acro:GRM' newly defined as it shall be overridden
 although it is yet undefined on input line 1243.
 
+Package acronym Warning: Acronym `GRM' is not defined on input line 1243.
+
+
+Package acronym Warning: Acronym `GRM' is not defined on input line 1243.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[40 <./Plot/route.png> <./General Image/OSM Drone-General Overview.pdf>]
+
+LaTeX Warning: Reference `LastPage' on page 34 undefined on input line 1249.
+
+[34 <./Plot/route.png> <./General Image/OSM Drone-General Overview.pdf>]
 Package acronym Info: Label `acro:GPS' newly defined as it shall be overridden
 although it is yet undefined on input line 1255.
+
+
+Package acronym Warning: Acronym `GPS' is not defined on input line 1255.
+
+
+Package acronym Warning: Acronym `GPS' is not defined on input line 1255.
+
 Package acronym Info: Label `acro:API' newly defined as it shall be overridden
 although it is yet undefined on input line 1259.
+
+Package acronym Warning: Acronym `API' is not defined on input line 1259.
+
+
+Package acronym Warning: Acronym `API' is not defined on input line 1259.
+
 Package acronym Info: Label `acro:geoJSON' newly defined as it shall be overridden
 although it is yet undefined on input line 1259.
+
+Package acronym Warning: Acronym `geoJSON' is not defined on input line 1259.
+
+
+Package acronym Warning: Acronym `geoJSON' is not defined on input line 1259.
+
 Package acronym Info: Label `acro:GIS' newly defined as it shall be overridden
 although it is yet undefined on input line 1283.
 
+Package acronym Warning: Acronym `GIS' is not defined on input line 1283.
+
+
+Package acronym Warning: Acronym `GIS' is not defined on input line 1283.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1342,15 +1793,40 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[41]
+
+LaTeX Warning: Reference `LastPage' on page 35 undefined on input line 1286.
+
+[35]
 Package acronym Info: Label `acro:CRS' newly defined as it shall be overridden
 although it is yet undefined on input line 1310.
+
+
+Package acronym Warning: Acronym `CRS' is not defined on input line 1310.
+
+
+Package acronym Warning: Acronym `CRS' is not defined on input line 1310.
+
+
+LaTeX Warning: Reference `fig:riskmatrix' on page 36 undefined on input line 1313.
+
+
+LaTeX Warning: Reference `fig:riskmap' on page 36 undefined on input line 1315.
+
+
+Package acronym Warning: Acronym `CRS' is not defined on input line 1316.
+
 Package acronym Info: Label `acro:EPSG' newly defined as it shall be overridden
 although it is yet undefined on input line 1316.
 
+Package acronym Warning: Acronym `EPSG' is not defined on input line 1316.
+
+
+Package acronym Warning: Acronym `EPSG' is not defined on input line 1316.
+
+
 
 pdfTeX warning: pdflatex (file ./General Image/OSM Drone-RISK.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<General Image/OSM Drone-RISK.pdf, id=1249, 143.5764pt x 112.50029pt>
+<General Image/OSM Drone-RISK.pdf, id=584, 143.5764pt x 112.50029pt>
 File: General Image/OSM Drone-RISK.pdf Graphic file (type pdf)
 <use General Image/OSM Drone-RISK.pdf>
 Package pdftex.def Info: General Image/OSM Drone-RISK.pdf  used on input line 1321.
@@ -1362,8 +1838,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[42]
-<Plot/talon/total_fatality.png, id=1256, 555.7563pt x 295.5843pt>
+
+LaTeX Warning: Reference `LastPage' on page 36 undefined on input line 1325.
+
+[36]
+<Plot/talon/total_fatality.png, id=594, 555.7563pt x 295.5843pt>
 File: Plot/talon/total_fatality.png Graphic file (type png)
 <use Plot/talon/total_fatality.png>
 Package pdftex.def Info: Plot/talon/total_fatality.png  used on input line 1328.
@@ -1376,68 +1855,109 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[43 <./General Image/OSM Drone-RISK.pdf> <./Plot/talon/total_fatality.png>]
-<Plot/pop_dense.PNG, id=1280, 579.3645pt x 322.806pt>
+
+LaTeX Warning: Reference `LastPage' on page 37 undefined on input line 1340.
+
+[37 <./General Image/OSM Drone-RISK.pdf> <./Plot/talon/total_fatality.png>]
+
+LaTeX Warning: Reference `fig:population' on page 38 undefined on input line 1365.
+
+<Plot/pop_dense.PNG, id=619, 579.3645pt x 322.806pt>
 File: Plot/pop_dense.PNG Graphic file (type png)
 <use Plot/pop_dense.PNG>
 Package pdftex.def Info: Plot/pop_dense.PNG  used on input line 1374.
 (pdftex.def)             Requested size: 426.79135pt x 237.80383pt.
 
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[44]
-<Plot/obstacle.png, id=1287, 555.7563pt x 294.1389pt>
+
+LaTeX Warning: Reference `LastPage' on page 38 undefined on input line 1378.
+
+[38]
+
+LaTeX Warning: Reference `fig:obstacle' on page 39 undefined on input line 1385.
+
+<Plot/obstacle.png, id=625, 555.7563pt x 294.1389pt>
 File: Plot/obstacle.png Graphic file (type png)
 <use Plot/obstacle.png>
 Package pdftex.def Info: Plot/obstacle.png  used on input line 1394.
 (pdftex.def)             Requested size: 426.79135pt x 225.88173pt.
 
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[45 <./Plot/pop_dense.PNG>]
+
+LaTeX Warning: Reference `LastPage' on page 39 undefined on input line 1398.
+
+[39 <./Plot/pop_dense.PNG>]
 Package acronym Info: Label `acro:DoD' newly defined as it shall be overridden
 although it is yet undefined on input line 1417.
 
 
+Package acronym Warning: Acronym `DoD' is not defined on input line 1417.
+
+
+Package acronym Warning: Acronym `DoD' is not defined on input line 1417.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[46 <./Plot/obstacle.png>]
-<Plot/shelter_factor.png, id=1310, 555.7563pt x 293.4162pt>
+
+LaTeX Warning: Reference `LastPage' on page 40 undefined on input line 1426.
+
+[40 <./Plot/obstacle.png>]
+
+LaTeX Warning: Reference `tab:sheltering_factor' on page 41 undefined on input line 1430.
+
+
+LaTeX Warning: Reference `fig:shelter_factor_map' on page 41 undefined on input line 1432.
+
+<Plot/shelter_factor.png, id=648, 555.7563pt x 293.4162pt>
 File: Plot/shelter_factor.png Graphic file (type png)
 <use Plot/shelter_factor.png>
 Package pdftex.def Info: Plot/shelter_factor.png  used on input line 1439.
 (pdftex.def)             Requested size: 426.79135pt x 225.32675pt.
 
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[47 <./Plot/shelter_factor.png>]
+
+LaTeX Warning: Reference `LastPage' on page 41 undefined on input line 1469.
+
+[41 <./Plot/shelter_factor.png>]
 Package acronym Info: Label `acro:FAA' newly defined as it shall be overridden
 although it is yet undefined on input line 1469.
+
+
+Package acronym Warning: Acronym `FAA' is not defined on input line 1469.
+
+
+Package acronym Warning: Acronym `FAA' is not defined on input line 1469.
+
 Package acronym Info: Label `acro:ICAO' newly defined as it shall be overridden
 although it is yet undefined on input line 1469.
 
-Overfull \hbox (3.51294pt too wide) in paragraph at lines 1469--1470
-[]\OT1/cmr/m/n/12 Regulation agency-defined ar-eas, i.e.[][][]Federal Avi-a-tion Ad-min-is-tra-tion ([])[],
- []
+Package acronym Warning: Acronym `ICAO' is not defined on input line 1469.
+
+
+Package acronym Warning: Acronym `ICAO' is not defined on input line 1469.
+
+
+LaTeX Warning: Reference `eq:fullprobability' on page 42 undefined on input line 1491.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1446,13 +1966,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[48]
+
+LaTeX Warning: Reference `LastPage' on page 42 undefined on input line 1510.
+
+[42]
+
+LaTeX Warning: Reference `fig:summer' on page 43 undefined on input line 1529.
+
 Package acronym Info: Label `acro:PDF' newly defined as it shall be overridden
 although it is yet undefined on input line 1529.
 
+Package acronym Warning: Acronym `PDF' is not defined on input line 1529.
+
+
+Package acronym Warning: Acronym `PDF' is not defined on input line 1529.
+
+
+LaTeX Warning: Reference `sec:descent_events' on page 43 undefined on input line 1530.
+
+
 
 pdfTeX warning: pdflatex (file ./General Image/OSM Drone-LOGIC_SUM.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<General Image/OSM Drone-LOGIC_SUM.pdf, id=1331, 505.89pt x 288.11641pt>
+<General Image/OSM Drone-LOGIC_SUM.pdf, id=667, 505.89pt x 288.11641pt>
 File: General Image/OSM Drone-LOGIC_SUM.pdf Graphic file (type pdf)
 <use General Image/OSM Drone-LOGIC_SUM.pdf>
 Package pdftex.def Info: General Image/OSM Drone-LOGIC_SUM.pdf  used on input line 1536.
@@ -1464,7 +1999,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[49]
+
+LaTeX Warning: Reference `LastPage' on page 43 undefined on input line 1540.
+
+[43]
+
+LaTeX Warning: Reference `eq:mtbf_final' on page 44 undefined on input line 1558.
+
+
+LaTeX Warning: Reference `eq:pfatal_final' on page 44 undefined on input line 1561.
+
+
+LaTeX Warning: Reference `tab:mtbf' on page 44 undefined on input line 1563.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1472,7 +2019,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[50 <./General Image/OSM Drone-LOGIC_SUM.pdf>]
+
+LaTeX Warning: Reference `LastPage' on page 44 undefined on input line 1565.
+
+[44 <./General Image/OSM Drone-LOGIC_SUM.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1480,13 +2030,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[51]
-<Plot/talon/ballistic.png, id=1363, 392.4261pt x 327.3831pt>
+
+LaTeX Warning: Reference `LastPage' on page 45 undefined on input line 1616.
+
+[45]
+<Plot/talon/ballistic.png, id=698, 392.4261pt x 327.3831pt>
 File: Plot/talon/ballistic.png Graphic file (type png)
 <use Plot/talon/ballistic.png>
 Package pdftex.def Info: Plot/talon/ballistic.png  used on input line 1642.
 (pdftex.def)             Requested size: 192.0548pt x 160.2193pt.
-<Plot/phantom4/ballistic.png, id=1364, 389.5353pt x 327.3831pt>
+<Plot/phantom4/ballistic.png, id=699, 389.5353pt x 327.3831pt>
 File: Plot/phantom4/ballistic.png Graphic file (type png)
 <use Plot/phantom4/ballistic.png>
 Package pdftex.def Info: Plot/phantom4/ballistic.png  used on input line 1649.
@@ -1499,13 +2052,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[52 <./Plot/talon/ballistic.png> <./Plot/phantom4/ballistic.png>]
-<Plot/talon/glide.png, id=1373, 382.3083pt x 327.3831pt>
+
+LaTeX Warning: Reference `LastPage' on page 46 undefined on input line 1661.
+
+[46 <./Plot/talon/ballistic.png> <./Plot/phantom4/ballistic.png>]
+<Plot/talon/glide.png, id=708, 382.3083pt x 327.3831pt>
 File: Plot/talon/glide.png Graphic file (type png)
 <use Plot/talon/glide.png>
 Package pdftex.def Info: Plot/talon/glide.png  used on input line 1674.
 (pdftex.def)             Requested size: 192.0548pt x 164.46544pt.
-<Plot/phantom4/glide.png, id=1374, 390.258pt x 327.3831pt>
+<Plot/phantom4/glide.png, id=709, 390.258pt x 327.3831pt>
 File: Plot/phantom4/glide.png Graphic file (type png)
 <use Plot/phantom4/glide.png>
 Package pdftex.def Info: Plot/phantom4/glide.png  used on input line 1681.
@@ -1518,23 +2074,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[53 <./Plot/talon/glide.png> <./Plot/phantom4/glide.png>]
-<Plot/talon/fly_away.png, id=1383, 367.8543pt x 327.3831pt>
+
+LaTeX Warning: Reference `LastPage' on page 47 undefined on input line 1702.
+
+[47 <./Plot/talon/glide.png> <./Plot/phantom4/glide.png>]
+<Plot/talon/fly_away.png, id=718, 367.8543pt x 327.3831pt>
 File: Plot/talon/fly_away.png Graphic file (type png)
 <use Plot/talon/fly_away.png>
 Package pdftex.def Info: Plot/talon/fly_away.png  used on input line 1707.
 (pdftex.def)             Requested size: 192.0548pt x 170.92456pt.
-<Plot/phantom4/fly_away.png, id=1384, 385.1991pt x 327.3831pt>
+<Plot/phantom4/fly_away.png, id=719, 385.1991pt x 327.3831pt>
 File: Plot/phantom4/fly_away.png Graphic file (type png)
 <use Plot/phantom4/fly_away.png>
 Package pdftex.def Info: Plot/phantom4/fly_away.png  used on input line 1714.
 (pdftex.def)             Requested size: 192.0548pt x 163.23155pt.
-<Plot/talon/parachute.png, id=1386, 365.6862pt x 357.0138pt>
+<Plot/talon/parachute.png, id=721, 365.6862pt x 357.0138pt>
 File: Plot/talon/parachute.png Graphic file (type png)
 <use Plot/talon/parachute.png>
 Package pdftex.def Info: Plot/talon/parachute.png  used on input line 1737.
 (pdftex.def)             Requested size: 192.0548pt x 187.50586pt.
-<Plot/phantom4/parachute.png, id=1387, 370.7451pt x 286.1892pt>
+<Plot/phantom4/parachute.png, id=722, 370.7451pt x 286.1892pt>
 File: Plot/phantom4/parachute.png Graphic file (type png)
 <use Plot/phantom4/parachute.png>
 Package pdftex.def Info: Plot/phantom4/parachute.png  used on input line 1744.
@@ -1547,7 +2106,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[54 <./Plot/talon/fly_away.png> <./Plot/phantom4/fly_away.png>]
+
+LaTeX Warning: Reference `LastPage' on page 48 undefined on input line 1751.
+
+[48 <./Plot/talon/fly_away.png> <./Plot/phantom4/fly_away.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1555,7 +2117,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[55 <./Plot/talon/parachute.png> <./Plot/phantom4/parachute.png>]
+
+LaTeX Warning: Reference `LastPage' on page 49 undefined on input line 1779.
+
+[49 <./Plot/talon/parachute.png> <./Plot/phantom4/parachute.png>]
+
+LaTeX Warning: Reference `eq:radial' on page 50 undefined on input line 1787.
+
+
+LaTeX Warning: Reference `eq:human_impact' on page 50 undefined on input line 1787.
+
+
+LaTeX Warning: Reference `eq:fatality' on page 50 undefined on input line 1816.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1563,7 +2137,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[56]
+
+LaTeX Warning: Reference `LastPage' on page 50 undefined on input line 1835.
+
+[50]
+
+LaTeX Warning: Reference `eq:fatality' on page 51 undefined on input line 1836.
+
+
+LaTeX Warning: Reference `eq:fatality' on page 51 undefined on input line 1850.
+
+
+LaTeX Warning: Reference `eq:fatality' on page 51 undefined on input line 1850.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1571,7 +2157,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[57]
+
+LaTeX Warning: Reference `LastPage' on page 51 undefined on input line 1865.
+
+[51]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1579,7 +2168,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[58]
+
+LaTeX Warning: Reference `LastPage' on page 52 undefined on input line 1907.
+
+[52]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1587,7 +2179,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[59]
+
+LaTeX Warning: Reference `LastPage' on page 53 undefined on input line 1944.
+
+[53]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1967.
  (C:\Users\MICKO\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
@@ -1602,7 +2197,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[60]
+
+LaTeX Warning: Reference `LastPage' on page 54 undefined on input line 2004.
+
+[54]
+
+LaTeX Warning: Reference `eq:heuristic' on page 55 undefined on input line 2007.
+
+
+LaTeX Warning: Reference `eq:costfunction' on page 55 undefined on input line 2008.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1610,7 +2214,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[61]
+
+LaTeX Warning: Reference `LastPage' on page 55 undefined on input line 2013.
+
+[55]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1618,7 +2225,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[62]
+
+LaTeX Warning: Reference `LastPage' on page 56 undefined on input line 2098.
+
+[56]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1626,8 +2236,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[63]
-<General Image/UPX GENERAL FLOWCHART.png, id=1484, 4045.1125pt x 5460.4pt>
+
+LaTeX Warning: Reference `LastPage' on page 57 undefined on input line 2106.
+
+[57]
+<General Image/UPX GENERAL FLOWCHART.png, id=815, 4045.1125pt x 5460.4pt>
 File: General Image/UPX GENERAL FLOWCHART.png Graphic file (type png)
 <use General Image/UPX GENERAL FLOWCHART.png>
 Package pdftex.def Info: General Image/UPX GENERAL FLOWCHART.png  used on input line 2120.
@@ -1640,7 +2253,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[64]
+
+LaTeX Warning: Reference `LastPage' on page 58 undefined on input line 2124.
+
+[58]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1648,25 +2264,38 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[65 <./General Image/UPX GENERAL FLOWCHART.png>]
+
+LaTeX Warning: Reference `LastPage' on page 59 undefined on input line 2131.
+
+[59 <./General Image/UPX GENERAL FLOWCHART.png>]
+
+LaTeX Warning: Reference `fig:tassel' on page 60 undefined on input line 2139.
+
+
 
 pdfTeX warning: pdflatex (file ./General Image/OSM Drone-Tessel.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<General Image/OSM Drone-Tessel.pdf, id=1497, 303.05219pt x 122.3772pt>
+<General Image/OSM Drone-Tessel.pdf, id=828, 303.05219pt x 122.3772pt>
 File: General Image/OSM Drone-Tessel.pdf Graphic file (type pdf)
 <use General Image/OSM Drone-Tessel.pdf>
 Package pdftex.def Info: General Image/OSM Drone-Tessel.pdf  used on input line 2143.
 (pdftex.def)             Requested size: 320.0935pt x 129.26729pt.
 
+LaTeX Warning: Reference `fig:sjoin' on page 60 undefined on input line 2152.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[66 <./General Image/OSM Drone-Tessel.pdf>]
+
+LaTeX Warning: Reference `LastPage' on page 60 undefined on input line 2157.
+
+[60 <./General Image/OSM Drone-Tessel.pdf>]
 
 pdfTeX warning: pdflatex (file ./General Image/OSM Drone-Attribute.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<General Image/OSM Drone-Attribute.pdf, id=1509, 536.96606pt x 442.53331pt>
+<General Image/OSM Drone-Attribute.pdf, id=839, 536.96606pt x 442.53331pt>
 File: General Image/OSM Drone-Attribute.pdf Graphic file (type pdf)
 <use General Image/OSM Drone-Attribute.pdf>
 Package pdftex.def Info: General Image/OSM Drone-Attribute.pdf  used on input line 2160.
@@ -1678,10 +2307,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[67 <./General Image/OSM Drone-Attribute.pdf>]
+
+LaTeX Warning: Reference `LastPage' on page 61 undefined on input line 2177.
+
+[61 <./General Image/OSM Drone-Attribute.pdf>]
+
+LaTeX Warning: Reference `fig:queen' on page 62 undefined on input line 2182.
+
+
 
 pdfTeX warning: pdflatex (file ./General Image/OSM Drone-graph convert.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<General Image/OSM Drone-graph convert.pdf, id=1525, 288.11641pt x 122.3772pt>
+<General Image/OSM Drone-graph convert.pdf, id=854, 288.11641pt x 122.3772pt>
 File: General Image/OSM Drone-graph convert.pdf Graphic file (type pdf)
 <use General Image/OSM Drone-graph convert.pdf>
 Package pdftex.def Info: General Image/OSM Drone-graph convert.pdf  used on input line 2186.
@@ -1693,7 +2329,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[68 <./General Image/OSM Drone-graph convert.pdf>]
+
+LaTeX Warning: Reference `LastPage' on page 62 undefined on input line 2206.
+
+[62 <./General Image/OSM Drone-graph convert.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1701,7 +2340,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[69]
+
+LaTeX Warning: Reference `LastPage' on page 63 undefined on input line 2242.
+
+[63]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1709,27 +2351,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[70]
+
+LaTeX Warning: Reference `LastPage' on page 64 undefined on input line 2255.
+
+[64]
 Chapter 4.
-<Plot/talon/ballistic_fpdf.png, id=1545, 555.7563pt x 295.5843pt>
+<Plot/talon/ballistic_fpdf.png, id=873, 555.7563pt x 295.5843pt>
 File: Plot/talon/ballistic_fpdf.png Graphic file (type png)
 <use Plot/talon/ballistic_fpdf.png>
 Package pdftex.def Info: Plot/talon/ballistic_fpdf.png  used on input line 2277.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
-<Plot/parrot/ballistic_pdf.png, id=1546, 555.7563pt x 295.5843pt>
+<Plot/parrot/ballistic_pdf.png, id=874, 555.7563pt x 295.5843pt>
 File: Plot/parrot/ballistic_pdf.png Graphic file (type png)
 <use Plot/parrot/ballistic_pdf.png>
 Package pdftex.def Info: Plot/parrot/ballistic_pdf.png  used on input line 2282.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
-<Plot/phantom4/ballistic_pdf.png, id=1547, 555.7563pt x 295.5843pt>
+<Plot/phantom4/ballistic_pdf.png, id=875, 555.7563pt x 295.5843pt>
 File: Plot/phantom4/ballistic_pdf.png Graphic file (type png)
 <use Plot/phantom4/ballistic_pdf.png>
 Package pdftex.def Info: Plot/phantom4/ballistic_pdf.png  used on input line 2287.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
-[71
+[65
 
  <./Plot/talon/ballistic_fpdf.png>]
-<Plot/inspire/ballistic_pdf.png, id=1553, 555.7563pt x 295.5843pt>
+<Plot/inspire/ballistic_pdf.png, id=885, 555.7563pt x 295.5843pt>
 File: Plot/inspire/ballistic_pdf.png Graphic file (type png)
 <use Plot/inspire/ballistic_pdf.png>
 Package pdftex.def Info: Plot/inspire/ballistic_pdf.png  used on input line 2292.
@@ -1742,13 +2387,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[72 <./Plot/parrot/ballistic_pdf.png> <./Plot/phantom4/ballistic_pdf.png>]
-<Plot/talon/glide_pdf.png, id=1563, 555.7563pt x 295.5843pt>
+
+LaTeX Warning: Reference `LastPage' on page 66 undefined on input line 2295.
+
+[66 <./Plot/parrot/ballistic_pdf.png> <./Plot/phantom4/ballistic_pdf.png>]
+<Plot/talon/glide_pdf.png, id=896, 555.7563pt x 295.5843pt>
 File: Plot/talon/glide_pdf.png Graphic file (type png)
 <use Plot/talon/glide_pdf.png>
 Package pdftex.def Info: Plot/talon/glide_pdf.png  used on input line 2313.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
-<Plot/parrot/glide_pdf.png, id=1564, 555.7563pt x 295.5843pt>
+<Plot/parrot/glide_pdf.png, id=897, 555.7563pt x 295.5843pt>
 File: Plot/parrot/glide_pdf.png Graphic file (type png)
 <use Plot/parrot/glide_pdf.png>
 Package pdftex.def Info: Plot/parrot/glide_pdf.png  used on input line 2318.
@@ -1761,13 +2409,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[73 <./Plot/inspire/ballistic_pdf.png>]
-<Plot/phantom4/glide_pdf.png, id=1571, 555.7563pt x 295.5843pt>
+
+LaTeX Warning: Reference `LastPage' on page 67 undefined on input line 2320.
+
+[67 <./Plot/inspire/ballistic_pdf.png>]
+<Plot/phantom4/glide_pdf.png, id=905, 555.7563pt x 295.5843pt>
 File: Plot/phantom4/glide_pdf.png Graphic file (type png)
 <use Plot/phantom4/glide_pdf.png>
 Package pdftex.def Info: Plot/phantom4/glide_pdf.png  used on input line 2323.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
-<Plot/inspire/glide_pdf.png, id=1572, 555.7563pt x 295.5843pt>
+<Plot/inspire/glide_pdf.png, id=906, 555.7563pt x 295.5843pt>
 File: Plot/inspire/glide_pdf.png Graphic file (type png)
 <use Plot/inspire/glide_pdf.png>
 Package pdftex.def Info: Plot/inspire/glide_pdf.png  used on input line 2328.
@@ -1780,7 +2431,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[74 <./Plot/talon/glide_pdf.png> <./Plot/parrot/glide_pdf.png>]
+
+LaTeX Warning: Reference `LastPage' on page 68 undefined on input line 2330.
+
+[68 <./Plot/talon/glide_pdf.png> <./Plot/parrot/glide_pdf.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1788,23 +2442,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[75 <./Plot/phantom4/glide_pdf.png> <./Plot/inspire/glide_pdf.png>]
-<Plot/talon/fly_away_pdf.png, id=1587, 555.7563pt x 295.5843pt>
+
+LaTeX Warning: Reference `LastPage' on page 69 undefined on input line 2342.
+
+[69 <./Plot/phantom4/glide_pdf.png> <./Plot/inspire/glide_pdf.png>]
+<Plot/talon/fly_away_pdf.png, id=924, 555.7563pt x 295.5843pt>
 File: Plot/talon/fly_away_pdf.png Graphic file (type png)
 <use Plot/talon/fly_away_pdf.png>
 Package pdftex.def Info: Plot/talon/fly_away_pdf.png  used on input line 2345.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
-<Plot/parrot/fly_away_pdf.png, id=1588, 565.8741pt x 295.5843pt>
+<Plot/parrot/fly_away_pdf.png, id=925, 565.8741pt x 295.5843pt>
 File: Plot/parrot/fly_away_pdf.png Graphic file (type png)
 <use Plot/parrot/fly_away_pdf.png>
 Package pdftex.def Info: Plot/parrot/fly_away_pdf.png  used on input line 2350.
 (pdftex.def)             Requested size: 426.79135pt x 222.94151pt.
-<Plot/phantom4/fly_away_pdf.png, id=1589, 555.7563pt x 295.5843pt>
+<Plot/phantom4/fly_away_pdf.png, id=926, 555.7563pt x 295.5843pt>
 File: Plot/phantom4/fly_away_pdf.png Graphic file (type png)
 <use Plot/phantom4/fly_away_pdf.png>
 Package pdftex.def Info: Plot/phantom4/fly_away_pdf.png  used on input line 2355.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
-<Plot/inspire/fly_away_pdf.png, id=1590, 555.7563pt x 295.5843pt>
+<Plot/inspire/fly_away_pdf.png, id=927, 555.7563pt x 295.5843pt>
 File: Plot/inspire/fly_away_pdf.png Graphic file (type png)
 <use Plot/inspire/fly_away_pdf.png>
 Package pdftex.def Info: Plot/inspire/fly_away_pdf.png  used on input line 2360.
@@ -1817,8 +2474,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[76 <./Plot/talon/fly_away_pdf.png> <./Plot/parrot/fly_away_pdf.png>]
-<Plot/talon/parachute_pdf.png, id=1598, 555.7563pt x 295.5843pt>
+
+LaTeX Warning: Reference `LastPage' on page 70 undefined on input line 2362.
+
+[70 <./Plot/talon/fly_away_pdf.png> <./Plot/parrot/fly_away_pdf.png>]
+<Plot/talon/parachute_pdf.png, id=936, 555.7563pt x 295.5843pt>
 File: Plot/talon/parachute_pdf.png Graphic file (type png)
 <use Plot/talon/parachute_pdf.png>
 Package pdftex.def Info: Plot/talon/parachute_pdf.png  used on input line 2378.
@@ -1831,18 +2491,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[77 <./Plot/phantom4/fly_away_pdf.png> <./Plot/inspire/fly_away_pdf.png>]
-<Plot/parrot/parachute_pdf.png, id=1606, 555.7563pt x 295.5843pt>
+
+LaTeX Warning: Reference `LastPage' on page 71 undefined on input line 2380.
+
+[71 <./Plot/phantom4/fly_away_pdf.png> <./Plot/inspire/fly_away_pdf.png>]
+<Plot/parrot/parachute_pdf.png, id=946, 555.7563pt x 295.5843pt>
 File: Plot/parrot/parachute_pdf.png Graphic file (type png)
 <use Plot/parrot/parachute_pdf.png>
 Package pdftex.def Info: Plot/parrot/parachute_pdf.png  used on input line 2383.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
-<Plot/phantom4/parachute_pdf.png, id=1607, 555.7563pt x 295.5843pt>
+<Plot/phantom4/parachute_pdf.png, id=947, 555.7563pt x 295.5843pt>
 File: Plot/phantom4/parachute_pdf.png Graphic file (type png)
 <use Plot/phantom4/parachute_pdf.png>
 Package pdftex.def Info: Plot/phantom4/parachute_pdf.png  used on input line 2388.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
-<Plot/inspire/parachute_pdf.png, id=1608, 555.7563pt x 295.5843pt>
+<Plot/inspire/parachute_pdf.png, id=948, 555.7563pt x 295.5843pt>
 File: Plot/inspire/parachute_pdf.png Graphic file (type png)
 <use Plot/inspire/parachute_pdf.png>
 Package pdftex.def Info: Plot/inspire/parachute_pdf.png  used on input line 2393.
@@ -1855,7 +2518,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[78 <./Plot/talon/parachute_pdf.png> <./Plot/parrot/parachute_pdf.png>]
+
+LaTeX Warning: Reference `LastPage' on page 72 undefined on input line 2395.
+
+[72 <./Plot/talon/parachute_pdf.png> <./Plot/parrot/parachute_pdf.png>]
 Overfull \hbox (16.63052pt too wide) in paragraph at lines 2398--2407
 \OT1/cmr/m/n/12 A to-tal fa-tal-ity risk map in-te-grates var-i-ous haz-ard mod-els, in-clud-ing bal-lis-tic, parachute,
  []
@@ -1867,22 +2533,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[79 <./Plot/phantom4/parachute_pdf.png> <./Plot/inspire/parachute_pdf.png>]
+
+LaTeX Warning: Reference `LastPage' on page 73 undefined on input line 2407.
+
+[73 <./Plot/phantom4/parachute_pdf.png> <./Plot/inspire/parachute_pdf.png>]
 File: Plot/talon/total_fatality.png Graphic file (type png)
 <use Plot/talon/total_fatality.png>
 Package pdftex.def Info: Plot/talon/total_fatality.png  used on input line 2410.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
-<Plot/parrot/total_fatality-pdf.png, id=1624, 555.7563pt x 295.5843pt>
+<Plot/parrot/total_fatality-pdf.png, id=967, 555.7563pt x 295.5843pt>
 File: Plot/parrot/total_fatality-pdf.png Graphic file (type png)
 <use Plot/parrot/total_fatality-pdf.png>
 Package pdftex.def Info: Plot/parrot/total_fatality-pdf.png  used on input line 2415.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
-<Plot/phantom4/total_fatality_pdf.png, id=1625, 555.7563pt x 295.5843pt>
+<Plot/phantom4/total_fatality_pdf.png, id=968, 555.7563pt x 295.5843pt>
 File: Plot/phantom4/total_fatality_pdf.png Graphic file (type png)
 <use Plot/phantom4/total_fatality_pdf.png>
 Package pdftex.def Info: Plot/phantom4/total_fatality_pdf.png  used on input line 2420.
 (pdftex.def)             Requested size: 426.79135pt x 226.99173pt.
-<Plot/inspire/total_fatality_pdf.png, id=1626, 555.7563pt x 295.5843pt>
+<Plot/inspire/total_fatality_pdf.png, id=969, 555.7563pt x 295.5843pt>
 File: Plot/inspire/total_fatality_pdf.png Graphic file (type png)
 <use Plot/inspire/total_fatality_pdf.png>
 Package pdftex.def Info: Plot/inspire/total_fatality_pdf.png  used on input line 2425.
@@ -1895,7 +2564,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[80 <./Plot/parrot/total_fatality-pdf.png>]
+
+LaTeX Warning: Reference `LastPage' on page 74 undefined on input line 2427.
+
+[74 <./Plot/parrot/total_fatality-pdf.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1903,23 +2575,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[81 <./Plot/phantom4/total_fatality_pdf.png> <./Plot/inspire/total_fatality_pdf.png>]
-<Plot/base_a_star.png, id=1640, 570.2103pt x 273.9033pt>
+
+LaTeX Warning: Reference `LastPage' on page 75 undefined on input line 2439.
+
+[75 <./Plot/phantom4/total_fatality_pdf.png> <./Plot/inspire/total_fatality_pdf.png>]
+<Plot/base_a_star.png, id=986, 570.2103pt x 273.9033pt>
 File: Plot/base_a_star.png Graphic file (type png)
 <use Plot/base_a_star.png>
 Package pdftex.def Info: Plot/base_a_star.png  used on input line 2444.
 (pdftex.def)             Requested size: 426.79135pt x 205.01738pt.
-<Plot/talon/talon_route.png, id=1641, 570.2103pt x 273.9033pt>
+<Plot/talon/talon_route.png, id=987, 570.2103pt x 273.9033pt>
 File: Plot/talon/talon_route.png Graphic file (type png)
 <use Plot/talon/talon_route.png>
 Package pdftex.def Info: Plot/talon/talon_route.png  used on input line 2451.
 (pdftex.def)             Requested size: 426.79135pt x 205.01738pt.
-<Plot/parrot/parrot_route.png, id=1642, 570.2103pt x 273.9033pt>
+<Plot/parrot/parrot_route.png, id=988, 570.2103pt x 273.9033pt>
 File: Plot/parrot/parrot_route.png Graphic file (type png)
 <use Plot/parrot/parrot_route.png>
 Package pdftex.def Info: Plot/parrot/parrot_route.png  used on input line 2456.
 (pdftex.def)             Requested size: 426.79135pt x 205.01738pt.
-<Plot/phantom4/phantom_route.png, id=1643, 570.2103pt x 273.9033pt>
+<Plot/phantom4/phantom_route.png, id=989, 570.2103pt x 273.9033pt>
 File: Plot/phantom4/phantom_route.png Graphic file (type png)
 <use Plot/phantom4/phantom_route.png>
 Package pdftex.def Info: Plot/phantom4/phantom_route.png  used on input line 2461.
@@ -1932,8 +2607,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[82 <./Plot/base_a_star.png> <./Plot/talon/talon_route.png>]
-<Plot/inspire/inspire_route.png, id=1651, 570.2103pt x 273.9033pt>
+
+LaTeX Warning: Reference `LastPage' on page 76 undefined on input line 2463.
+
+[76 <./Plot/base_a_star.png> <./Plot/talon/talon_route.png>]
+<Plot/inspire/inspire_route.png, id=1000, 570.2103pt x 273.9033pt>
 File: Plot/inspire/inspire_route.png Graphic file (type png)
 <use Plot/inspire/inspire_route.png>
 Package pdftex.def Info: Plot/inspire/inspire_route.png  used on input line 2466.
@@ -1946,7 +2624,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[83 <./Plot/parrot/parrot_route.png> <./Plot/phantom4/phantom_route.png>]
+
+LaTeX Warning: Reference `LastPage' on page 77 undefined on input line 2469.
+
+[77 <./Plot/parrot/parrot_route.png> <./Plot/phantom4/phantom_route.png>]
+
+LaTeX Warning: Reference `tab:pathway-risk' on page 78 undefined on input line 2471.
+
+
+LaTeX Warning: Reference `fig:regularastar' on page 78 undefined on input line 2479.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1954,25 +2641,102 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[84 <./Plot/inspire/inspire_route.png>]
-<Plot/risk_vs_distance.png, id=1670, 714.7503pt x 860.013pt>
+
+LaTeX Warning: Reference `LastPage' on page 78 undefined on input line 2496.
+
+[78 <./Plot/inspire/inspire_route.png>]
+
+LaTeX Warning: Reference `tab:total-pathway-risk' on page 79 undefined on input line 2498.
+
+
+LaTeX Warning: Reference `fig:total-path1' on page 79 undefined on input line 2498.
+
+<Plot/risk_vs_distance.png, id=1017, 714.7503pt x 860.013pt>
 File: Plot/risk_vs_distance.png Graphic file (type png)
 <use Plot/risk_vs_distance.png>
 Package pdftex.def Info: Plot/risk_vs_distance.png  used on input line 2506.
 (pdftex.def)             Requested size: 426.79135pt x 513.54471pt.
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 79 undefined on input line 2510.
+
+[79]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 80 undefined on input line 2532.
+
+[80 <./Plot/risk_vs_distance.png>]
+
+LaTeX Warning: Reference `tab:pathway-risk' on page 81 undefined on input line 2536.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 81 undefined on input line 2575.
+
+[81]
+
+LaTeX Warning: Reference `tab:total-map-risk' on page 82 undefined on input line 2576.
+
+
+Overfull \hbox (13.13574pt too wide) in paragraph at lines 2584--2596
+ [][] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 82 undefined on input line 2601.
+
+[82]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 83 undefined on input line 2636.
+
+[83]
+Chapter 5.
+[84
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 85 undefined on input line 2707.
 
 [85]
-Overfull \hbox (129.67566pt too wide) in paragraph at lines 2515--2525
- [][] 
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1980,66 +2744,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[86 <./Plot/risk_vs_distance.png>]
-Overfull \hbox (112.96773pt too wide) in paragraph at lines 2577--2589
- [][] 
- []
 
+LaTeX Warning: Reference `LastPage' on page 86 undefined on input line 2718.
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+[86] [87
 
-[87]
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 88 undefined on input line 2718.
 
 [88]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[89]
-Chapter 5.
-[90
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[91]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[92] [93
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[94]
-Overfull \hbox (23.00986pt too wide) in paragraph at lines 2712--2712
+Overfull \hbox (23.00986pt too wide) in paragraph at lines 2719--2719
 [][]\OT1/cmr/m/n/12 OpenStreetMap con-trib-u-tors. (2017). Planet dump re-trieved from https://planet.osm.org
  []
 
@@ -2050,33 +2772,50 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[95] 
+
+LaTeX Warning: Reference `LastPage' on page 89 undefined on input line 2719.
+
+[89] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (main.aux)
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7B0DCCCBABD365FA037B88D02DD993CA;11900.
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  7B0DCCCBABD365FA037B88D02DD993CA;11900.
+
+Package lastpage Warning: Rerun to get the references right on input line 2719.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24642 strings out of 476375
- 442155 string characters out of 5788976
- 1871299 words of memory out of 5000000
- 44282 multiletter control sequences out of 15000+600000
+ 24344 strings out of 476375
+ 438097 string characters out of 5788976
+ 1872299 words of memory out of 5000000
+ 44000 multiletter control sequences out of 15000+600000
  522371 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,77p,2504b,5044s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/MICKO/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (96 pages, 10548733 bytes).
+Output written on main.pdf (90 pages, 10442919 bytes).
 PDF statistics:
- 1934 PDF objects out of 2073 (max. 8388607)
- 396 named destinations out of 1000 (max. 500000)
- 913 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1280 PDF objects out of 1440 (max. 8388607)
+ 390 named destinations out of 1000 (max. 500000)
+ 281 words of extra memory for PDF output out of 10000 (max. 10000000)
 

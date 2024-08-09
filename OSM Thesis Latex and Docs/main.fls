@@ -896,8 +896,18 @@ INPUT .\main.aux
 INPUT main.aux
 INPUT main.aux
 OUTPUT main.aux
-OUTPUT main.out
+INPUT .\main.out
+INPUT main.out
+INPUT .\main.out
+INPUT main.out
+INPUT .\main.out
+INPUT main.out
+INPUT .\main.out
+INPUT main.out
 OUTPUT main.pdf
+INPUT .\main.out
+INPUT .\main.out
+OUTPUT main.out
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -958,16 +968,9 @@ INPUT C:\Users\MICKO\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
-OUTPUT main.toc
-OUTPUT main.lof
-OUTPUT main.lot
-INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
-INPUT .\General Image\OSM Drone-GROUND.pdf
-INPUT .\General Image\OSM Drone-GROUND.pdf
-INPUT General Image\OSM Drone-GROUND.pdf
-INPUT .\General Image\OSM Drone-GROUND.pdf
-INPUT .\General Image\OSM Drone-GROUND.pdf
-INPUT .\General Image\OSM Drone-GROUND.pdf
+INPUT .\main.toc
+INPUT main.toc
+INPUT main.toc
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
@@ -992,6 +995,22 @@ INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+OUTPUT main.toc
+INPUT .\main.lof
+INPUT main.lof
+INPUT main.lof
+OUTPUT main.lof
+INPUT .\main.lot
+INPUT main.lot
+INPUT main.lot
+OUTPUT main.lot
+INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT .\General Image\OSM Drone-GROUND.pdf
+INPUT .\General Image\OSM Drone-GROUND.pdf
+INPUT General Image\OSM Drone-GROUND.pdf
+INPUT .\General Image\OSM Drone-GROUND.pdf
+INPUT .\General Image\OSM Drone-GROUND.pdf
+INPUT .\General Image\OSM Drone-GROUND.pdf
 INPUT .\General Image\OSM Drone-Area Exposed.pdf
 INPUT .\General Image\OSM Drone-Area Exposed.pdf
 INPUT General Image\OSM Drone-Area Exposed.pdf
@@ -1109,63 +1128,55 @@ INPUT General Image\OSM Drone-LOGIC_SUM.pdf
 INPUT .\General Image\OSM Drone-LOGIC_SUM.pdf
 INPUT .\General Image\OSM Drone-LOGIC_SUM.pdf
 INPUT .\General Image\OSM Drone-LOGIC_SUM.pdf
-INPUT .\Plot\talon\ballistic.png
-INPUT .\Plot\talon\ballistic.png
-INPUT Plot\talon\ballistic.png
-INPUT .\Plot\talon\ballistic.png
-INPUT .\Plot\talon\ballistic.png
-INPUT .\Plot\talon\ballistic.png
-INPUT .\Plot\talon\ballistic.png
+INPUT .\Plot\talon\Talon ballistic distribution.pdf
+INPUT .\Plot\talon\Talon ballistic distribution.pdf
+INPUT Plot\talon\Talon ballistic distribution.pdf
+INPUT .\Plot\talon\Talon ballistic distribution.pdf
+INPUT .\Plot\talon\Talon ballistic distribution.pdf
+INPUT .\Plot\talon\Talon ballistic distribution.pdf
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
-INPUT .\Plot\phantom4\ballistic.png
-INPUT .\Plot\phantom4\ballistic.png
-INPUT Plot\phantom4\ballistic.png
-INPUT .\Plot\phantom4\ballistic.png
-INPUT .\Plot\phantom4\ballistic.png
-INPUT .\Plot\phantom4\ballistic.png
-INPUT .\Plot\phantom4\ballistic.png
-INPUT .\Plot\talon\glide.png
-INPUT .\Plot\talon\glide.png
-INPUT Plot\talon\glide.png
-INPUT .\Plot\talon\glide.png
-INPUT .\Plot\talon\glide.png
-INPUT .\Plot\talon\glide.png
-INPUT .\Plot\talon\glide.png
-INPUT .\Plot\phantom4\glide.png
-INPUT .\Plot\phantom4\glide.png
-INPUT Plot\phantom4\glide.png
-INPUT .\Plot\phantom4\glide.png
-INPUT .\Plot\phantom4\glide.png
-INPUT .\Plot\phantom4\glide.png
-INPUT .\Plot\phantom4\glide.png
-INPUT .\Plot\talon\fly_away.png
-INPUT .\Plot\talon\fly_away.png
-INPUT Plot\talon\fly_away.png
-INPUT .\Plot\talon\fly_away.png
-INPUT .\Plot\talon\fly_away.png
-INPUT .\Plot\talon\fly_away.png
-INPUT .\Plot\talon\fly_away.png
-INPUT .\Plot\phantom4\fly_away.png
-INPUT .\Plot\phantom4\fly_away.png
-INPUT Plot\phantom4\fly_away.png
-INPUT .\Plot\phantom4\fly_away.png
-INPUT .\Plot\phantom4\fly_away.png
-INPUT .\Plot\phantom4\fly_away.png
-INPUT .\Plot\phantom4\fly_away.png
-INPUT .\Plot\talon\parachute.png
-INPUT .\Plot\talon\parachute.png
-INPUT Plot\talon\parachute.png
-INPUT .\Plot\talon\parachute.png
-INPUT .\Plot\talon\parachute.png
-INPUT .\Plot\talon\parachute.png
-INPUT .\Plot\talon\parachute.png
-INPUT .\Plot\phantom4\parachute.png
-INPUT .\Plot\phantom4\parachute.png
-INPUT Plot\phantom4\parachute.png
-INPUT .\Plot\phantom4\parachute.png
-INPUT .\Plot\phantom4\parachute.png
-INPUT .\Plot\phantom4\parachute.png
-INPUT .\Plot\phantom4\parachute.png
+INPUT .\Plot\phantom4\Phantom 4 ballistic distribution.pdf
+INPUT .\Plot\phantom4\Phantom 4 ballistic distribution.pdf
+INPUT Plot\phantom4\Phantom 4 ballistic distribution.pdf
+INPUT .\Plot\phantom4\Phantom 4 ballistic distribution.pdf
+INPUT .\Plot\phantom4\Phantom 4 ballistic distribution.pdf
+INPUT .\Plot\phantom4\Phantom 4 ballistic distribution.pdf
+INPUT .\Plot\talon\Talon glide distribution.pdf
+INPUT .\Plot\talon\Talon glide distribution.pdf
+INPUT Plot\talon\Talon glide distribution.pdf
+INPUT .\Plot\talon\Talon glide distribution.pdf
+INPUT .\Plot\talon\Talon glide distribution.pdf
+INPUT .\Plot\talon\Talon glide distribution.pdf
+INPUT .\Plot\phantom4\Phantom 4 glide distribution.pdf
+INPUT .\Plot\phantom4\Phantom 4 glide distribution.pdf
+INPUT Plot\phantom4\Phantom 4 glide distribution.pdf
+INPUT .\Plot\phantom4\Phantom 4 glide distribution.pdf
+INPUT .\Plot\phantom4\Phantom 4 glide distribution.pdf
+INPUT .\Plot\phantom4\Phantom 4 glide distribution.pdf
+INPUT .\Plot\talon\Talon_fly_away_distribution.pdf
+INPUT .\Plot\talon\Talon_fly_away_distribution.pdf
+INPUT Plot\talon\Talon_fly_away_distribution.pdf
+INPUT .\Plot\talon\Talon_fly_away_distribution.pdf
+INPUT .\Plot\talon\Talon_fly_away_distribution.pdf
+INPUT .\Plot\talon\Talon_fly_away_distribution.pdf
+INPUT .\Plot\phantom4\Phantom_4_fly_away_distribution.pdf
+INPUT .\Plot\phantom4\Phantom_4_fly_away_distribution.pdf
+INPUT Plot\phantom4\Phantom_4_fly_away_distribution.pdf
+INPUT .\Plot\phantom4\Phantom_4_fly_away_distribution.pdf
+INPUT .\Plot\phantom4\Phantom_4_fly_away_distribution.pdf
+INPUT .\Plot\phantom4\Phantom_4_fly_away_distribution.pdf
+INPUT .\Plot\talon\Talon parachute distribution.pdf
+INPUT .\Plot\talon\Talon parachute distribution.pdf
+INPUT Plot\talon\Talon parachute distribution.pdf
+INPUT .\Plot\talon\Talon parachute distribution.pdf
+INPUT .\Plot\talon\Talon parachute distribution.pdf
+INPUT .\Plot\talon\Talon parachute distribution.pdf
+INPUT .\Plot\phantom4\Phantom_4_parachute_distribution.pdf
+INPUT .\Plot\phantom4\Phantom_4_parachute_distribution.pdf
+INPUT Plot\phantom4\Phantom_4_parachute_distribution.pdf
+INPUT .\Plot\phantom4\Phantom_4_parachute_distribution.pdf
+INPUT .\Plot\phantom4\Phantom_4_parachute_distribution.pdf
+INPUT .\Plot\phantom4\Phantom_4_parachute_distribution.pdf
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\tex\latex\base\omscmr.fd
 INPUT C:\Users\MICKO\AppData\Local\Programs\MiKTeX\tex\latex\base\omscmr.fd
@@ -1334,41 +1345,41 @@ INPUT .\Plot\inspire\total_fatality_pdf.png
 INPUT .\Plot\inspire\total_fatality_pdf.png
 INPUT .\Plot\inspire\total_fatality_pdf.png
 INPUT .\Plot\inspire\total_fatality_pdf.png
-INPUT .\Plot\base_a_star.png
-INPUT .\Plot\base_a_star.png
-INPUT Plot\base_a_star.png
-INPUT .\Plot\base_a_star.png
-INPUT .\Plot\base_a_star.png
-INPUT .\Plot\base_a_star.png
-INPUT .\Plot\base_a_star.png
-INPUT .\Plot\talon\talon_route.png
-INPUT .\Plot\talon\talon_route.png
-INPUT Plot\talon\talon_route.png
-INPUT .\Plot\talon\talon_route.png
-INPUT .\Plot\talon\talon_route.png
-INPUT .\Plot\talon\talon_route.png
-INPUT .\Plot\talon\talon_route.png
-INPUT .\Plot\parrot\parrot_route.png
-INPUT .\Plot\parrot\parrot_route.png
-INPUT Plot\parrot\parrot_route.png
-INPUT .\Plot\parrot\parrot_route.png
-INPUT .\Plot\parrot\parrot_route.png
-INPUT .\Plot\parrot\parrot_route.png
-INPUT .\Plot\parrot\parrot_route.png
-INPUT .\Plot\phantom4\phantom_route.png
-INPUT .\Plot\phantom4\phantom_route.png
-INPUT Plot\phantom4\phantom_route.png
-INPUT .\Plot\phantom4\phantom_route.png
-INPUT .\Plot\phantom4\phantom_route.png
-INPUT .\Plot\phantom4\phantom_route.png
-INPUT .\Plot\phantom4\phantom_route.png
-INPUT .\Plot\inspire\inspire_route.png
-INPUT .\Plot\inspire\inspire_route.png
-INPUT Plot\inspire\inspire_route.png
-INPUT .\Plot\inspire\inspire_route.png
-INPUT .\Plot\inspire\inspire_route.png
-INPUT .\Plot\inspire\inspire_route.png
-INPUT .\Plot\inspire\inspire_route.png
+INPUT .\Plot\base astar with risk.png
+INPUT .\Plot\base astar with risk.png
+INPUT Plot\base astar with risk.png
+INPUT .\Plot\base astar with risk.png
+INPUT .\Plot\base astar with risk.png
+INPUT .\Plot\base astar with risk.png
+INPUT .\Plot\base astar with risk.png
+INPUT .\Plot\talon\route with fatality.png
+INPUT .\Plot\talon\route with fatality.png
+INPUT Plot\talon\route with fatality.png
+INPUT .\Plot\talon\route with fatality.png
+INPUT .\Plot\talon\route with fatality.png
+INPUT .\Plot\talon\route with fatality.png
+INPUT .\Plot\talon\route with fatality.png
+INPUT .\Plot\parrot\route with fatality.png
+INPUT .\Plot\parrot\route with fatality.png
+INPUT Plot\parrot\route with fatality.png
+INPUT .\Plot\parrot\route with fatality.png
+INPUT .\Plot\parrot\route with fatality.png
+INPUT .\Plot\parrot\route with fatality.png
+INPUT .\Plot\parrot\route with fatality.png
+INPUT .\Plot\phantom4\risk with fatality.png
+INPUT .\Plot\phantom4\risk with fatality.png
+INPUT Plot\phantom4\risk with fatality.png
+INPUT .\Plot\phantom4\risk with fatality.png
+INPUT .\Plot\phantom4\risk with fatality.png
+INPUT .\Plot\phantom4\risk with fatality.png
+INPUT .\Plot\phantom4\risk with fatality.png
+INPUT .\Plot\inspire\risk with fatality.png
+INPUT .\Plot\inspire\risk with fatality.png
+INPUT Plot\inspire\risk with fatality.png
+INPUT .\Plot\inspire\risk with fatality.png
+INPUT .\Plot\inspire\risk with fatality.png
+INPUT .\Plot\inspire\risk with fatality.png
+INPUT .\Plot\inspire\risk with fatality.png
 INPUT .\Plot\risk_vs_distance.png
 INPUT .\Plot\risk_vs_distance.png
 INPUT Plot\risk_vs_distance.png

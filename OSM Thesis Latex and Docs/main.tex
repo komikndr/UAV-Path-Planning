@@ -420,9 +420,9 @@
             scenario, probably the least common failure stated by \cite{washington_review_2017}, occurs when some
             components detach from the drone and fall to the ground.
 
-            Although the definition of a ways that UAV can fell into the terrain, it does not necessarly help us
-            calculate the likelihoodness of a UAV to fell into the ground. With that being said this definition can help
-            us to formulate the descent model of the ground risk model.
+            Although the definition of a ways that UAV can fell into the terrain might be useful, it does not necessarly
+            help us calculate the likelihoodness of a UAV to fell into the ground. With that being said this definition
+            can help us to formulate the descent model of the ground risk model.
             
             If we want to calculate the probability of the drone starts to fail, there are two main models that we can
             use. The first one is  failure model proposed by \cite{breunig_modeling_2018} and \cite{weibel_safety_2012}
@@ -575,14 +575,14 @@
             taking place. The recovery risk model also takes into account the UAV design, capabilities and limitations.
             For example some UAV has parachute failsafe built into it. This parachute is then deployed when the control
             logic of the UAV detected major system breakdown. Some high-end UAV will enter a automatic landing or
-            controlled crash into terrain before it deploys its parachute. Although not always it is a general rule of
-            thumb that the UAV that has already equiped by parachute usually already has an advance flight controller.
+            controlled crash into terrain before it deploys its parachute. Although not always, it is a general rule of
+            thumb that the UAV that has already equiped by parachute, usually already has an advance flight controller.
             Please note that at the time of this writing, there are little to none database containing every specification
             of each highend drone.
                 
             Although there is a significant in studying UAV recovery behaviour, only three researches that managed to
             include recovery model in its ground risk model. \cite{shelley_model_2016} calculated the safest highest
-            possible flight altitude of the UAV based on its weight, or to be precised its resulted kinetic impact. It
+            possible flight altitude of the UAV based on its weight, or to be precised, its resulted kinetic impact. It
             is showed that under any circumstances UAV with the weight over 1.5 kg must not be flown over a dense
             population. The study also give a benefit to equiping UAV with parachute will enable most UAV from only
             permitted to flown in tens of feet to 400 ft \ac{AGL}.
@@ -666,13 +666,12 @@
 
         \subsection{Exposure model}
             An exposure model is a method for determining how affected individual or property may be to dangers related
-            to the use of UAV.
-
-            A uniform exposure model is the model of population exposure that is most frequently utilized. The use of
-            this approach overlooks possible population clustering within a specified geographic region and, as a
-            result, averages the potential exposure factors contribution to the overall risk assessment. Such
-            methodologies tend to overestimate or underestimate the risk value associated with the current setup because
-            they do not provide sufficient information about the spatial and temporal distribution of the population.
+            to the use of UAV.  A uniform exposure model is the model of population exposure that is most frequently
+            utilized. The use of this approach overlooks possible population clustering within a specified geographic
+            region and, as a result, averages the potential exposure factors contribution to the overall risk
+            assessment. Such methodologies tend to overestimate or underestimate the risk value associated with the
+            current setup because they do not provide sufficient information about the spatial and temporal distribution
+            of the population.
 
             Models such as those created by \cite{burke_system-level_2011} and \cite{melnyk_third-party_2014} aim to add temporal features, acknowledging how individuals
             spend their days, taking such factors into consideration. An illustration of a thorough exposure model that
@@ -717,7 +716,7 @@
         \subsection{Harm model}
             The harm model describe the severity of UAV impact towards the population. The harm model usually measured
             in probability of fatality given UAV impact to a person. The impact harm model can be categorized based on
-            its severity from minor, major, and fatal injury.As previously mentioned many literature paper use kinetic
+            its severity from minor, major, and fatal injury. As previously mentioned many literature paper use kinetic
             impact energy as a variable when it comes to determining the fatality imposed by the UAV.  Of every injury
             mechanism, the most common studied harm mechanism is a blunt force trauma. According to
             \cite{shelley_model_2016}, the most likely impact injuries are injuries to the head, particularly skull
@@ -726,9 +725,9 @@
             For various impact locations, the a charateristic of fatality probability model have been developed as as a
             function of kinetic energy by \cite{harwick_approved_2007}. The model describes the harm response of an
             average male, averaged over varying impact orientations, as a binomial regression function. Binomial
-            distribution is a function that map a given input in this case kinentic energy to a false or true statement
-            in this case a resulted fatality. Therefore, given a kinetic energy, does that energy can cause fatality to
-            a person. 
+            distribution is a function that map a given input in this case kinentic energy to a false or true statement,
+            which in this case is a resulted fatality. Therefore, given a kinetic energy, does that energy can cause
+            fatality to a person. 
             
             The binomial distribution is calculated using a sigmoid function, more commonly known as logistic curve,
             shown in figure \ref{fig:logistic}. logistic curve probability of fatality described in
@@ -794,8 +793,8 @@
             \label{fig:bfs}
         \end{figure}
 
-        One of the main advantages of BFS is its guarantee to find the shortest path in terms of the number of edges in
-        unweighted graphs. This algorithm is also straightforward and easy to implement. However, BFS can be very
+        One of the main advantages of BFS is it is discretized the GR guarantee to find the shortest path in terms of the number of edges
+        in unweighted graphs. This algorithm is also straightforward and easy to implement. However, BFS can be very
         memory-intensive as it needs to store all nodes at the current depth level before proceeding to the next, which
         can be inefficient for large graphs or when memory resources are limited. Furthermore, BFS does not perform well
         on weighted graphs where the cost of traversing edges varies significantly \cite{cormen_introduction_2022}.
@@ -1241,8 +1240,7 @@
         \cite{commission_ghsl_2023}, to retrieve population density throughout the earth.
 
         The \ac{GRM} is calculated using geographic and population data, and also the type of aircraft that are being
-        used in the calculation. The result would be descent location, impact energy, and fatality probability heat map. 
-        
+        used in the calculation. The result would be descent location, impact energy, and fatality probability heat map.
         After we compute and discretized the GRM. We find the optimal path with the least amount of risk using
         pathfinding algorithms, where the result would be compared.
 
@@ -1639,14 +1637,14 @@
             \centering
             \begin{subfigure}[b]{0.45\textwidth}
                 \centering
-                \includegraphics[width=\textwidth]{Plot/talon/ballistic.png}
+                \includegraphics[width=\textwidth]{Plot/talon/Talon ballistic distribution.pdf}
                 \caption{Fixed wing ballistic descent}
                 \label{fig:fixed_wing}
             \end{subfigure}
             \hfill
             \begin{subfigure}[b]{0.45\textwidth}
                 \centering
-                \includegraphics[width=\textwidth]{Plot/phantom4/ballistic.png}
+                \includegraphics[width=\textwidth]{Plot/phantom4/Phantom 4 ballistic distribution.pdf}
                 \caption{Multirotor ballistic descent}
                 \label{fig:multirotor}
             \end{subfigure}
@@ -1671,14 +1669,14 @@
             \centering
             \begin{subfigure}[b]{0.45\textwidth}
                 \centering
-                \includegraphics[width=\textwidth]{Plot/talon/glide.png}
+                \includegraphics[width=\textwidth]{Plot/talon/Talon glide distribution.pdf}
                 \caption{Fixed wing glide descent}
                 \label{fig:fixed_wing}
             \end{subfigure}
             \hfill
             \begin{subfigure}[b]{0.45\textwidth}
                 \centering
-                \includegraphics[width=\textwidth]{Plot/phantom4/glide.png}
+                \includegraphics[width=\textwidth]{Plot/phantom4/Phantom 4 glide distribution.pdf}
                 \caption{Multirotor glide descent}
                 \label{fig:multirotor}
             \end{subfigure}
@@ -1704,14 +1702,14 @@
             \centering
             \begin{subfigure}[b]{0.45\textwidth}
                 \centering
-                \includegraphics[width=\textwidth]{Plot/talon/fly_away.png}
+                \includegraphics[width=\textwidth]{Plot/talon/Talon_fly_away_distribution.pdf}
                 \caption{Fixed wing fly away descent}
                 \label{fig:fixed_wing}
             \end{subfigure}
             \hfill
             \begin{subfigure}[b]{0.45\textwidth}
                 \centering
-                \includegraphics[width=\textwidth]{Plot/phantom4/fly_away.png}
+                \includegraphics[width=\textwidth]{Plot/phantom4/Phantom_4_fly_away_distribution.pdf}
                 \caption{Multirotor fly away descent}
                 \label{fig:multirotor}
             \end{subfigure}
@@ -1734,14 +1732,14 @@
             \centering
             \begin{subfigure}[b]{0.45\textwidth}
                 \centering
-                \includegraphics[width=\textwidth]{Plot/talon/parachute.png}
+                \includegraphics[width=\textwidth]{Plot/talon/Talon parachute distribution.pdf}
                 \caption{Fixed wing parachute descent}
                 \label{fig:fixed_wing}
             \end{subfigure}
             \hfill
             \begin{subfigure}[b]{0.45\textwidth}
                 \centering
-                \includegraphics[width=\textwidth]{Plot/phantom4/parachute.png}
+                \includegraphics[width=\textwidth]{Plot/phantom4/Phantom_4_parachute_distribution.pdf}
                 \caption{Multirotor parachute descent}
                 \label{fig:multirotor}
             \end{subfigure}
@@ -2441,29 +2439,29 @@
         \subsection{Regular A*}
         \begin{figure}[H]
             \centering
-            \includegraphics[width=\textwidth]{Plot/base_a_star.png}
+            \includegraphics[width=\textwidth]{Plot/base astar with risk.png}
             \caption{Regular A* flight path}
         \end{figure}
 
         \subsection{Risk A*}
         \begin{figure}[H]
             \centering
-            \includegraphics[width=\textwidth]{Plot/talon/talon_route.png}
+            \includegraphics[width=\textwidth]{Plot/talon/route with fatality.png}
             \caption{Talon risk A* flight path}
         \end{figure}
         \begin{figure}[H]
             \centering
-            \includegraphics[width=\textwidth]{Plot/parrot/parrot_route.png}
+            \includegraphics[width=\textwidth]{Plot/parrot/route with fatality.png}
             \caption{Disco risk A* flight path}
         \end{figure}
         \begin{figure}[H]
             \centering
-            \includegraphics[width=\textwidth]{Plot/phantom4/phantom_route.png}
+            \includegraphics[width=\textwidth]{Plot/phantom4/risk with fatality.png}
             \caption{DJI Phantom 4 risk A* flight path}
         \end{figure}
         \begin{figure}[H]
             \centering
-            \includegraphics[width=\textwidth]{Plot/inspire/inspire_route.png}
+            \includegraphics[width=\textwidth]{Plot/inspire/risk with fatality.png}
             \caption{DJI Inspire 2 risk A* flight path}
         \end{figure}
 
@@ -2476,10 +2474,9 @@
         understand the trade-offs between risk and distance for each algorithm.
             
         Normal A* utilizes the Talon distribution but does not implement the Risk A* pathfinder. As seen in Figure
-        \ref{fig:regularastar}, the traveled distance of Normal A* is the shortest among the risk A* algorithms.
-        Interestingly, Normal A* has the highest risk score, which may seem counterintuitive, as one might expect an
-        inverse correlation between Normal A* and its risk A* counterpart. While it is not guaranteed for Normal A* to
-        have the highest risk score, it will consistently produce the shortest path length compared to risk A*.
+        \ref{fig:regularastar}, the traveled distance of Normal A* is the shortest among the risk A* algorithms. Not
+        surprisingly, Normal A* has the highest risk score. While it is not guaranteed for Normal A* to have the highest
+        risk score, it will consistently produce the shortest path length compared to risk A*.
             
         To assess different properties, we can measure the risk-to-traveled distance ratio, reflecting how much the
         algorithm attempts to avoid critical areas by extending the pathway to safer options. This is clearly
